@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
+import os
 import datetime
 from LogFile import logger
 import pandas as pd
@@ -14,13 +14,13 @@ class AdvertiserList(Config):
 
     def __init__(self):
         super(AdvertiserList, self).__init__()
-        # self.input_file = input_file
         self.file_csv = None
         self.writer = None
         self.file_csv_unique_market = None
 
     def read_account_file(self):
-        file_csv = pd.read_excel(self.section_value[2] + 'Account_&_Advertisers_List_data.xlsx')
+        os.system(self.section_value[11])
+        file_csv = pd.read_csv(self.section_value[2] + 'Account_&_Advertisers_List_data.csv', encoding="utf-8")
         file_csv_br = file_csv[file_csv['Market'] == 'BR']
         file_csv = file_csv.drop(file_csv_br.index, axis=0)
         file_csv_unique_market = file_csv['Market'].nunique()
