@@ -2,9 +2,9 @@ import email
 import imaplib
 import email.mime.multipart
 from config import Config
-import datetime
 import os
 import pandas as pd
+from LogFile import logger
 
 
 class Outlook(Config):
@@ -13,12 +13,9 @@ class Outlook(Config):
         self.username = None
         self.password = None
         self.imap = None
-        self.smtp = None
-        self.data = None
-        self.emails = []
-        self.msg = []
         self.subject = []
         self.file_name = []
+        self.att_path = "No attachment found"
 
     def subject_line(self):
         subject_read = pd.read_csv(self.section_value[9] + 'outlookEmails.csv')
@@ -31,10 +28,11 @@ class Outlook(Config):
         return self.imap.close()
 
     def login(self, username, password):
+        # IMAP Settings
         self.username = username
         self.password = password
         while True:
-
+            # Connect to the server
             try:
                 self.imap = imaplib.IMAP4_SSL("imap-mail.outlook.com", port=993)
                 r, d = self.imap.login(username, password)
@@ -46,69 +44,62 @@ class Outlook(Config):
             break
 
     def inbox(self):
+        # selecting the inbox
         typ, data = self.imap.select("Inbox")
         print typ, data
         num_msgs = int(data[0])
         print 'There are {} messages in INBOX'.format(num_msgs)
         return self.imap.select("Inbox")
 
-    @staticmethod
-    def today():
-        mydate = datetime.datetime.now()
-        return mydate.strftime("%Y-%m-%d")
+    def email_check(self, download_folder):
+        # fetch the email body (RFC822) for the given ID
+        try:
+            for i in self.subject:
+                print ('SUBJECT {}'.format(i))
+                # typ, msg_ids = self.imap.uid('search', None, 'SUBJECT {}'.format(i))
+                typ, msg_ids = self.imap.uid('search', None, 'SUBJECT {}'.format(i))
+                inbox_item_list = msg_ids[0].split()
+                most_recent = inbox_item_list[-1]
+                if typ == "OK":
+                    ret, data = self.imap.uid('fetch', most_recent, '(RFC822)')
+                    raw_data = data[0][1]
+                    # converts byte literal to string removing b''
+                    raw_data_string = raw_data.decode('utf-8')
+                    msg = email.message_from_string(raw_data_string)
+                    # downloading attachments
+                    # print(msg)
+                    print('Subject:' + msg['Subject'])
+                    for part in msg.walk():
+                        if part.get_content_maintype() == 'multipart':
+                            continue
+                        if part.get('Content-Disposition') is None:
+                            continue
 
-    def email_check(self):
-        for i in self.subject:
-            typ, msg_ids = self.imap.uid('search', None, '(SUBJECT "{}")'.format(i))
-            print(i, msg_ids)
-            inbox_item_list = msg_ids[0].split()
-            print (inbox_item_list)
-            most_recent = inbox_item_list[-1]
-            print (typ, i, most_recent)
-            if typ == "OK":
-                for message in most_recent:
-                    print 'Processing :', i
-                    try:
-                        typ, self.data = self.imap.uid('fetch', message, '(RFC822)')
-                        self.msg = email.message_from_string(self.data[0][1])
-                    except:
-                        print(self.msg)
+                        filename = part.get_filename()
+                        print(filename)
 
-                    if not isinstance(self.msg, str):
-                        self.emails.append(self.msg)
-                    response, self.data = self.imap.uid('store', message, '-FLAGS', '\\Seen')
-                    print(self.emails)
-                    print(self.data)
-                    exit()
-        return self.msg
+                        counter = 1
+                        # if there is no filename, we create one with a counter to avoid duplicates
 
-    def save_attachment(self, msg, download_folder):
-        att_path = "No attachment found"
-        for part in msg.walk():
-            if part.get_content_maintype() == 'multipart':
-                continue
-            if part.get('Content-Disposition') is None:
-                continue
+                        # filename = '{}'.format(i for i in self.file_name)
 
-            filename = part.get_filename()
-            print(filename)
-            exit()
-
-            att_path = os.path.join(download_folder, filename)
-
-            if not os.path.isfile(att_path):
-                fp = open(att_path, 'wb')
-                fp.write(part.get_payload(decode=True))
-                fp.close()
-                
-        return att_path
+                        self.att_path = os.path.join(download_folder, filename)
+                        # Check if its already there
+                        # if not os.path.isfile(self.att_path):
+                        fp = open(self.att_path, 'wb')
+                        fp.write(part.get_payload(decode=True))
+                        fp.close()
+        except imaplib.IMAP4.error as e:
+            logger.error(str(e))
+            pass
 
     def main(self):
         self.subject_line()
         self.login(self.section_value[5], self.section_value[6])
         self.inbox()
-        self.save_attachment(self.email_check(), self.section_value[12])
+        self.email_check(self.section_value[12])
         self.close_connection()
+        logger.info('Emails Downloaded')
 
 
 if __name__ == "__main__":
