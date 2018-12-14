@@ -5,6 +5,7 @@ from config import Config
 import os
 import pandas as pd
 from LogFile import logger
+import csv
 
 
 class Outlook(Config):
@@ -13,16 +14,15 @@ class Outlook(Config):
         self.username = None
         self.password = None
         self.imap = None
-        self.subject = []
-        self.file_name = []
+        self.subject = None
+        self.file_name = None
         self.att_path = "No attachment found"
 
     def subject_line(self):
         subject_read = pd.read_csv(self.section_value[9] + 'outlookEmails.csv')
-        subject = subject_read.iloc[:, 1].tolist()
-        file_name = subject_read.iloc[:, 0].tolist()
-        self.subject = subject
-        self.file_name = file_name
+        subject = subject_read.iloc[:, :]
+        self.subject = subject.iloc[:, 1]
+        self.file_name = subject.iloc[:, 0]
 
     def close_connection(self):
         return self.imap.close()
@@ -55,11 +55,12 @@ class Outlook(Config):
         # fetch the email body (RFC822) for the given ID
         try:
             for i in self.subject:
-                print ('SUBJECT {}'.format(i))
+                print ('Subject {}'.format(i))
                 # typ, msg_ids = self.imap.uid('search', None, 'SUBJECT {}'.format(i))
-                typ, msg_ids = self.imap.uid('search', None, 'SUBJECT {}'.format(i))
+                typ, msg_ids = self.imap.uid('search', None, '(SUBJECT "{}")'.format(i))
                 inbox_item_list = msg_ids[0].split()
                 most_recent = inbox_item_list[-1]
+                print most_recent
                 if typ == "OK":
                     ret, data = self.imap.uid('fetch', most_recent, '(RFC822)')
                     raw_data = data[0][1]
@@ -76,20 +77,19 @@ class Outlook(Config):
                             continue
 
                         filename = part.get_filename()
-                        print(filename)
+                        print("filename:" + filename)
+                        filename = self.file_name
 
-                        counter = 1
-                        # if there is no filename, we create one with a counter to avoid duplicates
-
-                        # filename = '{}'.format(i for i in self.file_name)
-
-                        self.att_path = os.path.join(download_folder, filename)
+                    # if there is no filename, we create one with a counter to avoid duplicates
+                        print filename
+                        self.att_path = os.path.join(download_folder, self.file_name)
                         # Check if its already there
                         # if not os.path.isfile(self.att_path):
                         fp = open(self.att_path, 'wb')
                         fp.write(part.get_payload(decode=True))
                         fp.close()
-        except imaplib.IMAP4.error as e:
+
+        except (imaplib.IMAP4.error, TypeError) as e:
             logger.error(str(e))
             pass
 
