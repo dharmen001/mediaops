@@ -5,6 +5,7 @@ from config import Config
 import os
 import pandas as pd
 from LogFile import logger
+import datetime
 
 
 class Outlook(Config):
@@ -96,10 +97,10 @@ class Outlook(Config):
         self.subject_line()
         self.login(self.section_value[5], self.section_value[6])
         self.inbox()
-        logger.info('start downloading emails at ')
+        logger.info('start downloading emails at ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         self.email_check(self.section_value[12])
         self.close_connection()
-        logger.info('Emails Downloaded')
+        logger.info('Emails Downloaded ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
 
 if __name__ == "__main__":
