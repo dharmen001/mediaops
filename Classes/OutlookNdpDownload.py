@@ -5,7 +5,6 @@ from config import Config
 import os
 import pandas as pd
 from LogFile import logger
-import csv
 
 
 class Outlook(Config):
@@ -16,11 +15,13 @@ class Outlook(Config):
         self.imap = None
         self.subject = None
         self.file_name = None
+        self.s = None
         self.att_path = "No attachment found"
 
     def subject_line(self):
         subject_read = pd.read_csv(self.section_value[9] + 'outlookEmails.csv')
         subject = subject_read.iloc[:, :]
+        self.s = subject
         self.subject = subject.iloc[:, 1]
         self.file_name = subject.iloc[:, 0]
 
@@ -54,7 +55,8 @@ class Outlook(Config):
     def email_check(self, download_folder):
         # fetch the email body (RFC822) for the given ID
         try:
-            for i in self.subject:
+            counter = 0
+            for i, j in zip(self.subject, self.file_name):
                 print ('Subject {}'.format(i))
                 # typ, msg_ids = self.imap.uid('search', None, 'SUBJECT {}'.format(i))
                 typ, msg_ids = self.imap.uid('search', None, '(SUBJECT "{}")'.format(i))
@@ -75,14 +77,11 @@ class Outlook(Config):
                             continue
                         if part.get('Content-Disposition') is None:
                             continue
-
                         filename = part.get_filename()
                         print("filename:" + filename)
-                        filename = self.file_name
-
+                        filename = j
                     # if there is no filename, we create one with a counter to avoid duplicates
-                        print filename
-                        self.att_path = os.path.join(download_folder, self.file_name)
+                        self.att_path = os.path.join(download_folder, filename)
                         # Check if its already there
                         # if not os.path.isfile(self.att_path):
                         fp = open(self.att_path, 'wb')
@@ -97,6 +96,7 @@ class Outlook(Config):
         self.subject_line()
         self.login(self.section_value[5], self.section_value[6])
         self.inbox()
+        logger.info('start downloading emails at ')
         self.email_check(self.section_value[12])
         self.close_connection()
         logger.info('Emails Downloaded')
