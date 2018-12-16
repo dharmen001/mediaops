@@ -25,7 +25,7 @@ class NdpGrdriveDate(Config):
         self.file_list_uk = file_list_uk
 
     def download_files(self):
-        self.file_obj.GetContentFile(self.section_value[12] + 'Sage Global - Publisher Data - Daily.xlsx',
+        self.file_obj_publisher_file.GetContentFile(self.section_value[12] + 'Sage Global - Publisher Data - Daily.xlsx',
                                 mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
         self.file_obj_lead_file(self.section_value[12] + 'NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx',
