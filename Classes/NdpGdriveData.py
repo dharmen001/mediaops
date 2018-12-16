@@ -7,7 +7,7 @@ class NdpGrdriveDate(Config):
     def __init__(self):
         super(NdpGrdriveDate, self).__init__()
         self.gauth = GoogleAuth()
-        self.gauth.LocalWebserverAuth()
+        # self.gauth.LocalWebserverAuth()
         self.drive = GoogleDrive(self.gauth)
 
     def file_objects(self):

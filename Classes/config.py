@@ -14,6 +14,7 @@ class Config(object):
         Path
         :return:
         """
+        print ("Cong")
         config_file = configparser.ConfigParser()
         config_file.read('C:/mediaops/config/mediaops.ini')
 
