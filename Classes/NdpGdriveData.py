@@ -15,20 +15,26 @@ class NdpGrdriveDate(Config):
         # print(file_obj["title"], file_obj["mimeType"])
         file_obj_publisher_file = self.drive.CreateFile({'id': self.section_value[15]})
         self.file_obj_publisher_file = file_obj_publisher_file
+        print ('title: {}, id: {}'.format(self.file_obj_publisher_file['title'], self.file_obj_publisher_file['id']))
+        print('downloading to {}'.format(self.file_obj_publisher_file))
 
         # Lead file(US/CA)
         file_obj_lead_file = self.drive.CreateFile({'id': self.section_value[16]})
         self.file_obj_lead_file = file_obj_lead_file
+        print ('title: {}, id: {}'.format(self.file_obj_lead_file['title'], self.file_obj_lead_file['id']))
+        print('downloading to {}'.format(self.file_obj_lead_file))
+
 
         #Uk Files
         file_list_uk = self.drive.ListFile({'q':"'1gzbtbqWyQEbJCfyRuYGsXKr4boOGdsrh' in parents"}).GetList()
         self.file_list_uk = file_list_uk
 
+
     def download_files(self):
         self.file_obj_publisher_file.GetContentFile(self.section_value[12] + 'Sage Global - Publisher Data - Daily.xlsx',
                                 mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
-        self.file_obj_lead_file(self.section_value[12] + 'NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx',
+        self.file_obj_lead_file.GetContentFile(self.section_value[12] + 'NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx',
                                 mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
     def download_uk_folder(self):
