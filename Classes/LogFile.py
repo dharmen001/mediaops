@@ -4,8 +4,6 @@
 logging Class
 """
 import logging
-from config import Config
-c = Config()
 
 logger = logging.getLogger('{}'.format('App'))
 logger.setLevel(logging.DEBUG)
@@ -14,7 +12,7 @@ logger.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 # create file handler which logs even debug messages
-fh = logging.FileHandler(c.section_value[18] + 'logfile.log'.format())
+fh = logging.FileHandler('C:/mediaops/logfolder/logfile.log')
 fh.setLevel(logging.ERROR)
 fh.setFormatter(formatter)
 logger.addHandler(fh)

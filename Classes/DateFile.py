@@ -1,6 +1,6 @@
 import os
 import datetime
-from config import Config
+from config_ini import Config
 from LogFile import logger
 # current_day = datetime.datetime.now().day
 # current_month = datetime.datetime.now().month

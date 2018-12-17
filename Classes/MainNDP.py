@@ -3,7 +3,7 @@
 
 from Advertiser_list import AdvertiserList
 from JiraWrapper import Jira
-from config import Config
+from config_ini import Config
 
 
 if __name__ == "__main__":

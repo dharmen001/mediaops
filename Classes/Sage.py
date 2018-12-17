@@ -5,7 +5,7 @@ Combining Xlsx File
 import pandas as pd
 import glob
 import xlsxwriter
-from config import Config
+from config_ini import Config
 import DateFile
 
 

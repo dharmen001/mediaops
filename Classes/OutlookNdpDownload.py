@@ -1,7 +1,7 @@
 import email
 import imaplib
 import email.mime.multipart
-from config import Config
+from config_ini import Config
 import os
 import pandas as pd
 from LogFile import logger
@@ -48,22 +48,21 @@ class Outlook(Config):
     def inbox(self):
         # selecting the inbox
         typ, data = self.imap.select("Inbox")
-        print typ, data
+        print (typ, data)
         num_msgs = int(data[0])
-        print 'There are {} messages in INBOX'.format(num_msgs)
+        print ('There are {} messages in INBOX'.format(num_msgs))
         return self.imap.select("Inbox")
 
     def email_check(self, download_folder):
         # fetch the email body (RFC822) for the given ID
         try:
-            counter = 0
             for i, j in zip(self.subject, self.file_name):
                 print ('Subject {}'.format(i))
                 # typ, msg_ids = self.imap.uid('search', None, 'SUBJECT {}'.format(i))
                 typ, msg_ids = self.imap.uid('search', None, '(SUBJECT "{}")'.format(i))
                 inbox_item_list = msg_ids[0].split()
                 most_recent = inbox_item_list[-1]
-                print most_recent
+                print (most_recent)
                 if typ == "OK":
                     ret, data = self.imap.uid('fetch', most_recent, '(RFC822)')
                     raw_data = data[0][1]

@@ -7,14 +7,14 @@ import configparser
 
 class Config(object):
     """
-    read bi.ini file
+    read mediaops.ini file
     """
     def __init__(self):
         """
         Path
         :return:
         """
-        print ("Cong")
+
         config_file = configparser.ConfigParser()
         config_file.read('C:/mediaops/config/mediaops.ini')
 

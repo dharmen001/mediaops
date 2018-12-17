@@ -6,7 +6,7 @@ import datetime
 from LogFile import logger
 import pandas as pd
 import pandas.io.formats.excel
-from config import Config
+from config_ini import Config
 pandas.io.formats.excel.header_style = None
 
 

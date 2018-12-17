@@ -10,7 +10,7 @@ from datetime import timedelta
 from LogFile import logger
 from jira.client import JIRA
 import urllib3
-from config import Config
+from config_ini import Config
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
@@ -113,74 +113,89 @@ class Jira(Config):
         assignees = 'anastasia.lanina'
         attachment = [self.section_value[3] + 'DE.xlsx']
 
-        self.issue_de = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} DE'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'DE'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
+        try:
+            self.issue_de = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} DE'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'DE'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        create_de = self.client.create_issue(fields=self.issue_de, prefetch=True)
-        self.create_de = create_de
+            create_de = self.client.create_issue(fields=self.issue_de, prefetch=True)
+            self.create_de = create_de
 
-        for i in watch:
-            self.client.add_watcher(self.create_de.id, i)
+            for i in watch:
+                self.client.add_watcher(self.create_de.id, i)
 
-        for j in attachment:
-            self.client.add_attachment(self.create_de.id, j)
+            for j in attachment:
+                self.client.add_attachment(self.create_de.id, j)
+
+        except JiraException:
+            pass
 
     def fr(self):
         watch = ['manon.mercier', 'maxime.sarrazin',
                  'jennifer.marquez', 'manon.leymat', 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
         assignees = 'manon.mercier'
         attachment = [self.section_value[3] + 'FR.xlsx']
-        self.issue_fr = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} FR'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'FR'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
 
-        self.create_fr = self.client.create_issue(fields=self.issue_fr, prefetch=True)
-        for i in watch:
-            self.client.add_watcher(self.create_fr.id, i)
+        try:
+            self.issue_fr = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} FR'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'FR'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        for j in attachment:
-            self.client.add_attachment(self.create_fr.id, j)
+            self.create_fr = self.client.create_issue(fields=self.issue_fr, prefetch=True)
+
+            for i in watch:
+                self.client.add_watcher(self.create_fr.id, i)
+
+            for j in attachment:
+                self.client.add_attachment(self.create_fr.id, j)
+
+        except JiraException:
+            pass
 
     def es(self):
         watch = ['carmen.candela', 'antonio.desantos', 'raquel.hernandez', 'jennifer.marquez', 'manon.leymat',
                  'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
         assignees = 'antonio.desantos'
         attachment = [self.section_value[3] + 'ES.xlsx', self.section_value[3] + 'PT.xlsx']
-        self.issue_es = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} ES'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'ES'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
 
-        self.create_es = self.client.create_issue(fields=self.issue_es, prefetch=True)
-        for i in watch:
-            self.client.add_watcher(self.create_es.id, i)
+        try:
+            self.issue_es = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} ES'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'ES'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        for j in attachment:
-            self.client.add_attachment(self.create_es.id, j)
+            self.create_es = self.client.create_issue(fields=self.issue_es, prefetch=True)
+            for i in watch:
+                self.client.add_watcher(self.create_es.id, i)
+
+            for j in attachment:
+                self.client.add_attachment(self.create_es.id, j)
+
+        except JiraException:
+            pass
 
     def us(self):
         watch = ['christine.ciarcia', 'vanessa.ezeta', 'jennifer.marquez', 'manon.leymat',
@@ -188,72 +203,86 @@ class Jira(Config):
         assignees = 'vanessa.ezeta'
         attachment = [self.section_value[3] + 'CA.xlsx', self.section_value[3] + 'US.xlsx',
                       self.section_value[3] + 'US & CA.xlsx']
-        self.issue_us = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} US'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'US'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
 
-        self.create_us = self.client.create_issue(fields=self.issue_us, prefetch=True)
-        for i in watch:
-            self.client.add_watcher(self.create_us.id, i)
+        try:
+            self.issue_us = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} US'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'US'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        for j in attachment:
-            self.client.add_attachment(self.create_us.id, j)
+            self.create_us = self.client.create_issue(fields=self.issue_us, prefetch=True)
+            for i in watch:
+                self.client.add_watcher(self.create_us.id, i)
+
+            for j in attachment:
+                self.client.add_attachment(self.create_us.id, j)
+
+        except JiraException:
+            pass
 
     def uk(self):
         watch = ['mireia.nadal', 'marta.fiascaris', 'nick.gardiner', 'yasmin.andrews', 'ye-eun.kim', 'jennifer.marquez',
                  'manon.leymat', 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
         assignees = 'ye-eun.kim'
         attachment = [self.section_value[3] + 'UK.xlsx', self.section_value[3] + 'IE.xlsx']
-        self.issue_uk = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} UK'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'UK'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
 
-        self.create_uk = self.client.create_issue(fields=self.issue_uk, prefetch=True)
-        for i in watch:
-            self.client.add_watcher(self.create_uk.id, i)
+        try:
+            self.issue_uk = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} UK'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'UK'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        for j in attachment:
-            self.client.add_attachment(self.create_uk.id, j)
+            self.create_uk = self.client.create_issue(fields=self.issue_uk, prefetch=True)
+            for i in watch:
+                self.client.add_watcher(self.create_uk.id, i)
+
+            for j in attachment:
+                self.client.add_attachment(self.create_uk.id, j)
+        except JiraException:
+            pass
 
     def mea(self):
-        watch = ['cindy.booysen', 'kyle.ackermann', 'jennifer.marquez', 'manon.leymat',
+        watch = ['cindy.booysen', 'jennifer.marquez', 'manon.leymat',
                  'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
         assignees = 'cindy.booysen'
         attachment = [self.section_value[3] + 'ZA.xlsx']
-        self.issue_mea = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} MEA'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'MEA'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
 
-        self.create_mea = self.client.create_issue(fields=self.issue_mea, prefetch=True)
-        for i in watch:
-            self.client.add_watcher(self.create_mea.id, i)
+        try:
+            self.issue_mea = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} MEA'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'MEA'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        for j in attachment:
-            self.client.add_attachment(self.create_mea.id, j)
+            self.create_mea = self.client.create_issue(fields=self.issue_mea, prefetch=True)
+            for i in watch:
+                self.client.add_watcher(self.create_mea.id, i)
+
+            for j in attachment:
+                self.client.add_attachment(self.create_mea.id, j)
+
+        except JiraException:
+            pass
 
     def aus(self):
         watch = ['corinne.hewlett', 'thuy.le', 'jon.windred', 'jennifer.marquez', 'manon.leymat',
@@ -261,25 +290,29 @@ class Jira(Config):
         assignees = 'corinne.hewlett'
         attachment = [self.section_value[3] + 'AUS.xlsx']
 
-        self.issue_aus = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} AUS'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'AUS'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
+        try:
+            self.issue_aus = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} AUS'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'AUS'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        self.create_aus = self.client.create_issue(fields=self.issue_aus, prefetch=True)
+            self.create_aus = self.client.create_issue(fields=self.issue_aus, prefetch=True)
 
-        for i in watch:
-            self.client.add_watcher(self.create_aus.id, i)
+            for i in watch:
+                self.client.add_watcher(self.create_aus.id, i)
 
-        for j in attachment:
-            self.client.add_attachment(self.create_aus.id, j)
+            for j in attachment:
+                self.client.add_attachment(self.create_aus.id, j)
+
+        except JiraException:
+            pass
 
     def apac(self):
         watch = ['ravi.chettiar', 'jennifer.marquez', 'manon.leymat',
@@ -289,24 +322,28 @@ class Jira(Config):
                       self.section_value[3] + 'MY.xlsx', self.section_value[3] + 'SG.xlsx',
                       self.section_value[3] + 'TH.xlsx']
 
-        self.issue_apac = {
-            'project': {'key': 'MOS'},
-            'issuetype': {'name': 'Reporting'},
-            'summary': 'NDP Data Audit {} APAC'.format(Jira.date_create().strftime('%B')),
-            'description': self.description,
-            'customfield_10038': {'value': 'APAC'},
-            'customfield_10052': {'value': 'Ad hoc'},
-            'customfield_10053': {'value': 'Monthly'},
-            "assignee": {
-                "name": assignees
-            }, 'duedate': str(Jira.sixth_day())}
+        try:
+            self.issue_apac = {
+                'project': {'key': 'MOS'},
+                'issuetype': {'name': 'Reporting'},
+                'summary': 'NDP Data Audit {} APAC'.format(Jira.date_create().strftime('%B')),
+                'description': self.description,
+                'customfield_10038': {'value': 'APAC'},
+                'customfield_10052': {'value': 'Ad hoc'},
+                'customfield_10053': {'value': 'Monthly'},
+                "assignee": {
+                    "name": assignees
+                }, 'duedate': str(Jira.sixth_day())}
 
-        self.create_apac = self.client.create_issue(fields=self.issue_apac, prefetch=True)
-        for i in watch:
-            self.client.add_watcher(self.create_apac.id, i)
+            self.create_apac = self.client.create_issue(fields=self.issue_apac, prefetch=True)
+            for i in watch:
+                self.client.add_watcher(self.create_apac.id, i)
 
-        for j in attachment:
-            self.client.add_attachment(self.create_apac.id, j)
+            for j in attachment:
+                self.client.add_attachment(self.create_apac.id, j)
+
+        except JiraException:
+            pass
 
     def main(self):
         self.get_projects()

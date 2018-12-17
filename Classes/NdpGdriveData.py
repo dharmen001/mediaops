@@ -1,15 +1,21 @@
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
-from config import Config
+from config_ini import Config
 
 class NdpGrdriveDate(Config):
 
     def __init__(self):
         super(NdpGrdriveDate, self).__init__()
         self.gauth = GoogleAuth()
-        # self.gauth.LocalWebserverAuth()
+        self.gauth.LoadCredentialsFile("mycreds.txt")
+        if self.gauth.credentials is None:
+            self.gauth.LocalWebserverAuth()
+        elif self.gauth.access_token_expired:
+            self.gauth.Refresh()
+        else:
+            self.gauth.Authorize()
+        self.gauth.SaveCredentialsFile("mycreds.txt")
         self.drive = GoogleDrive(self.gauth)
-
     def file_objects(self):
         # publisher file
         # print(file_obj["title"], file_obj["mimeType"])

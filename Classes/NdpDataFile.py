@@ -1,16 +1,19 @@
+# !/usr/bin/python
+# coding=utf-8
+
 import pandas as pd
 import datetime
-from config import Config
+from config_ini import Config
 from LogFile import logger
 
 
-class NdpDataFile(Config):
+class NdpData(Config):
     def __init__(self):
-        super(NdpDataFile, self).__init__()
+        super(NdpData, self).__init__()
         self.path = self.section_value[10] + "Data Audit_GDS_All_Markets for ({}-{}).xlsx".\
             format(datetime.datetime.now().year, datetime.datetime.now().month - 1)
 
-        logger.info("Start creating NDPFile ")
+        logger.info("Start creating NDPFile")
 
         self.writer_file = pd.ExcelWriter(self.path, engine="xlsxwriter", datetime_format="YYYY-MM-DD")
 
@@ -21,8 +24,8 @@ class NdpDataFile(Config):
         """
         self.writer_file.save()
         self.writer_file.close()
-        logger.info("File has been create at {}".format(self.path))
+        logger.info("File has been created at {}".format(self.path))
 
 
 if __name__ == "__main__":
-    obj_npd_file = NdpDataFile()
+    obj_npd_file = NdpData()
