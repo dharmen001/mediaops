@@ -1,0 +1,13 @@
+$server='https://10az.online.tableau.com'
+$username='simon.mccarthy@ogilvy.com'
+$password='Alr3adyH0me'
+$site='neoogilvy'
+
+
+Set-Location "C:\tabcmd\Command Line Utility\"
+
+$TabCMD = ".\tableau tabcmd login -s $server -u $username -p $password"
+
+Invoke-Expression -Command:$TabCMD
+
+write-host 'Command complete!!'
