@@ -1,11 +1,30 @@
-<html>
-    <head>
-        <script type="text javascript"
-                src  = "{{ url_for ('static', filename = 'response.js')}}"></script>
-    </head>
+<!DOCTYPE HTML>
+<html lang = "en">
 
-    <body>
-        <input type="button" onclick="sayHello()" value="Say Hello" />
-    </body>
+  <head>
+    <title>Home</title>
+    <meta charset = "UTF-8" />
+  </head>
+  <body bgcolor="#7030A0">
+    <h1>
+        <font color = white> MindShare Neo Report Server</font> </h1>
+    <form>
+       <fieldset>
+          <legend>Selecting elements</legend>
+          <p>
+              <label><font color = white>Report Name</font></label>
+             <select id = "myList">
+               <option value = "1">NDP</option>
+             </select>
+              <label for="Start Date"><font color = white>Start Date</font> : </label>
+              <input id="Start Date" type="date" value="2011-01-13"/>
+              <label for="End Date"><font color = white>End Date</font> : </label>
+              <input id="End Date" type="date" value="2011-01-13"/>
+             <input type="Submit" value="Submit">
+          </p>
+       </fieldset>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="response.js"></script>
+  </body>
 </html>
-
