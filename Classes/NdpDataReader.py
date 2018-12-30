@@ -19,7 +19,7 @@ class NdpReader(NdpDataFile.NdpData):
     def __init__(self):
 
         super(NdpReader, self).__init__()
-        print(self.section_value[9] + "NdpRawDataFile.csv")
+        # print(self.section_value[9] + "NdpRawDataFile.csv")
         self.read_ndp_data = None
         self.read_dmc_data = None
         self.read_dbm_data = None
@@ -27,6 +27,20 @@ class NdpReader(NdpDataFile.NdpData):
         self.read_lead_content = None
         self.df = None
         self.publisher_data_uk = None
+        self.read_static_site_conversion = None
+        self.read_dynamic_site_conversion = None
+        self.read_site_dcm_platform_mapping = None
+        self.read_advertiser_mapping = None
+        self.read_conversion_raw_file = None
+        self.data_reader_ndp_raw()
+        self.ndp_static_conversion_reader()
+        self.ndp_dynamic_conversion_reader()
+        self.ndp_mapping_reader()
+        self.dcm_data_reader()
+        self.dbm_data_reader()
+        self.publisher_data_read()
+        self.lead_content_read()
+        self.uk_publisher_data()
 
     def data_reader_ndp_raw(self):
 
@@ -34,6 +48,57 @@ class NdpReader(NdpDataFile.NdpData):
         read_ndp_data = pd.read_csv(self.section_value[9] + "NdpRawDataFile.csv", encoding="ISO-8859-1")
         logger.info("Done Reading:- NdpRawDataFile.csv at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         self.read_ndp_data = read_ndp_data
+
+    def ndp_static_conversion_reader(self):
+        logger.info("Start Reading:- DMC_Static_Conversions.xlsx at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        read_conversion_raw_file = pd.read_excel(self.section_value[12] + "DMC_Static_Conversions.xlsx", skipfooter=1)
+
+        logger.info("Done Reading:- DMC_Static_Conversions.xlsx at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
+        self.read_conversion_raw_file = read_conversion_raw_file
+
+    def ndp_dynamic_conversion_reader(self):
+        pass
+
+    def criteo_data_reader(self):
+        pass
+
+    def ndp_mapping_reader(self):
+        logger.info("Start Reading:- removeStaticConnversionsSiteName.csv at " + str(datetime.datetime.now().
+                                                                                      strftime("%Y-%m-%d %H:%M")))
+        read_static_site_conversion = pd.read_csv(self.section_value[9] + "removeStaticConnversionsSiteName.csv")
+
+        logger.info("Done Reading:- removeStaticConnversionsSiteName.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
+        logger.info("Start Reading:- removeDynamicConnversionsSiteName.csv at " + str(datetime.datetime.now().
+                                                                                     strftime("%Y-%m-%d %H:%M")))
+        read_dynamic_site_conversion = pd.read_csv(self.section_value[9] + "removeDynamicConnversionsSiteName.csv")
+
+        logger.info("Done Reading:- removeDynamicConnversionsSiteName.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
+        logger.info("Start Reading:- siteDCMPlatformMapping.csv at " + str(datetime.datetime.now().
+                                                                                      strftime("%Y-%m-%d %H:%M")))
+        read_site_dcm_platform_mapping = pd.read_csv(self.section_value[9] + "siteDCMPlatformMapping.csv")
+
+        logger.info("Done Reading:- siteDCMPlatformMapping.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
+        logger.info("Start Reading:- advertiserMarketMapping.csv at " + str(datetime.datetime.now().
+                                                                           strftime("%Y-%m-%d %H:%M")))
+
+        read_advertiser_mapping = pd.read_csv(self.section_value[9] + "advertiserMarketMapping.csv")
+
+        logger.info("Done Reading:- advertiserMarketMapping.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
+        self.read_static_site_conversion = read_static_site_conversion
+        self.read_dynamic_site_conversion = read_dynamic_site_conversion
+        self.read_site_dcm_platform_mapping = read_site_dcm_platform_mapping
+        self.read_advertiser_mapping = read_advertiser_mapping
 
     def dcm_data_reader(self):
 
@@ -129,6 +194,9 @@ class NdpReader(NdpDataFile.NdpData):
 
     def main(self):
         self.data_reader_ndp_raw()
+        self.ndp_static_conversion_reader()
+        self.ndp_dynamic_conversion_reader()
+        self.ndp_mapping_reader()
         self.dcm_data_reader()
         self.dbm_data_reader()
         self.publisher_data_read()
@@ -138,4 +206,4 @@ class NdpReader(NdpDataFile.NdpData):
 
 if __name__ == "__main__":
     obj_NdpDataReader = NdpReader()
-    obj_NdpDataReader.main()
+    # obj_NdpDataReader.main()
