@@ -4,7 +4,6 @@
 import pandas as pd
 import os
 import zipfile
-
 import xlrd
 
 from LogFile import logger
@@ -25,13 +24,14 @@ class NdpReader(NdpDataFile.NdpData):
         self.read_dbm_data = None
         self.read_publisher_data = None
         self.read_lead_content = None
-        self.df = None
         self.publisher_data_uk = None
+        self.dynamic_df = None
         self.read_static_site_conversion = None
-        self.read_dynamic_site_conversion = None
         self.read_site_dcm_platform_mapping = None
         self.read_advertiser_mapping = None
         self.read_conversion_raw_file = None
+        self.read_tableau_advertiser_mapping = None
+        self.read_tableau_platform_mapping = None
         self.data_reader_ndp_raw()
         self.ndp_static_conversion_reader()
         self.ndp_dynamic_conversion_reader()
@@ -50,34 +50,57 @@ class NdpReader(NdpDataFile.NdpData):
         self.read_ndp_data = read_ndp_data
 
     def ndp_static_conversion_reader(self):
-        logger.info("Start Reading:- DMC_Static_Conversions.xlsx at " +
+        logger.info("Start Reading:- DMC_Static_Conversions.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        read_conversion_raw_file = pd.read_excel(self.section_value[12] + "DMC_Static_Conversions.xlsx", skipfooter=1)
+        read_conversion_raw_file = pd.read_csv(self.section_value[12] + "DMC_Static_Conversions.csv")
 
-        logger.info("Done Reading:- DMC_Static_Conversions.xlsx at " +
+        logger.info("Done Reading:- DMC_Static_Conversions.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
         self.read_conversion_raw_file = read_conversion_raw_file
 
     def ndp_dynamic_conversion_reader(self):
-        pass
+
+        raw_dynamic_conversion_us = pd.read_csv(self.section_value[12] + "DynamicUS.csv", engine='python',
+                                                skipfooter=1, skiprows=13)
+
+        raw_dynamic_conversion_uk = pd.read_csv(self.section_value[12] + "DynamicUK.csv", engine='python',
+                                                skipfooter=1, skiprows=18)
+
+        raw_dynamic_conversion_spain = pd.read_csv(self.section_value[12] + "DynamicSpain.csv", engine='python',
+                                                   skipfooter=1, skiprows=12)
+
+        raw_dynamic_conversion_germany = pd.read_csv(self.section_value[12] + "DynamicGermany.csv", engine='python',
+                                                     skipfooter=1, skiprows=13)
+
+        raw_dynamic_conversion_france = pd.read_csv(self.section_value[12] + "DynamicFrance.csv", engine='python',
+                                                    skiprows=12, skipfooter=1)
+
+        raw_dynamic_conversion_us['Market'] = 'USA'
+        raw_dynamic_conversion_uk['Market'] = 'UK'
+        raw_dynamic_conversion_spain['Market'] = 'Spain'
+        raw_dynamic_conversion_germany['Market'] = 'Germany'
+        raw_dynamic_conversion_france['Market'] = 'France'
+
+        dynamic_df = pd.concat([raw_dynamic_conversion_us,
+                                raw_dynamic_conversion_uk.rename(columns={'Form_lead_type (string)': 'Form_lead_type (string)'}),
+                                raw_dynamic_conversion_spain.rename(columns={'Form_lead_type (string)': 'Form_lead_type (string)'}),
+                                raw_dynamic_conversion_germany.rename(columns={'Formleadtype (string)': 'Form_lead_type (string)'}),
+                                raw_dynamic_conversion_france.rename(columns={'form_solution_lead_type (string)': 'Form_lead_type (string)'})],
+                               axis=0, sort=True, ignore_index=True)
+
+        self.dynamic_df = dynamic_df
+
 
     def criteo_data_reader(self):
         pass
 
     def ndp_mapping_reader(self):
-        logger.info("Start Reading:- removeStaticConnversionsSiteName.csv at " + str(datetime.datetime.now().
+        logger.info("Start Reading:- staticActivityMapping.csv at " + str(datetime.datetime.now().
                                                                                       strftime("%Y-%m-%d %H:%M")))
-        read_static_site_conversion = pd.read_csv(self.section_value[9] + "removeStaticConnversionsSiteName.csv")
+        read_static_site_conversion = pd.read_csv(self.section_value[9] + "staticActivityMapping.csv")
 
-        logger.info("Done Reading:- removeStaticConnversionsSiteName.csv at " +
-                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        logger.info("Start Reading:- removeDynamicConnversionsSiteName.csv at " + str(datetime.datetime.now().
-                                                                                     strftime("%Y-%m-%d %H:%M")))
-        read_dynamic_site_conversion = pd.read_csv(self.section_value[9] + "removeDynamicConnversionsSiteName.csv")
-
-        logger.info("Done Reading:- removeDynamicConnversionsSiteName.csv at " +
+        logger.info("Done Reading:- staticActivityMapping.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
         logger.info("Start Reading:- siteDCMPlatformMapping.csv at " + str(datetime.datetime.now().
@@ -95,10 +118,25 @@ class NdpReader(NdpDataFile.NdpData):
         logger.info("Done Reading:- advertiserMarketMapping.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
+        logger.info("Start Reading:- advertiserMappingTableau.csv at " + str(datetime.datetime.now().
+                                                                            strftime("%Y-%m-%d %H:%M")))
+        read_tableau_advertiser_mapping = pd.read_csv(self.section_value[9] + "advertiserMappingTableau.csv")
+
+        logger.info("Done Reading:- advertiserMappingTableau.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
+        logger.info("Start Reading:- tableauPlatformMapping.csv at " + str(datetime.datetime.now().
+                                                                            strftime("%Y-%m-%d %H:%M")))
+        read_tableau_platform_mapping = pd.read_csv(self.section_value[9] + "tableauPlatformMapping.csv")
+
+        logger.info("Done Reading:- tableauPlatformMapping.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
         self.read_static_site_conversion = read_static_site_conversion
-        self.read_dynamic_site_conversion = read_dynamic_site_conversion
         self.read_site_dcm_platform_mapping = read_site_dcm_platform_mapping
         self.read_advertiser_mapping = read_advertiser_mapping
+        self.read_tableau_advertiser_mapping = read_tableau_advertiser_mapping
+        self.read_tableau_platform_mapping = read_tableau_platform_mapping
 
     def dcm_data_reader(self):
 
