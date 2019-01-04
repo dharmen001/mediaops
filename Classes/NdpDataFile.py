@@ -10,8 +10,11 @@ from LogFile import logger
 class NdpData(Config):
     def __init__(self):
         super(NdpData, self).__init__()
+        now = datetime.datetime.now()
+        last_month = now.month-1 if now.month > 1 else 12
+        last_year = now.year - 1
         self.path = self.section_value[10] + "Data Audit_GDS_All_Markets for ({}-{}).xlsx".\
-            format(datetime.datetime.now().year, datetime.datetime.now().month - 1)
+            format(last_year, last_month)
 
         logger.info("Start creating NDPFile")
 

@@ -19,6 +19,9 @@ class NdpReader(NdpDataFile.NdpData):
 
         super(NdpReader, self).__init__()
         # print(self.section_value[9] + "NdpRawDataFile.csv")
+        self.now = datetime.datetime.now()
+        self.last_month = self.now.month - 1 if self.now.month > 1 else 12
+        self.last_year = self.now.year - 1
         self.read_ndp_data = None
         self.read_dmc_data = None
         self.read_dbm_data = None
@@ -32,6 +35,7 @@ class NdpReader(NdpDataFile.NdpData):
         self.read_conversion_raw_file = None
         self.read_tableau_advertiser_mapping = None
         self.read_tableau_platform_mapping = None
+        self.read_site_display_mapping = None
         self.data_reader_ndp_raw()
         self.ndp_static_conversion_reader()
         self.ndp_dynamic_conversion_reader()
@@ -96,18 +100,19 @@ class NdpReader(NdpDataFile.NdpData):
         pass
 
     def ndp_mapping_reader(self):
-        logger.info("Start Reading:- staticActivityMapping.csv at " + str(datetime.datetime.now().
-                                                                                      strftime("%Y-%m-%d %H:%M")))
-        read_static_site_conversion = pd.read_csv(self.section_value[9] + "staticActivityMapping.csv")
 
-        logger.info("Done Reading:- staticActivityMapping.csv at " +
+        logger.info("Start Reading:- staticActivityConversionMapping.csv at " + str(datetime.datetime.now().
+                                                                                      strftime("%Y-%m-%d %H:%M")))
+        read_static_site_conversion = pd.read_csv(self.section_value[9] + "staticActivityConversionMapping.csv")
+
+        logger.info("Done Reading:- staticActivityConversionMapping.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        logger.info("Start Reading:- siteDCMPlatformMapping.csv at " + str(datetime.datetime.now().
+        logger.info("Start Reading:- siteStaticConversionMapping.csv at " + str(datetime.datetime.now().
                                                                                       strftime("%Y-%m-%d %H:%M")))
-        read_site_dcm_platform_mapping = pd.read_csv(self.section_value[9] + "siteDCMPlatformMapping.csv")
+        read_site_dcm_platform_mapping = pd.read_csv(self.section_value[9] + "siteStaticConversionMapping.csv")
 
-        logger.info("Done Reading:- siteDCMPlatformMapping.csv at " +
+        logger.info("Done Reading:- siteStaticConversionMapping.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
         logger.info("Start Reading:- advertiserMarketMapping.csv at " + str(datetime.datetime.now().
@@ -132,18 +137,30 @@ class NdpReader(NdpDataFile.NdpData):
         logger.info("Done Reading:- tableauPlatformMapping.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
+        logger.info("Start Reading:- siteDisplayPerformanceMapping.csv at " + str(datetime.datetime.now().
+                                                                           strftime("%Y-%m-%d %H:%M")))
+        read_site_display_mapping = pd.read_csv(self.section_value[9] + "siteDisplayPerformanceMapping.csv")
+
+        logger.info("Done Reading:- siteDisplayPerformanceMapping.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
         self.read_static_site_conversion = read_static_site_conversion
         self.read_site_dcm_platform_mapping = read_site_dcm_platform_mapping
         self.read_advertiser_mapping = read_advertiser_mapping
         self.read_tableau_advertiser_mapping = read_tableau_advertiser_mapping
         self.read_tableau_platform_mapping = read_tableau_platform_mapping
+        self.read_site_display_mapping = read_site_display_mapping
 
     def dcm_data_reader(self):
 
         logger.info("Start Reading:- DMC_Report.zip at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         read_dmc_data_zf = zipfile.ZipFile(self.section_value[12] + "DMC_Report.zip")
         read_dmc_data = pd.read_csv(read_dmc_data_zf.open(zipfile.ZipFile.namelist(read_dmc_data_zf)[0]),
-                                    skiprows=11, skipfooter=1, engine='python', encoding="ISO-8859-1")
+                                    skiprows=9, skipfooter=1, engine='python', encoding="ISO-8859-1",
+                                    parse_dates=['Date'])
+
+        read_dmc_data = read_dmc_data[(read_dmc_data['Date'].dt.year == self.last_year) &
+                                      (read_dmc_data['Date'].dt.month == self.last_month)]
 
         logger.info("Done Reading:- DMC_Report.zip at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         self.read_dmc_data = read_dmc_data
@@ -157,6 +174,9 @@ class NdpReader(NdpDataFile.NdpData):
                                     engine='python', encoding="ISO-8859-1", error_bad_lines=False)
         read_dbm_data = read_dbm_data[:read_dbm_data['Date'].isnull().idxmax()]
         read_dbm_data['Date'] = pd.to_datetime(read_dbm_data['Date'])
+
+        read_dbm_data = read_dbm_data[(read_dbm_data['Date'].dt.year == self.last_year) &
+                                      (read_dbm_data['Date'].dt.month == self.last_month)]
 
         logger.info("Done Reading:- DBM_Report.zip at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
@@ -213,6 +233,8 @@ class NdpReader(NdpDataFile.NdpData):
 
         uk_publisher_data = df.dropna(how='all')
         self.publisher_data_uk = uk_publisher_data
+        # x = self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
+        # self.save_and_close_writer()
 
         # instruction_df = pd.DataFrame()
         #

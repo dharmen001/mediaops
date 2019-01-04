@@ -6,6 +6,7 @@ from LogFile import logger
 from NdpDataReader import NdpReader
 from functools import reduce
 import numpy as np
+from datetime import datetime
 
 
 class NdpWriter(NdpReader):
@@ -18,6 +19,9 @@ class NdpWriter(NdpReader):
         self.internal_conversions_new = None
         self.activity_with_static_conversion = None
         self.data_static_conversion_new = None
+        self.dynamic_conversion = None
+        self.final_dcm_data = None
+        self.final_dbm_data = None
 
     def internal_data(self):
         # Removing unconditional rows from NDP Tableau Raw Data
@@ -49,11 +53,11 @@ class NdpWriter(NdpReader):
                                               index=['New Market', 'Platform'], aggfunc=np.sum)
 
         internal_conversions_new = internal_conversions.reset_index()
+        internal_conversions_new.rename(columns={"New Market": "Market"}, inplace=True)
 
         self.internal_conversions_new = internal_conversions_new
 
     def market_mapping_static_conversion(self):
-
         """Advertiser Which needs to count"""
         static_conversion_merge_advertiser = [self.read_conversion_raw_file, self.read_advertiser_mapping]
         advertiser_with_static_conversion = reduce(lambda left, right: pd.merge(left, right, on='Advertiser'),
@@ -88,9 +92,9 @@ class NdpWriter(NdpReader):
         choice_ibuy = self.activity_with_static_conversion['Total Conversions']
         choice_other = self.activity_with_static_conversion['Total Conversions']
 
-
         """Creating Columns in Static Conversions"""
-        self.activity_with_static_conversion['Application'] = np.select([mask_application], [choice_application], default=0)
+        self.activity_with_static_conversion['Application'] = np.select([mask_application], [choice_application],
+                                                                        default=0)
         self.activity_with_static_conversion['Contact'] = np.select([mask_cont], [choice_cont], default=0)
         self.activity_with_static_conversion['Download'] = np.select([mask_download], [choice_download], default=0)
         self.activity_with_static_conversion['Purchase'] = np.select([mask_ibuy], [choice_ibuy], default=0)
@@ -101,16 +105,17 @@ class NdpWriter(NdpReader):
                                                          self.activity_with_static_conversion['Purchase'] + \
                                                          self.activity_with_static_conversion['Free Trial']
 
-        self.activity_with_static_conversion['Other Conversions'] = np.select([self.activity_with_static_conversion['Others']==0],
-                                                                              [choice_other],default=0)
-
+        self.activity_with_static_conversion['Other Conversions'] = np.select(
+            [self.activity_with_static_conversion['Others'] == 0],
+            [choice_other], default=0)
 
         data_static_conversion = pd.pivot_table(self.activity_with_static_conversion, index=['Country', 'Platform'],
                                                 values=['Application', 'Contact', 'Download', 'Purchase',
-                                                        'Free Trial','Other Conversions'],
+                                                        'Free Trial', 'Other Conversions'],
                                                 aggfunc=np.sum)
 
         data_static_conversion_new = data_static_conversion.reset_index()
+        data_static_conversion_new.rename(columns={"Country": "Market"}, inplace=True)
 
         self.data_static_conversion_new = data_static_conversion_new
 
@@ -162,24 +167,24 @@ class NdpWriter(NdpReader):
         choice_tool = self.dynamic_conversion_df['Total Conversions']
         choice_ibuy = self.dynamic_conversion_df['Total Conversions']
 
-        self.dynamic_conversion_df['Sub'] = np.select([mask_sub],[choice_sub],default=0)
-        self.dynamic_conversion_df['Quo'] = np.select([mask_quo],[choice_quo],default=0)
-        self.dynamic_conversion_df['Eml'] = np.select([mask_eml],[choice_eml],default=0)
-        self.dynamic_conversion_df['Res'] = np.select([mask_res],[choice_res],default=0)
-        self.dynamic_conversion_df['Add'] = np.select([mask_add],[choice_add],default=0)
-        self.dynamic_conversion_df['Ot'] = np.select([mask_ot],[choice_ot],default=0)
-        self.dynamic_conversion_df['Con'] = np.select([mask_con],[choice_con],default=0)
-        self.dynamic_conversion_df['Eve'] = np.select([mask_eve],[choice_eve],default=0)
-        self.dynamic_conversion_df['Art'] = np.select([mask_art],[choice_art],default=0)
-        self.dynamic_conversion_df['Pdf'] = np.select([mask_pdf],[choice_pdf],default=0)
-        self.dynamic_conversion_df['Vid'] = np.select([mask_vid],[choice_vid],default=0)
-        self.dynamic_conversion_df['Inf'] = np.select([mask_inf],[choice_inf],default=0)
-        self.dynamic_conversion_df['Img'] = np.select([mask_img],[choice_img],default=0)
-        self.dynamic_conversion_df['Temp'] = np.select([mask_temp],[choice_temp], default=0)
-        self.dynamic_conversion_df['Dem'] = np.select([mask_dem],[choice_dem], default=0)
-        self.dynamic_conversion_df['Trl'] = np.select([mask_trl],[choice_trl],default=0)
-        self.dynamic_conversion_df['Tool'] = np.select([mask_tool],[choice_tool],default=0)
-        self.dynamic_conversion_df['Ibuy'] = np.select([mask_ibuy],[choice_ibuy],default=0)
+        self.dynamic_conversion_df['Sub'] = np.select([mask_sub], [choice_sub], default=0)
+        self.dynamic_conversion_df['Quo'] = np.select([mask_quo], [choice_quo], default=0)
+        self.dynamic_conversion_df['Eml'] = np.select([mask_eml], [choice_eml], default=0)
+        self.dynamic_conversion_df['Res'] = np.select([mask_res], [choice_res], default=0)
+        self.dynamic_conversion_df['Add'] = np.select([mask_add], [choice_add], default=0)
+        self.dynamic_conversion_df['Ot'] = np.select([mask_ot], [choice_ot], default=0)
+        self.dynamic_conversion_df['Con'] = np.select([mask_con], [choice_con], default=0)
+        self.dynamic_conversion_df['Eve'] = np.select([mask_eve], [choice_eve], default=0)
+        self.dynamic_conversion_df['Art'] = np.select([mask_art], [choice_art], default=0)
+        self.dynamic_conversion_df['Pdf'] = np.select([mask_pdf], [choice_pdf], default=0)
+        self.dynamic_conversion_df['Vid'] = np.select([mask_vid], [choice_vid], default=0)
+        self.dynamic_conversion_df['Inf'] = np.select([mask_inf], [choice_inf], default=0)
+        self.dynamic_conversion_df['Img'] = np.select([mask_img], [choice_img], default=0)
+        self.dynamic_conversion_df['Temp'] = np.select([mask_temp], [choice_temp], default=0)
+        self.dynamic_conversion_df['Dem'] = np.select([mask_dem], [choice_dem], default=0)
+        self.dynamic_conversion_df['Trl'] = np.select([mask_trl], [choice_trl], default=0)
+        self.dynamic_conversion_df['Tool'] = np.select([mask_tool], [choice_tool], default=0)
+        self.dynamic_conversion_df['Ibuy'] = np.select([mask_ibuy], [choice_ibuy], default=0)
 
         self.dynamic_conversion_df['Contact'] = self.dynamic_conversion_df['Sub'] + self.dynamic_conversion_df['Quo'] + \
                                                 self.dynamic_conversion_df['Eml'] + self.dynamic_conversion_df['Res'] + \
@@ -190,18 +195,21 @@ class NdpWriter(NdpReader):
                                                  self.dynamic_conversion_df['Vid'] + self.dynamic_conversion_df['Inf'] + \
                                                  self.dynamic_conversion_df['Img'] + self.dynamic_conversion_df['Temp']
 
-        self.dynamic_conversion_df['Free Trial'] = self.dynamic_conversion_df['Dem'] + self.dynamic_conversion_df['Trl'] + \
+        self.dynamic_conversion_df['Free Trial'] = self.dynamic_conversion_df['Dem'] + self.dynamic_conversion_df[
+            'Trl'] + \
                                                    self.dynamic_conversion_df['Tool']
 
         self.dynamic_conversion_df['Purchase'] = self.dynamic_conversion_df['Ibuy']
 
-        self.dynamic_conversion_df['Total'] = self.dynamic_conversion_df['Contact'] + self.dynamic_conversion_df['Download'] + \
-                                              self.dynamic_conversion_df['Free Trial'] + self.dynamic_conversion_df['Purchase']
+        self.dynamic_conversion_df['Total'] = self.dynamic_conversion_df['Contact'] + self.dynamic_conversion_df[
+            'Download'] + \
+                                              self.dynamic_conversion_df['Free Trial'] + self.dynamic_conversion_df[
+                                                  'Purchase']
 
-        self.dynamic_conversion_df['Other Dynamic Conversions'] = np.select([self.dynamic_conversion_df['Total']==0],
-                                                                            [self.dynamic_conversion_df['Total Conversions']],
+        self.dynamic_conversion_df['Other Dynamic Conversions'] = np.select([self.dynamic_conversion_df['Total'] == 0],
+                                                                            [self.dynamic_conversion_df[
+                                                                                 'Total Conversions']],
                                                                             default=0)
-
 
         dynamic_conversion_final = pd.pivot_table(self.dynamic_conversion_df, index=['Market', 'Platform'],
                                                   values=['Contact', 'Download', 'Free Trial', 'Purchase',
@@ -213,27 +221,96 @@ class NdpWriter(NdpReader):
 
     def writing_conversion(self):
         start_col_internal = self.internal_conversions_new.shape[1]
-        start_col_static  = self.data_static_conversion_new.shape[1]
+        start_col_static = self.data_static_conversion_new.shape[1]
+        start_col_dynamic = self.dynamic_conversion.shape[1]
+        start_row_internal = self.internal_conversions_new.shape[0]
+        start_row_static = self.data_static_conversion_new.shape[0]
+        start_row_dynamic = self.dynamic_conversion.shape[0]
+
         write_internal_data = self.internal_conversions_new.to_excel(self.writer_file, sheet_name='Conversions',
                                                                      index=False, startrow=1, startcol=1)
 
         writing_static_conversion = self.data_static_conversion_new.to_excel(self.writer_file, sheet_name='Conversions',
-                                                                    index=False, startrow=1,
-                                                                    startcol=start_col_internal+2)
+                                                                             index=False, startrow=1,
+                                                                             startcol=start_col_internal + 2)
 
-        writing_dynamic_conversion = self.dynamic_conversion.to_excel(self.writer_file, sheet_name = 'Conversions',
-                                                             index=False, startrow = 1,
-                                                             startcol = start_col_internal+2+start_col_static+1)
+        writing_dynamic_conversion = self.dynamic_conversion.to_excel(self.writer_file, sheet_name='Conversions',
+                                                                      index=False, startrow=1,
+                                                                      startcol=start_col_internal + 2 + start_col_static + 1)
 
         workbook = self.writer_file.book
         worksheet = self.writer_file.sheets['Conversions']
         worksheet.hide_gridlines(2)
         worksheet.set_column("A:A", 2)
         worksheet.set_zoom(75)
-        merge_format = workbook.add_format({'bold': 1,'border': 1,'align': 'center','valign': 'vcenter','fg_color': 'yellow'})
+        merge_format = workbook.add_format(
+            {'bold': 1, 'border': 1, 'align': 'center', 'valign': 'vcenter', 'fg_color': 'yellow'})
         worksheet.merge_range("B1:J1", 'Internal Conversion', merge_format)
         worksheet.merge_range("L1:S1", 'Static Conversion', merge_format)
         worksheet.merge_range("U1:AA1", 'Dynamic Conversion', merge_format)
+        worksheet.freeze_panes(1, 1)
+        border_row = workbook.add_format({"border": 1, "num_format": "#,##0"})
+        format_header = workbook.add_format({"bold": True, "bg_color": "#00B0F0", "border": 1})
+
+        worksheet.conditional_format(1, 1, 1, start_col_internal, {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(1, start_col_internal + 1, 1, 1 + start_col_internal + 1 + start_col_static,
+                                     {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(1, 1 + start_col_internal + 1 + start_col_static + 1, 1,
+                                     start_col_internal + start_col_static + start_col_dynamic + 2,
+                                     {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(2, 1, start_row_internal + 1, start_col_internal, {"type": "no_blanks",
+                                                                                        "format": border_row})
+
+        worksheet.conditional_format(2, start_col_internal + 1, start_row_static + 1,
+                                     1 + start_col_internal + 1 + start_col_static, {"type": "no_blanks",
+                                                                                     "format": border_row})
+
+        worksheet.conditional_format(2, 1 + start_col_internal + 1 + start_col_static + 1, start_row_dynamic + 1,
+                                     start_col_internal + start_col_static + start_col_dynamic + 2,
+                                     {"type": "no_blanks", "format": border_row})
+
+    def performance_data(self):
+        self.read_dbm_data.columns = [col.encode('ascii', 'ignore') for col in self.read_dbm_data]
+        self.read_dmc_data.columns = [col.encode('ascii', 'ignore') for col in self.read_dmc_data]
+
+        self.read_dmc_data["Date"] = self.read_dmc_data["Date"].astype(str)
+        self.read_dmc_data["Placement ID"] = self.read_dmc_data["Placement ID"].astype(str)
+
+        self.read_dmc_data["Pl_Date"] = self.read_dmc_data[['Placement ID', 'Date']].apply(lambda x: " ".join(x), axis=1)
+
+        dmc_platform_mapping = [self.read_dmc_data, self.read_site_display_mapping]
+
+        merge_platform_dmc = reduce(lambda left, right: pd.merge(left, right, on='Site (DCM)'),
+                                    dmc_platform_mapping)
+
+        dmc_market_mapping = [merge_platform_dmc, self.read_advertiser_mapping]
+
+        merge_market_platform_dmc = reduce(lambda left, right: pd.merge(left, right, on='Advertiser'),
+                                           dmc_market_mapping)
+
+        self.read_dbm_data['Date'] = self.read_dbm_data["Date"].astype(str)
+        self.read_dbm_data['CM Placement ID'] = self.read_dbm_data['CM Placement ID'].astype(str)
+        self.read_dbm_data['CM Placement ID'] = self.read_dbm_data['CM Placement ID'].str.replace('.0', '')
+
+        self.read_dbm_data['Pl_Date'] = self.read_dbm_data[['CM Placement ID', 'Date']].apply(lambda x: " ".join(x),
+                                                                                              axis=1)
+        final_dcm_data = self.read_dmc_data[['Campaign', 'Site (DCM)', 'Placement', 'Date',
+                                             'Placement ID', 'Advertiser', 'Advertiser ID',
+                                             'Impressions', 'Clicks',
+                                             'Media Cost', 'Pl_Date']]
+
+        final_dbm_data = self.read_dbm_data[['Pl_Date', 'Total Media Cost (Advertiser Currency)']]
+
+        self.final_dcm_data = final_dcm_data
+
+        self.final_dbm_data = final_dbm_data
+
+    def merge_performance_data(self):
+        dbm_dcm_data = self.final_dcm_data.merge(self.final_dbm_data, how='left', on='Pl_Date')
+        x = dbm_dcm_data.to_excel(self.writer_file, sheet_name="PerformanceData")
 
     def main(self):
         self.internal_data()
@@ -243,6 +320,8 @@ class NdpWriter(NdpReader):
         self.platfrom_mapping_dynamic()
         self.add_conversion_dynamic()
         self.writing_conversion()
+        self.performance_data()
+        self.merge_performance_data()
         self.save_and_close_writer()
 
 
