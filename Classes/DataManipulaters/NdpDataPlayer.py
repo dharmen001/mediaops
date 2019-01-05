@@ -2,18 +2,17 @@
 # coding=utf-8
 
 import pandas as pd
-from LogFile import logger
-from NdpDataReader import NdpReader
+from Classes.DataReaders.NdpDataReader import NdpReader
 from functools import reduce
 import numpy as np
-from datetime import datetime
+from Classes.LoggerFile.LogFile import logger
 
 
-class NdpWriter(NdpReader):
+class NdpDataPlayer(NdpReader):
 
     def __init__(self):
         # Inheriting Reader Class
-        super(NdpWriter, self).__init__()
+        super(NdpDataPlayer, self).__init__()
         self.merged_internal_data_advertiser = None
         self.static_conversions_report = None
         self.internal_conversions_new = None
@@ -22,19 +21,34 @@ class NdpWriter(NdpReader):
         self.dynamic_conversion = None
         self.final_dcm_data = None
         self.final_dbm_data = None
+        self.dynamic_conversion_df = None
+        self.dbm_dcm_data = None
+        self.internal_data_performance = None
+        self.internal_data()
+        self.market_mapping_internal_data()
+        self.internal_performance_data()
+        self.market_mapping_static_conversion()
+        self.add_conversion_static_column()
+        self.platform_mapping_dynamic()
+        self.add_conversion_dynamic()
+        self.writing_conversion()
+        self.performance_data()
+        self.merge_performance_data()
 
     def internal_data(self):
         # Removing unconditional rows from NDP Tableau Raw Data
-
+        logger.info("Start removing channel from tableau data")
         remove_row_channel = self.read_ndp_data[self.read_ndp_data['Channel'].isin(['CONTENT SYNDICATION', 'OTHER',
                                                                                     'LEAD AGGREGATOR'])]
         self.read_ndp_data = self.read_ndp_data.drop(remove_row_channel.index, axis=0)
 
+        logger.info("Start removing BR Market from tableau data")
         remove_row_market = self.read_ndp_data[self.read_ndp_data['Market'].isin(['BR'])]
 
         self.read_ndp_data = self.read_ndp_data.drop(remove_row_market.index, axis=0)
 
     def market_mapping_internal_data(self):
+
         internal_data_merge_platform = [self.read_ndp_data, self.read_tableau_platform_mapping]
         merged_internal_data = reduce(lambda left, right: pd.merge(left, right, on='Channel'),
                                       internal_data_merge_platform)
@@ -56,6 +70,19 @@ class NdpWriter(NdpReader):
         internal_conversions_new.rename(columns={"New Market": "Market"}, inplace=True)
 
         self.internal_conversions_new = internal_conversions_new
+
+    def internal_performance_data(self):
+        internal_performance = pd.pivot_table(self.merged_internal_data_advertiser, index=['New Market', 'Platform'],
+                                              values=['Impressions', 'Clicks', 'Spend Local'], aggfunc=np.sum)
+
+        internal_data_performance = internal_performance.reset_index()
+        internal_data_performance.rename(columns={"New Market": "Market"}, inplace=True)
+        internal_data_performance_display = internal_data_performance[(internal_data_performance['Platform']
+                                                                       == 'Display')]
+
+        internal_data_performance_final = internal_data_performance_display[['Market', 'Clicks', 'Impressions',
+                                                                             'Spend Local']]
+        self.internal_data_performance = internal_data_performance_final
 
     def market_mapping_static_conversion(self):
         """Advertiser Which needs to count"""
@@ -119,7 +146,7 @@ class NdpWriter(NdpReader):
 
         self.data_static_conversion_new = data_static_conversion_new
 
-    def platfrom_mapping_dynamic(self):
+    def platform_mapping_dynamic(self):
         dynamic_platform_df = [self.dynamic_df, self.read_site_dcm_platform_mapping]
         dynamic_conversion_df = reduce(lambda left, right: pd.merge(left, right, on='Site (DCM)'),
                                        dynamic_platform_df)
@@ -219,68 +246,16 @@ class NdpWriter(NdpReader):
 
         self.dynamic_conversion = dynamic_conversion
 
-    def writing_conversion(self):
-        start_col_internal = self.internal_conversions_new.shape[1]
-        start_col_static = self.data_static_conversion_new.shape[1]
-        start_col_dynamic = self.dynamic_conversion.shape[1]
-        start_row_internal = self.internal_conversions_new.shape[0]
-        start_row_static = self.data_static_conversion_new.shape[0]
-        start_row_dynamic = self.dynamic_conversion.shape[0]
-
-        write_internal_data = self.internal_conversions_new.to_excel(self.writer_file, sheet_name='Conversions',
-                                                                     index=False, startrow=1, startcol=1)
-
-        writing_static_conversion = self.data_static_conversion_new.to_excel(self.writer_file, sheet_name='Conversions',
-                                                                             index=False, startrow=1,
-                                                                             startcol=start_col_internal + 2)
-
-        writing_dynamic_conversion = self.dynamic_conversion.to_excel(self.writer_file, sheet_name='Conversions',
-                                                                      index=False, startrow=1,
-                                                                      startcol=start_col_internal + 2 + start_col_static + 1)
-
-        workbook = self.writer_file.book
-        worksheet = self.writer_file.sheets['Conversions']
-        worksheet.hide_gridlines(2)
-        worksheet.set_column("A:A", 2)
-        worksheet.set_zoom(75)
-        merge_format = workbook.add_format(
-            {'bold': 1, 'border': 1, 'align': 'center', 'valign': 'vcenter', 'fg_color': 'yellow'})
-        worksheet.merge_range("B1:J1", 'Internal Conversion', merge_format)
-        worksheet.merge_range("L1:S1", 'Static Conversion', merge_format)
-        worksheet.merge_range("U1:AA1", 'Dynamic Conversion', merge_format)
-        worksheet.freeze_panes(1, 1)
-        border_row = workbook.add_format({"border": 1, "num_format": "#,##0"})
-        format_header = workbook.add_format({"bold": True, "bg_color": "#00B0F0", "border": 1})
-
-        worksheet.conditional_format(1, 1, 1, start_col_internal, {"type": "no_blanks", "format": format_header})
-
-        worksheet.conditional_format(1, start_col_internal + 1, 1, 1 + start_col_internal + 1 + start_col_static,
-                                     {"type": "no_blanks", "format": format_header})
-
-        worksheet.conditional_format(1, 1 + start_col_internal + 1 + start_col_static + 1, 1,
-                                     start_col_internal + start_col_static + start_col_dynamic + 2,
-                                     {"type": "no_blanks", "format": format_header})
-
-        worksheet.conditional_format(2, 1, start_row_internal + 1, start_col_internal, {"type": "no_blanks",
-                                                                                        "format": border_row})
-
-        worksheet.conditional_format(2, start_col_internal + 1, start_row_static + 1,
-                                     1 + start_col_internal + 1 + start_col_static, {"type": "no_blanks",
-                                                                                     "format": border_row})
-
-        worksheet.conditional_format(2, 1 + start_col_internal + 1 + start_col_static + 1, start_row_dynamic + 1,
-                                     start_col_internal + start_col_static + start_col_dynamic + 2,
-                                     {"type": "no_blanks", "format": border_row})
-
     def performance_data(self):
-        self.read_dbm_data.columns = [col.encode('ascii', 'ignore') for col in self.read_dbm_data]
-        self.read_dmc_data.columns = [col.encode('ascii', 'ignore') for col in self.read_dmc_data]
 
-        self.read_dmc_data["Date"] = self.read_dmc_data["Date"].astype(str)
-        self.read_dmc_data["Placement ID"] = self.read_dmc_data["Placement ID"].astype(str)
+        # self.read_dbm_data.columns = [col.encode('ascii', 'ignore') for col in self.read_dbm_data]
+        # self.read_dmc_data.columns = [col.encode('ascii', 'ignore') for col in self.read_dmc_data]
 
-        self.read_dmc_data["Pl_Date"] = self.read_dmc_data[['Placement ID', 'Date']].apply(lambda x: " ".join(x), axis=1)
+        # self.read_dmc_data["Date"] = self.read_dmc_data["Date"].astype(str)
+        # self.read_dmc_data["Placement ID"] = self.read_dmc_data["Placement ID"].astype(str)
 
+        # self.read_dmc_data["Pl_Date"] = self.read_dmc_data[['Placement ID', 'Date']].apply(lambda x: " ".join(x),
+        #                                                                                    axis=1)
         dmc_platform_mapping = [self.read_dmc_data, self.read_site_display_mapping]
 
         merge_platform_dmc = reduce(lambda left, right: pd.merge(left, right, on='Site (DCM)'),
@@ -291,40 +266,62 @@ class NdpWriter(NdpReader):
         merge_market_platform_dmc = reduce(lambda left, right: pd.merge(left, right, on='Advertiser'),
                                            dmc_market_mapping)
 
-        self.read_dbm_data['Date'] = self.read_dbm_data["Date"].astype(str)
-        self.read_dbm_data['CM Placement ID'] = self.read_dbm_data['CM Placement ID'].astype(str)
-        self.read_dbm_data['CM Placement ID'] = self.read_dbm_data['CM Placement ID'].str.replace('.0', '')
+        dcm_data = pd.pivot_table(merge_market_platform_dmc, index=['Country', 'Placement ID'],
+                                  values=['Impressions', 'Clicks', 'Media Cost'], aggfunc=np.sum)
 
-        self.read_dbm_data['Pl_Date'] = self.read_dbm_data[['CM Placement ID', 'Date']].apply(lambda x: " ".join(x),
-                                                                                              axis=1)
-        final_dcm_data = self.read_dmc_data[['Campaign', 'Site (DCM)', 'Placement', 'Date',
-                                             'Placement ID', 'Advertiser', 'Advertiser ID',
-                                             'Impressions', 'Clicks',
-                                             'Media Cost', 'Pl_Date']]
+        dcm_data_final = dcm_data.reset_index()
 
-        final_dbm_data = self.read_dbm_data[['Pl_Date', 'Total Media Cost (Advertiser Currency)']]
+        # self.read_dbm_data['Date'] = self.read_dbm_data["Date"].astype(str)
+        # self.read_dbm_data['CM Placement ID'] = self.read_dbm_data['CM Placement ID'].astype(str)
+        # self.read_dbm_data['CM Placement ID'] = self.read_dbm_data['CM Placement ID'].str.replace('.0', '')
+
+        # self.read_dbm_data['Pl_Date'] = self.read_dbm_data[['CM Placement ID', 'Date']].apply(lambda x: " ".join(x),
+        #                                                                                       axis=1)
+
+        final_dcm_data = dcm_data_final[['Country', 'Placement ID', 'Impressions', 'Clicks', 'Media Cost']]
+
+        dbm_data = pd.pivot_table(self.read_dbm_data, index=['CM Placement ID'],
+                                  values=['Total Media Cost (Advertiser Currency)'], aggfunc=np.sum)
+
+        dbm_data_final = dbm_data.reset_index()
+
+        dbm_data_final.rename(columns={"CM Placement ID": "Placement ID"}, inplace=True)
+
+        final_dbm_data = dbm_data_final[['Placement ID', 'Total Media Cost (Advertiser Currency)']]
 
         self.final_dcm_data = final_dcm_data
-
         self.final_dbm_data = final_dbm_data
 
     def merge_performance_data(self):
-        dbm_dcm_data = self.final_dcm_data.merge(self.final_dbm_data, how='left', on='Pl_Date')
-        x = dbm_dcm_data.to_excel(self.writer_file, sheet_name="PerformanceData")
 
-    def main(self):
-        self.internal_data()
-        self.market_mapping_internal_data()
-        self.market_mapping_static_conversion()
-        self.add_conversion_static_column()
-        self.platfrom_mapping_dynamic()
-        self.add_conversion_dynamic()
-        self.writing_conversion()
-        self.performance_data()
-        self.merge_performance_data()
-        self.save_and_close_writer()
+        dbm_dcm_data = self.final_dcm_data.merge(self.final_dbm_data, how='left', on='Placement ID')
+        dbm_dcm_data['Total Media Cost (Advertiser Currency)'] = dbm_dcm_data['Total Media Cost (Advertiser Currency)']\
+            .fillna(value=dbm_dcm_data['Media Cost'])
+
+        dbm_dcm_data.rename(columns={"Total Media Cost (Advertiser Currency)": "Spend Local",
+                                     "Country": "Market"}, inplace=True)
+
+        dbm_data_new = pd.pivot_table(dbm_dcm_data, index=['Market'], values=['Impressions', 'Clicks', 'Spend Local'],
+                                      aggfunc=np.sum)
+
+        dbm_data_reset = dbm_data_new.reset_index()
+
+        self.dbm_dcm_data = dbm_data_reset
+
+    # def main(self):
+    #     self.internal_data()
+    #     self.market_mapping_internal_data()
+    #     self.internal_performance_data()
+    #     self.market_mapping_static_conversion()
+    #     self.add_conversion_static_column()
+    #     self.platform_mapping_dynamic()
+    #     self.add_conversion_dynamic()
+    #     self.writing_conversion()
+    #     self.performance_data()
+    #     self.merge_performance_data()
+    #     self.save_and_close_writer()
 
 
 if __name__ == "__main__":
-    object_ndp_writer = NdpWriter()
-    object_ndp_writer.main()
+    object_ndp_writer = NdpDataPlayer()
+    # object_ndp_writer.main()

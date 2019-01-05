@@ -3,10 +3,10 @@
 
 import os
 import datetime
-from LogFile import logger
+from Classes.LoggerFile.LogFile import logger
 import pandas as pd
 import pandas.io.formats.excel
-from config_ini import Config
+from Classes.DataReaders.config_ini import Config
 pandas.io.formats.excel.header_style = None
 
 

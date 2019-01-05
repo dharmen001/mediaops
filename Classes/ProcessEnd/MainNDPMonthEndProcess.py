@@ -1,10 +1,7 @@
 # coding=utf-8
 # !/usr/bin/env python
 # from config import Config
-from NdpDataReader import NdpReader
-from OutlookNdpDownload import Outlook
-from NdpGdriveData import NdpGrdriveDate
-
+from Classes.DataReaders.NdpDataReader import NdpReader
 
 if __name__ == "__main__":
 

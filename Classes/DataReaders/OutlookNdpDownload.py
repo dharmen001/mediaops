@@ -1,10 +1,10 @@
 import email
 import imaplib
 import email.mime.multipart
-from config_ini import Config
+from Classes.DataReaders.config_ini import Config
 import os
 import pandas as pd
-from LogFile import logger
+from Classes.LoggerFile import logger
 import datetime
 
 

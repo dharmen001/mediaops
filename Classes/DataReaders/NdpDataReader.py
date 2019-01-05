@@ -6,15 +6,15 @@ import os
 import zipfile
 import xlrd
 
-from LogFile import logger
+from Classes.LoggerFile.LogFile import logger
 import datetime
-import NdpDataFile
+import Classes.DataWriters.NdpDataFile
 import pandas.io.formats.excel
 
 pandas.io.formats.excel.header_style = None
 
 
-class NdpReader(NdpDataFile.NdpData):
+class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
     def __init__(self):
 
         super(NdpReader, self).__init__()
@@ -156,7 +156,7 @@ class NdpReader(NdpDataFile.NdpData):
         logger.info("Start Reading:- DMC_Report.zip at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         read_dmc_data_zf = zipfile.ZipFile(self.section_value[12] + "DMC_Report.zip")
         read_dmc_data = pd.read_csv(read_dmc_data_zf.open(zipfile.ZipFile.namelist(read_dmc_data_zf)[0]),
-                                    skiprows=9, skipfooter=1, engine='python', encoding="ISO-8859-1",
+                                    skiprows=9, skipfooter=1, engine='python', encoding="utf-8",
                                     parse_dates=['Date'])
 
         read_dmc_data = read_dmc_data[(read_dmc_data['Date'].dt.year == self.last_year) &
@@ -171,7 +171,8 @@ class NdpReader(NdpDataFile.NdpData):
 
         read_dbm_data_zf = zipfile.ZipFile(self.section_value[12] + "DBM_Report.zip")
         read_dbm_data = pd.read_csv(read_dbm_data_zf.open(zipfile.ZipFile.namelist(read_dbm_data_zf)[0]),
-                                    engine='python', encoding="ISO-8859-1", error_bad_lines=False)
+                                    engine='python', encoding="utf-8", error_bad_lines=False)
+
         read_dbm_data = read_dbm_data[:read_dbm_data['Date'].isnull().idxmax()]
         read_dbm_data['Date'] = pd.to_datetime(read_dbm_data['Date'])
 
@@ -252,16 +253,16 @@ class NdpReader(NdpDataFile.NdpData):
 
         # print(instruction_df.tail())
 
-    def main(self):
-        self.data_reader_ndp_raw()
-        self.ndp_static_conversion_reader()
-        self.ndp_dynamic_conversion_reader()
-        self.ndp_mapping_reader()
-        self.dcm_data_reader()
-        self.dbm_data_reader()
-        self.publisher_data_read()
-        self.lead_content_read()
-        self.uk_publisher_data()
+    # def main(self):
+    #     self.data_reader_ndp_raw()
+    #     self.ndp_static_conversion_reader()
+    #     self.ndp_dynamic_conversion_reader()
+    #     self.ndp_mapping_reader()
+    #     self.dcm_data_reader()
+    #     self.dbm_data_reader()
+    #     self.publisher_data_read()
+    #     self.lead_content_read()
+    #     self.uk_publisher_data()
 
 
 if __name__ == "__main__":

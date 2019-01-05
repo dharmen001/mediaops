@@ -1,4 +1,4 @@
-from Classes import OutlookNdpDownload
+from Classes.DataReaders import OutlookNdpDownload
 from flask import Flask, render_template
 app = Flask(__name__)
 

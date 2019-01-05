@@ -7,10 +7,10 @@
 
 import datetime
 from datetime import timedelta
-from LogFile import logger
+from Classes.LoggerFile.LogFile import logger
 from jira.client import JIRA
 import urllib3
-from config_ini import Config
+from Classes.DataReaders.config_ini import Config
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 

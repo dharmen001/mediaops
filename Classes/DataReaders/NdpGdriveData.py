@@ -1,6 +1,6 @@
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
-from config_ini import Config
+from Classes.DataReaders.config_ini import Config
 
 class NdpGrdriveDate(Config):
 
