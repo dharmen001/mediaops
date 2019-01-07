@@ -238,8 +238,10 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
             logger.info("Done Reading:-  UK Publisher file " + f + ' Sheet Name -  Sheet1 ' +
                         str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        uk_publisher_data = df.dropna(subset=['Market'], how='all')
-        self.publisher_data_uk = uk_publisher_data
+        df['Week'] = df.loc[:, 'Week Number'].astype(str)
+        df['NewWeek'] = df['Week'].str.extract('(\d+)').astype(float)
+        df = df.dropna(subset=['Market'], how='all')
+        self.publisher_data_uk = df
 
         # x = self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
         # self.save_and_close_writer()
