@@ -24,6 +24,16 @@ class NdpDataPlayer(NdpReader):
         self.dynamic_conversion_df = None
         self.dbm_dcm_data = None
         self.internal_data_performance = None
+        self.merged_publisher_data_advertiser = None
+        self.read_ndp_data_platform = None
+        self.read_ndp_data_publisher = None
+        self.internal_publisher_data_new = None
+        self.read_publisher_data_other_us = None
+        self.market_publisher_other_than_us = None
+        self.read_lead_content_us = None
+        self.read_lead_content_us_new = None
+        self.final_us_ca_publisher_data = None
+        self.publisher_data_uk_new = None
         self.internal_data()
         self.market_mapping_internal_data()
         self.internal_performance_data()
@@ -31,25 +41,29 @@ class NdpDataPlayer(NdpReader):
         self.add_conversion_static_column()
         self.platform_mapping_dynamic()
         self.add_conversion_dynamic()
-        self.writing_conversion()
         self.performance_data()
         self.merge_performance_data()
+        self.internal_publisher_data()
+        self.internal_publisher_data_process()
+        self.market_publisher_data_other_us()
+        self.market_publisher_data_us()
 
     def internal_data(self):
         # Removing unconditional rows from NDP Tableau Raw Data
         logger.info("Start removing channel from tableau data")
-        remove_row_channel = self.read_ndp_data[self.read_ndp_data['Channel'].isin(['CONTENT SYNDICATION', 'OTHER',
-                                                                                    'LEAD AGGREGATOR'])]
-        self.read_ndp_data = self.read_ndp_data.drop(remove_row_channel.index, axis=0)
+        self.read_ndp_data_platform = self.read_ndp_data
+        remove_row_channel = self.read_ndp_data_platform[self.read_ndp_data_platform['Channel'].isin([
+            'CONTENT SYNDICATION', 'OTHER', 'LEAD AGGREGATOR'])]
+        self.read_ndp_data_platform = self.read_ndp_data_platform.drop(remove_row_channel.index, axis=0)
 
         logger.info("Start removing BR Market from tableau data")
-        remove_row_market = self.read_ndp_data[self.read_ndp_data['Market'].isin(['BR'])]
+        remove_row_market = self.read_ndp_data_platform[self.read_ndp_data_platform['Market'].isin(['BR'])]
 
-        self.read_ndp_data = self.read_ndp_data.drop(remove_row_market.index, axis=0)
+        self.read_ndp_data_platform = self.read_ndp_data_platform.drop(remove_row_market.index, axis=0)
 
     def market_mapping_internal_data(self):
 
-        internal_data_merge_platform = [self.read_ndp_data, self.read_tableau_platform_mapping]
+        internal_data_merge_platform = [self.read_ndp_data_platform, self.read_tableau_platform_mapping]
         merged_internal_data = reduce(lambda left, right: pd.merge(left, right, on='Channel'),
                                       internal_data_merge_platform)
 
@@ -308,20 +322,81 @@ class NdpDataPlayer(NdpReader):
 
         self.dbm_dcm_data = dbm_data_reset
 
-    # def main(self):
-    #     self.internal_data()
-    #     self.market_mapping_internal_data()
-    #     self.internal_performance_data()
-    #     self.market_mapping_static_conversion()
-    #     self.add_conversion_static_column()
-    #     self.platform_mapping_dynamic()
-    #     self.add_conversion_dynamic()
-    #     self.writing_conversion()
-    #     self.performance_data()
-    #     self.merge_performance_data()
-    #     self.save_and_close_writer()
+    def internal_publisher_data(self):
+        self.read_ndp_data_publisher = self.read_ndp_data
+        remove_row_channel_publisher = self.read_ndp_data_publisher[self.read_ndp_data_publisher['Channel'].isin(
+            ['DISPLAY', 'SEARCH', 'SOCIAL'])]
+        self.read_ndp_data_publisher = self.read_ndp_data_publisher.drop(remove_row_channel_publisher.index, axis=0)
+
+        logger.info("Start removing BR Market from tableau data")
+        remove_row_market_publisher = self.read_ndp_data_publisher[self.read_ndp_data_publisher['Market'].isin(['BR'])]
+
+        self.read_ndp_data_publisher = self.read_ndp_data_publisher.drop(remove_row_market_publisher.index, axis=0)
+
+        publisher_data_merge_platform = [self.read_ndp_data_publisher, self.read_tableau_platform_mapping]
+        merged_internal_data_publisher = reduce(lambda left, right: pd.merge(left, right, on='Channel'),
+                                                publisher_data_merge_platform)
+
+        publisher_data_merge_market = [merged_internal_data_publisher, self.read_tableau_advertiser_mapping]
+        merged_publisher_data_advertiser = reduce(lambda left, right: pd.merge(left, right, on='Market'),
+                                                  publisher_data_merge_market)
+
+        self.merged_publisher_data_advertiser = merged_publisher_data_advertiser
+
+    def internal_publisher_data_process(self):
+
+        internal_publisher_data = pd.pivot_table(self.merged_publisher_data_advertiser,
+                                                 index=['New Market', 'Platform', 'Publisher'],
+                                                 values=['Impressions', 'Clicks', 'Conversions',
+                                                         'Spend Local'], aggfunc=np.sum)
+
+        internal_publisher_data_new = internal_publisher_data.reset_index()
+
+        internal_publisher_data_new.rename(columns={"New Market": "Market", "Publisher": "Site"}, inplace=True)
+
+        self.internal_publisher_data_new = internal_publisher_data_new
+
+    def market_publisher_data_other_us(self):
+        self.read_publisher_data_other_us = self.read_publisher_data
+        self.read_publisher_data_other_us = self.read_publisher_data_other_us[(self.read_publisher_data_other_us
+                                                                               ['Date'].dt.year == self.last_year) &
+                                                                              (self.read_publisher_data_other_us
+                                                                               ['Date'].dt.month ==
+                                                                               self.last_month)]
+        publisher_data_other_us = [self.read_publisher_data_other_us, self.read_tableau_advertiser_mapping]
+        merged_publisher_market_other_us = reduce(lambda left, right: pd.merge(left, right, on='Market'),
+                                                  publisher_data_other_us)
+
+        merged_publisher_market_other_us.rename(columns={"Site/Partner": "Site",
+                                                         "Spend_In_Local_Currency": "Spend Local"}, inplace=True)
+
+        market_publisher_data = pd.pivot_table(merged_publisher_market_other_us, index=['New Market', 'Channel',
+                                                                                        'Site'],
+                                               values=['Impressions', 'Clicks', 'Conversions',
+                                                       'Spend Local'], aggfunc=np.sum)
+
+        market_publisher_data_reset = market_publisher_data.reset_index()
+        market_publisher_data_reset.rename(columns={"New Market": "Market", "Channel": "Platform"}, inplace=True)
+        self.market_publisher_other_than_us = market_publisher_data_reset
+
+    def market_publisher_data_us(self):
+        self.read_lead_content_us = self.read_lead_content
+        self.read_lead_content_us = self.read_lead_content_us[(self.read_lead_content_us['Date'].dt.year ==
+                                                               self.last_year) &
+                                                              (self.read_lead_content_us['Date'].dt.month ==
+                                                               self.last_month)]
+
+        us_publisher_data = [self.read_lead_content_us, self.read_tableau_advertiser_mapping]
+        merged_us_publisher_data = reduce(lambda left, right: pd.merge(left, right, on='Market'), us_publisher_data)
+
+        us_ca_publisher_data = pd.pivot_table(merged_us_publisher_data, index=['New Market', 'Channel', 'Site'],
+                                              values=['Conversions', 'Spend Local'], aggfunc=np.sum)
+
+        us_ca_publisher_data_reset = us_ca_publisher_data.reset_index()
+        us_ca_publisher_data_reset.rename(columns={"New Market": "Market", "Channel": "Platform"}, inplace=True)
+        self.final_us_ca_publisher_data = us_ca_publisher_data_reset
 
 
 if __name__ == "__main__":
     object_ndp_writer = NdpDataPlayer()
-    # object_ndp_writer.main()
+

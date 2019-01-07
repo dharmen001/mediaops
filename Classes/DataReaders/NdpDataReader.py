@@ -10,6 +10,7 @@ from Classes.LoggerFile.LogFile import logger
 import datetime
 import Classes.DataWriters.NdpDataFile
 import pandas.io.formats.excel
+import regex as re
 
 pandas.io.formats.excel.header_style = None
 
@@ -208,6 +209,10 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         logger.info("Done Reading:-  NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
+        read_lead_content.rename(columns={"Region": "Market",
+                                          "Media Type": "Channel", "Vendor": "Site",
+                                          "Leads": "Conversions", "Spend": "Spend Local"}, inplace=True)
+
         self.read_lead_content = read_lead_content
 
     def uk_publisher_data(self):
@@ -221,19 +226,21 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
 
         df = pd.DataFrame()
         for f in files_xlsx:
-            logger.info('Start Reading filename: -' + f + 'Sheet Name -  Sheet1')
+            logger.info('Start Reading filename: - ' + f + ' Sheet Name -  Sheet1 ')
             try:
                 data = pd.read_excel(self.section_value[14] + f, 'Sheet1')
+                data['WorkbookName'] = f
                 df = df.append(data,  ignore_index=True, sort=True)
             except xlrd.biffh.XLRDError as e:
                 pass
                 logger.error('Sheet Name Not available at file ' + f + str(e))
 
-            logger.info("Done Reading:-  UK Publisher file" + f + 'Sheet Name -  Sheet1' +
+            logger.info("Done Reading:-  UK Publisher file " + f + ' Sheet Name -  Sheet1 ' +
                         str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        uk_publisher_data = df.dropna(how='all')
+        uk_publisher_data = df.dropna(subset=['Market'], how='all')
         self.publisher_data_uk = uk_publisher_data
+
         # x = self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
         # self.save_and_close_writer()
 
@@ -242,7 +249,9 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         # for g in files_xlsx:
         #     logger.info('Start Reading filename:- ' + g + ' Sheet Name -  Instructions')
         #     try:
-        #         instruction_data = pd.read_excel(self.section_value[14] + g, 'Instructions', skiprows=14)
+        #         instruction_data = pd.read_excel(self.section_value[14] + g, sheet_name=['Instructions'], skiprows=15)
+        #         print(instruction_data)
+        #         exit()
         #         instruction_df = instruction_df.append(instruction_data,  ignore_index=True, sort=True)
         #     except xlrd.biffh.XLRDError as e:
         #         pass
@@ -250,19 +259,10 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         #
         #     logger.info("Done Reading:-  UK Publisher file" + g + 'Sheet Name -  Instructions' +
         #                 str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        # print(instruction_df.tail())
-
-    # def main(self):
-    #     self.data_reader_ndp_raw()
-    #     self.ndp_static_conversion_reader()
-    #     self.ndp_dynamic_conversion_reader()
-    #     self.ndp_mapping_reader()
-    #     self.dcm_data_reader()
-    #     self.dbm_data_reader()
-    #     self.publisher_data_read()
-    #     self.lead_content_read()
-    #     self.uk_publisher_data()
+        #
+        #     print(instruction_df.tail())
+        #
+        # exit()
 
 
 if __name__ == "__main__":

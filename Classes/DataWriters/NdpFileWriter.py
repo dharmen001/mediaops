@@ -49,6 +49,37 @@ class NdpFileWriter(NdpDataPlayer):
 
         logger.info("Done")
 
+    def writing_publisher_internal(self):
+        logger.info("Writing Internal Publisher Data")
+        writing_internal_publisher = self.internal_publisher_data_new.to_excel(self.writer_file,
+                                                                               index=False, sheet_name="Publisher "
+                                                                                                       "Provided Data",
+                                                                               startrow=1, startcol=1)
+
+        logger.info("Done")
+
+    def writing_publisher_market_other_us(self):
+        logger.info("Writing Other than US/CA Publisher Data")
+
+        writing_us_ca_publisher_other = self.market_publisher_other_than_us.to_excel(self.writer_file, index=False,
+                                                                                     sheet_name=
+                                                                                     "Publisher Provided Data",
+                                                                                     startrow=1,
+                                                                                     startcol=self.
+                                                                                     internal_publisher_data_new.
+                                                                                     shape[1]+2)
+        logger.info("Done")
+
+    def writing_publisher_market_us(self):
+        logger.info("Writing US/CA Publisher Data")
+
+        writng_us_ca_publisher_data = self.final_us_ca_publisher_data.to_excel(self.writer_file,
+                                                                               index=False, sheet_name="Publisher "
+                                                                                                       "Provided Data",
+                                                                               startrow=self.
+                                                                               internal_publisher_data_new.shape[0]+4,
+                                                                               startcol=1)
+
     def formatting_conversions(self):
         workbook = self.writer_file.book
         worksheet = self.writer_file.sheets['Conversions']
@@ -125,9 +156,15 @@ class NdpFileWriter(NdpDataPlayer):
                                      self.internal_data_performance.shape[1] + 2 + self.dbm_dcm_data.shape[1] + 1,
                                      {"type": "no_blanks", "format": border_row})
 
+    def formatting_internal_performance(self):
+        pass
+
     def main(self):
         self.writing_conversion()
         self.writing_performance()
+        self.writing_publisher_internal()
+        self.writing_publisher_market_other_us()
+        self.writing_publisher_market_us()
         self.formatting_conversions()
         self.formatting_performance()
         self.save_and_close_writer()
