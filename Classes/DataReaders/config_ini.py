@@ -32,7 +32,7 @@ class Config(object):
         # print(self.section_key)
         # print(self.section_key[2])
         self.section_value = section_value
-        # print(self.section_value[2])
+        # print(self.section_value[19])
 
 
 if __name__ == "__main__":

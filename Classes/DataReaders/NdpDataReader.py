@@ -10,7 +10,7 @@ from Classes.LoggerFile.LogFile import logger
 import datetime
 import Classes.DataWriters.NdpDataFile
 import pandas.io.formats.excel
-import regex as re
+
 
 pandas.io.formats.excel.header_style = None
 
@@ -37,6 +37,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.read_tableau_advertiser_mapping = None
         self.read_tableau_platform_mapping = None
         self.read_site_display_mapping = None
+        self.read_social_site_platform = None
         self.data_reader_ndp_raw()
         self.ndp_static_conversion_reader()
         self.ndp_dynamic_conversion_reader()
@@ -109,6 +110,14 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         logger.info("Done Reading:- staticActivityConversionMapping.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
+        logger.info("Start Reading:- socialplatformtableumapping.csv at " + str(datetime.datetime.now().
+                                                                                    strftime("%Y-%m-%d %H:%M")))
+
+        read_social_site_platform = pd.read_csv(self.section_value[9] + "socialplatformtableumapping.csv")
+
+        logger.info("Done Reading:- socialplatformtableumapping.csv at " +
+                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
         logger.info("Start Reading:- siteStaticConversionMapping.csv at " + str(datetime.datetime.now().
                                                                                       strftime("%Y-%m-%d %H:%M")))
         read_site_dcm_platform_mapping = pd.read_csv(self.section_value[9] + "siteStaticConversionMapping.csv")
@@ -151,6 +160,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.read_tableau_advertiser_mapping = read_tableau_advertiser_mapping
         self.read_tableau_platform_mapping = read_tableau_platform_mapping
         self.read_site_display_mapping = read_site_display_mapping
+        self.read_social_site_platform = read_social_site_platform
 
     def dcm_data_reader(self):
 
@@ -241,11 +251,19 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         df['Week'] = df.loc[:, 'Week Number'].astype(str)
         df['NewWeek'] = df['Week'].str.extract('(\d+)').astype(float)
         df = df.dropna(subset=['Market'], how='all')
-        self.publisher_data_uk = df
+        # df['Year'] = df['Year'].astype(datetime)
+        # df = df[(df['Year'].dt.year == self.last_year)]
+        df.rename(columns={"Inquiries/Leads Delivered": "Conversions",
+                           "Inquiries/Leads ACCEPTED": "Leads ACCEPTED",
+                           "Inquiries/Leads Booked": "Leads Booked"}, inplace=True)
 
+        df['NConversions'] = df['Conversions'].str.replace('["/" " "]', '-')
+        df['NConversions'].fillna((df['Conversions']), inplace=True)
+        df.fillna(0, inplace=True)
+        self.publisher_data_uk = df.loc[:, ['NewWeek', 'Market', 'WorkbookName', 'Delivered Budget', 'NConversions']]
         # x = self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
         # self.save_and_close_writer()
-
+        # exit()
         # instruction_df = pd.DataFrame()
         #
         # for g in files_xlsx:

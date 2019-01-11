@@ -80,6 +80,27 @@ class NdpFileWriter(NdpDataPlayer):
                                                                                internal_publisher_data_new.shape[0]+4,
                                                                                startcol=1)
 
+        logger.info("Done")
+
+    def writing_publisher_uk(self):
+
+        logger.info("Writing UK Publisher Data")
+        writing_uk_pub_data = self.uk_pub_data_reset.to_excel(self.writer_file, index=False,
+                                                              sheet_name="Publisher Provided Data",
+                                                              startrow=self.internal_publisher_data_new.shape[0]+4,
+                                                              startcol=self.uk_pub_data_reset.shape[1]+4)
+
+        logger.info("Done")
+
+    def writing_social_internal(self):
+        logger.info("Writing Social Data")
+        writing_tableau_social_data = self.social_internal_pivot_reset.to_excel(self.writer_file,
+                                                                                index=False,
+                                                                                sheet_name="Social Performance",
+                                                                                startrow=1, startcol=1)
+
+        logger.info("Done")
+
     def formatting_conversions(self):
         workbook = self.writer_file.book
         worksheet = self.writer_file.sheets['Conversions']
@@ -156,8 +177,90 @@ class NdpFileWriter(NdpDataPlayer):
                                      self.internal_data_performance.shape[1] + 2 + self.dbm_dcm_data.shape[1] + 1,
                                      {"type": "no_blanks", "format": border_row})
 
-    def formatting_internal_performance(self):
-        pass
+    def formatting_publisher(self):
+        workbook = self.writer_file.book
+        worksheet = self.writer_file.sheets['Publisher Provided Data']
+        worksheet.hide_gridlines(2)
+        worksheet.set_column("A:A", 2)
+        worksheet.set_zoom(75)
+        merge_format = workbook.add_format(
+            {'bold': 1, 'border': 1, 'align': 'center', 'valign': 'vcenter', 'fg_color': 'yellow'})
+        worksheet.merge_range("B1:H1", 'Internal Publisher Data', merge_format)
+        worksheet.merge_range("J1:P1", 'Publisher Data', merge_format)
+        worksheet.merge_range("B{}:F{}".format(self.internal_publisher_data_new.shape[0]+4,
+                                               self.internal_publisher_data_new.shape[0]+4), "US CA Publisher Data",
+                              merge_format)
+        worksheet.merge_range("J{}:N{}".format(self.internal_publisher_data_new.shape[0]+4,
+                                               self.internal_publisher_data_new.shape[0]+4), "UK Publisher Data",
+                              merge_format)
+        worksheet.freeze_panes(1, 1)
+        border_row = workbook.add_format({"border": 1, "num_format": "#,##0"})
+        format_header = workbook.add_format({"bold": True, "bg_color": "#00B0F0", "border": 1})
+
+        worksheet.conditional_format(1, 1, 1,
+                                     self.internal_publisher_data_new.shape[1]+1, {"type": "no_blanks",
+                                                                                   "format": format_header})
+
+        worksheet.conditional_format(1, 1, self.internal_publisher_data_new.shape[0]+1,
+                                     self.internal_publisher_data_new.shape[1]+1, {"type":  "no_blanks",
+                                                                                   "format": border_row})
+
+        worksheet.conditional_format(1, self.internal_publisher_data_new.shape[1]+2, 1,
+                                     self.internal_data_performance.shape[1] + 2 +
+                                     self.market_publisher_other_than_us.shape[1]+2,
+                                     {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(1, self.internal_publisher_data_new.shape[1]+2,
+                                     self.market_publisher_other_than_us.shape[0]+1,
+                                     self.internal_publisher_data_new.shape[1] + 2 +
+                                     self.market_publisher_other_than_us.shape[0]+3, {"type": "no_blanks",
+                                                                                      "format": border_row})
+
+        worksheet.conditional_format(self.internal_publisher_data_new.shape[0]+4, 1,
+                                     self.internal_publisher_data_new.shape[0]+4,
+                                     self.final_us_ca_publisher_data.shape[1]+1, {"type": "no_blanks",
+                                                                                  "format": format_header})
+
+        worksheet.conditional_format(self.internal_publisher_data_new.shape[0]+4, 1,
+                                     self.internal_publisher_data_new.shape[0] +
+                                     self.final_us_ca_publisher_data.shape[0] + 5,
+                                     self.final_us_ca_publisher_data.shape[1]+1, {"type": "no_blanks",
+                                                                                  "format": border_row})
+
+        worksheet.conditional_format(self.internal_publisher_data_new.shape[0]+4,
+                                     self.final_us_ca_publisher_data.shape[1] + 4,
+                                     self.internal_publisher_data_new.shape[0] + 4,
+                                     self.final_us_ca_publisher_data.shape[1] + 5 + self.uk_pub_data_reset.shape[1],
+                                     {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(self.final_us_ca_publisher_data.shape[1] + 5,
+                                     self.final_us_ca_publisher_data.shape[1] + 4,
+                                     self.internal_publisher_data_new.shape[0] +
+                                     self.uk_pub_data_reset.shape[0] +
+                                     5, self.final_us_ca_publisher_data.shape[1] + 5 +
+                                     self.uk_pub_data_reset.shape[1],
+                                     {"type": "no_blanks", "format": border_row})
+
+    def formatting_social(self):
+        workbook = self.writer_file.book
+        worksheet = self.writer_file.sheets['Social Performance']
+        worksheet.hide_gridlines(2)
+        worksheet.set_column("A:A", 2)
+        worksheet.set_zoom(75)
+        merge_format = workbook.add_format(
+            {'bold': 1, 'border': 1, 'align': 'center', 'valign': 'vcenter', 'fg_color': 'yellow'})
+        format_header = workbook.add_format({"bold": True, "bg_color": "#00B0F0", "border": 1})
+        border_row = workbook.add_format({"border": 1, "num_format": "#,##0"})
+
+        worksheet.merge_range("B1:G1", 'Internal Social Performance', merge_format)
+
+        worksheet.conditional_format(1, 1, 1,
+                                     self.social_internal_pivot_reset.shape[1] + 1,
+                                     {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(2, 1, self.social_internal_pivot_reset.shape[0] + 2,
+                                     self.social_internal_pivot_reset.shape[1] + 1, {"type": "no_blanks",
+                                                                                     "format": border_row})
 
     def main(self):
         self.writing_conversion()
@@ -165,9 +268,13 @@ class NdpFileWriter(NdpDataPlayer):
         self.writing_publisher_internal()
         self.writing_publisher_market_other_us()
         self.writing_publisher_market_us()
+        self.writing_publisher_uk()
+        self.writing_social_internal()
         self.formatting_conversions()
         self.formatting_performance()
-        self.save_and_close_writer()
+        self.formatting_publisher()
+        self.formatting_social()
+        # self.save_and_close_writer()
 
 
 if __name__ == "__main__":

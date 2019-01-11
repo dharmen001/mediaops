@@ -1,5 +1,7 @@
-import pandas as pd
-
-x = pd.read_excel('C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/NDPdataDump/DMC_Static_Conversions.xlsx',
-                error_bad_lines=False, converters={"Advertiser ID": str})
-print(x)
+import datetime
+today = datetime.date.today()
+first = today.replace(day=1)
+lastday = first - datetime.timedelta(days=1)
+firstday = first - datetime.timedelta(days=31)
+print lastday.strftime("%Y-%m-%d")
+print firstday.strftime("%Y-%m-%d")
