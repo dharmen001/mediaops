@@ -265,6 +265,7 @@ Sage_1_InMail_Turn Left Media_19944061_2017, ,ZA,Linkedin
 Sage_1_InMail_TurnLeftMedia_19975983_2017, ,ZA,Linkedin
 Sage_Acc&BMS&HR_InMail_Neo_Q1Q216_FR_TK  // 14778502, ,FR,Linkedin
 Sage_Acc&BMS&HR_InMail_Neo_Q1Q216_FR_TK_14778502_Accounting, ,FR,Linkedin
+SAGE_Addedvalue_FY18, ,FR,Linkedin
 SAGE_Addedvalue_FY18, ,UK,Linkedin
 Sage_Campaigns_NEO_DE, ,DE,Linkedin
 Sage_DE_DBM, ,DE,DBM
@@ -287,10 +288,13 @@ Sage-SBS-Sage One-US, ,US & CA,DS3
 Sage|AU, ,AUS,DS3
 SAGE|BR, ,BR,DCM
 SAGE|BR, ,BR,DS3
-Sage|CA|Accountants, ,US & CA,DS3
-Sage|CA|Accounting_Finance, ,US & CA,DS3
-Sage|CA|BMS, ,US & CA,DS3
-Sage|CA|People & Payroll, ,US & CA,DS3
+Sage|CA|Accountants, ,CA,DS3
+Sage|CA|Accounting_Finance, ,CA,DS3
+Sage|CA|BMS, ,CA,DS3
+Sage|CA|Cross-Segment, ,CA,DS3
+Sage|CA|Enterprise, ,CA,DS3
+Sage|CA|People & Payroll, ,CA,DS3
+Sage|CA|Small, ,CA,DS3
 SAGE|DBM|FR|GLOBAL, ,FR,DBM
 SAGE|DBM|FR|LOCAL, ,FR,DBM
 SAGE|DE, ,DE,DCM
@@ -314,8 +318,8 @@ SAGE|SEARCH|PT, ,PT,DS3
 Sage|UK, ,UK,DS3
 Sage|UK(8205616), ,UK,DCM
 Sage|USA, ,US,DCM
+Sage|USA, ,US,DS3
 Sage|USA, ,US & CA,DBM
-Sage|USA, ,US & CA,DS3
 SAGE|ZA, ,ZA,DBM
 SAGE|ZA, ,ZA,DS3
 SageSoftware_Neo@Ogilvy_50CA_14185222, ,US & CA,Linkedin
@@ -370,10 +374,10 @@ SU_Sage_Neo@ogilvy Sage Live 3038 Q1 2017 // 18333622, ,ES,Linkedin
 SU_Sage:neo@ogilvy Plan_Sage_Summit_Madrid_3056 // 18414742, ,ES,Linkedin
 Timeslips, ,US & CA,DS3
 UK | Sage | 2018, ,UK,DBM
-US|Accountants, ,US & CA,DS3
-US|Accounting_Finance, ,US & CA,DS3
-US|BMS, ,US & CA,DS3
-US|Payments, ,US & CA,DS3
-US|People & Payroll, ,US & CA,DS3
-US|Sage Summit, ,US & CA,DS3
+US|Accountants, ,US,DS3
+US|Accounting_Finance, ,US,DS3
+US|BMS, ,US,DS3
+US|Payments, ,US,DS3
+US|People & Payroll, ,US,DS3
+US|Sage Summit, ,US,DS3
 YZ3W74EFKNA2NF5PWITA5P, ,US & CA,ADROLL

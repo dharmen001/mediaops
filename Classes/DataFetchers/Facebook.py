@@ -2,6 +2,7 @@ from selenium import webdriver
 import datetime
 import time
 from Classes.DataReaders.config_ini import Config
+import pandas as pd
 import glob
 import os
 
@@ -26,10 +27,10 @@ class Facebook(Config):
 
         chrome_options.add_experimental_option("prefs", preference)
         self.driver = webdriver.Chrome(self.section_value[20], chrome_options=chrome_options)
-        self.driver.get(self.section_value[21])
+        self.driver.get(self.section_value[25])
 
-        username_field = self.driver.find_element_by_class_name("js-username-field")
-        password_field = self.driver.find_element_by_class_name("js-password-field")
+        username_field = self.driver.find_element_by_id("email")
+        password_field = self.driver.find_element_by_id("pass")
 
         username_field.send_keys(username)
         self.driver.implicitly_wait(10)
@@ -37,10 +38,38 @@ class Facebook(Config):
         password_field.send_keys(password)
         self.driver.implicitly_wait(10)
 
-        self.driver.find_element_by_class_name("EdgeButtom--medium").click()
+        self.driver.find_element_by_id("loginbutton").click()
         self.driver.implicitly_wait(10)
+
+    def each_market_report_india(self):
+        market_facebook_report_india = pd.read_csv(self.section_value[9] + "facebookmarketurlindia.csv")
+        for i in market_facebook_report_india.iloc[:, 2]:
+            self.driver.get(i)
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_id("export_button").click()
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_xpath("//*[contains(@class, '_271k _271m _1qjd layerConfirm')]").click()
+            time.sleep(10)
+
+    def each_market_report_gds(self):
+        market_facebook_report_india = pd.read_csv(self.section_value[9] + "facebookmarketurlgds.csv")
+        for i in market_facebook_report_india.iloc[:, 2]:
+            self.driver.get(i)
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_id("export_button").click()
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_xpath("//*[contains(text(), 'Export as .csv')]").click()
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_xpath("//*[contains(@class, '_271k _271m _1qjd layerConfirm')]").click()
+            time.sleep(10)
+
+    def main(self):
+        #self.login_facebook("india.adops.sage@gmail.com", "Ogilvy@123")
+        #self.each_market_report_india()
+        self.login_facebook("gds.sage.mahesh@gmail.com", "abc@12345")
+        self.each_market_report_gds()
 
 
 if __name__ == "__main__":
     object_twitter = Facebook()
-    object_twitter.login_facebook("india.adops.sage@gmail.com", "Ogilvy@123")
+    object_twitter.main()

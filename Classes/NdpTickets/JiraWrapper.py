@@ -8,7 +8,7 @@
 import datetime
 from datetime import timedelta
 from Classes.LoggerFile.LogFile import logger
-from jira.client import JIRA
+from jira.client import JIRA, JIRAError
 import urllib3
 from Classes.DataReaders.config_ini import Config
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -108,7 +108,7 @@ class Jira(Config):
         self.description = description
 
     def de(self):
-        watch = ['anastasia.lanina', 'Ing-y.Chenn', 'thilo.babel', 'jennifer.marquez', 'manon.leymat',
+        watch = ['anastasia.lanina', 'Ing-y.Chenn', 'jennifer.marquez', 'manon.leymat',
                  'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
         assignees = 'anastasia.lanina'
         attachment = [self.section_value[3] + 'DE.xlsx']
@@ -135,7 +135,8 @@ class Jira(Config):
             for j in attachment:
                 self.client.add_attachment(self.create_de.id, j)
 
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def fr(self):
@@ -165,7 +166,8 @@ class Jira(Config):
             for j in attachment:
                 self.client.add_attachment(self.create_fr.id, j)
 
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def es(self):
@@ -194,7 +196,8 @@ class Jira(Config):
             for j in attachment:
                 self.client.add_attachment(self.create_es.id, j)
 
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def us(self):
@@ -224,7 +227,8 @@ class Jira(Config):
             for j in attachment:
                 self.client.add_attachment(self.create_us.id, j)
 
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def uk(self):
@@ -252,7 +256,8 @@ class Jira(Config):
 
             for j in attachment:
                 self.client.add_attachment(self.create_uk.id, j)
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def mea(self):
@@ -281,7 +286,8 @@ class Jira(Config):
             for j in attachment:
                 self.client.add_attachment(self.create_mea.id, j)
 
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def aus(self):
@@ -311,7 +317,8 @@ class Jira(Config):
             for j in attachment:
                 self.client.add_attachment(self.create_aus.id, j)
 
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def apac(self):
@@ -342,7 +349,8 @@ class Jira(Config):
             for j in attachment:
                 self.client.add_attachment(self.create_apac.id, j)
 
-        except JiraException:
+        except JIRAError as e:
+            logger.error(str(e))
             pass
 
     def main(self):
@@ -385,5 +393,5 @@ class Jira(Config):
 
 
 if __name__ == "__main__":
-    MyJira = Jira(username='Dharmendra.mishra@neomediaworld.com', password='Password2')
+    MyJira = Jira(username='Dharmendra.mishra@neomediaworld.com', password='Password3')
     MyJira.main()

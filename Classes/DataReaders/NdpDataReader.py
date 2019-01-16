@@ -38,6 +38,10 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.read_tableau_platform_mapping = None
         self.read_site_display_mapping = None
         self.read_social_site_platform = None
+        self.twitter_data_fr = None
+        self.twitter_data_mea = None
+        self.twitter_data_za = None
+        self.twitter_data = None
         self.data_reader_ndp_raw()
         self.ndp_static_conversion_reader()
         self.ndp_dynamic_conversion_reader()
@@ -47,6 +51,10 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.publisher_data_read()
         self.lead_content_read()
         self.uk_publisher_data()
+        self.twitter_data_reader_france()
+        self.twitter_data_reader_mea()
+        self.twitter_data_reader_za()
+        self.final_twitter_data()
 
     def data_reader_ndp_raw(self):
 
@@ -96,10 +104,6 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
                                axis=0, sort=True, ignore_index=True)
 
         self.dynamic_df = dynamic_df
-
-
-    def criteo_data_reader(self):
-        pass
 
     def ndp_mapping_reader(self):
 
@@ -196,34 +200,44 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
 
     def publisher_data_read(self):
 
-        logger.info("Start Reading:- Sage Global - Publisher Data - Daily.xlsx at " +
-                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        try:
+            logger.info("Start Reading:- Sage Global - Publisher Data - Daily.xlsx at " +
+                        str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        read_publisher_data = pd.read_excel(self.section_value[12] + "Sage Global - Publisher Data - Daily.xlsx",
-                                            sheet_name='Publisher Provided Data Sheet')
+            read_publisher_data = pd.read_excel(self.section_value[12] + "Sage Global - Publisher Data - Daily.xlsx",
+                                                sheet_name='Publisher Provided Data Sheet')
 
-        read_publisher_data = read_publisher_data[:read_publisher_data['Date'].isnull().idxmax()]
+            read_publisher_data = read_publisher_data[:read_publisher_data['Date'].isnull().idxmax()]
 
-        logger.info("Done Reading:- Sage Global - Publisher Data - Daily.xlsx at " +
-                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+            logger.info("Done Reading:- Sage Global - Publisher Data - Daily.xlsx at " +
+                        str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        self.read_publisher_data = read_publisher_data
+            self.read_publisher_data = read_publisher_data
+
+        except IOError as e:
+            logger.error(str(e))
+            pass
 
     def lead_content_read(self):
 
-        logger.info("Start Reading:-  NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx at " +
-                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        try:
+            logger.info("Start Reading:-  NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx at " +
+                        str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        read_lead_content = pd.read_excel(self.section_value[12] + "NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx")
+            read_lead_content = pd.read_excel(self.section_value[12] + "NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx")
 
-        logger.info("Done Reading:-  NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx at " +
-                    str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+            logger.info("Done Reading:-  NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx at " +
+                        str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        read_lead_content.rename(columns={"Region": "Market",
-                                          "Media Type": "Channel", "Vendor": "Site",
-                                          "Leads": "Conversions", "Spend": "Spend Local"}, inplace=True)
+            read_lead_content.rename(columns={"Region": "Market",
+                                              "Media Type": "Channel", "Vendor": "Site",
+                                              "Leads": "Conversions", "Spend": "Spend Local"}, inplace=True)
 
-        self.read_lead_content = read_lead_content
+            self.read_lead_content = read_lead_content
+
+        except IOError as e:
+            logger.error(str(e))
+            pass
 
     def uk_publisher_data(self):
 
@@ -283,6 +297,32 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         #     print(instruction_df.tail())
         #
         # exit()
+
+    def twitter_data_reader_france(self):
+        twitter_data_fr = pd.read_excel(self.section_value[19] + 'Sage_twitter_france.xlsx')
+        twitter_data_fr['Market'] = 'France'
+        self.twitter_data_fr = twitter_data_fr
+
+    def twitter_data_reader_mea(self):
+        twitter_data_mea = pd.read_excel(self.section_value[19] + 'Sage_twitter_MEA.xlsx')
+        twitter_data_mea['Market'] = 'MEA'
+        self.twitter_data_mea = twitter_data_mea
+        # print(self.twitter_data_mea)
+
+    def twitter_data_reader_za(self):
+        twitter_data_za = pd.read_excel(self.section_value[19]+'Sage_twitter_ZA.xlsx')
+        twitter_data_za['Market'] = 'ZA'
+        self.twitter_data_za = twitter_data_za
+
+    def final_twitter_data(self):
+        twitter_data = self.twitter_data_za.append([self.twitter_data_mea, self.twitter_data_fr], sort=True)
+        twitter_data.fillna(0, inplace=True)
+        twitter_data['Clicks'] = twitter_data['Clicks'].replace('-', 0)
+        twitter_data['Conversions'] = twitter_data['Sign ups'] + twitter_data['Site visits'] \
+                                      + twitter_data['Custom events'] \
+                                      + twitter_data['Downloads']
+        twitter_data_final = twitter_data.loc[:, ['Market', 'Impressions', 'Clicks', 'Spend', 'Conversions']]
+        self.twitter_data = twitter_data_final
 
 
 if __name__ == "__main__":

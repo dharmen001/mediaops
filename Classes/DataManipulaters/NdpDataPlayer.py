@@ -37,6 +37,7 @@ class NdpDataPlayer(NdpReader):
         self.uk_pub_data_reset = None
         self.read_ndp_data_social = None
         self.social_internal_pivot_reset = None
+        self.twitter_data_player_reset = None
         self.internal_data()
         self.market_mapping_internal_data()
         self.internal_performance_data()
@@ -52,6 +53,7 @@ class NdpDataPlayer(NdpReader):
         self.market_publisher_data_us()
         self.pub_data_uk()
         self.social_npd_data()
+        self.twitter_data_player()
 
     def internal_data(self):
         # Removing unconditional rows from NDP Tableau Raw Data
@@ -452,6 +454,17 @@ class NdpDataPlayer(NdpReader):
         social_internal_pivot_reset.rename(columns={"New Market": "Market"}, inplace=True)
 
         self.social_internal_pivot_reset = social_internal_pivot_reset
+
+    def twitter_data_player(self):
+        twitter_data_player = pd.pivot_table(self.twitter_data, index=['Market'], values=['Impressions',
+                                                                                          'Clicks',
+                                                                                          'Spend',
+                                                                                          'Conversions'],
+                                             aggfunc=np.sum)
+
+        twitter_data_player_reset = twitter_data_player.reset_index()
+
+        self.twitter_data_player_reset = twitter_data_player_reset
 
 
 if __name__ == "__main__":

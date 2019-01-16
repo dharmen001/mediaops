@@ -101,6 +101,17 @@ class NdpFileWriter(NdpDataPlayer):
 
         logger.info("Done")
 
+    def writing_social_twitter(self):
+        logger.info("Writing twitter Data")
+
+        writing_twitter_social_data = self.twitter_data_player_reset.to_excel(self.writer_file, index=False,
+                                                                              sheet_name="Social Performance",
+                                                                              startrow=1,
+                                                                              startcol=
+                                                                              self.social_internal_pivot_reset.
+                                                                              shape[1]+2)
+        logger.info("Done")
+
     def formatting_conversions(self):
         workbook = self.writer_file.book
         worksheet = self.writer_file.sheets['Conversions']
@@ -261,6 +272,19 @@ class NdpFileWriter(NdpDataPlayer):
         worksheet.conditional_format(2, 1, self.social_internal_pivot_reset.shape[0] + 2,
                                      self.social_internal_pivot_reset.shape[1] + 1, {"type": "no_blanks",
                                                                                      "format": border_row})
+        # Twitter_external_data
+
+        worksheet.merge_range("I1:M1", 'Twitter Social Performance', merge_format)
+        worksheet.conditional_format(1, self.social_internal_pivot_reset.shape[1] + 2, 1,
+                                     self.social_internal_pivot_reset.shape[1] + 2 +
+                                     self.twitter_data_player_reset.shape[1],
+                                     {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(2, self.social_internal_pivot_reset.shape[1] + 2,
+                                     self.twitter_data_player_reset.shape[1]+1,
+                                     self.social_internal_pivot_reset.shape[1] + 2 +
+                                     self.twitter_data_player_reset.shape[1]
+                                     , {"type": "no_blanks", "format": border_row})
 
     def main(self):
         self.writing_conversion()
@@ -270,11 +294,12 @@ class NdpFileWriter(NdpDataPlayer):
         self.writing_publisher_market_us()
         self.writing_publisher_uk()
         self.writing_social_internal()
+        self.writing_social_twitter()
         self.formatting_conversions()
         self.formatting_performance()
         self.formatting_publisher()
         self.formatting_social()
-        # self.save_and_close_writer()
+        self.save_and_close_writer()
 
 
 if __name__ == "__main__":
