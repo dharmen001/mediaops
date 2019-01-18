@@ -112,6 +112,17 @@ class NdpFileWriter(NdpDataPlayer):
                                                                               shape[1]+2)
         logger.info("Done")
 
+    def writing_social_facebook(self):
+        logger.info("Writing facebook Data")
+
+        writting_facbook_social_data = self.facebook_social_data.to_excel(self.writer_file, index=False,
+                                                                          sheet_name="Social Performance",
+                                                                          startrow=
+                                                                          self.twitter_data_player_reset.shape[0]+4,
+                                                                          startcol=
+                                                                          self.social_internal_pivot_reset.shape[1]+2)
+        logger.info("Done")
+
     def formatting_conversions(self):
         workbook = self.writer_file.book
         worksheet = self.writer_file.sheets['Conversions']
@@ -286,6 +297,23 @@ class NdpFileWriter(NdpDataPlayer):
                                      self.twitter_data_player_reset.shape[1]
                                      , {"type": "no_blanks", "format": border_row})
 
+        # Facebook_external_data
+        worksheet.merge_range("I{}:M{}".format(self.twitter_data_player_reset.shape[0]+4,
+                                               self.twitter_data_player_reset.shape[0]+4),
+                              'Facebook Social Performance', merge_format)
+
+        worksheet.conditional_format(self.twitter_data_player_reset.shape[0]+4,
+                                     self.social_internal_pivot_reset.shape[1] + 2,
+                                     self.twitter_data_player_reset.shape[0]+4,
+                                     self.social_internal_pivot_reset.shape[1] + 2 + self.facebook_social_data.shape[1],
+                                     {"type": "no_blanks", "format": format_header})
+
+        worksheet.conditional_format(self.twitter_data_player_reset.shape[0]+5,
+                                     self.social_internal_pivot_reset.shape[1] + 2,
+                                     self.twitter_data_player_reset.shape[0] + 5 + self.facebook_social_data.shape[0],
+                                     self.social_internal_pivot_reset.shape[1] + 2 + self.facebook_social_data.shape[1],
+                                     {"type": "no_blanks", "format": border_row})
+
     def main(self):
         self.writing_conversion()
         self.writing_performance()
@@ -295,6 +323,7 @@ class NdpFileWriter(NdpDataPlayer):
         self.writing_publisher_uk()
         self.writing_social_internal()
         self.writing_social_twitter()
+        self.writing_social_facebook()
         self.formatting_conversions()
         self.formatting_performance()
         self.formatting_publisher()

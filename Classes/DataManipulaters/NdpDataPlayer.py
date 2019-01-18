@@ -38,6 +38,7 @@ class NdpDataPlayer(NdpReader):
         self.read_ndp_data_social = None
         self.social_internal_pivot_reset = None
         self.twitter_data_player_reset = None
+        self.facebook_social_data = None
         self.internal_data()
         self.market_mapping_internal_data()
         self.internal_performance_data()
@@ -54,6 +55,7 @@ class NdpDataPlayer(NdpReader):
         self.pub_data_uk()
         self.social_npd_data()
         self.twitter_data_player()
+        self.facebook_data()
 
     def internal_data(self):
         # Removing unconditional rows from NDP Tableau Raw Data
@@ -465,6 +467,25 @@ class NdpDataPlayer(NdpReader):
         twitter_data_player_reset = twitter_data_player.reset_index()
 
         self.twitter_data_player_reset = twitter_data_player_reset
+
+    def facebook_data(self):
+        facebook_final_data = pd.concat([self.facebook_data_uk_final,
+                                         self.facebook_data_de_final,
+                                         self.facebook_data_fr_final,
+                                         self.facebook_data_mea_final,
+                                         self.facebook_data_pt_final,
+                                         self.facebook_data_uk_final,
+                                         self.facebook_data_us_final], axis=0)
+
+        facebook_final_data_pivot = pd.pivot_table(facebook_final_data, index=['Market'], values=['Impressions',
+                                                                                                  'Clicks',
+                                                                                                  'Conversion',
+                                                                                                  'Local Spend'],
+                                                   aggfunc=np.sum)
+
+        facebook_social_data = facebook_final_data_pivot.reset_index()
+        facebook_social_data.rename(columns={"Local Spend": "Spend"}, inplace=True)
+        self.facebook_social_data = facebook_social_data
 
 
 if __name__ == "__main__":

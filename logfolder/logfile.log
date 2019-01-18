@@ -100,3 +100,11 @@
 2019-01-15 13:50:09,042 - App - ERROR - [Errno 2] No such file or directory: 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/NDPdataDump/Sage Global - Publisher Data - Daily.xlsx'
 2019-01-15 13:51:13,719 - App - ERROR - [Errno 2] No such file or directory: 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/NDPdataDump/Sage Global - Publisher Data - Daily.xlsx'
 2019-01-15 13:51:13,733 - App - ERROR - [Errno 2] No such file or directory: 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/NDPdataDump/NDP - Sage NA Lead Gen - Content Synd Tracker.xlsx'
+2019-01-18 10:59:04,263 - App - ERROR - Sheet Name Not available at file Ad-ops April Timesheet.xlsxNo sheet named <'Sheet1'>
+2019-01-18 10:59:05,611 - App - ERROR - Sheet Name Not available at file Ad-ops June Month Timesheet.xlsxNo sheet named <'Sheet1'>
+2019-01-18 10:59:07,336 - App - ERROR - Sheet Name Not available at file Ad-ops May Month Timesheet.xlsxNo sheet named <'Sheet1'>
+2019-01-18 10:59:12,121 - App - ERROR - Sheet Name Not available at file Adops_Timesheet - July - 2018.xlsxNo sheet named <'Sheet1'>
+2019-01-18 10:59:14,381 - App - ERROR - Sheet Name Not available at file Adops_Timesheet - November - 2018.xlsxNo sheet named <'Sheet1'>
+2019-01-18 10:59:16,358 - App - ERROR - Sheet Name Not available at file Adops_Timesheet -August - 2018.xlsxNo sheet named <'Sheet1'>
+2019-01-18 10:59:36,727 - App - ERROR - Sheet Name Not available at file Adops_Timesheet -October - 2018.xlsxNo sheet named <'Sheet1'>
+2019-01-18 10:59:38,680 - App - ERROR - Sheet Name Not available at file Adops_Timesheet -September - 2018.xlsxNo sheet named <'Sheet1'>

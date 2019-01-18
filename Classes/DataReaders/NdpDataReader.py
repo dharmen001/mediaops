@@ -5,6 +5,7 @@ import pandas as pd
 import os
 import zipfile
 import xlrd
+import glob
 
 from Classes.LoggerFile.LogFile import logger
 import datetime
@@ -42,6 +43,13 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.twitter_data_mea = None
         self.twitter_data_za = None
         self.twitter_data = None
+        self.facebook_data_es_final = None
+        self.facebook_data_de_final = None
+        self.facebook_data_fr_final = None
+        self.facebook_data_mea_final = None
+        self.facebook_data_pt_final = None
+        self.facebook_data_uk_final = None
+        self.facebook_data_us_final = None
         self.data_reader_ndp_raw()
         self.ndp_static_conversion_reader()
         self.ndp_dynamic_conversion_reader()
@@ -55,6 +63,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.twitter_data_reader_mea()
         self.twitter_data_reader_za()
         self.final_twitter_data()
+        self.facebook_data_reader()
 
     def data_reader_ndp_raw(self):
 
@@ -323,6 +332,94 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
                                       + twitter_data['Downloads']
         twitter_data_final = twitter_data.loc[:, ['Market', 'Impressions', 'Clicks', 'Spend', 'Conversions']]
         self.twitter_data = twitter_data_final
+
+    def facebook_data_reader(self):
+        facebook_data_es = pd.concat([pd.read_csv(f) for f in glob.glob(self.section_value[24] + 'ES*.csv')], sort=True)
+        facebook_data_es = facebook_data_es.dropna(axis=0, subset=['Campaign name'])
+        facebook_data_es.fillna(value=0, inplace=True)
+        facebook_data_es.rename(columns={"Clicks (all)": "Clicks", "Amount spent (EUR)": "Local Spend"}, inplace=True)
+        facebook_data_es['Market'] = 'Spain'
+        facebook_data_es['Conversion'] = facebook_data_es['Leads']
+
+        facebook_data_es_final = facebook_data_es.loc[:, ['Market', 'Impressions', 'Local Spend',
+                                                          'Clicks', 'Conversion']]
+
+        facebook_data_de = pd.concat([pd.read_csv(f) for f in glob.glob(self.section_value[24] + 'DE*.csv')], sort=True)
+        facebook_data_de = facebook_data_de.dropna(axis=0, subset=['Campaign name'])
+        facebook_data_de.fillna(value=0, inplace=True)
+        facebook_data_de.rename(columns={"Clicks (all)": "Clicks", "Amount spent (EUR)": "Local Spend"}, inplace=True)
+        facebook_data_de['Market'] = 'Germany'
+        facebook_data_de['Conversion'] = facebook_data_de['Leads (form)']
+
+        facebook_data_de_final = facebook_data_de.loc[:, ['Market', 'Impressions', 'Local Spend',
+                                                          'Clicks', 'Conversion']]
+
+        facebook_data_fr = pd.concat([pd.read_csv(f) for f in glob.glob(self.section_value[24] + 'FR*.csv')], sort=True)
+        facebook_data_fr = facebook_data_fr.dropna(axis=0, subset=['Campaign name'])
+        facebook_data_fr.fillna(value=0, inplace=True)
+        facebook_data_fr.rename(columns={"Clicks (all)": "Clicks", "Amount spent (EUR)": "Local Spend"}, inplace=True)
+        facebook_data_fr['Market'] = 'France'
+        facebook_data_fr['Conversion'] = 0
+
+        facebook_data_fr_final = facebook_data_fr.loc[:, ['Market', 'Impressions', 'Local Spend',
+                                                          'Clicks', 'Conversion']]
+
+        facebook_data_mea = pd.concat([pd.read_csv(f) for f in glob.glob(self.section_value[24] + 'MEA*.csv')],
+                                      sort=True)
+        facebook_data_mea = facebook_data_mea.dropna(axis=0, subset=['Campaign name'])
+        facebook_data_mea.fillna(value=0, inplace=True)
+        facebook_data_mea.rename(columns={"Clicks (all)": "Clicks", "Amount spent (ZAR)": "Local Spend"}, inplace=True)
+        facebook_data_mea['Market'] = 'MEA'
+        facebook_data_mea['Conversion'] = facebook_data_mea['Leads (form)']
+
+        facebook_data_mea_final = facebook_data_mea.loc[:, ['Market', 'Impressions', 'Local Spend',
+                                                            'Clicks', 'Conversion']]
+
+        facebook_data_pt = pd.concat([pd.read_csv(f) for f in glob.glob(self.section_value[24] + 'PT*.csv')], sort=True)
+        facebook_data_pt = facebook_data_pt.dropna(axis=0, subset=['Campaign name'])
+        facebook_data_pt.fillna(value=0, inplace=True)
+        facebook_data_pt.rename(columns={"Clicks (all)": "Clicks", "Amount spent (EUR)": "Local Spend"}, inplace=True)
+        facebook_data_pt['Market'] = 'Portugal'
+        facebook_data_pt['Conversion'] = facebook_data_pt['Leads']
+
+        facebook_data_pt_final = facebook_data_pt.loc[:, ['Market', 'Impressions', 'Local Spend',
+                                                          'Clicks', 'Conversion']]
+
+        facebook_data_uk = pd.concat([pd.read_csv(f) for f in glob.glob(self.section_value[24] + 'UK*.csv')], sort=True)
+        facebook_data_uk = facebook_data_uk.dropna(axis=0, subset=['Campaign name'])
+        facebook_data_uk.fillna(value=0, inplace=True)
+        facebook_data_uk.rename(columns={"Clicks (all)": "Clicks", "Amount spent (GBP)": "Local Spend"}, inplace=True)
+        facebook_data_uk['Market'] = 'UK'
+        facebook_data_uk['Conversion'] = facebook_data_uk['Website payment info adds'] + \
+                                         facebook_data_uk['Website purchases'] + \
+                                         facebook_data_uk['Adds of payment info'] + \
+                                         facebook_data_uk['Adds to cart'] + \
+                                         facebook_data_uk['Adds to wishlist'] + \
+                                         facebook_data_uk['Checkouts initiated'] + \
+                                         facebook_data_uk['Registrations completed'] + \
+                                         facebook_data_uk['Download'] + \
+                                         facebook_data_uk['Download [On ad]']
+
+        facebook_data_uk_final = facebook_data_uk.loc[:, ['Market', 'Impressions', 'Local Spend',
+                                                          'Clicks', 'Conversion']]
+
+        facebook_data_us = pd.concat([pd.read_csv(f) for f in glob.glob(self.section_value[24] + 'US*.csv')], sort=True)
+        facebook_data_us = facebook_data_us.dropna(axis=0, subset=['Campaign name'])
+        facebook_data_us.fillna(value=0, inplace=True)
+        facebook_data_us.rename(columns={"Clicks (all)": "Clicks", "Amount spent (USD)": "Local Spend"}, inplace=True)
+        facebook_data_us['Market'] = 'US'
+        facebook_data_us['Conversion'] = 0
+
+        facebook_data_us_final = facebook_data_us.loc[:, ['Market', 'Impressions', 'Local Spend',
+                                                          'Clicks', 'Conversion']]
+
+        self.facebook_data_es_final = facebook_data_es_final
+        self.facebook_data_de_final = facebook_data_de_final
+        self.facebook_data_fr_final = facebook_data_fr_final
+        self.facebook_data_mea_final = facebook_data_mea_final
+        self.facebook_data_pt_final = facebook_data_pt_final
+        self.facebook_data_uk_final = facebook_data_uk_final
+        self.facebook_data_us_final = facebook_data_us_final
 
 
 if __name__ == "__main__":

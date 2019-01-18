@@ -12,13 +12,13 @@ class SageData(Config):
     def __init__(self):
         super(SageData, self).__init__()
         self.all_data = None
-        self.writer = pd.ExcelWriter(self.section_value[8] + DateFile.month_creation() + 'output.xlsx',
+        self.writer = pd.ExcelWriter(self.section_value[8] + 'output.xlsx',
                                      engine="xlsxwriter", datetime_format="YYYY-MM-DD")
 
     def read_sage(self):
         all_data = pd.DataFrame()
         for f in glob.glob(self.section_value[7] + "*.xlsx"):
-            df = pd.read_excel(f, sheet_name='Sheet1')
+            df = pd.read_excel(f, sheet_name=None, ignore_index=None)
             all_data = all_data.append(df, ignore_index=True)
 
         self.all_data = all_data

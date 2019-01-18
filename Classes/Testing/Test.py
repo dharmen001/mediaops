@@ -1,7 +1,14 @@
-import datetime
-today = datetime.date.today()
-first = today.replace(day=1)
-lastday = first - datetime.timedelta(days=1)
-firstday = first - datetime.timedelta(days=31)
-print lastday.strftime("%Y-%m-%d")
-print firstday.strftime("%Y-%m-%d")
+import pandas as pd
+
+df = pd.DataFrame()
+xlfname = 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/outputuklist/MasterSheet.xlsx'
+xl = pd.ExcelFile(xlfname)
+
+for sheet in xl.sheet_names:
+    df_tmp = xl.parse(sheet)
+    df = df.append(df_tmp, ignore_index=True)
+
+print(len(df))
+
+csvfile = 'sample.csv'
+df.to_csv(csvfile, index=False)

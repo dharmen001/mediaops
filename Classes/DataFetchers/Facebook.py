@@ -43,29 +43,47 @@ class Facebook(Config):
 
     def each_market_report_india(self):
         market_facebook_report_india = pd.read_csv(self.section_value[9] + "facebookmarketurlindia.csv")
-        for i in market_facebook_report_india.iloc[:, 2]:
-            self.driver.get(i)
-            self.driver.implicitly_wait(30)
-            self.driver.find_element_by_id("export_button").click()
-            self.driver.implicitly_wait(30)
-            self.driver.find_element_by_xpath("//*[contains(@class, '_271k _271m _1qjd layerConfirm')]").click()
-            time.sleep(10)
-
-    def each_market_report_gds(self):
-        market_facebook_report_india = pd.read_csv(self.section_value[9] + "facebookmarketurlgds.csv")
-        for i in market_facebook_report_india.iloc[:, 2]:
+        for i, j in zip(market_facebook_report_india.iloc[:, 2], market_facebook_report_india.iloc[:, 1]):
             self.driver.get(i)
             self.driver.implicitly_wait(30)
             self.driver.find_element_by_id("export_button").click()
             self.driver.implicitly_wait(30)
             self.driver.find_element_by_xpath("//*[contains(text(), 'Export as .csv')]").click()
             self.driver.implicitly_wait(30)
+            self.driver.find_element_by_class_name("_66ul").click()
+            self.driver.implicitly_wait(30)
             self.driver.find_element_by_xpath("//*[contains(@class, '_271k _271m _1qjd layerConfirm')]").click()
             time.sleep(10)
+            newest = max(glob.iglob(self.section_value[24] + '*.csv'), key=os.path.getctime)
+            head, tail = os.path.split(newest)
+            self.tail = tail
+            self.head = head
+            os.rename(os.path.join(self.head, self.tail), os.path.join(self.head,
+                                                                       self.tail.replace(self.tail, j + ".csv")))
+
+    def each_market_report_gds(self):
+        market_facebook_report_india = pd.read_csv(self.section_value[9] + "facebookmarketurlgds.csv")
+        for i, j in zip(market_facebook_report_india.iloc[:, 2], market_facebook_report_india.iloc[:, 1]):
+            self.driver.get(i)
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_id("export_button").click()
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_xpath("//*[contains(text(), 'Export as .csv')]").click()
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_class_name("_66ul").click()
+            self.driver.implicitly_wait(30)
+            self.driver.find_element_by_xpath("//*[contains(@class, '_271k _271m _1qjd layerConfirm')]").click()
+            time.sleep(10)
+            newest = max(glob.iglob(self.section_value[24] + '*.csv'), key=os.path.getctime)
+            head, tail = os.path.split(newest)
+            self.tail = tail
+            self.head = head
+            os.rename(os.path.join(self.head, self.tail), os.path.join(self.head,
+                                                                       self.tail.replace(self.tail, j + ".csv")))
 
     def main(self):
-        #self.login_facebook("india.adops.sage@gmail.com", "Ogilvy@123")
-        #self.each_market_report_india()
+        self.login_facebook("india.adops.sage@gmail.com", "Ogilvy@123")
+        self.each_market_report_india()
         self.login_facebook("gds.sage.mahesh@gmail.com", "abc@12345")
         self.each_market_report_gds()
 

@@ -232,9 +232,9 @@ class Jira(Config):
             pass
 
     def uk(self):
-        watch = ['mireia.nadal', 'marta.fiascaris', 'nick.gardiner', 'yasmin.andrews', 'ye-eun.kim', 'jennifer.marquez',
+        watch = ['mireia.nadal', 'marta.fiascaris', 'nick.gardiner', 'James Hill', 'jennifer.marquez',
                  'manon.leymat', 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
-        assignees = 'ye-eun.kim'
+        assignees = 'Aman Mastana'
         attachment = [self.section_value[3] + 'UK.xlsx', self.section_value[3] + 'IE.xlsx']
 
         try:

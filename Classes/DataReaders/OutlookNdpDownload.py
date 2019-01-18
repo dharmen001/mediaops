@@ -4,7 +4,7 @@ import email.mime.multipart
 from Classes.DataReaders.config_ini import Config
 import os
 import pandas as pd
-from Classes.LoggerFile import logger
+from Classes.LoggerFile.LogFile import logger
 import datetime
 
 
