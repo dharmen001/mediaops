@@ -74,6 +74,7 @@ class Facebook(Config):
             self.driver.implicitly_wait(30)
             self.driver.find_element_by_xpath("//*[contains(@class, '_271k _271m _1qjd layerConfirm')]").click()
             time.sleep(10)
+            # finding the latest modified file
             newest = max(glob.iglob(self.section_value[24] + '*.csv'), key=os.path.getctime)
             head, tail = os.path.split(newest)
             self.tail = tail

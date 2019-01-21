@@ -10,23 +10,23 @@ from Classes.DataFetchers.Facebook import Facebook
 
 
 if __name__ == "__main__":
-    #object_remove = RemoveExcelFile()
+    object_remove = RemoveExcelFile()
 
-    #object_outlook = Outlook()
-    #object_outlook.main()
+    object_outlook = Outlook()
+    object_outlook.main()
 
     object_Ndp_g_drive = NdpGrdriveDate()
     object_Ndp_g_drive.main()
 
-    #object_Ndp_twitter = Twitter()
-    #object_Ndp_twitter.main()
+    object_Ndp_twitter = Twitter()
+    object_Ndp_twitter.main()
 
-    #object_Ndp_Facebook = Facebook()
-    #object_Ndp_Facebook.main()
+    object_Ndp_Facebook = Facebook()
+    object_Ndp_Facebook.main()
 
-    #object_ndp_data_writer = NdpFileWriter()
-    #object_ndp_data_writer.main()
+    object_ndp_data_writer = NdpFileWriter()
+    object_ndp_data_writer.main()
 
-    #object_ndp_data_writer.save_and_close_writer()
+    object_ndp_data_writer.save_and_close_writer()
 
 
