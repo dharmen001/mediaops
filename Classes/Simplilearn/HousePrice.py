@@ -58,7 +58,5 @@ class PredictHousePrice(object):
 
 
 if __name__ == "__main__":
-    obj = PredictHousePrice('C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Simplilearn/'
-                            'Armando/New folder/Projects/Projects for submission/'
-                            'California Housing Price Prediction/Dataset for the project/housing.csv')
+    obj = PredictHousePrice('housing.csv')
     obj.main()
