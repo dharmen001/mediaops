@@ -12,7 +12,7 @@ class NdpData(Config):
         super(NdpData, self).__init__()
         now = datetime.datetime.now()
         last_month = now.month-1 if now.month > 1 else 12
-        last_year = now.year - 1
+        last_year = now.year if now.month > 1 else now.year - 1
         self.path = self.section_value[10] + "Data Audit_GDS_All_Markets for ({}-{}).xlsx".\
             format(last_year, last_month)
 

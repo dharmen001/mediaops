@@ -23,7 +23,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         # print(self.section_value[9] + "NdpRawDataFile.csv")
         self.now = datetime.datetime.now()
         self.last_month = self.now.month - 1 if self.now.month > 1 else 12
-        self.last_year = self.now.year - 1
+        self.last_year = self.now.year if self.now.month > 1 else self.now.year - 1
         self.read_ndp_data = None
         self.read_dmc_data = None
         self.read_dbm_data = None
@@ -283,6 +283,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         df['NConversions'] = df['Conversions'].str.replace('["/" " "]', '-')
         df['NConversions'].fillna((df['Conversions']), inplace=True)
         df.fillna(0, inplace=True)
+        df = df[(df['Year'] == self.last_year)]
         self.publisher_data_uk = df.loc[:, ['NewWeek', 'Market', 'WorkbookName', 'Delivered Budget', 'NConversions']]
         # x = self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
         # self.save_and_close_writer()

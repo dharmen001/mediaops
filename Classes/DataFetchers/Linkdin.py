@@ -22,26 +22,24 @@ class Linkedin(Config):
         self.last_month = self.last_day.strftime("%Y-%m")
 
     def login_linkedin(self, username, password):
-        #chrome_options = webdriver.()
-        #preference = {"download.default_directory": self.section_value[24]}
+        chrome_options = webdriver.ChromeOptions()
+        preference = {"download.default_directory": self.section_value[24]}
 
-        #chrome_options.add_experimental_option("prefs", preference)
+        chrome_options.add_experimental_option("prefs", preference)
         self.driver = webdriver.Chrome(self.section_value[20])
         self.driver.get(self.section_value[27])
+        self.driver.implicitly_wait(10)
 
-        username_field = self.driver.find_element_by_xpath("//*[contains(text(), 'Email or Phone')]")
-        # password_field = self.driver.find_element_by_id("password")
+        username_field = self.driver.find_elements_by_id("username")
+        password_field = self.driver.find_elements_by_id("password")
+
+        self.driver.implicitly_wait(10)
 
         username_field.send_keys(username)
         self.driver.implicitly_wait(10)
 
-        # password_field.send_keys(password)
-        # self.driver.implicitly_wait(10)
-
-        #self.driver.find_element_by_xpath("//*[contains(@class, 'btn__primary--large')]").click()
-
-        # self.driver.find_element_by_id("loginbutton").click()
-        #self.driver.implicitly_wait(10)
+        password_field.send_keys(password)
+        self.driver.implicitly_wait(10)
 
     def main(self):
         self.login_linkedin("neo.ayush.sharma@gmail.com", "Neo@1100")
