@@ -80,6 +80,7 @@ class PredictHousePrice(object):
         print("Test score: ", self.model.score(self.X_test, self.y_test))
         print("Train score: ", self.model.score(self.X_train, self.y_train))
         plt.show()
+        plt.savefig()
 
     def main(self):
         self.load_data()
