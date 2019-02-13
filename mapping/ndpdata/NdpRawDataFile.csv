@@ -1,4 +1,4 @@
-Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressions,Market,Other Activity,Other Dynamic Floodlight,Product,Publisher,Purchase,Social Platform Conversions,Solution,Spend,Spend Local
+ï»¿Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressions,Market,Other Activity,Other Dynamic Floodlight,Product,Publisher,Purchase,Social Platform Conversions,Solution,Spend,Spend Local
 0,SEARCH,98,0,3,2019-01-01,0,3,1216,FR,195,2,Brand,Google AdWords,0,0,Brand,124.81,145.12
 0,DISPLAY,0,0,0,2019-01-01,0,0,0,AUS,4,0,Accountants,Accountants Daily,0,0,Accountants,0,0
 0,DISPLAY,0,0,0,2019-01-01,0,0,0,AUS,5,0,Accountants Prospecting,DBM Neo@Ogilvy AU -1725474511-Sage AU,0,0,Accountants Prospecting,0,0
@@ -55,10 +55,10 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,0,0,0,2019-01-01,0,0,0,MY,,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
 0,SEARCH,0,0,0,2019-01-01,0,0,0,MY,,0,People Generic,Google AdWords,0,0,People Generic,0,0
 0,SEARCH,0,0,0,2019-01-01,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,188,0,0,2019-01-01,0,0,43346,ES,122,0,Accountants,RTBNEO ,0,0,Accountants,72.45271498,84.247343
+0,DISPLAY,188,0,0,2019-01-01,0,0,43346,ES,122,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.45271498,84.247343
 0,DISPLAY,17,0,0,2019-01-01,0,0,11425,ES,5790,2,Accountants,Supercontable,0,0,Accountants,28.53087238,33.175433
-0,DISPLAY,0,0,0,2019-01-01,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-01,0,0,4,ES,0,0,Accounting,EMMSunMediaES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-01,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-01,0,0,4,ES,0,0,Accounting,EMMSunMediaESÂ ,0,0,Accounting,0,0
 0,DISPLAY,6,0,0,2019-01-01,0,0,0,ES,5,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,SEARCH,306,0,0,2019-01-01,0,0,21075,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,38.04,633.98
 0,SEARCH,2,0,0,2019-01-01,0,0,56,EA,,0,Payroll,Google AdWords,0,0,Payroll,1.3,21.61
@@ -161,8 +161,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,155,0,1,2019-01-01,0,1,49288,ES,129,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,140.085535,162.890157
 0,DISPLAY,0,0,0,2019-01-01,0,0,255,ES,0,0,Medium Business,IDG Tech Network,0,0,Medium Business,26.112051,30.36285
 0,DISPLAY,12,0,0,2019-01-01,0,0,5374,ES,5,0,Medium Business,Infobolsa,0,0,Medium Business,23.1082,26.87
-0,DISPLAY,0,0,0,2019-01-01,0,0,1121,ES,5,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,8.91616008,10.367628
-0,DISPLAY,32,0,0,2019-01-01,0,0,4801,ES,30,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,20.6443,24.005
+0,DISPLAY,0,0,0,2019-01-01,0,0,1121,ES,5,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,8.91616008,10.367628
+0,DISPLAY,32,0,0,2019-01-01,0,0,4801,ES,30,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,20.6443,24.005
 0,DISPLAY,229,0,0,2019-01-01,0,0,83594,ES,159,0,Medium Business,RTB@NEO,0,0,Medium Business,208.6437563,242.609019
 0,DISPLAY,1,0,0,2019-01-01,0,0,2630,ES,15,0,Medium Business,Tic Beat,0,0,Medium Business,27.1416,31.56
 0,SEARCH,4,0,0,2019-01-01,0,0,66,AUS,6,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,1.19,2.01
@@ -255,7 +255,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-01,0,0,31,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-01,0,0,0,DE,1,0,Brand,Cover-PR,0,0,Brand,0,0
 0,DISPLAY,1,0,0,2019-01-01,0,0,0,DE,0,0,Brand,vice.com/de_at,0,0,Brand,0,0
-0,DISPLAY,2,0,0,2019-01-01,0,0,0,DE,6,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,2,0,0,2019-01-01,0,0,0,DE,6,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,59,0,0,2019-01-01,0,0,156431,DE,51,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,94.95377992,110.411372
 0,SEARCH,4,0,0,2019-01-01,0,0,65,ES,4,0,Awareness,Bing Ads,0,0,Awareness,1.32,1.54
 0,SEARCH,0,0,0,2019-01-01,0,0,4,ES,1,0,Awareness,Google AdWords,0,0,Awareness,0,0
@@ -530,12 +530,12 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,3,0,0,2019-01-01,0,0,2332,ES,8,0,Small Business,Expansion,0,0,Small Business,17.04962212,19.825142
 0,DISPLAY,0,0,0,2019-01-01,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,0,0,0,2019-01-01,0,0,0,ES,6,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,813,0,1,2019-01-01,0,1,249607,ES,636,0,Small Business,RTBNEO ,0,0,Small Business,565.126222,657.123514
+0,DISPLAY,813,0,1,2019-01-01,0,1,249607,ES,636,0,Small Business,RTBNEOÂ ,0,0,Small Business,565.126222,657.123514
 0,DISPLAY,15,0,0,2019-01-01,0,0,4948,ES,62,1,Small Business,Pymes y Autonomos,0,0,Small Business,25.53168,29.688
-0,DISPLAY,0,0,0,2019-01-01,0,0,0,ES,22,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-01,0,0,0,ES,15,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-01,0,0,0,ES,22,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-01,0,0,0,ES,15,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-01,0,0,0,ES,6,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,417,1,4,2019-01-01,0,3,364548,ES,666,2,Other,RTBNEO ,0,0,Other,348.0202549,404.674715
+0,DISPLAY,417,1,4,2019-01-01,0,3,364548,ES,666,2,Other,RTBNEOÂ ,0,0,Other,348.0202549,404.674715
 0,DISPLAY,228,2,2,2019-01-01,0,0,0,ES,187,0,Small Business,PMPSoftonic,0,0,Small Business,78.432,91.2
 0,SEARCH,0,0,0,2019-01-01,0,0,7,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,3,0,0,2019-01-01,0,0,180,IE,1,0,Enterprise,Google AdWords,0,0,Enterprise,10.53,10.53
@@ -596,8 +596,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,0,0,0,2019-01-02,0,0,0,MY,2,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
 0,SEARCH,0,0,0,2019-01-02,0,0,0,MY,,0,People Generic,Google AdWords,0,0,People Generic,0,0
 0,SEARCH,0,0,0,2019-01-02,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,128,0,0,2019-01-02,0,0,46943,ES,443,8,Accountants,RTBNEO ,0,0,Accountants,72.50227162,84.304967
-0,DISPLAY,0,0,0,2019-01-02,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,128,0,0,2019-01-02,0,0,46943,ES,443,8,Accountants,RTBNEOÂ ,0,0,Accountants,72.50227162,84.304967
+0,DISPLAY,0,0,0,2019-01-02,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,15,0,0,2019-01-02,0,0,0,ES,16,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-02,0,0,0,ES,7,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,359,0,0,2019-01-02,0,0,22756,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,39.63,660.59
@@ -794,7 +794,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,9,0,2,2019-01-02,0,2,28873,CA,55,0,Small Business,Owner IQ,0,0,Small Business,106.714608,133.39326
 0,DISPLAY,42,0,9,2019-01-02,0,9,40612,CA,245,0,Small Business,Invite Media,1,0,Small Business,250.5405136,313.175642
 0,DISPLAY,0,0,0,2019-01-02,0,0,58,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,0,0,1,2019-01-02,0,1,0,DE,66,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,1,2019-01-02,0,1,0,DE,66,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,18,0,0,2019-01-02,0,0,66160,DE,99,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,43.74284134,50.863769
 0,SEARCH,13,0,0,2019-01-02,0,0,408,ES,15,0,Awareness,Bing Ads,0,0,Awareness,4.15,4.82
 0,SEARCH,0,0,0,2019-01-02,0,0,19,ES,1,0,Awareness,Google AdWords,0,0,Awareness,0,0
@@ -1072,14 +1072,14 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,232,0,0,2019-01-02,0,0,0,ES,178,1,Small Business,PMPSoftonic,0,0,Small Business,79.808,92.8
 0,DISPLAY,19,0,0,2019-01-02,0,0,10850,ES,252,4,Small Business,Pymes y Autonomos,0,0,Small Business,55.986,65.1
 0,DISPLAY,0,0,0,2019-01-02,0,0,0,ES,1,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-02,0,0,0,ES,59,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-02,0,0,0,ES,64,1,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-02,0,0,0,ES,59,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-02,0,0,0,ES,64,1,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,1,1,2019-01-02,0,0,0,ES,38,2,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,2,0,1,2019-01-02,1,0,3903,ES,34,2,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,31.04351374,36.097109
-0,DISPLAY,16,0,1,2019-01-02,1,0,7626,ES,27,6,Medium Business,PremiumSosfeES ,0,0,Medium Business,32.7918,38.13
+0,DISPLAY,2,0,1,2019-01-02,1,0,3903,ES,34,2,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,31.04351374,36.097109
+0,DISPLAY,16,0,1,2019-01-02,1,0,7626,ES,27,6,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,32.7918,38.13
 0,DISPLAY,0,0,1,2019-01-02,1,0,0,ES,16,3,Small Business,ElBlogSalmon,0,0,Small Business,0,0
-0,DISPLAY,758,1,5,2019-01-02,1,3,255494,ES,1671,10,Small Business,RTBNEO ,0,0,Small Business,576.6660632,670.541934
-0,DISPLAY,242,5,12,2019-01-02,1,6,395354,ES,2861,27,Other,RTBNEO ,0,0,Other,375.448302,436.567793
+0,DISPLAY,758,1,5,2019-01-02,1,3,255494,ES,1671,10,Small Business,RTBNEOÂ ,0,0,Small Business,576.6660632,670.541934
+0,DISPLAY,242,5,12,2019-01-02,1,6,395354,ES,2861,27,Other,RTBNEOÂ ,0,0,Other,375.448302,436.567793
 0,DISPLAY,0,0,2,2019-01-02,2,0,0,ES,99,3,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,29,0,4,2019-01-02,4,0,46041,ES,23998,65,Accountants,Supercontable,0,0,Accountants,108.5279571,126.195299
 0,SEARCH,0,0,0,2019-01-02,0,0,14,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -1136,9 +1136,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,3,0,0,2019-01-03,0,0,44,MY,3,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0.72,1.29
 0,SEARCH,4,0,0,2019-01-03,0,0,49,MY,8,0,People Generic,Google AdWords,0,0,People Generic,4.75,8.49
 0,SEARCH,0,0,0,2019-01-03,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,200,0,0,2019-01-03,0,0,46211,ES,425,0,Accountants,RTBNEO ,0,0,Accountants,72.44883466,84.242831
-0,DISPLAY,0,0,0,2019-01-03,0,0,1,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-03,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,200,0,0,2019-01-03,0,0,46211,ES,425,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.44883466,84.242831
+0,DISPLAY,0,0,0,2019-01-03,0,0,1,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-03,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,1,0,Brand,Supercontable,0,0,Brand,0,0
 0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,1,0,Enterprise Management,PremiumChannelbiz,0,0,Enterprise Management,0,0
 0,SEARCH,365,0,0,2019-01-03,0,0,20432,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,39.33,655.5
@@ -1240,7 +1240,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,108,0,0,2019-01-03,0,0,46712,ES,354,7,Enterprise Management,RTB@NEO,0,0,Enterprise Management,123.9783405,144.160861
 0,DISPLAY,1,0,0,2019-01-03,0,0,1667,ES,8,0,Medium Business,IDG Tech Network,0,0,Medium Business,170.7011334,198.48969
 0,DISPLAY,9,0,0,2019-01-03,0,0,7142,ES,12,0,Medium Business,Infobolsa,0,0,Medium Business,30.7106,35.71
-0,DISPLAY,11,0,0,2019-01-03,0,0,7696,ES,13,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,33.0928,38.48
+0,DISPLAY,11,0,0,2019-01-03,0,0,7696,ES,13,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,33.0928,38.48
 0,DISPLAY,186,0,0,2019-01-03,0,0,83370,ES,341,0,Medium Business,RTB@NEO,0,0,Medium Business,207.3865258,241.147123
 0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,1,0,Medium Business,Silicon News Spain,0,0,Medium Business,0,0
 0,DISPLAY,0,0,0,2019-01-03,0,0,2496,ES,17,0,Medium Business,Tic Beat,0,0,Medium Business,25.75872,29.952
@@ -1476,7 +1476,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,1,0,1,2019-01-03,0,1,1680,DE,90,0,Small Segment Payroll Sage Business Cloud Lohnabrechnung,Programmatic Buying,0,0,Small Segment Payroll Sage Business Cloud Lohnabrechnung,4.02299572,4.677902
 0,DISPLAY,6,1,1,2019-01-03,0,0,23277,DE,24,0,People Segment People Category,Programmatic Buying,0,0,People Segment People Category,11.95395098,13.899943
 0,DISPLAY,2,1,2,2019-01-03,0,1,8073,DE,94,0,Small Segment Accounting Sage 50cloud,Programmatic Buying,0,0,Small Segment Accounting Sage 50cloud,5.72316412,6.654842
-0,DISPLAY,0,0,1,2019-01-03,1,0,0,DE,64,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,1,2019-01-03,1,0,0,DE,64,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,6,0,1,2019-01-03,1,0,5452,DE,67,0,Medium Segment Financial Sage HR Suite Plus,Programmatic Buying,0,0,Medium Segment Financial Sage HR Suite Plus,19.26408256,22.400096
 0,DISPLAY,19,0,0,2019-01-03,0,0,37122,EA,55,0,Accountants,DBM,0,0,Accountants,11.322478,188.7079667
 0,DISPLAY,245,0,0,2019-01-03,0,0,63717,EA,16,0,Large Business,DBM,0,0,Large Business,58.540033,975.6672167
@@ -1621,13 +1621,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-03,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,19,0,0,2019-01-03,0,0,11647,ES,270,0,Small Business,Pymes y Autonomos,0,0,Small Business,60.09852,69.882
 0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,123,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,58,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,58,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-03,0,0,0,ES,36,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,18,1,1,2019-01-03,0,0,0,ES,24,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
-0,DISPLAY,0,1,1,2019-01-03,0,0,3648,ES,41,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,29.01530522,33.738727
-0,DISPLAY,786,2,9,2019-01-03,1,6,253669,ES,1667,5,Small Business,RTBNEO ,0,0,Small Business,581.2664423,675.891212
-0,DISPLAY,244,6,10,2019-01-03,1,3,394162,ES,2437,22,Other,RTBNEO ,0,0,Other,375.638552,436.789014
+0,DISPLAY,0,1,1,2019-01-03,0,0,3648,ES,41,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,29.01530522,33.738727
+0,DISPLAY,786,2,9,2019-01-03,1,6,253669,ES,1667,5,Small Business,RTBNEOÂ ,0,0,Small Business,581.2664423,675.891212
+0,DISPLAY,244,6,10,2019-01-03,1,3,394162,ES,2437,22,Other,RTBNEOÂ ,0,0,Other,375.638552,436.789014
 0,DISPLAY,28,1,5,2019-01-03,4,0,45460,ES,21464,11,Accountants,Supercontable,0,0,Accountants,98.18453676,114.168066
 0,SEARCH,0,0,0,2019-01-03,0,0,13,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,5,0,0,2019-01-03,0,0,372,IE,7,0,Enterprise,Google AdWords,0,0,Enterprise,12.93,12.93
@@ -1680,9 +1680,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,0,0,0,2019-01-04,0,0,16,MY,,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
 0,SEARCH,3,0,0,2019-01-04,0,0,63,MY,6,0,People Generic,Google AdWords,0,0,People Generic,3.95,7.05
 0,SEARCH,0,0,0,2019-01-04,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,284,0,0,2019-01-04,0,0,44027,ES,286,1,Accountants,RTBNEO ,0,0,Accountants,72.39790718,84.183613
-0,DISPLAY,0,0,0,2019-01-04,0,0,1,ES,0,0,Accounting,EMMDatacentric ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-04,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,284,0,0,2019-01-04,0,0,44027,ES,286,1,Accountants,RTBNEOÂ ,0,0,Accountants,72.39790718,84.183613
+0,DISPLAY,0,0,0,2019-01-04,0,0,1,ES,0,0,Accounting,EMMDatacentricÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-04,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,7,0,0,2019-01-04,0,0,0,ES,12,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-04,0,0,1,ES,0,0,Brand,EMM@Sosfe,0,0,Brand,0,0
 0,SEARCH,396,0,0,2019-01-04,0,0,28237,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,39.5,658.32
@@ -1787,8 +1787,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,120,0,2,2019-01-04,0,2,47387,ES,280,1,Enterprise Management,RTB@NEO,0,0,Enterprise Management,124.8494224,145.173747
 0,DISPLAY,1,0,0,2019-01-04,0,0,1369,ES,15,0,Medium Business,IDG Tech Network,0,0,Medium Business,140.1858738,163.00683
 0,DISPLAY,6,0,0,2019-01-04,0,0,3658,ES,9,0,Medium Business,Infobolsa,0,0,Medium Business,15.7294,18.29
-0,DISPLAY,0,0,0,2019-01-04,0,0,2408,ES,20,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,19.15264548,22.270518
-0,DISPLAY,10,0,0,2019-01-04,0,0,6540,ES,9,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,28.122,32.7
+0,DISPLAY,0,0,0,2019-01-04,0,0,2408,ES,20,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,19.15264548,22.270518
+0,DISPLAY,10,0,0,2019-01-04,0,0,6540,ES,9,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,28.122,32.7
 0,DISPLAY,0,0,0,2019-01-04,0,0,2527,ES,9,0,Medium Business,Tic Beat,0,0,Medium Business,26.07864,30.324
 0,SEARCH,11,0,0,2019-01-04,0,0,330,AUS,17,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,10.82,18.36
 0,SEARCH,0,0,0,2019-01-04,0,0,0,AUS,,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
@@ -1889,7 +1889,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,1,0,2,2019-01-04,0,2,15938,CA,51,0,Small Business,Owner IQ,0,0,Small Business,58.906848,73.63356
 0,DISPLAY,24,0,13,2019-01-04,0,13,46768,CA,184,0,Small Business,Invite Media,0,0,Small Business,233.7093032,292.136629
 0,DISPLAY,8,0,1,2019-01-04,0,1,35,DE,9,2,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,2,0,0,2019-01-04,0,0,0,DE,40,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,2,0,0,2019-01-04,0,0,0,DE,40,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,2,0,0,2019-01-04,0,0,0,DE,1,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,2,0,0,2019-01-04,0,0,2155,DE,8,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,8.6270943,10.031505
 0,DISPLAY,20,0,0,2019-01-04,0,0,97476,DE,94,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,57.31736084,66.648094
@@ -2173,14 +2173,14 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,10,0,1,2019-01-04,0,1,4997,ES,39,0,Small Business,Expansion,0,0,Small Business,36.53386124,42.481234
 0,DISPLAY,22,0,0,2019-01-04,0,0,12448,ES,266,2,Small Business,Pymes y Autonomos,0,0,Small Business,64.23168,74.688
 0,DISPLAY,0,0,0,2019-01-04,0,0,0,ES,78,2,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,786,0,5,2019-01-04,0,5,250529,ES,1303,16,Small Business,RTBNEO ,0,0,Small Business,574.4687658,667.986937
-0,DISPLAY,0,0,0,2019-01-04,0,0,0,ES,70,1,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,786,0,5,2019-01-04,0,5,250529,ES,1303,16,Small Business,RTBNEOÂ ,0,0,Small Business,574.4687658,667.986937
+0,DISPLAY,0,0,0,2019-01-04,0,0,0,ES,70,1,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-04,0,0,0,ES,32,3,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,205,1,1,2019-01-04,0,0,80246,ES,312,0,Medium Business,RTB@NEO,0,0,Medium Business,198.0123374,230.246904
 0,DISPLAY,218,1,1,2019-01-04,0,0,0,ES,142,0,Small Business,PMPSoftonic,0,0,Small Business,74.992,87.2
-0,DISPLAY,0,0,1,2019-01-04,1,0,0,ES,60,1,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,1,2019-01-04,1,0,0,ES,60,1,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,26,1,2,2019-01-04,1,0,36285,ES,16557,9,Accountants,Supercontable,0,0,Accountants,77.46706108,90.077978
-0,DISPLAY,247,9,14,2019-01-04,1,4,403828,ES,2130,11,Other,RTBNEO ,0,0,Other,375.2805641,436.372749
+0,DISPLAY,247,9,14,2019-01-04,1,4,403828,ES,2130,11,Other,RTBNEOÂ ,0,0,Other,375.2805641,436.372749
 0,SEARCH,0,0,0,2019-01-04,0,0,14,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,10,0,0,2019-01-04,0,0,234,IE,12,0,Enterprise,Google AdWords,0,0,Enterprise,16.53,16.53
 0,SEARCH,175,0,3,2019-01-05,0,3,1781,FR,344,1,Brand,Google AdWords,0,0,Brand,195.74,227.62
@@ -2231,9 +2231,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,0,0,0,2019-01-05,0,0,6,MY,,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
 0,SEARCH,3,0,0,2019-01-05,0,0,35,MY,2,0,People Generic,Google AdWords,0,0,People Generic,3.53,6.3
 0,SEARCH,0,0,0,2019-01-05,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,0,0,0,2019-01-05,0,0,2,ES,0,0,Accountants,EMMCEPYME ,0,0,Accountants,0,0
-0,DISPLAY,290,0,0,2019-01-05,0,0,43686,ES,97,2,Accountants,RTBNEO ,0,0,Accountants,72.29413442,84.062947
-0,DISPLAY,0,0,0,2019-01-05,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-05,0,0,2,ES,0,0,Accountants,EMMCEPYMEÂ ,0,0,Accountants,0,0
+0,DISPLAY,290,0,0,2019-01-05,0,0,43686,ES,97,2,Accountants,RTBNEOÂ ,0,0,Accountants,72.29413442,84.062947
+0,DISPLAY,0,0,0,2019-01-05,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,3,0,0,2019-01-05,0,0,0,ES,6,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,5,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,410,0,0,2019-01-05,0,0,25642,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,38.99,649.83
@@ -2336,8 +2336,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,138,0,1,2019-01-05,0,1,46937,ES,129,5,Enterprise Management,RTB@NEO,0,0,Enterprise Management,129.7858603,150.913791
 0,DISPLAY,0,0,0,2019-01-05,0,0,496,ES,0,0,Medium Business,IDG Tech Network,0,0,Medium Business,50.7904992,59.05872
 0,DISPLAY,2,0,0,2019-01-05,0,0,833,ES,8,0,Medium Business,Infobolsa,0,0,Medium Business,3.5819,4.165
-0,DISPLAY,0,0,0,2019-01-05,0,0,1188,ES,12,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,9.44906166,10.987281
-0,DISPLAY,13,0,0,2019-01-05,0,0,4384,ES,12,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,18.8512,21.92
+0,DISPLAY,0,0,0,2019-01-05,0,0,1188,ES,12,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,9.44906166,10.987281
+0,DISPLAY,13,0,0,2019-01-05,0,0,4384,ES,12,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,18.8512,21.92
 0,DISPLAY,190,0,0,2019-01-05,0,0,79455,ES,142,0,Medium Business,RTB@NEO,0,0,Medium Business,199.5341771,232.016485
 0,DISPLAY,1,0,0,2019-01-05,0,0,2663,ES,6,0,Medium Business,Tic Beat,0,0,Medium Business,27.48216,31.956
 0,SEARCH,23,0,0,2019-01-05,0,0,370,AUS,32,0,Brand,Google AdWords,0,0,Brand,32.29,54.73
@@ -2431,8 +2431,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,44,0,9,2019-01-05,0,9,37870,CA,115,0,Small Business,Invite Media,0,0,Small Business,197.2383192,246.547899
 0,DISPLAY,0,0,0,2019-01-05,0,0,0,DE,0,0,Accounting,Programmatic Buying,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-05,0,0,24,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,1,0,0,2019-01-05,0,0,0,DE,0,0,Brand,Gründerküche,0,0,Brand,0,0
-0,DISPLAY,1,0,0,2019-01-05,0,0,0,DE,24,1,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-05,0,0,0,DE,0,0,Brand,GrÃ¼nderkÃ¼che,0,0,Brand,0,0
+0,DISPLAY,1,0,0,2019-01-05,0,0,0,DE,24,1,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,0,0,0,2019-01-05,0,0,2135,DE,9,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,9.58461916,11.144906
 0,DISPLAY,5,0,0,2019-01-05,0,0,22742,DE,41,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,16.54088998,19.233593
 0,SEARCH,10,0,0,2019-01-05,0,0,151,ES,16,0,Accounting,Bing Ads,0,0,Accounting,3.48,4.04
@@ -2708,15 +2708,15 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,140,0,2,2019-01-05,0,2,6396,DE,22,2,Medium Segment Financial Sage HR Suite Plus,Google AdWords,0,0,Medium Segment Financial Sage HR Suite Plus,53.11,61.75
 0,SEARCH,55,1,3,2019-01-05,0,2,936,DE,129,2,Small Segment Accounting Sage 50cloud,Google AdWords,0,0,Small Segment Accounting Sage 50cloud,68.15,79.26
 0,SEARCH,8,0,2,2019-01-05,1,1,897,DE,9,0,Small Segment Accounting Category,Bing Ads,0,0,Small Segment Accounting Category,8.66,10.07
-0,DISPLAY,357,0,2,2019-01-05,0,2,366688,ES,765,5,Other,RTBNEO ,0,0,Other,344.3281545,400.381575
+0,DISPLAY,357,0,2,2019-01-05,0,2,366688,ES,765,5,Other,RTBNEOÂ ,0,0,Other,344.3281545,400.381575
 0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,5,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
 0,DISPLAY,6,0,0,2019-01-05,0,0,2919,ES,16,0,Small Business,Expansion,0,0,Small Business,21.34127238,24.815433
 0,DISPLAY,16,0,0,2019-01-05,0,0,5109,ES,62,0,Small Business,Pymes y Autonomos,0,0,Small Business,26.36244,30.654
 0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,19,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,214,0,0,2019-01-05,0,0,0,ES,145,2,Small Business,PMPSoftonic,0,0,Small Business,73.616,85.6
-0,DISPLAY,827,0,0,2019-01-05,0,0,248211,ES,679,2,Small Business,RTBNEO ,0,0,Small Business,560.9973655,652.322518
-0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,16,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,13,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,827,0,0,2019-01-05,0,0,248211,ES,679,2,Small Business,RTBNEOÂ ,0,0,Small Business,560.9973655,652.322518
+0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,16,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,13,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-05,0,0,0,ES,1,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,10,0,2,2019-01-05,2,0,13157,ES,5750,6,Accountants,Supercontable,0,0,Accountants,28.18424766,32.772381
 0,SEARCH,7,0,1,2019-01-05,0,1,30,IE,72,0,C4L 50C,Google AdWords,0,0,C4L 50C,5.47,5.47
@@ -2767,8 +2767,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,0,0,0,2019-01-06,0,0,35,MY,,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
 0,SEARCH,4,0,0,2019-01-06,0,0,123,MY,6,0,People Generic,Google AdWords,0,0,People Generic,4.23,7.55
 0,SEARCH,0,0,0,2019-01-06,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,271,0,0,2019-01-06,0,0,45613,ES,100,0,Accountants,RTBNEO ,0,0,Accountants,72.25342976,84.015616
-0,DISPLAY,0,0,0,2019-01-06,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,271,0,0,2019-01-06,0,0,45613,ES,100,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.25342976,84.015616
+0,DISPLAY,0,0,0,2019-01-06,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,7,0,0,2019-01-06,0,0,0,ES,5,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,SEARCH,438,0,0,2019-01-06,0,0,25674,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,38.96,649.28
 0,SEARCH,12,0,0,2019-01-06,0,0,75,EA,,0,Payroll,Google AdWords,0,0,Payroll,8.41,140.18
@@ -2874,7 +2874,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,182,0,0,2019-01-06,0,0,51015,ES,136,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,140.435371,163.296943
 0,DISPLAY,0,0,0,2019-01-06,0,0,475,ES,2,0,Medium Business,IDG Tech Network,0,0,Medium Business,48.640095,56.55825
 0,DISPLAY,3,0,0,2019-01-06,0,0,2210,ES,2,0,Medium Business,Infobolsa,0,0,Medium Business,9.503,11.05
-0,DISPLAY,26,0,0,2019-01-06,0,0,4330,ES,24,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,18.619,21.65
+0,DISPLAY,26,0,0,2019-01-06,0,0,4330,ES,24,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,18.619,21.65
 0,DISPLAY,188,0,0,2019-01-06,0,0,81984,ES,174,0,Medium Business,RTB@NEO,0,0,Medium Business,204.7118802,238.03707
 0,DISPLAY,0,0,0,2019-01-06,0,0,2563,ES,8,0,Medium Business,Tic Beat,0,0,Medium Business,26.45016,30.756
 0,SEARCH,8,0,0,2019-01-06,0,0,142,AUS,20,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,8.12,13.78
@@ -2966,7 +2966,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,38,0,3,2019-01-06,0,3,39702,CA,74,0,Small Business,Invite Media,0,0,Small Business,246.1445448,307.680681
 0,DISPLAY,0,0,0,2019-01-06,0,0,51,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-06,0,0,0,DE,1,0,Brand,Cover-PR,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-06,0,0,0,DE,22,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-06,0,0,0,DE,22,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,2,0,0,2019-01-06,0,0,2112,DE,13,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,9.61042432,11.174912
 0,DISPLAY,28,0,0,2019-01-06,0,0,70606,DE,59,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,74.85697312,87.042992
 0,SEARCH,11,0,0,2019-01-06,0,0,179,ES,22,0,Accounting,Bing Ads,0,0,Accounting,4.61,5.36
@@ -3243,18 +3243,18 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,19,0,0,2019-01-06,0,0,210,DE,31,2,Small Segment Accounting Sage 50 Handwerk,Google AdWords,0,0,Small Segment Accounting Sage 50 Handwerk,59.41,69.1
 0,SEARCH,67,0,1,2019-01-06,0,1,3678,DE,116,2,Medium Segment Financial Category,Google AdWords,0,0,Medium Segment Financial Category,206.18,239.73
 0,SEARCH,43,0,2,2019-01-06,0,2,916,DE,95,2,Small Segment Accounting Sage 50cloud,Google AdWords,0,0,Small Segment Accounting Sage 50cloud,46.55,54.1
-0,DISPLAY,0,0,0,2019-01-06,0,0,12548,ES,15,2,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,99.80374476,116.050866
+0,DISPLAY,0,0,0,2019-01-06,0,0,12548,ES,15,2,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,99.80374476,116.050866
 0,DISPLAY,0,0,0,2019-01-06,0,0,0,ES,6,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
 0,DISPLAY,8,0,0,2019-01-06,0,0,3250,ES,11,0,Small Business,Expansion,0,0,Small Business,23.7612668,27.62938
 0,DISPLAY,223,0,0,2019-01-06,0,0,0,ES,149,0,Small Business,PMPSoftonic,0,0,Small Business,76.712,89.2
 0,DISPLAY,0,0,0,2019-01-06,0,0,2,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.01376,0.016
 0,DISPLAY,0,0,0,2019-01-06,0,0,0,ES,4,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,10,0,1,2019-01-06,0,1,4631,ES,72,1,Small Business,Pymes y Autonomos,0,0,Small Business,23.89596,27.786
-0,DISPLAY,844,0,0,2019-01-06,0,0,251131,ES,746,2,Small Business,RTBNEO ,0,0,Small Business,562.1244393,653.633069
-0,DISPLAY,0,0,0,2019-01-06,0,0,0,ES,34,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-06,0,0,0,ES,21,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,844,0,0,2019-01-06,0,0,251131,ES,746,2,Small Business,RTBNEOÂ ,0,0,Small Business,562.1244393,653.633069
+0,DISPLAY,0,0,0,2019-01-06,0,0,0,ES,34,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-06,0,0,0,ES,21,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-06,0,0,0,ES,2,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,393,1,1,2019-01-06,0,0,392253,ES,640,0,Other,RTBNEO ,0,0,Other,366.8809201,426.605721
+0,DISPLAY,393,1,1,2019-01-06,0,0,392253,ES,640,0,Other,RTBNEOÂ ,0,0,Other,366.8809201,426.605721
 0,DISPLAY,12,0,2,2019-01-06,2,0,11630,ES,5157,2,Accountants,Supercontable,0,0,Accountants,24.70752996,28.729686
 0,SEARCH,5,0,0,2019-01-06,0,0,20,IE,9,0,C4L 50C,Google AdWords,0,0,C4L 50C,11.77,11.77
 0,SEARCH,0,0,0,2019-01-06,0,0,12,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -3315,10 +3315,10 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,0,0,0,2019-01-07,0,0,21,MY,2,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
 0,SEARCH,6,0,0,2019-01-07,0,0,107,MY,6,0,People Generic,Google AdWords,0,0,People Generic,3.92,7
 0,SEARCH,0,0,0,2019-01-07,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,205,0,0,2019-01-07,0,0,47178,ES,249,0,Accountants,RTBNEO ,0,0,Accountants,72.268251,84.03285
+0,DISPLAY,205,0,0,2019-01-07,0,0,47178,ES,249,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.268251,84.03285
 0,DISPLAY,34,0,0,2019-01-07,0,0,37241,ES,17130,2,Accountants,Supercontable,0,0,Accountants,78.93535714,91.785299
-0,DISPLAY,0,0,0,2019-01-07,0,0,1,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-07,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-07,0,0,1,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-07,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,11,4,Brand,Supercontable,0,0,Brand,0,0
 0,DISPLAY,0,0,0,2019-01-07,0,0,26,ES,0,0,Enterprise Management,PremiumChannelbiz,0,0,Enterprise Management,1.0062,1.17
 0,SEARCH,346,0,0,2019-01-07,0,0,19005,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,39.62,660.29
@@ -3419,7 +3419,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-07,0,0,51,ES,0,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,1.7544,2.04
 0,DISPLAY,134,0,0,2019-01-07,0,0,52383,ES,318,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,143.7126444,167.107726
 0,DISPLAY,0,0,0,2019-01-07,0,0,936,ES,1,0,Medium Business,IDG Tech Network,0,0,Medium Business,95.8465872,111.44952
-0,DISPLAY,18,0,0,2019-01-07,0,0,8453,ES,19,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,36.3479,42.265
+0,DISPLAY,18,0,0,2019-01-07,0,0,8453,ES,19,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,36.3479,42.265
 0,DISPLAY,0,0,0,2019-01-07,0,0,225,ES,1,0,Medium Business,Silicon News Spain,0,0,Medium Business,8.7075,10.125
 0,DISPLAY,2,0,0,2019-01-07,0,0,2323,ES,27,0,Medium Business,Tic Beat,0,0,Medium Business,23.97336,27.876
 0,SEARCH,24,0,0,2019-01-07,0,0,640,AUS,36,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,71.95,121.95
@@ -3524,7 +3524,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-07,0,0,56,DE,2,1,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-07,0,0,0,DE,0,0,Brand,fuer-gruender.de,0,0,Brand,0,0
 0,DISPLAY,1,0,0,2019-01-07,0,0,0,DE,0,0,Brand,vice.com/de_at,0,0,Brand,0,0
-0,DISPLAY,1,0,1,2019-01-07,0,1,0,DE,84,2,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,1,2019-01-07,0,1,0,DE,84,2,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,8,0,0,2019-01-07,0,0,0,DE,16,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,2,0,0,2019-01-07,0,0,2235,DE,108,1,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,9.5924787,11.154045
 0,DISPLAY,39,0,0,2019-01-07,0,0,135433,DE,138,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,67.58397204,78.586014
@@ -3831,19 +3831,19 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,86,0,5,2019-01-07,1,4,5210,DE,119,0,Medium Segment Financial Category,Google AdWords,0,0,Medium Segment Financial Category,223.68,260.11
 0,DISPLAY,7,0,0,2019-01-07,0,0,6081,ES,23,1,Medium Business,Infobolsa,0,0,Medium Business,26.1483,30.405
 0,DISPLAY,229,0,0,2019-01-07,0,0,86947,ES,334,2,Medium Business,RTB@NEO,0,0,Medium Business,216.6052468,251.866566
-0,DISPLAY,1,0,0,2019-01-07,0,0,10887,ES,56,4,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,86.59255462,100.689017
+0,DISPLAY,1,0,0,2019-01-07,0,0,10887,ES,56,4,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,86.59255462,100.689017
 0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,23,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
 0,DISPLAY,11,0,0,2019-01-07,0,0,4349,ES,30,0,Small Business,Expansion,0,0,Small Business,31.79623046,36.972361
 0,DISPLAY,0,0,0,2019-01-07,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,16,0,0,2019-01-07,0,0,8114,ES,288,0,Small Business,Pymes y Autonomos,0,0,Small Business,41.86824,48.684
 0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,63,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,1,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,43,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,43,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,27,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,42,2,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-07,0,0,0,ES,42,2,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,10,1,1,2019-01-07,0,0,0,ES,14,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
-0,DISPLAY,295,1,7,2019-01-07,0,6,418522,ES,1707,11,Other,RTBNEO ,0,0,Other,376.0719043,437.292912
-0,DISPLAY,817,1,5,2019-01-07,0,4,257742,ES,1297,2,Small Business,RTBNEO ,0,0,Small Business,570.3402515,663.186339
+0,DISPLAY,295,1,7,2019-01-07,0,6,418522,ES,1707,11,Other,RTBNEOÂ ,0,0,Other,376.0719043,437.292912
+0,DISPLAY,817,1,5,2019-01-07,0,4,257742,ES,1297,2,Small Business,RTBNEOÂ ,0,0,Small Business,570.3402515,663.186339
 0,DISPLAY,200,2,2,2019-01-07,0,0,0,ES,156,0,Small Business,PMPSoftonic,0,0,Small Business,68.8,80
 0,SEARCH,21,0,2,2019-01-07,0,2,121,IE,132,0,C4L 50C,Google AdWords,0,0,C4L 50C,33,33
 0,SEARCH,0,0,0,2019-01-07,0,0,29,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -3897,7 +3897,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,4,0,0,2019-01-08,0,0,31,MY,1,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,3.16,5.64
 0,SEARCH,1,0,0,2019-01-08,0,0,57,MY,4,0,People Generic,Google AdWords,0,0,People Generic,0.79,1.4
 0,SEARCH,0,0,0,2019-01-08,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,0,0,0,2019-01-08,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-08,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,19,0,0,2019-01-08,0,0,0,ES,30,6,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,9,0,Brand,Supercontable,0,0,Brand,0,0
 0,DISPLAY,0,0,0,2019-01-08,0,0,727,ES,0,0,Enterprise Management,PremiumChannelbiz,0,0,Enterprise Management,28.1349,32.715
@@ -3998,7 +3998,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,134,0,0,2019-01-08,0,0,54141,ES,358,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,146.1119394,169.897604
 0,DISPLAY,3,0,0,2019-01-08,0,0,2475,ES,11,0,Medium Business,IDG Tech Network,0,0,Medium Business,253.440495,294.69825
 0,DISPLAY,4,0,0,2019-01-08,0,0,7909,ES,24,0,Medium Business,Infobolsa,0,0,Medium Business,34.0087,39.545
-0,DISPLAY,12,0,0,2019-01-08,0,0,5674,ES,34,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,24.3982,28.37
+0,DISPLAY,12,0,0,2019-01-08,0,0,5674,ES,34,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,24.3982,28.37
 0,DISPLAY,0,0,0,2019-01-08,0,0,1337,ES,4,0,Medium Business,Silicon News Spain,0,0,Medium Business,51.7419,60.165
 0,SEARCH,20,0,0,2019-01-08,0,0,667,AUS,58,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,20.5,34.76
 0,SEARCH,0,0,0,2019-01-08,0,0,0,AUS,16,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0,0
@@ -4100,7 +4100,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,28,0,16,2019-01-08,0,16,49254,CA,232,0,Small Business,Invite Media,0,0,Small Business,214.5327272,268.165909
 0,DISPLAY,0,0,0,2019-01-08,0,0,0,DE,0,0,Accounting,Programmatic Buying,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-08,0,0,58,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,0,0,2,2019-01-08,0,2,0,DE,56,1,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,2,2019-01-08,0,2,0,DE,56,1,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,10,0,0,2019-01-08,0,0,0,DE,23,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,5,0,0,2019-01-08,0,0,2266,DE,136,1,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,9.57877116,11.138106
 0,SEARCH,25,0,0,2019-01-08,0,0,617,ES,42,0,Awareness,Bing Ads,0,0,Awareness,9.92,11.54
@@ -4381,7 +4381,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,0,1,1,2019-01-08,0,0,0,DE,7,0,Small Segment Campaign Payroll,Bing Ads,0,0,Small Segment Campaign Payroll,0,0
 0,SEARCH,95,1,2,2019-01-08,0,1,11492,DE,762,0,Brand,Google AdWords,0,0,Brand,115.75,134.58
 0,SEARCH,113,1,1,2019-01-08,0,0,1861,DE,351,3,Small Segment Accounting Sage 50cloud,Google AdWords,0,0,Small Segment Accounting Sage 50cloud,149.07,173.32
-0,DISPLAY,4,0,0,2019-01-08,0,0,4687,ES,54,1,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,37.2792585,43.347975
+0,DISPLAY,4,0,0,2019-01-08,0,0,4687,ES,54,1,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,37.2792585,43.347975
 0,DISPLAY,2,0,0,2019-01-08,0,0,2916,ES,32,1,Medium Business,Tic Beat,0,0,Medium Business,30.09312,34.992
 0,DISPLAY,194,0,0,2019-01-08,0,0,90128,ES,505,2,Medium Business,RTB@NEO,0,0,Medium Business,215.3126298,250.363523
 0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,64,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
@@ -4391,13 +4391,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,154,2,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,17,0,0,2019-01-08,0,0,11451,ES,493,3,Small Business,Pymes y Autonomos,0,0,Small Business,59.08716,68.706
 0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,1,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,77,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,77,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,53,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,62,2,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,146,4,4,2019-01-08,0,0,51790,ES,764,5,Accountants,RTBNEO ,0,0,Accountants,72.41940288,84.208608
+0,DISPLAY,0,0,0,2019-01-08,0,0,0,ES,62,2,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,146,4,4,2019-01-08,0,0,51790,ES,764,5,Accountants,RTBNEOÂ ,0,0,Accountants,72.41940288,84.208608
 0,DISPLAY,96,4,4,2019-01-08,0,0,62845,ES,33960,13,Accountants,Supercontable,0,0,Accountants,155.0272163,180.264205
-0,DISPLAY,803,4,7,2019-01-08,0,3,263771,ES,1998,1,Small Business,RTBNEO ,0,0,Small Business,578.7604875,672.977311
-0,DISPLAY,277,8,14,2019-01-08,0,6,442592,ES,3159,6,Other,RTBNEO ,0,0,Other,376.0837147,437.306645
+0,DISPLAY,803,4,7,2019-01-08,0,3,263771,ES,1998,1,Small Business,RTBNEOÂ ,0,0,Small Business,578.7604875,672.977311
+0,DISPLAY,277,8,14,2019-01-08,0,6,442592,ES,3159,6,Other,RTBNEOÂ ,0,0,Other,376.0837147,437.306645
 0,SEARCH,29,0,2,2019-01-08,0,2,271,IE,103,0,C4L 50C,Google AdWords,0,0,C4L 50C,58.28,58.28
 0,SEARCH,1,0,0,2019-01-08,0,0,25,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,1.36,1.36
 0,SEARCH,5,0,0,2019-01-08,0,0,369,IE,19,0,Enterprise,Google AdWords,0,0,Enterprise,6.9,6.9
@@ -4552,8 +4552,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,4,0,0,2019-01-09,0,0,3382,ES,2,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,116.3408,135.28
 0,DISPLAY,196,0,2,2019-01-09,0,2,61753,ES,386,12,Enterprise Management,RTB@NEO,0,0,Enterprise Management,179.4195975,208.627439
 0,DISPLAY,3,0,0,2019-01-09,0,0,2599,ES,10,0,Medium Business,IDG Tech Network,0,0,Medium Business,266.1381198,309.46293
-0,DISPLAY,4,0,0,2019-01-09,0,0,4467,ES,53,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,35.52943284,41.313294
-0,DISPLAY,7,0,0,2019-01-09,0,0,6762,ES,16,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,29.0766,33.81
+0,DISPLAY,4,0,0,2019-01-09,0,0,4467,ES,53,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,35.52943284,41.313294
+0,DISPLAY,7,0,0,2019-01-09,0,0,6762,ES,16,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,29.0766,33.81
 0,DISPLAY,1,0,0,2019-01-09,0,0,1773,ES,2,0,Medium Business,Silicon News Spain,0,0,Medium Business,68.6151,79.785
 0,SEARCH,19,0,0,2019-01-09,0,0,637,AUS,35,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,25.84,43.8
 0,SEARCH,0,0,0,2019-01-09,0,0,0,AUS,,0,People Brand,Google AdWords,0,0,People Brand,0,0
@@ -4660,7 +4660,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,28,0,12,2019-01-09,0,12,51769,CA,247,0,Small Business,Invite Media,0,0,Small Business,236.5762296,295.720287
 0,DISPLAY,4,0,0,2019-01-09,0,0,0,DE,0,0,Accounting,fuer-gruender.de,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-09,0,0,66,DE,6,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,0,0,0,2019-01-09,0,0,0,DE,63,1,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-09,0,0,0,DE,63,1,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,15,0,0,2019-01-09,0,0,0,DE,10,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-09,0,0,3701,DE,232,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.0589741,17.510435
 0,SEARCH,20,0,0,2019-01-09,0,0,526,ES,50,0,Accounting,Bing Ads,0,0,Accounting,8.66,10.09
@@ -4950,13 +4950,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,16,0,0,2019-01-09,0,0,11597,ES,510,0,Small Business,Pymes y Autonomos,0,0,Small Business,59.84052,69.582
 0,DISPLAY,0,0,0,2019-01-09,0,0,0,ES,124,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,0,0,0,2019-01-09,0,0,0,ES,2,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-09,0,0,0,ES,64,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-09,0,0,0,ES,64,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-09,0,0,0,ES,22,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-09,0,0,0,ES,88,1,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,283,1,1,2019-01-09,0,0,46783,ES,452,0,Accountants,RTBNEO ,0,0,Accountants,72.38581128,84.169548
-0,DISPLAY,828,2,8,2019-01-09,0,6,259799,ES,1871,5,Small Business,RTBNEO ,0,0,Small Business,583.4623096,678.444546
+0,DISPLAY,0,0,0,2019-01-09,0,0,0,ES,88,1,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,283,1,1,2019-01-09,0,0,46783,ES,452,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.38581128,84.169548
+0,DISPLAY,828,2,8,2019-01-09,0,6,259799,ES,1871,5,Small Business,RTBNEOÂ ,0,0,Small Business,583.4623096,678.444546
 0,DISPLAY,231,10,11,2019-01-09,0,1,61500,ES,29393,10,Accountants,Supercontable,0,0,Accountants,136.5751681,158.808335
-0,DISPLAY,253,4,10,2019-01-09,0,6,428419,ES,3148,16,Other,RTBNEO ,1,0,Other,376.1040692,437.330313
+0,DISPLAY,253,4,10,2019-01-09,0,6,428419,ES,3148,16,Other,RTBNEOÂ ,1,0,Other,376.1040692,437.330313
 0,SEARCH,0,0,0,2019-01-09,0,0,15,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,6,0,0,2019-01-09,0,0,339,IE,21,0,Enterprise,Google AdWords,0,0,Enterprise,11.52,11.52
 0,SEARCH,536,4,15,2019-01-10,0,11,2903,FR,1082,6,Brand,Google AdWords,1,0,Brand,367.6,427.44
@@ -5008,7 +5008,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,1,0,0,2019-01-10,0,0,52,MY,2,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0.77,1.38
 0,SEARCH,3,0,0,2019-01-10,0,0,97,MY,2,0,People Generic,Google AdWords,0,0,People Generic,2.57,4.58
 0,SEARCH,0,0,0,2019-01-10,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,0,0,0,2019-01-10,0,0,4,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-10,0,0,4,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,10,0,1,2019-01-10,0,1,0,ES,11,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-10,0,0,0,ES,12,0,Brand,Supercontable,0,0,Brand,0,0
 0,DISPLAY,1,0,0,2019-01-10,0,0,0,ES,1,0,Business Management Solution,Inbound@Outbrain,0,0,Business Management Solution,0,0
@@ -5116,8 +5116,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,3,0,0,2019-01-10,0,0,1833,ES,5,0,Enterprise Management,PremiumDirectorTic,0,0,Enterprise Management,86.7009,100.815
 0,DISPLAY,2,0,0,2019-01-10,0,0,4393,ES,10,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,151.1192,175.72
 0,DISPLAY,157,0,0,2019-01-10,0,0,54696,ES,402,2,Enterprise Management,RTB@NEO,0,0,Enterprise Management,154.8773811,180.089978
-0,DISPLAY,0,0,0,2019-01-10,0,0,4964,ES,40,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,39.4824495,45.909825
-0,DISPLAY,10,0,0,2019-01-10,0,0,6186,ES,14,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,26.5998,30.93
+0,DISPLAY,0,0,0,2019-01-10,0,0,4964,ES,40,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,39.4824495,45.909825
+0,DISPLAY,10,0,0,2019-01-10,0,0,6186,ES,14,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,26.5998,30.93
 0,DISPLAY,0,0,0,2019-01-10,0,0,1617,ES,0,0,Medium Business,Silicon News Spain,0,0,Medium Business,62.5779,72.765
 0,DISPLAY,0,0,0,2019-01-10,0,0,2807,ES,49,0,Medium Business,Tic Beat,0,0,Medium Business,28.96824,33.684
 0,SEARCH,22,0,0,2019-01-10,0,0,588,AUS,59,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,49.25,83.47
@@ -5213,7 +5213,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,26,0,8,2019-01-10,0,8,47868,CA,264,0,Small Business,Invite Media,0,0,Small Business,247.8919792,309.864974
 0,DISPLAY,0,0,0,2019-01-10,0,0,66,DE,3,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,4,0,0,2019-01-10,0,0,0,DE,0,0,Brand,fuer-gruender.de,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-10,0,0,0,DE,57,1,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-10,0,0,0,DE,57,1,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,12,0,0,2019-01-10,0,0,0,DE,22,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-10,0,0,3753,DE,300,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,16.03213032,18.642012
 0,SEARCH,2,0,0,2019-01-10,0,0,59,ES,2,0,Awareness,Google AdWords,0,0,Awareness,1.27,1.48
@@ -5510,13 +5510,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,205,0,0,2019-01-10,0,0,0,ES,156,1,Small Business,PMPSoftonic,0,0,Small Business,70.52,82
 0,DISPLAY,16,0,0,2019-01-10,0,0,10986,ES,388,2,Small Business,Pymes y Autonomos,0,0,Small Business,56.68776,65.916
 0,DISPLAY,0,0,0,2019-01-10,0,0,0,ES,2,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-10,0,0,0,ES,81,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-10,0,0,0,ES,95,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-10,0,0,0,ES,81,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-10,0,0,0,ES,95,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-10,0,0,0,ES,31,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,870,2,3,2019-01-10,0,1,260906,ES,1694,9,Small Business,RTBNEO ,0,0,Small Business,583.4969117,678.484781
+0,DISPLAY,870,2,3,2019-01-10,0,1,260906,ES,1694,9,Small Business,RTBNEOÂ ,0,0,Small Business,583.4969117,678.484781
 0,DISPLAY,111,3,5,2019-01-10,0,2,58004,ES,27069,7,Accountants,Supercontable,0,0,Accountants,122.3535717,142.271595
-0,DISPLAY,152,5,6,2019-01-10,0,1,52087,ES,510,2,Accountants,RTBNEO ,0,0,Accountants,72.55238554,84.363239
-0,DISPLAY,228,6,10,2019-01-10,0,4,421734,ES,2913,12,Other,RTBNEO ,0,0,Other,375.856464,437.0424
+0,DISPLAY,152,5,6,2019-01-10,0,1,52087,ES,510,2,Accountants,RTBNEOÂ ,0,0,Accountants,72.55238554,84.363239
+0,DISPLAY,228,6,10,2019-01-10,0,4,421734,ES,2913,12,Other,RTBNEOÂ ,0,0,Other,375.856464,437.0424
 0,SEARCH,0,0,0,2019-01-10,0,0,22,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,7,0,0,2019-01-10,0,0,325,IE,9,0,Enterprise,Google AdWords,0,0,Enterprise,15.59,15.59
 0,SEARCH,477,2,8,2019-01-11,0,6,2716,FR,962,5,Brand,Google AdWords,0,0,Brand,337.71,392.7
@@ -5569,8 +5569,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,2,0,0,2019-01-11,0,0,17,MY,2,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,1.07,1.91
 0,SEARCH,1,0,0,2019-01-11,0,0,64,MY,2,0,People Generic,Google AdWords,0,0,People Generic,0.42,0.74
 0,SEARCH,0,0,0,2019-01-11,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,390,0,0,2019-01-11,0,0,45713,ES,345,1,Accountants,RTBNEO ,0,0,Accountants,72.34960528,84.127448
-0,DISPLAY,0,0,0,2019-01-11,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,390,0,0,2019-01-11,0,0,45713,ES,345,1,Accountants,RTBNEOÂ ,0,0,Accountants,72.34960528,84.127448
+0,DISPLAY,0,0,0,2019-01-11,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,15,0,0,2019-01-11,0,0,0,ES,17,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-11,0,0,0,ES,4,0,Brand,Supercontable,0,0,Brand,0,0
 0,DISPLAY,0,0,0,2019-01-11,0,0,773,ES,0,0,Enterprise Management,PremiumChannelbiz,0,0,Enterprise Management,29.9151,34.785
@@ -5677,8 +5677,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,156,0,0,2019-01-11,0,0,58628,ES,331,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,164.1823798,190.909744
 0,DISPLAY,0,0,0,2019-01-11,0,0,2125,ES,22,0,Medium Business,IDG Tech Network,0,0,Medium Business,217.600425,253.02375
 0,DISPLAY,3,0,0,2019-01-11,0,0,6261,ES,19,0,Medium Business,Infobolsa,0,0,Medium Business,26.9223,31.305
-0,DISPLAY,0,0,0,2019-01-11,0,0,4470,ES,30,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,35.5532944,41.34104
-0,DISPLAY,7,0,0,2019-01-11,0,0,5532,ES,13,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,23.7876,27.66
+0,DISPLAY,0,0,0,2019-01-11,0,0,4470,ES,30,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,35.5532944,41.34104
+0,DISPLAY,7,0,0,2019-01-11,0,0,5532,ES,13,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,23.7876,27.66
 0,DISPLAY,1,0,0,2019-01-11,0,0,1283,ES,2,0,Medium Business,Silicon News Spain,0,0,Medium Business,49.6521,57.735
 0,DISPLAY,1,0,0,2019-01-11,0,0,2575,ES,15,0,Medium Business,Tic Beat,0,0,Medium Business,26.574,30.9
 0,SEARCH,19,0,0,2019-01-11,0,0,566,AUS,34,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,38.67,65.57
@@ -5781,7 +5781,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,27,0,20,2019-01-11,0,20,62449,CA,3,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,174.2912664,217.864083
 0,DISPLAY,0,0,0,2019-01-11,0,0,36,DE,1,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-11,0,0,0,DE,0,0,Brand,vice.com/de_at,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-11,0,0,0,DE,43,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-11,0,0,0,DE,43,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,9,0,2,2019-01-11,0,2,0,DE,19,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,40,0,0,2019-01-11,0,0,103142,DE,96,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,97.24880602,113.080007
 0,SEARCH,1,0,0,2019-01-11,0,0,37,ES,5,0,Awareness,Google AdWords,0,0,Awareness,1.94,2.25
@@ -6066,14 +6066,14 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-11,0,0,2,ES,2,0,Small Business,PremiumExponential,0,0,Small Business,0.01376,0.016
 0,DISPLAY,0,0,0,2019-01-11,0,0,0,ES,79,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,3,0,1,2019-01-11,0,1,4630,ES,39,1,Small Business,Expansion,0,0,Small Business,33.85066554,39.361239
-0,DISPLAY,1004,0,1,2019-01-11,0,1,254628,ES,1565,2,Small Business,RTBNEO ,0,0,Small Business,583.5981371,678.602485
+0,DISPLAY,1004,0,1,2019-01-11,0,1,254628,ES,1565,2,Small Business,RTBNEOÂ ,0,0,Small Business,583.5981371,678.602485
 0,DISPLAY,10,0,1,2019-01-11,0,1,9671,ES,413,3,Small Business,Pymes y Autonomos,0,0,Small Business,49.90236,58.026
-0,DISPLAY,0,0,0,2019-01-11,0,0,0,ES,43,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-11,0,0,0,ES,79,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-11,0,0,0,ES,43,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-11,0,0,0,ES,79,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-11,0,0,0,ES,24,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,258,1,1,2019-01-11,0,0,94701,ES,373,1,Medium Business,RTB@NEO,0,0,Medium Business,256.4552861,298.203821
 0,DISPLAY,73,3,6,2019-01-11,0,3,46295,ES,21427,7,Accountants,Supercontable,0,0,Accountants,97.14138514,112.955099
-0,DISPLAY,294,5,11,2019-01-11,1,5,435514,ES,2398,4,Other,RTBNEO ,0,0,Other,376.2244176,437.470253
+0,DISPLAY,294,5,11,2019-01-11,1,5,435514,ES,2398,4,Other,RTBNEOÂ ,0,0,Other,376.2244176,437.470253
 0,SEARCH,20,0,0,2019-01-11,0,0,126,IE,65,0,C4L 50C,Google AdWords,0,0,C4L 50C,45.09,45.09
 0,SEARCH,0,0,0,2019-01-11,0,0,11,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,3,0,0,2019-01-11,0,0,148,IE,,0,Enterprise,Google AdWords,0,0,Enterprise,5.49,5.49
@@ -6128,8 +6128,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,1,0,0,2019-01-12,0,0,14,MY,4,0,People Generic,Google AdWords,0,0,People Generic,0.28,0.5
 0,SEARCH,0,0,0,2019-01-12,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
 0,DISPLAY,20,0,0,2019-01-12,0,0,19196,ES,8343,0,Accountants,Supercontable,0,0,Accountants,40.39205344,46.967504
-0,DISPLAY,192,0,1,2019-01-12,0,1,48653,ES,158,0,Accountants,RTBNEO ,0,0,Accountants,72.2569979,84.019765
-0,DISPLAY,0,0,0,2019-01-12,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,192,0,1,2019-01-12,0,1,48653,ES,158,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.2569979,84.019765
+0,DISPLAY,0,0,0,2019-01-12,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,20,0,0,2019-01-12,0,0,0,ES,14,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-12,0,0,574,ES,0,0,Enterprise Management,PremiumChannelbiz,0,0,Enterprise Management,22.2138,25.83
 0,SEARCH,1,0,0,2019-01-12,0,0,46,EA,,0,Financials,Google AdWords,0,0,Financials,0.09,1.53
@@ -6236,8 +6236,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,236,0,0,2019-01-12,0,0,61211,ES,198,9,Enterprise Management,RTB@NEO,0,0,Enterprise Management,179.8200032,209.093027
 0,DISPLAY,1,0,0,2019-01-12,0,0,687,ES,4,0,Medium Business,IDG Tech Network,0,0,Medium Business,70.3489374,81.80109
 0,DISPLAY,1,0,0,2019-01-12,0,0,1280,ES,0,0,Medium Business,Infobolsa,0,0,Medium Business,5.504,6.4
-0,DISPLAY,0,0,0,2019-01-12,0,0,1909,ES,14,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,15.1837214,17.65549
-0,DISPLAY,17,0,0,2019-01-12,0,0,3900,ES,17,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,16.77,19.5
+0,DISPLAY,0,0,0,2019-01-12,0,0,1909,ES,14,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,15.1837214,17.65549
+0,DISPLAY,17,0,0,2019-01-12,0,0,3900,ES,17,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,16.77,19.5
 0,DISPLAY,0,0,0,2019-01-12,0,0,1119,ES,2,0,Medium Business,Silicon News Spain,0,0,Medium Business,43.3053,50.355
 0,DISPLAY,0,0,0,2019-01-12,0,0,2558,ES,5,0,Medium Business,Tic Beat,0,0,Medium Business,26.39856,30.696
 0,SEARCH,25,0,0,2019-01-12,0,0,364,AUS,24,0,Brand,Google AdWords,0,0,Brand,22.57,38.26
@@ -6335,7 +6335,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-12,0,0,52,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-12,0,0,0,DE,1,0,Brand,Cover-PR,0,0,Brand,0,0
 0,DISPLAY,1,0,0,2019-01-12,0,0,0,DE,1,0,Brand,chip.de,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-12,0,0,0,DE,29,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-12,0,0,0,DE,29,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,6,0,0,2019-01-12,0,0,0,DE,5,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,5,0,0,2019-01-12,0,0,3155,DE,36,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,16.0228922,18.63127
 0,DISPLAY,47,0,0,2019-01-12,0,0,99142,DE,61,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,97.2899252,113.12782
@@ -6623,11 +6623,11 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-12,0,0,3,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.02064,0.024
 0,DISPLAY,0,0,0,2019-01-12,0,0,0,ES,18,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,8,0,1,2019-01-12,0,1,5616,ES,161,1,Small Business,Pymes y Autonomos,0,0,Small Business,28.97856,33.696
-0,DISPLAY,1184,0,0,2019-01-12,0,0,251692,ES,906,4,Small Business,RTBNEO ,0,0,Small Business,577.4057578,671.402044
-0,DISPLAY,0,0,0,2019-01-12,0,0,0,ES,18,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-12,0,0,0,ES,24,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,1184,0,0,2019-01-12,0,0,251692,ES,906,4,Small Business,RTBNEOÂ ,0,0,Small Business,577.4057578,671.402044
+0,DISPLAY,0,0,0,2019-01-12,0,0,0,ES,18,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-12,0,0,0,ES,24,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-12,0,0,0,ES,3,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,438,1,2,2019-01-12,0,1,406668,ES,874,5,Other,RTBNEO ,0,0,Other,368.5121663,428.502519
+0,DISPLAY,438,1,2,2019-01-12,0,1,406668,ES,874,5,Other,RTBNEOÂ ,0,0,Other,368.5121663,428.502519
 0,SEARCH,6,0,0,2019-01-12,0,0,26,IE,30,0,C4L 50C,Google AdWords,0,0,C4L 50C,5.86,5.86
 0,SEARCH,0,0,0,2019-01-12,0,0,16,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,1,0,0,2019-01-12,0,0,135,IE,1,0,Enterprise,Google AdWords,0,0,Enterprise,1.35,1.35
@@ -6680,9 +6680,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,2,0,0,2019-01-13,0,0,29,MY,3,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,0.75,1.34
 0,SEARCH,5,0,0,2019-01-13,0,0,101,MY,4,0,People Generic,Google AdWords,0,0,People Generic,3.05,5.45
 0,SEARCH,0,0,0,2019-01-13,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,339,0,0,2019-01-13,0,0,47321,ES,180,5,Accountants,RTBNEO ,0,0,Accountants,72.22067752,83.977532
-0,DISPLAY,0,0,0,2019-01-13,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-13,0,0,1,ES,0,0,Accounting,EMMSunMediaES ,0,0,Accounting,0,0
+0,DISPLAY,339,0,0,2019-01-13,0,0,47321,ES,180,5,Accountants,RTBNEOÂ ,0,0,Accountants,72.22067752,83.977532
+0,DISPLAY,0,0,0,2019-01-13,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-13,0,0,1,ES,0,0,Accounting,EMMSunMediaESÂ ,0,0,Accounting,0,0
 0,DISPLAY,8,0,0,2019-01-13,0,0,0,ES,13,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,1,0,0,2019-01-13,0,0,0,ES,36,0,Brand,Supercontable,0,0,Brand,0,0
 0,DISPLAY,0,0,0,2019-01-13,0,0,2,ES,0,0,Business Management Solution,EMM@NetMediaEurope,0,0,Business Management Solution,0,0
@@ -6788,8 +6788,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,218,0,0,2019-01-13,0,0,61673,ES,183,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,179.7198777,208.976602
 0,DISPLAY,1,0,0,2019-01-13,0,0,631,ES,0,0,Medium Business,IDG Tech Network,0,0,Medium Business,64.6145262,75.13317
 0,DISPLAY,0,0,0,2019-01-13,0,0,1737,ES,5,0,Medium Business,Infobolsa,0,0,Medium Business,7.4691,8.685
-0,DISPLAY,1,0,0,2019-01-13,0,0,2072,ES,19,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,16.4801843,19.163005
-0,DISPLAY,11,0,0,2019-01-13,0,0,4254,ES,22,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,18.2922,21.27
+0,DISPLAY,1,0,0,2019-01-13,0,0,2072,ES,19,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,16.4801843,19.163005
+0,DISPLAY,11,0,0,2019-01-13,0,0,4254,ES,22,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,18.2922,21.27
 0,DISPLAY,0,0,0,2019-01-13,0,0,1341,ES,1,0,Medium Business,Silicon News Spain,0,0,Medium Business,51.8967,60.345
 0,DISPLAY,1,0,0,2019-01-13,0,0,2668,ES,9,0,Medium Business,Tic Beat,0,0,Medium Business,27.53376,32.016
 0,SEARCH,26,0,0,2019-01-13,0,0,415,AUS,47,0,Brand,Google AdWords,0,0,Brand,39.5,66.96
@@ -6887,7 +6887,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,2,0,0,2019-01-13,0,0,0,CA,0,0,Visa 50Cloud,YouTube.com,0,0,Visa 50Cloud,0,0
 0,DISPLAY,46,0,34,2019-01-13,0,34,76682,CA,3,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,201.6691712,252.086464
 0,DISPLAY,0,0,0,2019-01-13,0,0,39,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,1,0,0,2019-01-13,0,0,0,DE,17,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-13,0,0,0,DE,17,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,5,0,0,2019-01-13,0,0,0,DE,2,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-13,0,0,3166,DE,25,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,16.02356644,18.632054
 0,DISPLAY,54,0,0,2019-01-13,0,0,98621,DE,63,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,97.0573382,112.85737
@@ -7170,11 +7170,11 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-13,0,0,2,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.01376,0.016
 0,DISPLAY,0,0,0,2019-01-13,0,0,0,ES,24,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,8,0,0,2019-01-13,0,0,5938,ES,129,3,Small Business,Pymes y Autonomos,0,0,Small Business,30.64008,35.628
-0,DISPLAY,0,0,0,2019-01-13,0,0,0,ES,55,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-13,0,0,0,ES,19,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-13,0,0,0,ES,55,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-13,0,0,0,ES,19,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-13,0,0,0,ES,4,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,482,1,5,2019-01-13,0,4,398852,ES,1049,8,Other,RTBNEO ,0,0,Other,375.2637683,436.353219
-0,DISPLAY,1178,1,1,2019-01-13,0,0,253126,ES,889,0,Small Business,RTBNEO ,0,0,Small Business,577.6816132,671.722806
+0,DISPLAY,482,1,5,2019-01-13,0,4,398852,ES,1049,8,Other,RTBNEOÂ ,0,0,Other,375.2637683,436.353219
+0,DISPLAY,1178,1,1,2019-01-13,0,0,253126,ES,889,0,Small Business,RTBNEOÂ ,0,0,Small Business,577.6816132,671.722806
 0,DISPLAY,23,2,3,2019-01-13,0,1,22971,ES,10337,7,Accountants,Supercontable,0,0,Accountants,48.29880486,56.161401
 0,SEARCH,6,0,1,2019-01-13,0,1,39,IE,22,0,C4L 50C,Google AdWords,0,0,C4L 50C,12.27,12.27
 0,SEARCH,3,0,5,2019-01-13,0,5,8,IE,8,0,C4L 50C,Bing Ads,0,0,C4L 50C,4.78,4.78
@@ -7237,9 +7237,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,3,0,0,2019-01-14,0,0,40,MY,3,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,2.43,4.34
 0,SEARCH,2,0,0,2019-01-14,0,0,89,MY,2,0,People Generic,Google AdWords,0,0,People Generic,1.66,2.95
 0,SEARCH,0,0,0,2019-01-14,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,367,0,0,2019-01-14,0,0,48824,ES,652,0,Accountants,RTBNEO ,0,0,Accountants,72.30360216,84.073956
-0,DISPLAY,0,0,0,2019-01-14,0,0,6,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-14,0,0,2,ES,0,0,Accounting,EMMDatacentric ,0,0,Accounting,0,0
+0,DISPLAY,367,0,0,2019-01-14,0,0,48824,ES,652,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.30360216,84.073956
+0,DISPLAY,0,0,0,2019-01-14,0,0,6,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-14,0,0,2,ES,0,0,Accounting,EMMDatacentricÂ ,0,0,Accounting,0,0
 0,DISPLAY,10,0,0,2019-01-14,0,0,0,ES,12,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,14,0,Brand,Supercontable,0,0,Brand,0,0
 0,DISPLAY,0,0,0,2019-01-14,0,0,420,ES,0,0,Enterprise Management,PremiumChannelbiz,0,0,Enterprise Management,16.254,18.9
@@ -7345,7 +7345,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,193,0,0,2019-01-14,0,0,64374,ES,488,5,Enterprise Management,RTB@NEO,0,0,Enterprise Management,179.8500284,209.12794
 0,DISPLAY,1,0,0,2019-01-14,0,0,2581,ES,33,0,Medium Business,IDG Tech Network,0,0,Medium Business,264.2949162,307.31967
 0,DISPLAY,4,0,0,2019-01-14,0,0,6278,ES,32,0,Medium Business,Infobolsa,0,0,Medium Business,26.9954,31.39
-0,DISPLAY,2,0,0,2019-01-14,0,0,5244,ES,67,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,41.70950206,48.499421
+0,DISPLAY,2,0,0,2019-01-14,0,0,5244,ES,67,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,41.70950206,48.499421
 0,DISPLAY,313,0,0,2019-01-14,0,0,99349,ES,781,0,Medium Business,RTB@NEO,0,0,Medium Business,264.9304037,308.058609
 0,DISPLAY,1,0,0,2019-01-14,0,0,1291,ES,3,0,Medium Business,Silicon News Spain,0,0,Medium Business,49.9617,58.095
 0,DISPLAY,0,0,0,2019-01-14,0,0,2652,ES,24,0,Medium Business,Tic Beat,0,0,Medium Business,27.36864,31.824
@@ -7464,7 +7464,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,1,0,0,2019-01-14,0,0,0,CA,0,0,Visa 50Cloud,YouTube.com,0,0,Visa 50Cloud,0,0
 0,DISPLAY,62,0,26,2019-01-14,0,26,104951,CA,12,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,269.9804848,337.475606
 0,DISPLAY,0,0,0,2019-01-14,0,0,47,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,0,0,0,2019-01-14,0,0,0,DE,40,1,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-14,0,0,0,DE,40,1,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,5,0,0,2019-01-14,0,0,0,DE,9,1,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-14,0,0,3639,DE,279,1,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,16.09816972,18.718802
 0,DISPLAY,26,0,0,2019-01-14,0,0,96029,DE,118,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,97.48352582,113.352937
@@ -7768,18 +7768,18 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,19,1,1,2019-01-14,0,0,245,DE,64,2,Small Segment Accounting Sage 50 Handwerk,Google AdWords,0,0,Small Segment Accounting Sage 50 Handwerk,61.31,71.27
 0,SEARCH,133,0,1,2019-01-14,1,0,10072,DE,85,0,Medium Segment Financial Category,Bing Ads,0,0,Medium Segment Financial Category,50.98,59.28
 0,SEARCH,113,0,2,2019-01-14,1,1,2011,DE,192,3,Small Segment Accounting Sage 50cloud,Google AdWords,1,0,Small Segment Accounting Sage 50cloud,115.9,134.77
-0,DISPLAY,18,0,0,2019-01-14,0,0,8718,ES,33,1,Medium Business,PremiumSosfeES ,0,0,Medium Business,37.4874,43.59
+0,DISPLAY,18,0,0,2019-01-14,0,0,8718,ES,33,1,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,37.4874,43.59
 0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,25,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
 0,DISPLAY,7,0,0,2019-01-14,0,0,4609,ES,78,0,Small Business,Expansion,0,0,Small Business,33.69713146,39.182711
 0,DISPLAY,75,0,0,2019-01-14,0,0,0,ES,62,0,Small Business,PMPSoftonic,0,0,Small Business,25.8,30
 0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,2,0,Small Business,PremiumExponential,0,0,Small Business,0,0
 0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,139,1,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,17,0,0,2019-01-14,0,0,12560,ES,621,3,Small Business,Pymes y Autonomos,0,0,Small Business,64.8096,75.36
-0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,175,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,119,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,175,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,119,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-14,0,0,0,ES,47,2,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,273,1,8,2019-01-14,0,7,426452,ES,3307,6,Other,RTBNEO ,0,0,Other,376.0329799,437.247651
-0,DISPLAY,1283,1,8,2019-01-14,0,7,252731,ES,2433,5,Small Business,RTBNEO ,0,0,Small Business,577.632539,671.665743
+0,DISPLAY,273,1,8,2019-01-14,0,7,426452,ES,3307,6,Other,RTBNEOÂ ,0,0,Other,376.0329799,437.247651
+0,DISPLAY,1283,1,8,2019-01-14,0,7,252731,ES,2433,5,Small Business,RTBNEOÂ ,0,0,Small Business,577.632539,671.665743
 0,DISPLAY,56,3,3,2019-01-14,0,0,57288,ES,25971,12,Accountants,Supercontable,0,0,Accountants,119.0931242,138.480377
 0,SEARCH,28,0,3,2019-01-14,0,3,175,IE,120,0,C4L 50C,Google AdWords,0,0,C4L 50C,50.74,50.74
 0,SEARCH,0,0,0,2019-01-14,0,0,14,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -7830,7 +7830,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,1,0,0,2019-01-15,0,0,80,MY,2,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,1.28,2.28
 0,SEARCH,5,0,0,2019-01-15,0,0,151,MY,8,0,People Generic,Google AdWords,0,0,People Generic,2.45,4.38
 0,SEARCH,0,0,0,2019-01-15,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,271,0,0,2019-01-15,0,0,46194,ES,934,3,Accountants,RTBNEO ,0,0,Accountants,72.22830572,83.986402
+0,DISPLAY,271,0,0,2019-01-15,0,0,46194,ES,934,3,Accountants,RTBNEOÂ ,0,0,Accountants,72.22830572,83.986402
 0,DISPLAY,17,0,0,2019-01-15,0,0,0,ES,16,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-15,0,0,0,ES,12,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,6,0,0,2019-01-15,0,0,71,EA,,0,Financials,Google AdWords,0,0,Financials,7.81,130.12
@@ -7936,8 +7936,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,169,0,1,2019-01-15,0,1,62623,ES,621,12,Enterprise Management,RTB@NEO,0,0,Enterprise Management,179.9852264,209.285147
 0,DISPLAY,1,0,0,2019-01-15,0,0,2436,ES,15,0,Medium Business,IDG Tech Network,0,0,Medium Business,249.4468872,290.05452
 0,DISPLAY,3,0,0,2019-01-15,0,0,4897,ES,28,0,Medium Business,Infobolsa,0,0,Medium Business,21.0571,24.485
-0,DISPLAY,8,0,0,2019-01-15,0,0,4713,ES,66,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,37.48605668,43.588438
-0,DISPLAY,6,0,0,2019-01-15,0,0,7225,ES,26,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,31.0675,36.125
+0,DISPLAY,8,0,0,2019-01-15,0,0,4713,ES,66,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,37.48605668,43.588438
+0,DISPLAY,6,0,0,2019-01-15,0,0,7225,ES,26,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,31.0675,36.125
 0,DISPLAY,0,0,0,2019-01-15,0,0,1361,ES,3,0,Medium Business,Silicon News Spain,0,0,Medium Business,52.6707,61.245
 0,DISPLAY,1,0,0,2019-01-15,0,0,2616,ES,23,0,Medium Business,Tic Beat,0,0,Medium Business,26.99712,31.392
 0,SEARCH,28,0,0,2019-01-15,0,0,348,AUS,71,0,Brand,Google AdWords,0,0,Brand,27.88,47.25
@@ -8046,7 +8046,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,30,0,8,2019-01-15,0,8,93950,CA,19,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,269.3947736,336.743467
 0,DISPLAY,1,0,0,2019-01-15,0,0,64,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-15,0,0,0,DE,0,0,Brand,vice.com/de_at,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-15,0,0,0,DE,36,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-15,0,0,0,DE,36,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,9,0,0,2019-01-15,0,0,0,DE,8,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,4,0,2,2019-01-15,0,2,3429,DE,214,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,16.07686924,18.694034
 0,SEARCH,15,0,0,2019-01-15,0,0,560,ES,28,0,Awareness,Bing Ads,0,0,Awareness,4.52,5.25
@@ -8338,11 +8338,11 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-15,0,0,0,ES,169,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,20,0,0,2019-01-15,0,0,12764,ES,689,2,Small Business,Pymes y Autonomos,0,0,Small Business,65.86224,76.584
 0,DISPLAY,0,0,0,2019-01-15,0,0,0,ES,2,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-15,0,0,0,ES,190,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-15,0,0,0,ES,190,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-15,0,0,0,ES,67,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,1154,1,4,2019-01-15,0,3,256571,ES,3042,1,Small Business,RTBNEO ,0,0,Small Business,584.2010848,679.303587
-0,DISPLAY,0,1,1,2019-01-15,0,0,0,ES,131,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,221,14,19,2019-01-15,0,5,410968,ES,3634,45,Other,RTBNEO ,0,0,Other,375.7969305,436.973175
+0,DISPLAY,1154,1,4,2019-01-15,0,3,256571,ES,3042,1,Small Business,RTBNEOÂ ,0,0,Small Business,584.2010848,679.303587
+0,DISPLAY,0,1,1,2019-01-15,0,0,0,ES,131,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,221,14,19,2019-01-15,0,5,410968,ES,3634,45,Other,RTBNEOÂ ,0,0,Other,375.7969305,436.973175
 0,DISPLAY,77,1,1,2019-01-15,0,0,65481,ES,34011,3,Accountants,Supercontable,1,0,Accountants,160.3610275,186.466311
 0,SEARCH,35,0,3,2019-01-15,0,3,256,IE,186,0,C4L 50C,Google AdWords,0,0,C4L 50C,54.76,54.76
 0,SEARCH,2,0,0,2019-01-15,0,0,28,IE,2,0,Enterprise,Bing Ads,0,0,Enterprise,0.95,0.95
@@ -8391,10 +8391,10 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,5,0,0,2019-01-16,0,0,120,MY,1,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,3.79,6.78
 0,SEARCH,11,0,0,2019-01-16,0,0,243,MY,13,0,People Generic,Google AdWords,0,0,People Generic,6.54,11.69
 0,SEARCH,0,0,0,2019-01-16,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
-0,DISPLAY,319,0,1,2019-01-16,0,1,45349,ES,464,4,Accountants,RTBNEO ,0,0,Accountants,72.19617182,83.949037
-0,DISPLAY,0,0,0,2019-01-16,0,0,1,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-16,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-16,0,0,2,ES,0,0,Accounting,EMMSunMediaES ,0,0,Accounting,0,0
+0,DISPLAY,319,0,1,2019-01-16,0,1,45349,ES,464,4,Accountants,RTBNEOÂ ,0,0,Accountants,72.19617182,83.949037
+0,DISPLAY,0,0,0,2019-01-16,0,0,1,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-16,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-16,0,0,2,ES,0,0,Accounting,EMMSunMediaESÂ ,0,0,Accounting,0,0
 0,DISPLAY,9,0,0,2019-01-16,0,0,0,ES,13,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,SEARCH,2,0,0,2019-01-16,0,0,78,EA,,0,Financials,Google AdWords,0,0,Financials,2.33,38.82
 0,SEARCH,402,0,0,2019-01-16,0,0,19323,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,38.96,649.18
@@ -8501,8 +8501,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,1,0,0,2019-01-16,0,0,2944,ES,5,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,101.2736,117.76
 0,DISPLAY,0,0,0,2019-01-16,0,0,953,ES,6,0,Medium Business,IDG Tech Network,0,0,Medium Business,97.5873906,113.47371
 0,DISPLAY,1,0,0,2019-01-16,0,0,6443,ES,15,0,Medium Business,Infobolsa,0,0,Medium Business,27.7049,32.215
-0,DISPLAY,5,0,0,2019-01-16,0,0,5078,ES,45,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,40.38917846,46.964161
-0,DISPLAY,4,0,0,2019-01-16,0,0,5878,ES,9,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,25.2754,29.39
+0,DISPLAY,5,0,0,2019-01-16,0,0,5078,ES,45,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,40.38917846,46.964161
+0,DISPLAY,4,0,0,2019-01-16,0,0,5878,ES,9,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,25.2754,29.39
 0,DISPLAY,0,0,0,2019-01-16,0,0,1572,ES,5,0,Medium Business,Silicon News Spain,0,0,Medium Business,60.8364,70.74
 0,SEARCH,52,0,0,2019-01-16,0,0,475,AUS,90,0,Brand,Google AdWords,0,0,Brand,51.57,87.39
 0,SEARCH,17,0,0,2019-01-16,0,0,740,AUS,39,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,50.16,85.02
@@ -8602,8 +8602,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,27,0,6,2019-01-16,0,6,47901,CA,182,0,Small Business,Invite Media,0,0,Small Business,193.2842504,241.605313
 0,DISPLAY,30,0,1,2019-01-16,0,1,95513,CA,28,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,268.4095384,335.511923
 0,DISPLAY,0,0,0,2019-01-16,0,0,49,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,1,0,0,2019-01-16,0,0,0,DE,0,0,Brand,Gründerküche,0,0,Brand,0,0
-0,DISPLAY,1,0,1,2019-01-16,0,1,0,DE,31,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-16,0,0,0,DE,0,0,Brand,GrÃ¼nderkÃ¼che,0,0,Brand,0,0
+0,DISPLAY,1,0,1,2019-01-16,0,1,0,DE,31,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,3,0,0,2019-01-16,0,0,0,DE,2,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,SEARCH,24,0,0,2019-01-16,0,0,524,ES,28,0,Awareness,Bing Ads,0,0,Awareness,8.75,10.17
 0,SEARCH,0,0,0,2019-01-16,0,0,49,ES,3,0,Awareness,Google AdWords,0,0,Awareness,0,0
@@ -8898,14 +8898,14 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-16,0,0,0,ES,122,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,3,0,0,2019-01-16,0,0,3738,ES,69,1,Small Business,Expansion,0,0,Small Business,27.32911268,31.778038
 0,DISPLAY,11,0,1,2019-01-16,0,1,10797,ES,538,4,Small Business,Pymes y Autonomos,0,0,Small Business,55.71252,64.782
-0,DISPLAY,1255,0,4,2019-01-16,0,4,252518,ES,1878,6,Small Business,RTBNEO ,0,0,Small Business,584.1215245,679.211075
+0,DISPLAY,1255,0,4,2019-01-16,0,4,252518,ES,1878,6,Small Business,RTBNEOÂ ,0,0,Small Business,584.1215245,679.211075
 0,DISPLAY,0,0,0,2019-01-16,0,0,0,ES,4,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-16,0,0,0,ES,69,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-16,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-16,0,0,0,ES,69,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-16,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-16,0,0,0,ES,39,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,192,1,1,2019-01-16,0,0,62244,ES,420,5,Enterprise Management,RTB@NEO,0,0,Enterprise Management,179.9731735,209.271132
 0,DISPLAY,89,2,2,2019-01-16,0,0,71202,ES,32716,5,Accountants,Supercontable,0,0,Accountants,153.2633228,178.213166
-0,DISPLAY,238,6,15,2019-01-16,0,9,403731,ES,2895,18,Other,RTBNEO ,0,0,Other,375.8697458,437.057844
+0,DISPLAY,238,6,15,2019-01-16,0,9,403731,ES,2895,18,Other,RTBNEOÂ ,0,0,Other,375.8697458,437.057844
 0,SEARCH,24,0,1,2019-01-16,0,1,177,IE,367,0,C4L 50C,Google AdWords,0,0,C4L 50C,20.48,20.48
 0,SEARCH,1,0,0,2019-01-16,0,0,13,IE,1,0,Enterprise,Bing Ads,0,0,Enterprise,1.58,1.58
 0,SEARCH,10,0,0,2019-01-16,0,0,271,IE,16,0,Enterprise,Google AdWords,0,0,Enterprise,15.3,15.3
@@ -8957,8 +8957,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,27,0,0,2019-01-17,0,0,539,MY,41,0,People Generic,Google AdWords,0,0,People Generic,15.33,27.37
 0,SEARCH,0,0,0,2019-01-17,0,0,0,MY,,0,Unassigned,Google AdWords,0,0,Unassigned,0,0
 0,DISPLAY,0,0,0,2019-01-17,0,0,1,ES,0,0,Accountants,EMM@infoempleo,0,0,Accountants,0,0
-0,DISPLAY,271,0,0,2019-01-17,0,0,45968,ES,389,10,Accountants,RTBNEO ,0,0,Accountants,72.14727996,83.892186
-0,DISPLAY,0,0,0,2019-01-17,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,271,0,0,2019-01-17,0,0,45968,ES,389,10,Accountants,RTBNEOÂ ,0,0,Accountants,72.14727996,83.892186
+0,DISPLAY,0,0,0,2019-01-17,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,12,0,0,2019-01-17,0,0,0,ES,11,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,8,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,5,0,0,2019-01-17,0,0,96,EA,,0,Financials,Google AdWords,0,0,Financials,8.37,139.65
@@ -9070,7 +9070,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,2,0,0,2019-01-17,0,0,3150,ES,2,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,108.36,126
 0,DISPLAY,201,0,0,2019-01-17,0,0,62739,ES,368,6,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.0846175,209.400718
 0,DISPLAY,1,0,0,2019-01-17,0,0,6326,ES,22,0,Medium Business,Infobolsa,0,0,Medium Business,27.2018,31.63
-0,DISPLAY,4,0,0,2019-01-17,0,0,5064,ES,47,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,40.27782566,46.834681
+0,DISPLAY,4,0,0,2019-01-17,0,0,5064,ES,47,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,40.27782566,46.834681
 0,DISPLAY,0,0,0,2019-01-17,0,0,1590,ES,0,0,Medium Business,Silicon News Spain,0,0,Medium Business,61.533,71.55
 0,SEARCH,46,0,0,2019-01-17,0,0,538,AUS,113,0,Brand,Google AdWords,0,0,Brand,44.83,75.97
 0,SEARCH,11,0,0,2019-01-17,0,0,686,AUS,27,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,60.4,102.38
@@ -9178,7 +9178,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-17,0,0,46,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-17,0,0,0,DE,0,0,Brand,Cover-PR,0,0,Brand,0,0
 0,DISPLAY,2,0,0,2019-01-17,0,0,0,DE,0,0,Brand,fuer-gruender.de,0,0,Brand,0,0
-0,DISPLAY,1,0,0,2019-01-17,0,0,0,DE,32,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-17,0,0,0,DE,32,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,5,0,0,2019-01-17,0,0,0,DE,5,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-17,0,0,3375,DE,142,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.9689444,18.56854
 0,SEARCH,23,0,0,2019-01-17,0,0,549,ES,33,0,Awareness,Bing Ads,0,0,Awareness,8.84,10.28
@@ -9456,7 +9456,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,118,0,5,2019-01-17,1,4,2301,DE,251,0,Small Segment Campaign Payroll,Google AdWords,0,0,Small Segment Campaign Payroll,321.4,373.74
 0,SEARCH,4128,0,8,2019-01-17,1,7,68527,DE,407,0,Small Segment Payroll Sage Business Cloud Lohnabrechnung,Google AdWords,0,0,Small Segment Payroll Sage Business Cloud Lohnabrechnung,865.96,1006.91
 0,DISPLAY,0,0,0,2019-01-17,0,0,2648,ES,22,0,Medium Business,Tic Beat,0,0,Medium Business,27.32736,31.776
-0,DISPLAY,7,0,1,2019-01-17,0,1,5630,ES,16,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,24.209,28.15
+0,DISPLAY,7,0,1,2019-01-17,0,1,5630,ES,16,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,24.209,28.15
 0,DISPLAY,287,0,0,2019-01-17,0,0,99385,ES,489,1,Medium Business,RTB@NEO,0,0,Medium Business,265.7666789,309.031022
 0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,14,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
 0,DISPLAY,7,0,0,2019-01-17,0,0,5470,ES,38,0,Small Business,Expansion,0,0,Small Business,39.99203992,46.502372
@@ -9464,13 +9464,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-17,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,11,0,0,2019-01-17,0,0,8438,ES,458,0,Small Business,Pymes y Autonomos,0,0,Small Business,43.54008,50.628
 0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,97,1,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,49,1,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,49,1,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-17,0,0,0,ES,32,1,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,74,1,1,2019-01-17,0,0,64205,ES,28640,13,Accountants,Supercontable,0,0,Accountants,134.7335718,156.666944
-0,DISPLAY,1228,1,2,2019-01-17,0,1,252860,ES,1745,16,Small Business,RTBNEO ,0,0,Small Business,583.7352271,678.761892
+0,DISPLAY,1228,1,2,2019-01-17,0,1,252860,ES,1745,16,Small Business,RTBNEOÂ ,0,0,Small Business,583.7352271,678.761892
 0,DISPLAY,1,3,3,2019-01-17,0,0,894,ES,19,0,Medium Business,IDG Tech Network,0,0,Medium Business,91.5457788,106.44858
-0,DISPLAY,255,8,11,2019-01-17,0,3,400367,ES,2913,13,Other,RTBNEO ,0,0,Other,375.9332207,437.131652
+0,DISPLAY,255,8,11,2019-01-17,0,3,400367,ES,2913,13,Other,RTBNEOÂ ,0,0,Other,375.9332207,437.131652
 0,SEARCH,3,0,1,2019-01-17,0,1,22,IE,9,0,C4L 50C,Bing Ads,0,0,C4L 50C,3.01,3.01
 0,SEARCH,37,0,5,2019-01-17,0,5,244,IE,174,0,C4L 50C,Google AdWords,0,0,C4L 50C,42.74,42.74
 0,SEARCH,0,0,0,2019-01-17,0,0,9,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -9526,9 +9526,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,39,0,0,2019-01-18,0,0,219,MY,29,0,Brand Brand,Google AdWords,0,0,Brand Brand,4.05,7.24
 0,SEARCH,10,0,0,2019-01-18,0,0,169,MY,7,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,6.34,11.32
 0,SEARCH,20,0,0,2019-01-18,0,0,437,MY,34,0,People Generic,Google AdWords,0,0,People Generic,19.16,34.2
-0,DISPLAY,284,0,0,2019-01-18,0,0,42663,ES,300,0,Accountants,RTBNEO ,0,0,Accountants,72.23307528,83.991948
-0,DISPLAY,0,0,0,2019-01-18,0,0,2,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-18,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,284,0,0,2019-01-18,0,0,42663,ES,300,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.23307528,83.991948
+0,DISPLAY,0,0,0,2019-01-18,0,0,2,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-18,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,17,0,0,2019-01-18,0,0,0,ES,15,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,2,0,0,2019-01-18,0,0,0,ES,0,0,Business Management Solution,DAA Contenidos,0,0,Business Management Solution,0,0
 0,SEARCH,2,0,0,2019-01-18,0,0,84,EA,,0,Financials,Google AdWords,0,0,Financials,2.8,46.76
@@ -9636,8 +9636,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,4,0,0,2019-01-18,0,0,3167,ES,28,1,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,108.9448,126.68
 0,DISPLAY,1,0,0,2019-01-18,0,0,803,ES,13,0,Medium Business,IDG Tech Network,0,0,Medium Business,82.2273606,95.61321
 0,DISPLAY,1,0,0,2019-01-18,0,0,6660,ES,7,0,Medium Business,Infobolsa,0,0,Medium Business,28.638,33.3
-0,DISPLAY,1,0,0,2019-01-18,0,0,3981,ES,65,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,31.66390656,36.818496
-0,DISPLAY,5,0,0,2019-01-18,0,0,5966,ES,8,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,25.6538,29.83
+0,DISPLAY,1,0,0,2019-01-18,0,0,3981,ES,65,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,31.66390656,36.818496
+0,DISPLAY,5,0,0,2019-01-18,0,0,5966,ES,8,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,25.6538,29.83
 0,DISPLAY,1,0,0,2019-01-18,0,0,1381,ES,1,0,Medium Business,Silicon News Spain,0,0,Medium Business,53.4447,62.145
 0,SEARCH,49,0,0,2019-01-18,0,0,429,AUS,71,0,Brand,Google AdWords,0,0,Brand,51.97,88.09
 0,SEARCH,9,0,0,2019-01-18,0,0,450,AUS,11,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,36.7,62.19
@@ -9742,7 +9742,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,3,0,0,2019-01-18,0,0,0,CA,2,0,Visa 50Cloud,YouTube.com,0,0,Visa 50Cloud,0,0
 0,DISPLAY,36,0,1,2019-01-18,0,1,101993,CA,35,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,266.3028296,332.878537
 0,DISPLAY,1,0,0,2019-01-18,0,0,49,DE,0,1,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,0,0,1,2019-01-18,0,1,0,DE,37,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,1,2019-01-18,0,1,0,DE,37,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,5,0,0,2019-01-18,0,0,0,DE,4,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-18,0,0,3493,DE,109,1,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.96511396,18.564086
 0,DISPLAY,38,0,0,2019-01-18,0,0,92416,DE,98,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,96.79991182,112.558037
@@ -10026,13 +10026,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,82,0,0,2019-01-18,0,0,0,ES,72,0,Small Business,PMPSoftonic,0,0,Small Business,28.208,32.8
 0,DISPLAY,6,0,0,2019-01-18,0,0,7107,ES,340,0,Small Business,Pymes y Autonomos,0,0,Small Business,36.67212,42.642
 0,DISPLAY,0,0,0,2019-01-18,0,0,0,ES,68,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,1251,0,1,2019-01-18,0,1,247753,ES,1542,3,Small Business,RTBNEO ,0,0,Small Business,584.0030552,679.07332
-0,DISPLAY,0,0,0,2019-01-18,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-18,0,0,0,ES,40,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,1251,0,1,2019-01-18,0,1,247753,ES,1542,3,Small Business,RTBNEOÂ ,0,0,Small Business,584.0030552,679.07332
+0,DISPLAY,0,0,0,2019-01-18,0,0,0,ES,60,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-18,0,0,0,ES,40,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-18,0,0,0,ES,23,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,46,1,2,2019-01-18,0,1,49875,ES,22572,4,Accountants,Supercontable,1,0,Accountants,103.5517237,120.408981
 0,DISPLAY,312,0,1,2019-01-18,1,0,97992,ES,410,2,Medium Business,RTB@NEO,0,0,Medium Business,265.8609289,309.140615
-0,DISPLAY,222,2,8,2019-01-18,1,5,388272,ES,2196,5,Other,RTBNEO ,0,0,Other,375.6018799,436.746372
+0,DISPLAY,222,2,8,2019-01-18,1,5,388272,ES,2196,5,Other,RTBNEOÂ ,0,0,Other,375.6018799,436.746372
 0,SEARCH,17,0,0,2019-01-18,0,0,224,IE,98,0,C4L 50C,Google AdWords,0,0,C4L 50C,11.78,11.78
 0,SEARCH,0,0,0,2019-01-18,0,0,22,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,2,0,0,2019-01-18,0,0,144,IE,7,0,Enterprise,Google AdWords,0,0,Enterprise,2.1,2.1
@@ -10082,9 +10082,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,11,0,0,2019-01-19,0,0,63,MY,12,0,Brand Brand,Google AdWords,0,0,Brand Brand,1.25,2.22
 0,SEARCH,3,0,0,2019-01-19,0,0,89,MY,2,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,2.05,3.66
 0,SEARCH,20,0,0,2019-01-19,0,0,286,MY,26,0,People Generic,Google AdWords,0,0,People Generic,14.29,25.51
-0,DISPLAY,236,0,0,2019-01-19,0,0,46572,ES,152,0,Accountants,RTBNEO ,0,0,Accountants,72.22441938,83.981883
+0,DISPLAY,236,0,0,2019-01-19,0,0,46572,ES,152,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.22441938,83.981883
 0,DISPLAY,15,0,0,2019-01-19,0,0,21014,ES,9182,0,Accountants,Supercontable,0,0,Accountants,43.84478144,50.982304
-0,DISPLAY,0,0,0,2019-01-19,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-19,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,8,0,0,2019-01-19,0,0,0,ES,11,4,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,SEARCH,1,0,0,2019-01-19,0,0,82,EA,,0,Financials,Google AdWords,0,0,Financials,5.95,99.16
 0,SEARCH,320,0,0,2019-01-19,0,0,15756,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,36.65,610.94
@@ -10193,8 +10193,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,228,0,2,2019-01-19,0,2,62104,ES,198,2,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.1197665,209.441589
 0,DISPLAY,0,0,0,2019-01-19,0,0,210,ES,1,0,Medium Business,IDG Tech Network,0,0,Medium Business,21.504042,25.0047
 0,DISPLAY,2,0,0,2019-01-19,0,0,1649,ES,6,0,Medium Business,Infobolsa,0,0,Medium Business,7.0907,8.245
-0,DISPLAY,0,0,0,2019-01-19,0,0,1749,ES,21,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,13.91112006,16.175721
-0,DISPLAY,9,0,0,2019-01-19,0,0,4704,ES,5,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,20.2272,23.52
+0,DISPLAY,0,0,0,2019-01-19,0,0,1749,ES,21,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,13.91112006,16.175721
+0,DISPLAY,9,0,0,2019-01-19,0,0,4704,ES,5,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,20.2272,23.52
 0,DISPLAY,0,0,0,2019-01-19,0,0,1132,ES,0,0,Medium Business,Silicon News Spain,0,0,Medium Business,43.8084,50.94
 0,SEARCH,17,0,0,2019-01-19,0,0,381,AUS,13,0,Brand,Google AdWords,0,0,Brand,25.63,43.44
 0,SEARCH,2,0,0,2019-01-19,0,0,113,AUS,5,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,10.2,17.28
@@ -10293,7 +10293,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,3,0,0,2019-01-19,0,0,0,CA,1,0,Visa 50Cloud,YouTube.com,0,0,Visa 50Cloud,0,0
 0,DISPLAY,42,0,1,2019-01-19,0,1,84564,CA,19,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,198.228232,247.78529
 0,DISPLAY,0,0,0,2019-01-19,0,0,52,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,1,0,0,2019-01-19,0,0,0,DE,9,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-19,0,0,0,DE,9,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,5,0,0,2019-01-19,0,0,0,DE,8,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,3,0,0,2019-01-19,0,0,3396,DE,61,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.9841062,18.58617
 0,DISPLAY,50,0,0,2019-01-19,0,0,90329,DE,55,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,96.31774852,111.997382
@@ -10568,17 +10568,17 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,52,0,2,2019-01-19,0,2,2138,DE,72,2,Medium Segment Financial Sage100cloud,Google AdWords,0,0,Medium Segment Financial Sage100cloud,230.3,267.79
 0,SEARCH,53,0,1,2019-01-19,1,0,2357,DE,36,0,Small Segment Accounting Category,Google AdWords,0,0,Small Segment Accounting Category,68.78,80
 0,DISPLAY,0,0,0,2019-01-19,0,0,2750,ES,9,0,Medium Business,Tic Beat,0,0,Medium Business,28.38,33
-0,DISPLAY,441,0,1,2019-01-19,0,1,387825,ES,844,3,Other,RTBNEO ,0,0,Other,363.7909435,423.012725
-0,DISPLAY,0,0,0,2019-01-19,0,0,2,ES,0,0,Sage ContaPlus,EMMDatacentric ,0,0,Sage ContaPlus,0,0
+0,DISPLAY,441,0,1,2019-01-19,0,1,387825,ES,844,3,Other,RTBNEOÂ ,0,0,Other,363.7909435,423.012725
+0,DISPLAY,0,0,0,2019-01-19,0,0,2,ES,0,0,Sage ContaPlus,EMMDatacentricÂ ,0,0,Sage ContaPlus,0,0
 0,DISPLAY,0,0,0,2019-01-19,0,0,0,ES,3,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
 0,DISPLAY,3,0,0,2019-01-19,0,0,2375,ES,9,0,Small Business,Expansion,0,0,Small Business,17.36400114,20.190699
 0,DISPLAY,67,0,0,2019-01-19,0,0,0,ES,69,0,Small Business,PMPSoftonic,0,0,Small Business,23.048,26.8
 0,DISPLAY,0,0,0,2019-01-19,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,6,0,0,2019-01-19,0,0,3651,ES,126,0,Small Business,Pymes y Autonomos,0,0,Small Business,18.83916,21.906
 0,DISPLAY,0,0,0,2019-01-19,0,0,0,ES,16,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,1465,0,0,2019-01-19,0,0,248248,ES,918,1,Small Business,RTBNEO ,0,0,Small Business,577.0765387,671.019231
-0,DISPLAY,0,0,0,2019-01-19,0,0,0,ES,9,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-19,0,0,0,ES,17,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,1465,0,0,2019-01-19,0,0,248248,ES,918,1,Small Business,RTBNEOÂ ,0,0,Small Business,577.0765387,671.019231
+0,DISPLAY,0,0,0,2019-01-19,0,0,0,ES,9,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-19,0,0,0,ES,17,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-19,0,0,0,ES,10,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,364,0,1,2019-01-19,1,0,99083,ES,300,1,Medium Business,RTB@NEO,0,0,Medium Business,268.1854754,311.843576
 0,SEARCH,1,0,2,2019-01-19,0,2,7,IE,3,0,C4L 50C,Bing Ads,0,0,C4L 50C,1.46,1.46
@@ -10735,8 +10735,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,257,0,2,2019-01-20,0,2,62730,ES,227,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.0788598,209.394023
 0,DISPLAY,0,0,0,2019-01-20,0,0,751,ES,0,0,Medium Business,IDG Tech Network,0,0,Medium Business,76.9025502,89.42157
 0,DISPLAY,1,0,0,2019-01-20,0,0,1654,ES,7,0,Medium Business,Infobolsa,0,0,Medium Business,7.1122,8.27
-0,DISPLAY,1,0,0,2019-01-20,0,0,2019,ES,8,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,16.05863466,18.672831
-0,DISPLAY,19,0,0,2019-01-20,0,0,4674,ES,14,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,20.0982,23.37
+0,DISPLAY,1,0,0,2019-01-20,0,0,2019,ES,8,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,16.05863466,18.672831
+0,DISPLAY,19,0,0,2019-01-20,0,0,4674,ES,14,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,20.0982,23.37
 0,DISPLAY,0,0,0,2019-01-20,0,0,1231,ES,0,0,Medium Business,Silicon News Spain,0,0,Medium Business,47.6397,55.395
 0,SEARCH,1,0,0,2019-01-20,0,0,117,AUS,7,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,5.13,8.7
 0,SEARCH,24,0,0,2019-01-20,0,0,1443,AUS,35,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,148.23,251.24
@@ -10829,7 +10829,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,24,0,2,2019-01-20,0,2,82990,CA,18,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,189.3528064,236.691008
 0,DISPLAY,1,0,0,2019-01-20,0,0,31,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-20,0,0,0,DE,0,0,Brand,vice.com/de_at,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-20,0,0,0,DE,20,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-20,0,0,0,DE,20,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,8,0,0,2019-01-20,0,0,0,DE,6,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-20,0,0,3352,DE,63,1,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.93919614,18.533949
 0,DISPLAY,52,0,0,2019-01-20,0,0,91984,DE,69,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,96.35811692,112.044322
@@ -11113,13 +11113,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-20,0,0,2,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.01376,0.016
 0,DISPLAY,0,0,0,2019-01-20,0,0,0,ES,37,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,14,0,0,2019-01-20,0,0,7343,ES,168,1,Small Business,Pymes y Autonomos,0,0,Small Business,37.88988,44.058
-0,DISPLAY,1507,0,0,2019-01-20,0,0,249008,ES,1028,2,Small Business,RTBNEO ,0,0,Small Business,578.2927902,672.433477
-0,DISPLAY,0,0,0,2019-01-20,0,0,0,ES,12,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-20,0,0,0,ES,15,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,1507,0,0,2019-01-20,0,0,249008,ES,1028,2,Small Business,RTBNEOÂ ,0,0,Small Business,578.2927902,672.433477
+0,DISPLAY,0,0,0,2019-01-20,0,0,0,ES,12,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-20,0,0,0,ES,15,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-20,0,0,0,ES,7,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,249,0,1,2019-01-20,1,0,45511,ES,168,2,Accountants,RTBNEO ,0,0,Accountants,72.32014512,84.093192
+0,DISPLAY,249,0,1,2019-01-20,1,0,45511,ES,168,2,Accountants,RTBNEOÂ ,0,0,Accountants,72.32014512,84.093192
 0,DISPLAY,297,0,2,2019-01-20,1,1,99505,ES,277,1,Medium Business,RTB@NEO,0,0,Medium Business,268.1865486,311.844824
-0,DISPLAY,409,0,4,2019-01-20,2,2,388263,ES,881,4,Other,RTBNEO ,0,0,Other,375.9671701,437.171128
+0,DISPLAY,409,0,4,2019-01-20,2,2,388263,ES,881,4,Other,RTBNEOÂ ,0,0,Other,375.9671701,437.171128
 0,DISPLAY,39,3,16,2019-01-20,13,0,25747,ES,11381,13,Accountants,Supercontable,0,0,Accountants,53.9731657,62.759495
 0,SEARCH,8,0,1,2019-01-20,0,1,42,IE,18,0,C4L 50C,Google AdWords,0,0,C4L 50C,7.35,7.35
 0,SEARCH,0,0,0,2019-01-20,0,0,19,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -11179,8 +11179,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,12,0,0,2019-01-21,0,0,140,MY,8,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,6.83,12.19
 0,SEARCH,14,0,0,2019-01-21,0,0,382,MY,26,0,People Generic,Google AdWords,0,0,People Generic,8.84,15.79
 0,DISPLAY,0,0,0,2019-01-21,0,0,2,ES,0,0,Accountants,EMM@infoempleo,0,0,Accountants,0,0
-0,DISPLAY,243,0,0,2019-01-21,0,0,47448,ES,366,0,Accountants,RTBNEO ,0,0,Accountants,72.3480633,84.125655
-0,DISPLAY,0,0,0,2019-01-21,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,243,0,0,2019-01-21,0,0,47448,ES,366,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.3480633,84.125655
+0,DISPLAY,0,0,0,2019-01-21,0,0,2,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,22,0,0,2019-01-21,0,0,0,ES,21,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-21,0,0,0,ES,14,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,7,0,0,2019-01-21,0,0,69,EA,,0,Financials,Google AdWords,0,0,Financials,7.66,127.69
@@ -11283,8 +11283,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-21,0,0,626,ES,2,0,Enterprise Management,PremiumDirectorTic,0,0,Enterprise Management,29.6098,34.43
 0,DISPLAY,1,0,0,2019-01-21,0,0,2282,ES,16,0,Medium Business,IDG Tech Network,0,0,Medium Business,233.6772564,271.71774
 0,DISPLAY,3,0,0,2019-01-21,0,0,5944,ES,10,0,Medium Business,Infobolsa,0,0,Medium Business,25.5592,29.72
-0,DISPLAY,3,0,0,2019-01-21,0,0,4956,ES,62,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,39.41881982,45.835837
-0,DISPLAY,14,0,0,2019-01-21,0,0,8181,ES,26,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,35.1783,40.905
+0,DISPLAY,3,0,0,2019-01-21,0,0,4956,ES,62,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,39.41881982,45.835837
+0,DISPLAY,14,0,0,2019-01-21,0,0,8181,ES,26,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,35.1783,40.905
 0,DISPLAY,300,0,0,2019-01-21,0,0,99808,ES,384,0,Medium Business,RTB@NEO,0,0,Medium Business,268.2069822,311.868584
 0,DISPLAY,3,0,0,2019-01-21,0,0,1224,ES,3,0,Medium Business,Silicon News Spain,0,0,Medium Business,47.3688,55.08
 0,SEARCH,50,0,0,2019-01-21,0,0,408,AUS,91,0,Brand,Google AdWords,0,0,Brand,61.22,103.78
@@ -11392,7 +11392,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,9,1,2,2019-01-21,0,1,18878,CA,34,0,Enterprise Segment,Invite Media,0,0,Enterprise Segment,101.446744,126.80843
 0,DISPLAY,0,0,0,2019-01-21,0,0,57,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,2,0,0,2019-01-21,0,0,0,DE,0,0,Brand,fuer-gruender.de,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-21,0,0,0,DE,35,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-21,0,0,0,DE,35,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,9,0,0,2019-01-21,0,0,0,DE,6,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-21,0,0,3682,DE,229,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,16.01986586,18.627751
 0,DISPLAY,34,0,0,2019-01-21,0,0,94742,DE,143,0,Large Segment Enterprise Management Category,Programmatic Buying,0,0,Large Segment Enterprise Management Category,96.77809276,112.532666
@@ -11708,12 +11708,12 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-21,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,0,0,0,2019-01-21,0,0,0,ES,84,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,18,0,0,2019-01-21,0,0,9712,ES,472,3,Small Business,Pymes y Autonomos,0,0,Small Business,50.11392,58.272
-0,DISPLAY,1498,0,2,2019-01-21,0,2,253034,ES,1752,6,Small Business,RTBNEO ,0,0,Small Business,583.7513762,678.78067
-0,DISPLAY,0,0,0,2019-01-21,0,0,0,ES,58,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-21,0,0,0,ES,45,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,1498,0,2,2019-01-21,0,2,253034,ES,1752,6,Small Business,RTBNEOÂ ,0,0,Small Business,583.7513762,678.78067
+0,DISPLAY,0,0,0,2019-01-21,0,0,0,ES,58,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-21,0,0,0,ES,45,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,1,2019-01-21,0,1,0,ES,39,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,6,1,1,2019-01-21,0,0,4172,ES,10,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,143.5168,166.88
-0,DISPLAY,228,15,19,2019-01-21,0,4,406537,ES,2659,27,Other,RTBNEO ,0,0,Other,375.2255009,436.308722
+0,DISPLAY,228,15,19,2019-01-21,0,4,406537,ES,2659,27,Other,RTBNEOÂ ,0,0,Other,375.2255009,436.308722
 0,DISPLAY,278,0,4,2019-01-21,2,2,63263,ES,421,3,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.0043554,209.30739
 0,DISPLAY,35,3,8,2019-01-21,4,1,62892,ES,28300,13,Accountants,Supercontable,0,0,Accountants,130.153174,151.3409
 1,DISPLAY,0,1,4,2019-01-21,0,2,0,AUS,183,0,BMS Retargeting,DBM Neo@Ogilvy AU -1725474511-Sage AU,0,0,BMS Retargeting,0,0
@@ -11765,7 +11765,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,69,0,0,2019-01-22,0,0,970,MY,63,0,Brand,Google AdWords,0,0,Brand,57.98,103.53
 0,SEARCH,40,0,0,2019-01-22,0,0,184,MY,45,0,Brand Brand,Google AdWords,0,0,Brand Brand,7.47,13.36
 0,SEARCH,13,0,0,2019-01-22,0,0,238,MY,9,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,5.82,10.4
-0,DISPLAY,0,0,0,2019-01-22,0,0,1,ES,0,0,Accounting,EMMSunMediaES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-22,0,0,1,ES,0,0,Accounting,EMMSunMediaESÂ ,0,0,Accounting,0,0
 0,DISPLAY,17,0,0,2019-01-22,0,0,0,ES,24,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-22,0,0,0,ES,2,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,13,0,0,2019-01-22,0,0,98,EA,,0,Financials,Google AdWords,0,0,Financials,20.61,343.54
@@ -11872,8 +11872,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-22,0,0,81,ES,3,0,Enterprise Management,PremiumDirectorTic,0,0,Enterprise Management,3.8313,4.455
 0,DISPLAY,0,0,0,2019-01-22,0,0,1290,ES,1,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,44.376,51.6
 0,DISPLAY,55,0,0,2019-01-22,0,0,1765,ES,20,0,Medium Business,IDG Tech Network,0,0,Medium Business,180.736353,210.15855
-0,DISPLAY,0,0,0,2019-01-22,0,0,5281,ES,69,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,42.00379062,48.841617
-0,DISPLAY,5,0,0,2019-01-22,0,0,5396,ES,28,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,23.2028,26.98
+0,DISPLAY,0,0,0,2019-01-22,0,0,5281,ES,69,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,42.00379062,48.841617
+0,DISPLAY,5,0,0,2019-01-22,0,0,5396,ES,28,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,23.2028,26.98
 0,DISPLAY,0,0,0,2019-01-22,0,0,1228,ES,0,0,Medium Business,Silicon News Spain,0,0,Medium Business,47.5236,55.26
 0,SEARCH,16,0,0,2019-01-22,0,0,662,AUS,32,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,44.11,74.75
 0,SEARCH,1,0,0,2019-01-22,0,0,4,AUS,1,0,People Brand,Google AdWords,0,0,People Brand,0.32,0.55
@@ -11977,7 +11977,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,50,0,4,2019-01-22,0,4,103206,CA,54,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,265.998756,332.498445
 0,DISPLAY,1,0,0,2019-01-22,0,0,61,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,4,0,0,2019-01-22,0,0,0,DE,2,1,Brand,Cover-PR,0,0,Brand,0,0
-0,DISPLAY,1,0,0,2019-01-22,0,0,0,DE,39,1,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-22,0,0,0,DE,39,1,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,7,0,0,2019-01-22,0,0,0,DE,6,1,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,0,0,0,2019-01-22,0,0,3409,DE,283,3,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.40531502,17.913157
 0,SEARCH,26,0,0,2019-01-22,0,0,477,ES,71,0,Accounting,Bing Ads,0,0,Accounting,13.16,15.3
@@ -12262,13 +12262,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-22,0,0,0,ES,72,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
 0,DISPLAY,17,0,0,2019-01-22,0,0,7498,ES,443,6,Small Business,Pymes y Autonomos,0,0,Small Business,38.68968,44.988
 0,DISPLAY,0,0,0,2019-01-22,0,0,0,ES,21,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,1,2019-01-22,0,1,0,ES,74,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-22,0,0,0,ES,55,1,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,1,2019-01-22,0,1,0,ES,74,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-22,0,0,0,ES,55,1,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,4,1,1,2019-01-22,0,0,6355,ES,35,1,Medium Business,Infobolsa,0,0,Medium Business,27.3265,31.775
-0,DISPLAY,1483,1,7,2019-01-22,0,6,250544,ES,1945,3,Small Business,RTBNEO ,0,0,Small Business,582.7689311,677.638292
-0,DISPLAY,239,4,4,2019-01-22,0,0,47436,ES,500,5,Accountants,RTBNEO ,0,0,Accountants,72.28575114,84.053199
+0,DISPLAY,1483,1,7,2019-01-22,0,6,250544,ES,1945,3,Small Business,RTBNEOÂ ,0,0,Small Business,582.7689311,677.638292
+0,DISPLAY,239,4,4,2019-01-22,0,0,47436,ES,500,5,Accountants,RTBNEOÂ ,0,0,Accountants,72.28575114,84.053199
 0,DISPLAY,210,0,1,2019-01-22,1,0,63951,ES,370,3,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.3327378,209.68923
-0,DISPLAY,215,3,15,2019-01-22,3,9,411904,ES,2680,25,Other,RTBNEO ,0,0,Other,375.1616838,436.234516
+0,DISPLAY,215,3,15,2019-01-22,3,9,411904,ES,2680,25,Other,RTBNEOÂ ,0,0,Other,375.1616838,436.234516
 0,DISPLAY,1855,7,105,2019-01-22,98,0,82543,ES,35574,174,Accountants,Supercontable,0,0,Accountants,156.0803646,181.488796
 0,SEARCH,29,0,1,2019-01-22,0,1,273,IE,68,0,C4L 50C,Google AdWords,0,0,C4L 50C,74.97,74.97
 0,SEARCH,0,0,0,2019-01-22,0,0,16,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -12313,10 +12313,10 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,49,0,0,2019-01-23,0,0,525,MY,43,0,Brand,Google AdWords,0,0,Brand,45.62,81.48
 0,SEARCH,29,0,0,2019-01-23,0,0,201,MY,28,0,Brand Brand,Google AdWords,0,0,Brand Brand,4.66,8.33
 0,SEARCH,10,0,0,2019-01-23,0,0,286,MY,7,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,6.6,11.79
-0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,0,0,Accountants,EMMCEPYME ,0,0,Accountants,0,0
-0,DISPLAY,154,0,0,2019-01-23,0,0,47916,ES,427,0,Accountants,RTBNEO ,0,0,Accountants,72.3612944,84.14104
-0,DISPLAY,0,0,0,2019-01-23,0,0,2,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,0,0,Accountants,EMMCEPYMEÂ ,0,0,Accountants,0,0
+0,DISPLAY,154,0,0,2019-01-23,0,0,47916,ES,427,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.3612944,84.14104
+0,DISPLAY,0,0,0,2019-01-23,0,0,2,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,12,0,0,2019-01-23,0,0,0,ES,9,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,2,0,0,2019-01-23,0,0,0,ES,4,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,6,0,0,2019-01-23,0,0,101,EA,,0,Financials,Google AdWords,0,0,Financials,11.61,193.32
@@ -12425,7 +12425,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,208,0,0,2019-01-23,0,0,63889,ES,390,1,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.0783051,209.393378
 0,DISPLAY,44,0,0,2019-01-23,0,0,1371,ES,19,0,Medium Business,IDG Tech Network,0,0,Medium Business,140.3906742,163.24497
 0,DISPLAY,3,0,0,2019-01-23,0,0,5605,ES,27,0,Medium Business,Infobolsa,0,0,Medium Business,24.1015,28.025
-0,DISPLAY,7,0,0,2019-01-23,0,0,5747,ES,16,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,24.7121,28.735
+0,DISPLAY,7,0,0,2019-01-23,0,0,5747,ES,16,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,24.7121,28.735
 0,DISPLAY,0,0,0,2019-01-23,0,0,1505,ES,2,0,Medium Business,Silicon News Spain,0,0,Medium Business,58.2435,67.725
 0,SEARCH,38,0,0,2019-01-23,0,0,372,AUS,79,0,Brand,Google AdWords,0,0,Brand,44.21,74.94
 0,SEARCH,21,0,0,2019-01-23,0,0,1099,AUS,62,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,102.62,173.92
@@ -12537,7 +12537,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,1,0,0,2019-01-23,0,0,0,CA,0,0,Visa 50Cloud,YouTube.com,0,0,Visa 50Cloud,0,0
 0,DISPLAY,2,0,0,2019-01-23,0,0,54,DE,1,1,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,0,0,0,2019-01-23,0,0,0,DE,1,0,Brand,Cover-PR,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-23,0,0,0,DE,27,9,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-23,0,0,0,DE,27,9,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,4,0,0,2019-01-23,0,0,0,DE,14,5,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-23,0,0,3574,DE,335,32,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.94486526,18.540541
 0,SEARCH,25,0,0,2019-01-23,0,0,600,ES,59,0,Awareness,Bing Ads,0,0,Awareness,8.74,10.16
@@ -12818,7 +12818,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,22,1,4,2019-01-23,0,3,784,DE,30,2,Small Segment Accounting Sage 50cloud,Bing Ads,0,0,Small Segment Accounting Sage 50cloud,36.52,42.48
 0,SEARCH,108,1,2,2019-01-23,0,1,9616,DE,771,102,Brand,Google AdWords,0,0,Brand,71.11,82.69
 0,DISPLAY,0,0,0,2019-01-23,0,0,2528,ES,8,0,Medium Business,Tic Beat,0,0,Medium Business,26.08896,30.336
-0,DISPLAY,2,0,0,2019-01-23,0,0,5065,ES,92,1,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,40.28577894,46.843929
+0,DISPLAY,2,0,0,2019-01-23,0,0,5065,ES,92,1,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,40.28577894,46.843929
 0,DISPLAY,313,0,0,2019-01-23,0,0,114203,ES,390,4,Medium Business,RTB@NEO,0,0,Medium Business,294.9434087,342.957452
 0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,0,0,Sage ContaPlus,EMM@Adgravity,0,0,Sage ContaPlus,0,0
 0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,22,0,Small Business,ElBlogSalmon,0,0,Small Business,0.00516,0.006
@@ -12827,12 +12827,12 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,0,0,0,2019-01-23,0,0,1,ES,60,0,Small Business,infoautonomos.com,0,0,Small Business,0.00301,0.0035
 0,DISPLAY,0,0,0,2019-01-23,0,0,0,ES,1,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-23,0,0,0,ES,42,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-23,0,0,0,ES,39,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-23,0,0,0,ES,42,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-23,0,0,0,ES,39,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-23,0,0,0,ES,48,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,8,1,1,2019-01-23,0,0,7168,ES,401,0,Small Business,Pymes y Autonomos,0,0,Small Business,36.98688,43.008
-0,DISPLAY,1304,1,6,2019-01-23,1,4,251141,ES,1861,6,Small Business,RTBNEO ,0,0,Small Business,583.0782086,677.997917
-0,DISPLAY,226,17,22,2019-01-23,1,4,406410,ES,2583,8,Other,RTBNEO ,0,0,Other,375.6608871,436.814985
+0,DISPLAY,1304,1,6,2019-01-23,1,4,251141,ES,1861,6,Small Business,RTBNEOÂ ,0,0,Small Business,583.0782086,677.997917
+0,DISPLAY,226,17,22,2019-01-23,1,4,406410,ES,2583,8,Other,RTBNEOÂ ,0,0,Other,375.6608871,436.814985
 0,DISPLAY,475,5,37,2019-01-23,30,2,71005,ES,31352,45,Accountants,Supercontable,0,0,Accountants,141.6987574,164.765997
 0,SEARCH,28,0,2,2019-01-23,0,2,270,IE,124,0,C4L 50C,Google AdWords,0,0,C4L 50C,51.19,51.19
 0,SEARCH,0,0,0,2019-01-23,0,0,13,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -12883,7 +12883,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,68,0,0,2019-01-24,0,0,891,MY,62,0,Brand,Google AdWords,0,0,Brand,45.5,81.24
 0,SEARCH,26,0,0,2019-01-24,0,0,150,MY,22,0,Brand Brand,Google AdWords,0,0,Brand Brand,4.01,7.14
 0,SEARCH,24,0,0,2019-01-24,0,0,654,MY,42,0,People Generic,Google AdWords,0,0,People Generic,14.72,26.28
-0,DISPLAY,0,0,0,2019-01-24,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-24,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,17,0,0,2019-01-24,0,0,0,ES,10,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-24,0,0,0,ES,3,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,5,0,0,2019-01-24,0,0,110,EA,,0,Financials,Google AdWords,0,0,Financials,2.76,45.95
@@ -12993,8 +12993,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,174,0,2,2019-01-24,0,2,63919,ES,411,2,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.1959006,209.530117
 0,DISPLAY,0,0,0,2019-01-24,0,0,546,ES,22,0,Medium Business,IDG Tech Network,0,0,Medium Business,55.9105092,65.01222
 0,DISPLAY,5,0,0,2019-01-24,0,0,5326,ES,19,0,Medium Business,Infobolsa,0,0,Medium Business,22.9018,26.63
-0,DISPLAY,1,0,0,2019-01-24,0,0,4789,ES,41,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,38.09054122,44.291327
-0,DISPLAY,4,0,0,2019-01-24,0,0,5855,ES,20,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,25.1765,29.275
+0,DISPLAY,1,0,0,2019-01-24,0,0,4789,ES,41,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,38.09054122,44.291327
+0,DISPLAY,4,0,0,2019-01-24,0,0,5855,ES,20,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,25.1765,29.275
 0,DISPLAY,319,0,0,2019-01-24,0,0,114474,ES,436,0,Medium Business,RTB@NEO,0,0,Medium Business,294.2336284,342.132126
 0,DISPLAY,0,0,0,2019-01-24,0,0,1634,ES,5,0,Medium Business,Silicon News Spain,0,0,Medium Business,63.2358,73.53
 0,SEARCH,17,0,0,2019-01-24,0,0,724,AUS,31,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,36.96,62.65
@@ -13098,7 +13098,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,3,1,1,2019-01-24,0,0,1979,CA,4,0,Accountants,Invite Media,0,0,Accountants,18.287932,22.859915
 0,DISPLAY,0,0,0,2019-01-24,0,0,49,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-24,0,0,0,DE,0,0,Brand,vice.com/de_at,0,0,Brand,0,0
-0,DISPLAY,0,0,1,2019-01-24,0,1,0,DE,21,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,1,2019-01-24,0,1,0,DE,21,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,2,0,1,2019-01-24,0,1,0,DE,17,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,3,0,1,2019-01-24,0,1,3538,DE,307,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.75324178,18.317723
 0,SEARCH,12,0,0,2019-01-24,0,0,254,ES,12,0,Awareness,Google AdWords,0,0,Awareness,7.19,8.35
@@ -13383,13 +13383,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-24,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,0,0,0,2019-01-24,0,0,6,ES,96,0,Small Business,infoautonomos.com,0,0,Small Business,0.01806,0.021
 0,DISPLAY,0,0,0,2019-01-24,0,0,0,ES,2,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-24,0,0,0,ES,25,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-24,0,0,0,ES,46,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-24,0,0,0,ES,25,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-24,0,0,0,ES,46,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,4,1,1,2019-01-24,0,0,6637,ES,418,2,Small Business,Pymes y Autonomos,0,0,Small Business,34.24692,39.822
 0,DISPLAY,0,1,1,2019-01-24,0,0,0,ES,42,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,290,0,1,2019-01-24,1,0,46190,ES,487,3,Accountants,RTBNEO ,0,0,Accountants,72.16207884,83.909394
-0,DISPLAY,1504,0,4,2019-01-24,2,2,246442,ES,1860,9,Small Business,RTBNEO ,0,0,Small Business,580.8263012,675.37942
-0,DISPLAY,221,7,14,2019-01-24,2,5,406009,ES,2487,4,Other,RTBNEO ,0,0,Other,374.2897246,435.22061
+0,DISPLAY,290,0,1,2019-01-24,1,0,46190,ES,487,3,Accountants,RTBNEOÂ ,0,0,Accountants,72.16207884,83.909394
+0,DISPLAY,1504,0,4,2019-01-24,2,2,246442,ES,1860,9,Small Business,RTBNEOÂ ,0,0,Small Business,580.8263012,675.37942
+0,DISPLAY,221,7,14,2019-01-24,2,5,406009,ES,2487,4,Other,RTBNEOÂ ,0,0,Other,374.2897246,435.22061
 0,DISPLAY,166,0,4,2019-01-24,4,0,68939,ES,31465,15,Accountants,Supercontable,0,0,Accountants,140.2058808,163.030094
 0,SEARCH,0,0,0,2019-01-24,0,0,18,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,8,0,0,2019-01-24,0,0,286,IE,2,0,Enterprise,Google AdWords,0,0,Enterprise,12.9,12.9
@@ -13439,8 +13439,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,38,0,0,2019-01-25,0,0,144,MY,40,0,Brand Brand,Google AdWords,0,0,Brand Brand,7.05,12.58
 0,SEARCH,27,0,0,2019-01-25,0,0,379,MY,17,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,14.44,25.78
 0,SEARCH,18,0,0,2019-01-25,0,0,526,MY,22,0,People Generic,Google AdWords,0,0,People Generic,15.24,27.21
-0,DISPLAY,0,0,0,2019-01-25,0,0,1,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-25,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-25,0,0,1,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-25,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,10,0,0,2019-01-25,0,0,0,ES,7,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-25,0,0,0,ES,1,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,5,0,0,2019-01-25,0,0,81,EA,,0,Financials,Google AdWords,0,0,Financials,8.01,133.4
@@ -13551,7 +13551,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,209,0,1,2019-01-25,0,1,63395,ES,385,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.3682317,209.730502
 0,DISPLAY,0,0,0,2019-01-25,0,0,587,ES,10,0,Medium Business,IDG Tech Network,0,0,Medium Business,60.1089174,69.89409
 0,DISPLAY,0,0,0,2019-01-25,0,0,5083,ES,5,0,Medium Business,Infobolsa,0,0,Medium Business,21.8569,25.415
-0,DISPLAY,8,0,0,2019-01-25,0,0,5792,ES,19,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,24.9056,28.96
+0,DISPLAY,8,0,0,2019-01-25,0,0,5792,ES,19,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,24.9056,28.96
 0,DISPLAY,331,0,0,2019-01-25,0,0,116691,ES,443,0,Medium Business,RTB@NEO,0,0,Medium Business,295.3516817,343.432188
 0,DISPLAY,0,0,0,2019-01-25,0,0,1560,ES,4,0,Medium Business,Silicon News Spain,0,0,Medium Business,60.372,70.2
 0,SEARCH,48,0,0,2019-01-25,0,0,420,AUS,55,0,Brand,Google AdWords,0,0,Brand,57.95,98.2
@@ -13656,7 +13656,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,29,0,3,2019-01-25,0,3,96695,CA,49,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,286.9804504,358.725563
 0,DISPLAY,6,0,1,2019-01-25,1,0,32752,CA,30,0,Small Business,Owner IQ,0,0,Small Business,121.051392,151.31424
 0,DISPLAY,0,0,0,2019-01-25,0,0,67,DE,1,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,1,0,0,2019-01-25,0,0,0,DE,21,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-25,0,0,0,DE,21,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,3,0,0,2019-01-25,0,0,0,DE,31,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,0,0,1,2019-01-25,0,1,3406,DE,241,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.81972322,18.395027
 0,SEARCH,15,0,0,2019-01-25,0,0,524,ES,59,0,Awareness,Bing Ads,0,0,Awareness,4.72,5.49
@@ -13938,7 +13938,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,461,0,1,2019-01-25,1,0,22621,DE,285,0,Medium Segment Financial Sage HR Suite Plus,Google AdWords,0,0,Medium Segment Financial Sage HR Suite Plus,1116.83,1298.63
 0,SEARCH,115,0,2,2019-01-25,1,1,4587,DE,123,0,Small Segment Accounting Category,Google AdWords,0,0,Small Segment Accounting Category,231,268.63
 0,DISPLAY,1,0,0,2019-01-25,0,0,2678,ES,15,2,Medium Business,Tic Beat,0,0,Medium Business,27.63696,32.136
-0,DISPLAY,1,0,0,2019-01-25,0,0,4512,ES,49,4,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,35.88735108,41.729478
+0,DISPLAY,1,0,0,2019-01-25,0,0,4512,ES,49,4,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,35.88735108,41.729478
 0,DISPLAY,0,0,0,2019-01-25,0,0,1,ES,0,0,Sage ContaPlus,EMM@Adgravity,0,0,Sage ContaPlus,0,0
 0,DISPLAY,0,0,0,2019-01-25,0,0,0,ES,16,0,Small Business,ElBlogSalmon,0,0,Small Business,0,0
 0,DISPLAY,83,0,0,2019-01-25,0,0,69145,ES,132,0,Small Business,Expansion,0,0,Small Business,505.5301072,587.825706
@@ -13946,13 +13946,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-25,0,0,3,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.02064,0.024
 0,DISPLAY,6,0,0,2019-01-25,0,0,5558,ES,306,0,Small Business,Pymes y Autonomos,0,0,Small Business,28.67928,33.348
 0,DISPLAY,0,0,0,2019-01-25,0,0,0,ES,53,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,1564,0,0,2019-01-25,0,0,247413,ES,1557,1,Small Business,RTBNEO ,0,0,Small Business,579.6683946,674.033017
+0,DISPLAY,1564,0,0,2019-01-25,0,0,247413,ES,1557,1,Small Business,RTBNEOÂ ,0,0,Small Business,579.6683946,674.033017
 0,DISPLAY,0,0,0,2019-01-25,0,0,0,ES,1,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-25,0,0,0,ES,53,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-25,0,0,0,ES,53,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-25,0,0,0,ES,34,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,1,2019-01-25,0,1,0,ES,32,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,260,1,1,2019-01-25,0,0,46804,ES,307,1,Accountants,RTBNEO ,0,0,Accountants,72.19573752,83.948532
-0,DISPLAY,210,3,5,2019-01-25,1,1,424132,ES,2107,3,Other,RTBNEO ,1,0,Other,374.1062556,435.007274
+0,DISPLAY,0,0,1,2019-01-25,0,1,0,ES,32,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,260,1,1,2019-01-25,0,0,46804,ES,307,1,Accountants,RTBNEOÂ ,0,0,Accountants,72.19573752,83.948532
+0,DISPLAY,210,3,5,2019-01-25,1,1,424132,ES,2107,3,Other,RTBNEOÂ ,1,0,Other,374.1062556,435.007274
 0,DISPLAY,89,1,3,2019-01-25,2,0,52907,ES,23984,17,Accountants,Supercontable,0,0,Accountants,108.0534814,125.643583
 0,SEARCH,25,0,0,2019-01-25,0,0,210,IE,58,0,C4L 50C,Google AdWords,0,0,C4L 50C,36.38,36.38
 0,SEARCH,0,0,0,2019-01-25,0,0,9,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
@@ -14107,8 +14107,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,214,0,0,2019-01-26,0,0,64252,ES,203,4,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.0489576,209.359253
 0,DISPLAY,0,0,0,2019-01-26,0,0,225,ES,2,0,Medium Business,IDG Tech Network,0,0,Medium Business,23.040045,26.79075
 0,DISPLAY,0,0,0,2019-01-26,0,0,1773,ES,5,0,Medium Business,Infobolsa,0,0,Medium Business,7.6239,8.865
-0,DISPLAY,1,0,0,2019-01-26,0,0,2021,ES,19,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,16.07454208,18.691328
-0,DISPLAY,14,0,0,2019-01-26,0,0,4089,ES,16,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,17.5827,20.445
+0,DISPLAY,1,0,0,2019-01-26,0,0,2021,ES,19,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,16.07454208,18.691328
+0,DISPLAY,14,0,0,2019-01-26,0,0,4089,ES,16,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,17.5827,20.445
 0,DISPLAY,326,0,0,2019-01-26,0,0,114497,ES,278,0,Medium Business,RTB@NEO,0,0,Medium Business,292.4996972,340.115927
 0,DISPLAY,0,0,0,2019-01-26,0,0,802,ES,0,0,Medium Business,Silicon News Spain,0,0,Medium Business,31.0374,36.09
 0,SEARCH,14,0,0,2019-01-26,0,0,315,AUS,18,0,Brand,Google AdWords,0,0,Brand,21.04,35.65
@@ -14207,7 +14207,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,28,0,6,2019-01-26,1,5,33904,CA,84,0,Small Business,Invite Media,0,0,Small Business,180.0349344,225.043668
 0,DISPLAY,0,0,0,2019-01-26,0,0,31,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,3,0,0,2019-01-26,0,0,0,DE,1,0,Brand,Cover-PR,0,0,Brand,0,0
-0,DISPLAY,0,0,1,2019-01-26,0,1,0,DE,28,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,1,2019-01-26,0,1,0,DE,28,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,4,0,0,2019-01-26,0,0,0,DE,7,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-26,0,0,3259,DE,59,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.93689048,18.531268
 0,SEARCH,12,0,0,2019-01-26,0,0,239,ES,58,0,Accounting,Bing Ads,0,0,Accounting,3.88,4.52
@@ -14490,13 +14490,13 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,21,0,0,2019-01-26,0,0,14721,ES,36,0,Small Business,Expansion,0,0,Small Business,107.6275741,125.148342
 0,DISPLAY,16,0,0,2019-01-26,0,0,0,ES,30,0,Small Business,PMPSoftonic,0,0,Small Business,5.504,6.4
 0,DISPLAY,0,0,0,2019-01-26,0,0,0,ES,4,0,Small Business,infoautonomos.com,0,0,Small Business,0,0
-0,DISPLAY,1651,0,0,2019-01-26,0,0,246882,ES,963,3,Small Business,RTBNEO ,0,0,Small Business,561.2815654,652.652983
+0,DISPLAY,1651,0,0,2019-01-26,0,0,246882,ES,963,3,Small Business,RTBNEOÂ ,0,0,Small Business,561.2815654,652.652983
 0,DISPLAY,0,0,0,2019-01-26,0,0,0,ES,2,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-26,0,0,0,ES,18,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-26,0,0,0,ES,31,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-26,0,0,0,ES,18,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-26,0,0,0,ES,31,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-26,0,0,0,ES,11,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,355,1,2,2019-01-26,0,1,399581,ES,780,0,Other,RTBNEO ,0,0,Other,357.6036443,415.818191
-0,DISPLAY,293,0,1,2019-01-26,1,0,44792,ES,101,0,Accountants,RTBNEO ,0,0,Accountants,72.22791614,83.985949
+0,DISPLAY,355,1,2,2019-01-26,0,1,399581,ES,780,0,Other,RTBNEOÂ ,0,0,Other,357.6036443,415.818191
+0,DISPLAY,293,0,1,2019-01-26,1,0,44792,ES,101,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.22791614,83.985949
 0,DISPLAY,4,0,1,2019-01-26,1,0,2792,ES,84,1,Small Business,Pymes y Autonomos,0,0,Small Business,14.40672,16.752
 0,DISPLAY,51,0,2,2019-01-26,2,0,19565,ES,8891,3,Accountants,Supercontable,0,0,Accountants,40.26773872,46.822952
 0,SEARCH,13,0,3,2019-01-26,0,3,66,IE,78,0,C4L 50C,Google AdWords,0,0,C4L 50C,25.42,25.42
@@ -14547,8 +14547,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,7,0,0,2019-01-27,0,0,73,MY,4,0,Brand Brand,Google AdWords,0,0,Brand Brand,1.21,2.16
 0,SEARCH,7,0,0,2019-01-27,0,0,112,MY,4,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,5.22,9.31
 0,SEARCH,19,0,0,2019-01-27,0,0,379,MY,24,0,People Generic,Google AdWords,0,0,People Generic,14.49,25.87
-0,DISPLAY,324,0,0,2019-01-27,0,0,45412,ES,175,2,Accountants,RTBNEO ,0,0,Accountants,72.28266116,84.049606
-0,DISPLAY,0,0,0,2019-01-27,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,324,0,0,2019-01-27,0,0,45412,ES,175,2,Accountants,RTBNEOÂ ,0,0,Accountants,72.28266116,84.049606
+0,DISPLAY,0,0,0,2019-01-27,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,12,0,0,2019-01-27,0,0,0,ES,9,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-27,0,0,0,ES,5,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,6,0,0,2019-01-27,0,0,58,EA,,0,Financials,Google AdWords,0,0,Financials,11.35,189.06
@@ -14655,8 +14655,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-27,0,0,4,ES,0,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,0.1376,0.16
 0,DISPLAY,0,0,0,2019-01-27,0,0,198,ES,1,0,Medium Business,IDG Tech Network,0,0,Medium Business,20.2752396,23.57586
 0,DISPLAY,1,0,0,2019-01-27,0,0,1372,ES,4,0,Medium Business,Infobolsa,0,0,Medium Business,5.8996,6.86
-0,DISPLAY,0,0,0,2019-01-27,0,0,2289,ES,28,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,18.20614926,21.169941
-0,DISPLAY,6,0,0,2019-01-27,0,0,3902,ES,9,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,16.7786,19.51
+0,DISPLAY,0,0,0,2019-01-27,0,0,2289,ES,28,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,18.20614926,21.169941
+0,DISPLAY,6,0,0,2019-01-27,0,0,3902,ES,9,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,16.7786,19.51
 0,DISPLAY,283,0,0,2019-01-27,0,0,113469,ES,320,0,Medium Business,RTB@NEO,0,0,Medium Business,290.7033438,338.027144
 0,DISPLAY,0,0,0,2019-01-27,0,0,1514,ES,1,0,Medium Business,Silicon News Spain,0,0,Medium Business,58.5918,68.13
 0,SEARCH,12,0,0,2019-01-27,0,0,311,AUS,11,0,Brand,Google AdWords,0,0,Brand,12.5,21.18
@@ -14750,7 +14750,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,49,0,2,2019-01-27,0,2,88811,CA,50,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,246.2478712,307.809839
 0,DISPLAY,0,0,0,2019-01-27,0,0,41,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,0,0,0,2019-01-27,0,0,0,DE,0,0,Financials,Programmatic Buying,0,0,Financials,0,0
-0,DISPLAY,1,0,0,2019-01-27,0,0,0,DE,18,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-27,0,0,0,DE,18,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,5,0,0,2019-01-27,0,0,0,DE,2,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,0,0,0,2019-01-27,0,0,3221,DE,71,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.89226594,18.479379
 0,SEARCH,7,0,0,2019-01-27,0,0,154,ES,14,0,Accountants,Google AdWords,0,0,Accountants,30.9,35.93
@@ -15039,12 +15039,12 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-27,0,0,1,ES,1,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,7,0,0,2019-01-27,0,0,4043,ES,141,0,Small Business,Pymes y Autonomos,0,0,Small Business,20.86188,24.258
 0,DISPLAY,2,0,0,2019-01-27,0,0,585,ES,22,0,Small Business,infoautonomos.com,0,0,Small Business,1.76085,2.0475
-0,DISPLAY,1585,0,0,2019-01-27,0,0,244910,ES,1169,2,Small Business,RTBNEO ,0,0,Small Business,575.437708,669.113614
+0,DISPLAY,1585,0,0,2019-01-27,0,0,244910,ES,1169,2,Small Business,RTBNEOÂ ,0,0,Small Business,575.437708,669.113614
 0,DISPLAY,0,0,0,2019-01-27,0,0,0,ES,2,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-27,0,0,0,ES,38,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-27,0,0,0,ES,22,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-27,0,0,0,ES,38,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-27,0,0,0,ES,22,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-27,0,0,0,ES,1,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,371,1,1,2019-01-27,0,0,392463,ES,955,5,Other,RTBNEO ,0,0,Other,375.3249057,436.424309
+0,DISPLAY,371,1,1,2019-01-27,0,0,392463,ES,955,5,Other,RTBNEOÂ ,0,0,Other,375.3249057,436.424309
 0,DISPLAY,212,0,1,2019-01-27,1,0,62770,ES,233,1,Enterprise Management,RTB@NEO,0,0,Enterprise Management,180.0077782,209.31137
 0,DISPLAY,51,0,3,2019-01-27,2,1,24011,ES,10434,4,Accountants,Supercontable,0,0,Accountants,49.3746984,57.41244
 0,SEARCH,13,0,1,2019-01-27,0,1,61,IE,19,0,C4L 50C,Google AdWords,0,0,C4L 50C,13.18,13.18
@@ -15099,8 +15099,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,28,0,0,2019-01-28,0,0,197,MY,22,0,Brand Brand,Google AdWords,0,0,Brand Brand,4.84,8.62
 0,SEARCH,17,0,0,2019-01-28,0,0,429,MY,11,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,13.72,24.49
 0,SEARCH,30,0,0,2019-01-28,0,0,700,MY,39,0,People Generic,Google AdWords,0,0,People Generic,29.17,52.08
-0,DISPLAY,227,0,0,2019-01-28,0,0,45730,ES,433,0,Accountants,RTBNEO ,0,0,Accountants,72.18467448,83.935668
-0,DISPLAY,0,0,0,2019-01-28,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,227,0,0,2019-01-28,0,0,45730,ES,433,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.18467448,83.935668
+0,DISPLAY,0,0,0,2019-01-28,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,14,0,0,2019-01-28,0,0,0,ES,21,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-28,0,0,0,ES,6,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,11,0,0,2019-01-28,0,0,101,EA,,0,Financials,Google AdWords,0,0,Financials,20.34,338.94
@@ -15205,7 +15205,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-28,0,0,61,ES,15,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,2.0984,2.44
 0,DISPLAY,0,0,0,2019-01-28,0,0,559,ES,11,0,Medium Business,IDG Tech Network,0,0,Medium Business,57.2417118,66.56013
 0,DISPLAY,2,0,0,2019-01-28,0,0,2450,ES,16,0,Medium Business,Infobolsa,0,0,Medium Business,10.535,12.25
-0,DISPLAY,6,0,0,2019-01-28,0,0,8523,ES,9,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,36.6489,42.615
+0,DISPLAY,6,0,0,2019-01-28,0,0,8523,ES,9,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,36.6489,42.615
 0,DISPLAY,0,0,0,2019-01-28,0,0,1457,ES,3,0,Medium Business,Silicon News Spain,0,0,Medium Business,56.3859,65.565
 0,SEARCH,22,0,0,2019-01-28,0,0,364,AUS,55,0,Brand,Google AdWords,0,0,Brand,34.01,57.66
 0,SEARCH,4,0,0,2019-01-28,0,0,160,AUS,16,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,10.64,18.05
@@ -15299,7 +15299,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,37,0,5,2019-01-28,0,5,110101,CA,56,0,Visa 50Cloud,Invite Media,0,0,Visa 50Cloud,297.1113096,371.389137
 0,DISPLAY,0,0,0,2019-01-28,0,0,51,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-28,0,0,0,DE,0,0,Brand,vice.com/de_at,0,0,Brand,0,0
-0,DISPLAY,1,0,1,2019-01-28,0,1,0,DE,37,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,1,2019-01-28,0,1,0,DE,37,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,4,0,0,2019-01-28,0,0,0,DE,9,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,4,0,0,2019-01-28,0,0,3447,DE,270,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.92669432,18.519412
 0,SEARCH,24,0,0,2019-01-28,0,0,754,ES,31,0,Awareness,Bing Ads,0,0,Awareness,6.92,8.05
@@ -15510,7 +15510,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,327,0,3,2019-01-28,1,2,190773,ME,6,0,Accountants,DBM,0,0,Accountants,43.46295,724.3825
 0,DISPLAY,9,0,0,2019-01-28,0,0,3834,PT,2,0,Accounting,Premium@Jornaldenegocios_PT,0,0,Accounting,34.309872,39.8952
 0,DISPLAY,15,0,0,2019-01-28,0,0,9997,PT,71,0,Accounting,RTB@NEO,0,0,Accounting,19.22967396,22.360086
-0,DISPLAY,0,0,0,2019-01-28,0,0,0,PT,0,0,Other,RTBNEO ,0,0,Other,0,0
+0,DISPLAY,0,0,0,2019-01-28,0,0,0,PT,0,0,Other,RTBNEOÂ ,0,0,Other,0,0
 0,DISPLAY,45,0,1,2019-01-28,0,1,13767,PT,112,0,Accountants,RTB@NEO,0,0,Accountants,28.43797776,33.067416
 0,DISPLAY,240,0,3,2019-01-28,0,3,54198,SADC,575,0,Large Business,DBM,10,0,Large Business,59.543281,992.3880167
 0,DISPLAY,208,1,17,2019-01-28,0,16,98135,SADC,3674,0,Small Segment Campaign Payroll,DBM,33,0,Small Segment Campaign Payroll,286.371839,4772.863983
@@ -15589,17 +15589,17 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,6,0,0,2019-01-28,0,0,7485,ES,124,0,Small Business,Expansion,0,0,Small Business,54.72402482,63.632587
 0,DISPLAY,21,0,0,2019-01-28,0,0,0,ES,23,0,Small Business,PMPSoftonic,0,0,Small Business,7.224,8.4
 0,DISPLAY,0,0,0,2019-01-28,0,0,2,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.01376,0.016
-0,DISPLAY,1497,0,1,2019-01-28,0,1,250820,ES,1922,2,Small Business,RTBNEO ,0,0,Small Business,581.2480521,675.869828
+0,DISPLAY,1497,0,1,2019-01-28,0,1,250820,ES,1922,2,Small Business,RTBNEOÂ ,0,0,Small Business,581.2480521,675.869828
 0,DISPLAY,66,0,0,2019-01-28,0,0,75055,ES,500,3,Small Business,infoautonomos.com,0,0,Small Business,225.91555,262.6925
 0,DISPLAY,0,0,0,2019-01-28,0,0,0,ES,1,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-28,0,0,0,ES,38,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-28,0,0,0,ES,38,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-28,0,0,0,ES,25,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-28,0,0,0,ES,34,1,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-28,0,0,0,ES,34,1,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,60,1,1,2019-01-28,0,0,27604,ES,322,3,Enterprise Management,RTB@NEO,0,0,Enterprise Management,77.4368854,90.04289
 0,DISPLAY,99,1,1,2019-01-28,0,0,59900,ES,473,0,Medium Business,RTB@NEO,0,0,Medium Business,137.0489438,159.359237
-0,DISPLAY,0,0,1,2019-01-28,1,0,5984,ES,59,1,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,47.59528272,55.343352
+0,DISPLAY,0,0,1,2019-01-28,1,0,5984,ES,59,1,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,47.59528272,55.343352
 0,DISPLAY,8,0,1,2019-01-28,1,0,7953,ES,479,4,Small Business,Pymes y Autonomos,0,0,Small Business,41.03748,47.718
-0,DISPLAY,186,5,18,2019-01-28,3,10,397110,ES,2620,13,Other,RTBNEO ,0,0,Other,374.4923991,435.456278
+0,DISPLAY,186,5,18,2019-01-28,3,10,397110,ES,2620,13,Other,RTBNEOÂ ,0,0,Other,374.4923991,435.456278
 0,DISPLAY,83,1,5,2019-01-28,4,0,68343,ES,30494,9,Accountants,Supercontable,0,0,Accountants,139.9685871,162.754171
 0,SEARCH,0,0,0,2019-01-28,0,0,14,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,8,0,0,2019-01-28,0,0,484,IE,7,0,Enterprise,Google AdWords,0,0,Enterprise,19.99,19.99
@@ -15648,9 +15648,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,22,0,0,2019-01-29,0,0,171,MY,26,0,Brand Brand,Google AdWords,0,0,Brand Brand,4.61,8.23
 0,SEARCH,13,0,0,2019-01-29,0,0,359,MY,12,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,8.33,14.87
 0,SEARCH,24,0,0,2019-01-29,0,0,623,MY,33,0,People Generic,Google AdWords,0,0,People Generic,21.84,39
-0,DISPLAY,203,0,0,2019-01-29,0,0,46154,ES,570,2,Accountants,RTBNEO ,0,0,Accountants,72.14117482,83.885087
-0,DISPLAY,0,0,0,2019-01-29,0,0,1,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-29,0,0,1,ES,0,0,Accounting,EMMDatacentric ,0,0,Accounting,0,0
+0,DISPLAY,203,0,0,2019-01-29,0,0,46154,ES,570,2,Accountants,RTBNEOÂ ,0,0,Accountants,72.14117482,83.885087
+0,DISPLAY,0,0,0,2019-01-29,0,0,1,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-29,0,0,1,ES,0,0,Accounting,EMMDatacentricÂ ,0,0,Accounting,0,0
 0,DISPLAY,16,0,0,2019-01-29,0,0,0,ES,15,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-29,0,0,0,ES,4,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,12,0,0,2019-01-29,0,0,102,EA,2,0,Financials,Google AdWords,0,0,Financials,19.2,319.94
@@ -15755,8 +15755,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,36,0,0,2019-01-29,0,0,16398,ES,406,0,Enterprise Management,RTB@NEO,0,0,Enterprise Management,42.83118716,49.803706
 0,DISPLAY,26,0,0,2019-01-29,0,0,2279,ES,47,0,Medium Business,IDG Tech Network,0,0,Medium Business,233.3700558,271.36053
 0,DISPLAY,22,0,0,2019-01-29,0,0,17358,ES,44,0,Medium Business,Infobolsa,0,0,Medium Business,74.6394,86.79
-0,DISPLAY,0,0,0,2019-01-29,0,0,6019,ES,86,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,47.87366472,55.667052
-0,DISPLAY,9,0,0,2019-01-29,0,0,5921,ES,23,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,25.4603,29.605
+0,DISPLAY,0,0,0,2019-01-29,0,0,6019,ES,86,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,47.87366472,55.667052
+0,DISPLAY,9,0,0,2019-01-29,0,0,5921,ES,23,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,25.4603,29.605
 0,DISPLAY,0,0,0,2019-01-29,0,0,1471,ES,2,0,Medium Business,Silicon News Spain,0,0,Medium Business,56.9277,66.195
 0,SEARCH,56,0,0,2019-01-29,0,0,543,AUS,95,0,Brand,Google AdWords,0,0,Brand,56.59,95.91
 0,SEARCH,28,0,0,2019-01-29,0,0,892,AUS,51,0,Payroll Brand,Google AdWords,0,0,Payroll Brand,59.58,100.99
@@ -15862,7 +15862,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-29,0,0,0,DE,0,0,Accounting,Programmatic Buying,0,0,Accounting,0,0
 0,DISPLAY,1,0,0,2019-01-29,0,0,36,DE,1,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-29,0,0,0,DE,1,0,Brand,masha-sedgwick.com,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-29,0,0,0,DE,23,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-29,0,0,0,DE,23,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,5,0,0,2019-01-29,0,0,0,DE,33,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,SEARCH,35,0,0,2019-01-29,0,0,694,ES,47,0,Awareness,Bing Ads,0,0,Awareness,9.01,10.48
 0,SEARCH,20,0,0,2019-01-29,0,0,492,ES,21,0,Awareness,Google AdWords,0,0,Awareness,14.83,17.25
@@ -16144,20 +16144,20 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,124,0,1,2019-01-29,1,0,4023,DE,193,0,Small Segment Accounting Category,Google AdWords,0,0,Small Segment Accounting Category,299.77,348.53
 0,SEARCH,323,0,1,2019-01-29,1,0,14325,DE,540,1,Medium Segment Financial Category,Google AdWords,1,0,Medium Segment Financial Category,626.46,728.46
 0,DISPLAY,94,0,1,2019-01-29,0,1,51056,ES,411,0,Medium Business,RTB@NEO,0,0,Medium Business,99.93724772,116.206102
-0,DISPLAY,0,0,0,2019-01-29,0,0,1,ES,0,0,Sage ContaPlus,EMMDatacentric ,0,0,Sage ContaPlus,0,0
+0,DISPLAY,0,0,0,2019-01-29,0,0,1,ES,0,0,Sage ContaPlus,EMMDatacentricÂ ,0,0,Sage ContaPlus,0,0
 0,DISPLAY,7,0,0,2019-01-29,0,0,7074,ES,96,0,Small Business,Expansion,0,0,Small Business,51.71913838,60.138533
 0,DISPLAY,17,0,0,2019-01-29,0,0,0,ES,30,0,Small Business,PMPSoftonic,0,0,Small Business,5.848,6.8
 0,DISPLAY,17,0,0,2019-01-29,0,0,12001,ES,554,0,Small Business,Pymes y Autonomos,0,0,Small Business,61.92516,72.006
 0,DISPLAY,76,0,0,2019-01-29,0,0,19303,ES,95,4,Small Business,ElBlogSalmon,0,0,Small Business,99.60348,115.818
 0,DISPLAY,0,0,0,2019-01-29,0,0,0,ES,3,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-29,0,0,0,ES,42,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-29,0,0,0,ES,42,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-29,0,0,0,ES,33,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-29,0,0,0,ES,69,2,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-29,0,0,0,ES,69,2,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,85,1,2,2019-01-29,0,1,80233,ES,605,0,Small Business,infoautonomos.com,0,0,Small Business,241.50133,280.8155
-0,DISPLAY,216,3,11,2019-01-29,0,8,401072,ES,2876,6,Other,RTBNEO ,0,0,Other,374.3442864,435.284054
+0,DISPLAY,216,3,11,2019-01-29,0,8,401072,ES,2876,6,Other,RTBNEOÂ ,0,0,Other,374.3442864,435.284054
 0,DISPLAY,0,0,1,2019-01-29,1,0,2119,ES,22,1,Medium Business,Tic Beat,0,0,Medium Business,21.86808,25.428
 0,DISPLAY,109,1,3,2019-01-29,2,0,83292,ES,40928,8,Accountants,Supercontable,0,0,Accountants,188.3340135,218.993039
-0,DISPLAY,1670,0,3,2019-01-29,3,0,252465,ES,2090,5,Small Business,RTBNEO ,0,0,Small Business,581.4982235,676.160725
+0,DISPLAY,1670,0,3,2019-01-29,3,0,252465,ES,2090,5,Small Business,RTBNEOÂ ,0,0,Small Business,581.4982235,676.160725
 0,SEARCH,39,0,0,2019-01-29,0,0,348,IE,124,0,C4L 50C,Google AdWords,0,0,C4L 50C,126.22,126.22
 0,SEARCH,0,0,0,2019-01-29,0,0,17,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,3,0,0,2019-01-29,0,0,422,IE,3,0,Enterprise,Google AdWords,0,0,Enterprise,5.62,5.62
@@ -16209,8 +16209,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,26,0,0,2019-01-30,0,0,177,MY,23,0,Brand Brand,Google AdWords,0,0,Brand Brand,5.15,9.17
 0,SEARCH,11,0,0,2019-01-30,0,0,442,MY,8,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,7.49,13.39
 0,SEARCH,37,0,0,2019-01-30,0,0,528,MY,50,0,People Generic,Google AdWords,0,0,People Generic,29.11,51.97
-0,DISPLAY,211,0,0,2019-01-30,0,0,45910,ES,452,0,Accountants,RTBNEO ,0,0,Accountants,72.15081026,83.896291
-0,DISPLAY,0,0,0,2019-01-30,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,211,0,0,2019-01-30,0,0,45910,ES,452,0,Accountants,RTBNEOÂ ,0,0,Accountants,72.15081026,83.896291
+0,DISPLAY,0,0,0,2019-01-30,0,0,3,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,16,0,0,2019-01-30,0,0,0,ES,17,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-30,0,0,0,ES,2,0,Brand,Supercontable,0,0,Brand,0,0
 0,SEARCH,3,0,0,2019-01-30,0,0,110,EA,,0,Financials,Google AdWords,0,0,Financials,5.99,99.78
@@ -16318,8 +16318,8 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,0,0,0,2019-01-30,0,0,16,ES,1,0,Enterprise Management,PremiumDirectorTic,0,0,Enterprise Management,0.7568,0.88
 0,DISPLAY,1,0,0,2019-01-30,0,0,529,ES,10,0,Medium Business,IDG Tech Network,0,0,Medium Business,54.1697058,62.98803
 0,DISPLAY,0,0,0,2019-01-30,0,0,715,ES,11,0,Medium Business,Infobolsa,0,0,Medium Business,3.0745,3.575
-0,DISPLAY,1,0,0,2019-01-30,0,0,5659,ES,67,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,45.01031192,52.337572
-0,DISPLAY,5,0,0,2019-01-30,0,0,5493,ES,15,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,23.6199,27.465
+0,DISPLAY,1,0,0,2019-01-30,0,0,5659,ES,67,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,45.01031192,52.337572
+0,DISPLAY,5,0,0,2019-01-30,0,0,5493,ES,15,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,23.6199,27.465
 0,DISPLAY,109,0,0,2019-01-30,0,0,51502,ES,359,0,Medium Business,RTB@NEO,0,0,Medium Business,99.90877828,116.172998
 0,DISPLAY,1,0,0,2019-01-30,0,0,1391,ES,3,0,Medium Business,Silicon News Spain,0,0,Medium Business,53.8317,62.595
 0,SEARCH,21,0,0,2019-01-30,0,0,933,AUS,29,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,93.29,158.12
@@ -16415,7 +16415,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,1,0,0,2019-01-30,0,0,0,DE,0,0,Accounting,fuer-gruender.de,0,0,Accounting,0,0
 0,DISPLAY,0,0,0,2019-01-30,0,0,35,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
 0,DISPLAY,1,0,0,2019-01-30,0,0,0,DE,1,0,Brand,Cover-PR,0,0,Brand,0,0
-0,DISPLAY,0,0,0,2019-01-30,0,0,0,DE,57,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,0,0,0,2019-01-30,0,0,0,DE,57,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,8,0,0,2019-01-30,0,0,0,DE,13,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,2,0,0,2019-01-30,0,0,3519,DE,205,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.84548538,18.424983
 0,SEARCH,19,0,0,2019-01-30,0,0,314,ES,62,0,Accountants,Google AdWords,0,0,Accountants,68.37,79.5
@@ -16705,17 +16705,17 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,10,0,0,2019-01-30,0,0,0,ES,29,0,Small Business,PMPSoftonic,0,0,Small Business,3.44,4
 0,DISPLAY,0,0,0,2019-01-30,0,0,1,ES,0,0,Small Business,PremiumExponential,0,0,Small Business,0.00688,0.008
 0,DISPLAY,106,0,0,2019-01-30,0,0,81517,ES,704,1,Small Business,infoautonomos.com,0,0,Small Business,245.36617,285.3095
-0,DISPLAY,1610,0,3,2019-01-30,0,3,243045,ES,1959,3,Small Business,RTBNEO ,0,0,Small Business,581.0244426,675.609817
+0,DISPLAY,1610,0,3,2019-01-30,0,3,243045,ES,1959,3,Small Business,RTBNEOÂ ,0,0,Small Business,581.0244426,675.609817
 0,DISPLAY,0,0,0,2019-01-30,0,0,0,ES,2,0,Small Segment Accounting Category,Emailing Network 2016,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-30,0,0,0,ES,34,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-30,0,0,0,ES,34,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-30,0,0,0,ES,48,0,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,44,1,1,2019-01-30,0,0,16706,ES,379,4,Enterprise Management,RTB@NEO,0,0,Enterprise Management,42.78888548,49.754518
-0,DISPLAY,0,1,1,2019-01-30,0,0,0,ES,47,1,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,1,1,2019-01-30,0,0,0,ES,47,1,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,2,2,2019-01-30,0,0,24,ES,6,0,Enterprise Management,PremiumNewsBook,0,0,Enterprise Management,0.8256,0.96
 0,DISPLAY,9,2,2,2019-01-30,0,0,8065,ES,105,2,Small Business,Expansion,0,0,Small Business,58.9644982,68.56337
 0,DISPLAY,15,0,2,2019-01-30,1,1,9333,ES,494,4,Small Business,Pymes y Autonomos,0,0,Small Business,48.15828,55.998
 0,DISPLAY,60,6,7,2019-01-30,1,0,76249,ES,36654,4,Accountants,Supercontable,0,0,Accountants,161.537916,187.834786
-0,DISPLAY,269,9,19,2019-01-30,1,9,378397,ES,2828,7,Other,RTBNEO ,0,0,Other,374.4968066,435.461403
+0,DISPLAY,269,9,19,2019-01-30,1,9,378397,ES,2828,7,Other,RTBNEOÂ ,0,0,Other,374.4968066,435.461403
 0,SEARCH,0,0,0,2019-01-30,0,0,14,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,4,0,0,2019-01-30,0,0,401,IE,11,0,Enterprise,Google AdWords,0,0,Enterprise,7.25,7.25
 0,SEARCH,651,5,8,2019-01-31,0,3,5117,FR,1357,2,Brand,Google AdWords,1,0,Brand,588.96,684.83
@@ -16763,9 +16763,9 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,26,0,0,2019-01-31,0,0,148,MY,22,0,Brand Brand,Google AdWords,0,0,Brand Brand,5.5,9.81
 0,SEARCH,23,0,0,2019-01-31,0,0,468,MY,20,0,Payroll Generic,Google AdWords,0,0,Payroll Generic,17.5,31.27
 0,SEARCH,20,0,0,2019-01-31,0,0,507,MY,37,0,People Generic,Google AdWords,0,0,People Generic,28.22,50.39
-0,DISPLAY,319,0,0,2019-01-31,0,0,44622,ES,355,3,Accountants,RTBNEO ,0,0,Accountants,72.35510498,84.133843
-0,DISPLAY,0,0,0,2019-01-31,0,0,1,ES,0,0,Accounting,EMMCEPYME ,0,0,Accounting,0,0
-0,DISPLAY,0,0,0,2019-01-31,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkES ,0,0,Accounting,0,0
+0,DISPLAY,319,0,0,2019-01-31,0,0,44622,ES,355,3,Accountants,RTBNEOÂ ,0,0,Accountants,72.35510498,84.133843
+0,DISPLAY,0,0,0,2019-01-31,0,0,1,ES,0,0,Accounting,EMMCEPYMEÂ ,0,0,Accounting,0,0
+0,DISPLAY,0,0,0,2019-01-31,0,0,1,ES,0,0,Accounting,EMMEmailingNetworkESÂ ,0,0,Accounting,0,0
 0,DISPLAY,16,0,0,2019-01-31,0,0,0,ES,38,0,Accounting,pymesyautonomos.com,0,0,Accounting,0,0
 0,SEARCH,4,0,0,2019-01-31,0,0,115,EA,,0,Financials,Google AdWords,0,0,Financials,6.14,102.43
 0,SEARCH,392,0,0,2019-01-31,0,0,20599,EA,,0,Medium Segment Campaign Accounting,Google AdWords,0,0,Medium Segment Campaign Accounting,36.31,605.17
@@ -16869,7 +16869,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,52,0,1,2019-01-31,0,1,17289,ES,263,7,Enterprise Management,RTB@NEO,0,0,Enterprise Management,42.8072568,49.77588
 0,DISPLAY,2,0,0,2019-01-31,0,0,497,ES,19,0,Medium Business,IDG Tech Network,0,0,Medium Business,50.8928994,59.17779
 0,DISPLAY,0,0,0,2019-01-31,0,0,125,ES,13,0,Medium Business,Infobolsa,0,0,Medium Business,0.5375,0.625
-0,DISPLAY,4,0,0,2019-01-31,0,0,5341,ES,14,0,Medium Business,PremiumSosfeES ,0,0,Medium Business,22.9663,26.705
+0,DISPLAY,4,0,0,2019-01-31,0,0,5341,ES,14,0,Medium Business,PremiumSosfeESÂ ,0,0,Medium Business,22.9663,26.705
 0,DISPLAY,108,0,0,2019-01-31,0,0,50529,ES,279,0,Medium Business,RTB@NEO,0,0,Medium Business,99.6210111,115.838385
 0,DISPLAY,0,0,0,2019-01-31,0,0,1578,ES,1,0,Medium Business,Silicon News Spain,0,0,Medium Business,61.0686,71.01
 0,SEARCH,71,0,0,2019-01-31,0,0,561,AUS,103,0,Brand,Google AdWords,0,0,Brand,66.75,113.12
@@ -16972,7 +16972,7 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,DISPLAY,8,0,0,2019-01-31,0,0,0,CA,2,0,Visa 50Cloud,YouTube.com,0,0,Visa 50Cloud,0,0
 0,DISPLAY,37,0,6,2019-01-31,0,6,98526,CA,86,0,Visa 50Cloud,Invite Media,1,0,Visa 50Cloud,278.4852504,348.106563
 0,DISPLAY,0,0,0,2019-01-31,0,0,40,DE,0,0,Affiliate,Awin (ex Zanox),0,0,Affiliate,0,0
-0,DISPLAY,1,0,0,2019-01-31,0,0,0,DE,69,0,Für-Gründer-Cooperation,fuer-gruender.de,0,0,Für-Gründer-Cooperation,0,0
+0,DISPLAY,1,0,0,2019-01-31,0,0,0,DE,69,0,FÃ¼r-GrÃ¼nder-Cooperation,fuer-gruender.de,0,0,FÃ¼r-GrÃ¼nder-Cooperation,0,0
 0,DISPLAY,6,0,1,2019-01-31,0,1,0,DE,9,0,Google Shopping,Google DE,0,0,Google Shopping,0,0
 0,DISPLAY,1,0,0,2019-01-31,0,0,3544,DE,201,0,Large Segment Enterprise Management B7,Programmatic Buying,0,0,Large Segment Enterprise Management B7,15.98290994,18.584779
 0,SEARCH,21,0,0,2019-01-31,0,0,721,ES,23,0,Awareness,Bing Ads,0,0,Awareness,6.53,7.6
@@ -17250,18 +17250,18 @@ Application,Channel,Clicks,Contact,Conversions,Date,Download,Free Trial,Impressi
 0,SEARCH,727,0,2,2019-01-31,1,1,32166,DE,499,0,Medium Segment Financial Sage HR Suite Plus,Google AdWords,0,0,Medium Segment Financial Sage HR Suite Plus,2231.35,2594.57
 0,SEARCH,17,0,4,2019-01-31,1,3,919,DE,37,0,Medium Segment Financial Category,Bing Ads,0,0,Medium Segment Financial Category,20.96,24.36
 0,DISPLAY,0,0,0,2019-01-31,0,0,4098,ES,15,0,Medium Business,Tic Beat,0,0,Medium Business,42.29136,49.176
-0,DISPLAY,2,0,1,2019-01-31,0,1,5610,ES,96,0,Medium Business,PremiumRRHHDigitalesES ,0,0,Medium Business,44.62057712,51.884392
+0,DISPLAY,2,0,1,2019-01-31,0,1,5610,ES,96,0,Medium Business,PremiumRRHHDigitalesESÂ ,0,0,Medium Business,44.62057712,51.884392
 0,DISPLAY,64,0,0,2019-01-31,0,0,16802,ES,93,0,Small Business,ElBlogSalmon,0,0,Small Business,86.69832,100.812
 0,DISPLAY,40,0,0,2019-01-31,0,0,0,ES,35,0,Small Business,PMPSoftonic,0,0,Small Business,13.76,16
 0,DISPLAY,2,0,0,2019-01-31,0,0,1785,ES,290,0,Small Business,Pymes y Autonomos,0,0,Small Business,9.2106,10.71
-0,DISPLAY,0,0,0,2019-01-31,0,0,0,ES,46,0,Small Segment Accounting Category,PremiumElMundo ,0,0,Small Segment Accounting Category,0,0
-0,DISPLAY,0,0,0,2019-01-31,0,0,0,ES,38,0,Small Segment Accounting Category,PremiumElPais ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-31,0,0,0,ES,46,0,Small Segment Accounting Category,PremiumElMundoÂ ,0,0,Small Segment Accounting Category,0,0
+0,DISPLAY,0,0,0,2019-01-31,0,0,0,ES,38,0,Small Segment Accounting Category,PremiumElPaisÂ ,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,0,0,0,2019-01-31,0,0,0,ES,24,1,Small Segment Accounting Category,wetransfer.com,0,0,Small Segment Accounting Category,0,0
 0,DISPLAY,75,1,2,2019-01-31,0,1,71506,ES,590,3,Small Business,infoautonomos.com,0,0,Small Business,215.23306,250.271
 0,DISPLAY,3,1,1,2019-01-31,0,0,8734,ES,120,4,Small Business,Expansion,0,0,Small Business,63.85566392,74.250772
 0,DISPLAY,58,0,2,2019-01-31,1,1,66197,ES,30901,8,Accountants,Supercontable,0,0,Accountants,139.2768134,161.949783
-0,DISPLAY,1906,1,5,2019-01-31,2,2,243306,ES,1899,5,Small Business,RTBNEO ,0,0,Small Business,581.2398752,675.86032
-0,DISPLAY,230,11,17,2019-01-31,2,4,379124,ES,2507,23,Other,RTBNEO ,0,0,Other,376.1719739,437.409272
+0,DISPLAY,1906,1,5,2019-01-31,2,2,243306,ES,1899,5,Small Business,RTBNEOÂ ,0,0,Small Business,581.2398752,675.86032
+0,DISPLAY,230,11,17,2019-01-31,2,4,379124,ES,2507,23,Other,RTBNEOÂ ,0,0,Other,376.1719739,437.409272
 0,SEARCH,17,0,6,2019-01-31,0,6,167,IE,105,0,C4L 50C,Google AdWords,0,0,C4L 50C,40.56,40.56
 0,SEARCH,0,0,0,2019-01-31,0,0,23,IE,,0,Enterprise,Bing Ads,0,0,Enterprise,0,0
 0,SEARCH,7,0,0,2019-01-31,0,0,349,IE,22,0,Enterprise,Google AdWords,0,0,Enterprise,15.38,15.38

@@ -68,19 +68,25 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
     def data_reader_ndp_raw(self):
 
         logger.info("Start Reading:- NdpRawDataFile.csv at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        read_ndp_data = pd.read_csv(self.section_value[9] + "NdpRawDataFile.csv", encoding="ISO-8859-1")
+        read_ndp_data = pd.read_csv(self.section_value[9] + "NdpRawDataFile.csv")
         logger.info("Done Reading:- NdpRawDataFile.csv at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         self.read_ndp_data = read_ndp_data
 
     def ndp_static_conversion_reader(self):
         logger.info("Start Reading:- DMC_Static_Conversions.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        read_conversion_raw_file = pd.read_csv(self.section_value[12] + "DMC_Static_Conversions.csv")
+
+        read_dmc_static_zf = zipfile.ZipFile(self.section_value[12] + "DMC_Static_Conversions.zip")
+        read_dmc_static = pd.read_csv(read_dmc_static_zf.open(zipfile.ZipFile.namelist(read_dmc_static_zf)[0]),
+                                      skiprows=9, skipfooter=1, engine='python', encoding="utf-8", parse_dates=['Date'])
+
+        # read_conversion_raw_file = pd.read_csv(self.section_value[12] + "DMC_Static_Conversions.csv",
+        #                                        encoding="ISO-8859-1")
 
         logger.info("Done Reading:- DMC_Static_Conversions.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        self.read_conversion_raw_file = read_conversion_raw_file
+        self.read_conversion_raw_file = read_dmc_static
 
     def ndp_dynamic_conversion_reader(self):
 
@@ -88,16 +94,16 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
                                                 skipfooter=1, skiprows=13)
 
         raw_dynamic_conversion_uk = pd.read_csv(self.section_value[12] + "DynamicUK.csv", engine='python',
-                                                skipfooter=1, skiprows=18)
+                                                skipfooter=1, skiprows=17)
 
         raw_dynamic_conversion_spain = pd.read_csv(self.section_value[12] + "DynamicSpain.csv", engine='python',
-                                                   skipfooter=1, skiprows=12)
+                                                   skipfooter=1, skiprows=11)
 
         raw_dynamic_conversion_germany = pd.read_csv(self.section_value[12] + "DynamicGermany.csv", engine='python',
-                                                     skipfooter=1, skiprows=13)
+                                                     skipfooter=1, skiprows=12)
 
         raw_dynamic_conversion_france = pd.read_csv(self.section_value[12] + "DynamicFrance.csv", engine='python',
-                                                    skiprows=12, skipfooter=1)
+                                                    skiprows=11, skipfooter=1)
 
         raw_dynamic_conversion_us['Market'] = 'USA'
         raw_dynamic_conversion_uk['Market'] = 'UK'
@@ -105,11 +111,11 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         raw_dynamic_conversion_germany['Market'] = 'Germany'
         raw_dynamic_conversion_france['Market'] = 'France'
 
-        dynamic_df = pd.concat([raw_dynamic_conversion_us,
-                                raw_dynamic_conversion_uk.rename(columns={'Form_lead_type (string)': 'Form_lead_type (string)'}),
-                                raw_dynamic_conversion_spain.rename(columns={'Form_lead_type (string)': 'Form_lead_type (string)'}),
-                                raw_dynamic_conversion_germany.rename(columns={'Formleadtype (string)': 'Form_lead_type (string)'}),
-                                raw_dynamic_conversion_france.rename(columns={'form_solution_lead_type (string)': 'Form_lead_type (string)'})],
+        dynamic_df = pd.concat([raw_dynamic_conversion_us.rename(columns={'form_lead_type (string)': 'Form_lead_type (string)'}),
+                                raw_dynamic_conversion_uk.rename(columns={'form_lead_type (string)': 'Form_lead_type (string)'}),
+                                raw_dynamic_conversion_spain.rename(columns={'form_lead_type (string)': 'Form_lead_type (string)'}),
+                                raw_dynamic_conversion_germany.rename(columns={'form_lead_type (string)': 'Form_lead_type (string)'}),
+                                raw_dynamic_conversion_france.rename(columns={'form_lead_type (string)': 'Form_lead_type (string)'})],
                                axis=0, sort=True, ignore_index=True)
 
         self.dynamic_df = dynamic_df
@@ -141,7 +147,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         logger.info("Start Reading:- advertiserMarketMapping.csv at " + str(datetime.datetime.now().
                                                                            strftime("%Y-%m-%d %H:%M")))
 
-        read_advertiser_mapping = pd.read_csv(self.section_value[9] + "advertiserMarketMapping.csv")
+        read_advertiser_mapping = pd.read_csv(self.section_value[9] + "advertiserMarketMapping.csv", encoding="utf-8")
 
         logger.info("Done Reading:- advertiserMarketMapping.csv at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))

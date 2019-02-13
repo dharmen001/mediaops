@@ -61,6 +61,7 @@ class NdpDataPlayer(NdpReader):
         # Removing unconditional rows from NDP Tableau Raw Data
         logger.info("Start removing channel from tableau data")
         self.read_ndp_data_platform = self.read_ndp_data
+
         remove_row_channel = self.read_ndp_data_platform[self.read_ndp_data_platform['Channel'].isin([
             'CONTENT SYNDICATION', 'OTHER', 'LEAD AGGREGATOR'])]
         self.read_ndp_data_platform = self.read_ndp_data_platform.drop(remove_row_channel.index, axis=0)
@@ -82,8 +83,8 @@ class NdpDataPlayer(NdpReader):
         self.merged_internal_data_advertiser = merged_internal_data_advertiser
 
         internal_conversions = pd.pivot_table(self.merged_internal_data_advertiser, values=['Application',
-                                                                                            'Contact', 'Download'
-            , 'Free Trial', 'Purchase',
+                                                                                            'Contact', 'Download',
+                                                                                            'Free Trial', 'Purchase',
                                                                                             'Other Activity',
                                                                                             'Other Dynamic Floodlight'],
                                               index=['New Market', 'Platform'], aggfunc=np.sum)
@@ -108,9 +109,17 @@ class NdpDataPlayer(NdpReader):
 
     def market_mapping_static_conversion(self):
         """Advertiser Which needs to count"""
-        static_conversion_merge_advertiser = [self.read_conversion_raw_file, self.read_advertiser_mapping]
-        advertiser_with_static_conversion = reduce(lambda left, right: pd.merge(left, right, on='Advertiser'),
+        # x = self.read_conversion_raw_file.to_excel(self.writer_file)
+        # self.save_and_close_writer()
+        # exit()
+        static_conversion_merge_advertiser = [self.read_advertiser_mapping, self.read_conversion_raw_file]
+        advertiser_with_static_conversion = reduce(lambda left, right: pd.merge(left, right, on='Advertiser ID'),
                                                    static_conversion_merge_advertiser)
+
+        # x = advertiser_with_static_conversion.to_excel(self.writer_file)
+        # self.save_and_close_writer()
+        # exit()
+
         """Site Which needs to count"""
         static_conversion_merge_platform = [advertiser_with_static_conversion, self.read_site_dcm_platform_mapping]
 

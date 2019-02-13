@@ -1,8 +1,6 @@
-application: TestPy
-version: 1
 runtime: python27
 api_version: 1
-threadsafe: false
+threadsafe: True
 handlers:
 - url: /.*
-  script: TestPy.py
+  script:
