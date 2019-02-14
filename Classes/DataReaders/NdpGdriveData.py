@@ -2,19 +2,22 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 from Classes.DataReaders.config_ini import Config
 
+
 class NdpGrdriveDate(Config):
 
     def __init__(self):
         super(NdpGrdriveDate, self).__init__()
+        GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = 'C:\mediaops\Classes\DataReaders\client_secrets.json'
+        mycred = 'C:\mediaops\Classes\DataReaders\mycreds.txt'
         self.gauth = GoogleAuth()
-        self.gauth.LoadCredentialsFile("mycreds.txt")
+        self.gauth.LoadCredentialsFile(mycred)
         if self.gauth.credentials is None:
             self.gauth.LocalWebserverAuth()
         elif self.gauth.access_token_expired:
             self.gauth.Refresh()
         else:
             self.gauth.Authorize()
-        self.gauth.SaveCredentialsFile("mycreds.txt")
+        self.gauth.SaveCredentialsFile(mycred)
         self.drive = GoogleDrive(self.gauth)
 
     def file_objects(self):
