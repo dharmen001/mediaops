@@ -36,7 +36,7 @@ class Outlook(Config):
         while True:
             # Connect to the server
             try:
-                self.imap = imaplib.IMAP4_SSL("imap-mail.outlook.com", port=993)
+                self.imap = imaplib.IMAP4_SSL("outlook.office365.com", port=993)
                 r, d = self.imap.login(username, password)
                 assert r == 'OK', 'login failed'
                 print(" > Sign as ", d)

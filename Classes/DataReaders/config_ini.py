@@ -30,9 +30,9 @@ class Config(object):
 
         self.section_key = section_key
         # print(self.section_key)
-        # print(self.section_key[2])
+        # print(self.section_key[6])
         self.section_value = section_value
-        # print(self.section_value[19])
+        # print(self.section_value[6])
 
 
 if __name__ == "__main__":
