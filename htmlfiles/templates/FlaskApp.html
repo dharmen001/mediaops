@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8"/>
+</head>
+
+<body bgcolor="#7030A0">
+
+<h1><font color=White> MindShare Neo Report</font></h1>
+
+<form action="Submit" method="POST">
+    <fieldset>
+        <legend><font color=White> Select Report Name</font></legend>
+        <select name="reports">
+          <option value="Generate Jira Tickets">Generate Jira Tickets</option>
+          <option value="NDP Reports">NDP Reports</option>
+        </select>
+        <label for="Start Date"><font color = white>Start Date</font> : </label>
+        <input id="Start Date" type="date" value="YYYY-MM-DD"/>
+        <label for="End Date"><font color = white>End Date</font> : </label>
+        <input id="End Date" type="date" value="YYYY-MM-DD"/>
+        <input type="submit">
+    </fieldset>
+
+</form>
+
+</body>
+
+</html>
+

@@ -27,7 +27,6 @@ Advertiser/Account ID/Account Name,Calculation2,Market,Platform
 18ce53uwe4q, ,ES,Twitter
 18ce53yh15j, ,FR,Twitter
 18ce53yupgw, ,DE,Twitter
-18ce53yxf9c, ,ZA,Twitter
 18ce53z39ku, ,UK,Twitter
 18ce54a24x4, ,UK,Twitter
 18ce54a24xc, ,UK,Twitter
@@ -49,20 +48,23 @@ Advertiser/Account ID/Account Name,Calculation2,Market,Platform
 190851931743214, ,PT,Facebook
 200627034094757, ,ZA,Facebook
 211238953028391, ,ZA,Facebook
+251673709101263, ,PT,Facebook
+291609914844674, ,PT,Facebook
 297862587483470, ,UK,Facebook
+322729395122058, ,PT,Facebook
 327417891166366, ,UK,Facebook
 350190809068465, ,ZA,Facebook
-466419103561180, ,ZA,Facebook
-466419200227837, ,ZA,Facebook
-466419243561166, ,ZA,Facebook
+401729853725387, ,PT,Facebook
 478607032649959, ,ES,Facebook
-498249400692335, ,US & CA,Facebook
+480172915849484, ,PT,Facebook
+498249400692335, ,CA,Facebook
 525651201166321, ,ZA,Facebook
+558477728005803, ,PT,Facebook
 615991732081196, ,ZA,Facebook
 696903320434181, ,ZA,Facebook
 700571030067410, ,ZA,Facebook
 708882145902965, ,ZA,Facebook
-712433339127908, ,US & CA,Facebook
+712433339127908, ,CA,Facebook
 715745955216584, ,ZA,Facebook
 717590098609803, ,DE,Facebook
 722739641183882, ,ZA,Facebook
@@ -95,7 +97,6 @@ Advertiser/Account ID/Account Name,Calculation2,Market,Platform
 1101737219951733, ,UK,Facebook
 1102283819897073, ,UK,Facebook
 1122510471109909, ,PT,Facebook
-1125725197448980, ,BR,Facebook
 1145253058933482, ,UK,Facebook
 1183205088359370, ,FR,Facebook
 1193372584030302, ,DE,Facebook
@@ -119,7 +120,7 @@ Advertiser/Account ID/Account Name,Calculation2,Market,Platform
 2199496580326414, ,ES,Facebook
 10153202519372347, ,US & CA,Facebook
 10153492937497347, ,US & CA,Facebook
-10153578702442347, ,US & CA,Facebook
+10153578702442347, ,US,Facebook
 10153578705177347, ,US & CA,Facebook
 10153578707852347, ,US & CA,Facebook
 10153578709027347, ,US & CA,Facebook
@@ -147,10 +148,10 @@ Advertiser/Account ID/Account Name,Calculation2,Market,Platform
 10154501783527347, ,US & CA,Facebook
 10154580146032347, ,US & CA,Facebook
 10154600492292347, ,US & CA,Facebook
-10154766244802347, ,US & CA,Facebook
+10154766244802347, ,US,Facebook
 10154821611842347, ,US & CA,Facebook
 10154821616592347, ,US & CA,Facebook
-10154871510482347, ,US & CA,Facebook
+10154871510482347, ,US,Facebook
 10154914608252347, ,US & CA,Facebook
 10154922550582347, ,US & CA,Facebook
 10155605649042347, ,US & CA,Facebook
@@ -162,7 +163,6 @@ GGVJTVIQ5NB4LFLC3FWTA2, ,US & CA,ADROLL
 HRMS, ,US & CA,DS3
 IE | Sage | 2018, ,IE,DBM
 IJPUQDWM7NGRPDIQJPSJU4, ,US & CA,ADROLL
-IM_SAGE_NEO_SAGELIVE_FINANCIAL_Q1_18_Pierre, ,FR,Linkedin
 Impact, ,US & CA,DS3
 InMail_01_15447382_Spain_Mgr+ AND Ind= Manufacturing/Services/Transportation AND Function = IT/Ops/, ,ES,Linkedin
 InMail_01_Sage Forum_Director+And Csize=0-200 _14703862, ,ES,Linkedin
@@ -170,16 +170,13 @@ InMail_02_Sage Forum_Director + And Opinion leaders, ,ES,Linkedin
 InMail_Sage neo@ogilvy Accounting General 2858 Q4 2016 // 16851262, ,US & CA,Linkedin
 InMail_Sage neo@ogilvy MBS 2871 Q4 2016// 16782142, ,ES,Linkedin
 Inmail_Sage neo@ogilvy sparta Q3 2016//15987382, ,ES,Linkedin
-"INMAIL_Sage_Acc&BMS&HR_InMail_Neo_Q1Q216_FR_TK_01_FR_Csize= Myself only,1-10_Accounting", ,FR,Linkedin
-INMAIL_Sage_Cloud_Neo_Q417_FR_MP, ,FR,Linkedin
-InMail_Sage_Inmail_Neo_Q217_FR_MP // 18856222, ,FR,Linkedin
 Inmail_Sage_Neo Sage 3127 Live Q2 DOM // 18673702, ,ES,Linkedin
 InMail_Sage_neo@ogilvy Accounting_2919_Q1 2017 DOM // 17310262, ,ES,Linkedin
 InMail_Sage_Neo@ogilvy BMS 3028 spain // 17396182, ,ES,Linkedin
 Inmail_Sage_Neo@ogilvy Sage Live 3038 Q1 2017 // 18333622, ,ES,Linkedin
 InMail_Sage:neo@ogilvy Plan_Sage_Summit_Madrid_3056 // 18414742, ,ES,Linkedin
 Línea de Crédito Sage Portugal, ,ES,Linkedin
-LL_Sage_Accounting_Campaigns, ,ZA,Linkedin
+Línea de Crédito Sage Portugal Account ID: 503256374, ,PT,Linkedin
 LMS_SAGE SP SL_Sponsored Content, ,ES,Linkedin
 LMS_SAGE SP SL_Sponsored InMail, ,ES,Linkedin
 LMS_SAGE SP SL-Sage neo 3207 SII Q2 2017 DOM_Sponsored InMail, ,ES,Linkedin
@@ -193,16 +190,18 @@ neoogilvyla-sagesfa-sc, ,US & CA,TABOOLA
 North America Brand, ,US & CA,DS3
 Payments Center, ,US & CA,DS3
 Payments ISO, ,US & CA,DS3
-Sage, ,BR,DS3
 Sage 100/300 Canada, ,US & CA,DS3
 Sage 100/300 ERP, ,US & CA,DS3
+SAGE - APAC - NEO - Hong Kong, ,HK,DCM
 SAGE - APAC - NEO - Hong Kong, ,HK,DS3
+SAGE - APAC - NEO - Indonesia -, ,ID,DCM
 SAGE - APAC - NEO - Indonesia -, ,ID,DS3
+SAGE - APAC - NEO - Malaysia, ,MY,DCM
 SAGE - APAC - NEO - Malaysia, ,MY,DS3
+SAGE - APAC - NEO - Singapore, ,SG,DCM
 SAGE - APAC - NEO - Singapore, ,SG,DS3
+SAGE - APAC - NEO - Thailand, ,TH,DCM
 SAGE - APAC - NEO - Thailand, ,TH,DS3
-Sage - One (DCM), ,BR,DBM
-Sage - X3 - Jussi, ,BR,DBM
 SAGE (Local Advertiser) - Legacy, ,DE,DS3
 Sage â€“ X3 ERP, ,US & CA,DS3
 Sage Accountants Global UK, ,UK,DBM
@@ -215,10 +214,15 @@ Sage BMS Local, ,UK,DBM
 Sage Business Management, ,UK,DBM
 Sage C4L Q1 2018_Sponsored Content, ,US & CA,Linkedin
 Sage C4L Q1 2018_Sponsored InMail, ,US & CA,Linkedin
-Sage CA_H1 FY19_Sponsored Content, ,US & CA,Linkedin
+Sage CA_H1 FY19_Sponsored Content, ,CA,Linkedin
 Sage CA_H1 FY19_Sponsored InMail, ,US & CA,Linkedin
 Sage CRE, ,US & CA,DS3
 Sage CRE - Display, ,US & CA,DS3
+SAGE DBM - HK, ,HK,DBM
+SAGE DBM - ID, ,ID,DBM
+SAGE DBM - MY, ,MY,DBM
+SAGE DBM - SG, ,SG,DBM
+SAGE DBM - TH, ,TH,DBM
 Sage Finance Category, ,UK,DBM
 Sage Global HR & Payroll UK, ,UK,DBM
 Sage Impact Local, ,UK,DBM
@@ -245,26 +249,21 @@ Sage Payments Dev. Portal, ,US & CA,DS3
 Sage Payments Global UK, ,UK,DBM
 Sage Payroll, ,US & CA,DS3
 Sage Payroll UK, ,UK,DBM
-Sage Q1 2019_Cross Segment_CA_XSEG_, ,US & CA,Linkedin
-Sage Q1 2019_People_US_PEEPS_, ,US & CA,Linkedin
+Sage Q1 2019_Cross Segment_CA_XSEG_, ,CA,Linkedin
+Sage Q1 2019_People_US_PEEPS_, ,US,Linkedin
 Sage Q2 2018 Solutions Combined_NA InMail, ,US & CA,Linkedin
 Sage Q2 2018 Solutions Combined_NA Sponsored Content, ,US & CA,Linkedin
+Sage Q2 2019_Cross Segment_CA_XSEG_, ,CA,Linkedin
+Sage Q2 2019_People_US_PEEPS_, ,US,Linkedin
 Sage Q4 2018_C4L_50US_Alliance, ,US & CA,Linkedin
 SAGE South Africa, ,ZA,DBM
 Sage UK FY19, ,UK,Linkedin
 Sage US, ,US & CA,DBM
-Sage US_H1 FY19_Sponsored Content, ,US & CA,Linkedin
-Sage US_H1 FY19_Sponsored InMail, ,US & CA,Linkedin
+Sage US_H1 FY19_Sponsored Content, ,US,Linkedin
+Sage US_H1 FY19_Sponsored InMail, ,US,Linkedin
 Sage X3 2759 neo@ogilvy Q3 2016 // 55257022, ,ES,Linkedin
 Sage X3 2759 neo@ogilvy Q3 2016// 16467622, ,ES,Linkedin
 Sage X3 Canada, ,US & CA,DS3
-Sage_1_Dynamic_Turn Left Media_19944061_2017, ,ZA,Linkedin
-Sage_1_Dynamic_Turn Left Media_19967057_2017, ,ZA,Linkedin
-Sage_1_Dynamic_TurnLeftMedia_18685462_2017, ,ZA,Linkedin
-Sage_1_InMail_Turn Left Media_19944061_2017, ,ZA,Linkedin
-Sage_1_InMail_TurnLeftMedia_19975983_2017, ,ZA,Linkedin
-Sage_Acc&BMS&HR_InMail_Neo_Q1Q216_FR_TK  // 14778502, ,FR,Linkedin
-Sage_Acc&BMS&HR_InMail_Neo_Q1Q216_FR_TK_14778502_Accounting, ,FR,Linkedin
 SAGE_Addedvalue_FY18, ,FR,Linkedin
 SAGE_Addedvalue_FY18, ,UK,Linkedin
 Sage_Campaigns_NEO_DE, ,DE,Linkedin
@@ -280,14 +279,11 @@ Sage_Q3 SU_Standard_15856702, ,ES,Linkedin
 Sage_Q4_NetworkAuto-Enrolment_Ogilvy2016 / 16960702_SEONE, ,UK,Linkedin
 Sage_Q4_Payments_Neo2016 / 16960702, ,UK,Linkedin
 Sage_SagePeople _ Ogilvy2016 / 16960702_SOP, ,UK,Linkedin
-Sage_Summit Tour_SC&SI_Neo_Q416_FR_TK  // 16871062, ,FR,Linkedin
 Sage-SBS-Sage 50-CA, ,US & CA,DS3
 Sage-SBS-Sage 50-US, ,US & CA,DS3
 Sage-SBS-Sage One-CA, ,US & CA,DS3
 Sage-SBS-Sage One-US, ,US & CA,DS3
 Sage|AU, ,AUS,DS3
-SAGE|BR, ,BR,DCM
-SAGE|BR, ,BR,DS3
 Sage|CA|Accountants, ,CA,DS3
 Sage|CA|Accounting_Finance, ,CA,DS3
 Sage|CA|BMS, ,CA,DS3
@@ -295,6 +291,7 @@ Sage|CA|Cross-Segment, ,CA,DS3
 Sage|CA|Enterprise, ,CA,DS3
 Sage|CA|People & Payroll, ,CA,DS3
 Sage|CA|Small, ,CA,DS3
+Sage|CA|VISA, ,CA,DS3
 SAGE|DBM|FR|GLOBAL, ,FR,DBM
 SAGE|DBM|FR|LOCAL, ,FR,DBM
 SAGE|DE, ,DE,DCM
@@ -352,12 +349,6 @@ SageSoftware_Neo@Ogilvy_SageX3_14251702, ,US & CA,Linkedin
 SageSoftware_Neo@Ogilvy_X3Partners_SGX, ,US & CA,Linkedin
 SAS, ,US & CA,DS3
 SC_Sage Software_Direct_Placeholder_Q3 2017, ,AUS,Linkedin
-SC_Sage_Cloud_Neo_Q417_FR_MP, ,FR,Linkedin
-SC_Sage_Jussi_InMail_Novembro-2016.05984.00001.001, ,BR,Linkedin
-SC_Sage_Jussi_Maio 2016_SU_SAGE One_PI 2016.01738.00001, ,BR,Linkedin
-SC_Sage_Jussi_Maio 2016_SU_SAGE X3_PI 2016.01730.00001.001, ,BR,Linkedin
-SC_Sage_Jussi_SC_Agosto 2016_PI 2016.04466.00001.001, ,BR,Linkedin
-SC_SAGE_NEO_SAGELIVE_FINANCIAL_Q1_18_Pierre, ,FR,Linkedin
 SC_SageSoftware_Neo@Ogilvy_SAS_Impact_16184782, ,US & CA,Linkedin
 Sponsored Content_Sage Software_ISO_SC_Ogilvy_15924142, ,US & CA,Linkedin
 SU_SAGE Forum Ogilvy Q1 2015_14703862, ,ES,Linkedin
@@ -366,7 +357,6 @@ SU_Sage neo@ogilvy Accounting General 2858 Q4 2016//16851262, ,ES,Linkedin
 SU_sage neo@ogilvy Q4 DG entreprise 2015_13463542, ,ES,Linkedin
 SU_Sage neo@ogilvy sparta Q3 2016_15987382, ,ES,Linkedin
 SU_Sage_GlobalUK_Accounting Solutions_SU&InMail_Q3-Q4_FY16_Neo@Ogilvy_ACNTG, ,UK,Linkedin
-SU_Sage_LIVE_SC_Neo_Q217_FR_MP_18780262, ,FR,Linkedin
 SU_Sage_Neo Sage 3127 Live Q2 DOM  // 18673702, ,ES,Linkedin
 SU_Sage_neo@ogilvy Accountant Q2 3069 2017 DOM // 18844102, ,ES,Linkedin
 SU_Sage_Neo@ogilvy BMS 3028 spain // 17396182, ,ES,Linkedin
