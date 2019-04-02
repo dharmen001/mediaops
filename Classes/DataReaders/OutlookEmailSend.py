@@ -5,9 +5,9 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from Classes.DataReaders.config_ini import Config
-from string import Template
 from email import Encoders
 import pandas as pd
+from Classes.LoggerFile.LogFile import logger
 
 
 class SendEmail(Config):
@@ -23,7 +23,7 @@ class SendEmail(Config):
             Return two lists names, emails containing names and email addresses
             read from a file specified by filename.
         """
-
+        logger.info('Start Reading : {} '.format(filename))
         file_name = pd.read_csv(filename)
         body = file_name['Body']
         names = file_name['Name']
@@ -33,10 +33,12 @@ class SendEmail(Config):
         self.file_name = filename
         return body, names, emails, subjects, attachments
 
-    def main(self):
-        body, names, emails, subjects, attachments = self.get_contacts('mycontacts.csv')  # read contacts
+    def main(self, file_path):
+        body, names, emails, subjects, attachments = self.get_contacts(self.section_value[9] +
+                                                                       'outlookReciepientsList.csv')  # read contacts
 
         # set up the SMTP server
+        logger.info('Setting up server with: {} '.format(self.username))
         s = smtplib.SMTP(host='smtp-mail.outlook.com', port=587)
         s.ehlo()
         s.starttls()
@@ -45,7 +47,7 @@ class SendEmail(Config):
 
         # For each contact, send the email:
         for msg_body, name, email, subject, attachment in zip(body, names, emails, subjects, attachments):
-            file_path = 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/Monday/Mazda_Report/'
+            print(file_path+attachment)
             msg = MIMEMultipart()  # create a message
 
             # setup the parameters of the message
@@ -64,12 +66,14 @@ class SendEmail(Config):
             msg.attach(MIMEText(msg_body, 'plain'))
 
             # send the message via the server set up earlier.
+            logger.info('Sending email with Subject: {} to {} '.format(subject, email))
             s.sendmail(msg['From'], msg['To'], msg.as_string())
-
+            logger.info('Email sent to {}: '.format(name))
         # Terminate the SMTP session and close the connection
         s.close()
 
 
 if __name__ == "__main__":
     Object_Email_Send = SendEmail()
-    Object_Email_Send.main()
+    path = 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/Monday/Mazda_Report/'
+    Object_Email_Send.main(path)

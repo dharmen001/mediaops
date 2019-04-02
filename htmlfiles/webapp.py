@@ -26,6 +26,9 @@ def submit():
     elif report == 'NDP Reports':
         subprocess.call([r'C:\mediaops\script\Ndp.bat'])
         return 'NDP Reports Generated'
+    elif report == 'Billing':
+        subprocess.call([r'C:\mediaops\script\Billing.Bat'])
+        return render_template('Billing.html')
 
 
 if __name__ == "__main__":
