@@ -1,11 +1,11 @@
 # coding=utf-8
-#! /usr/bin/env python
+#!/usr/bin/env python3
 import smtplib
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from Classes.DataReaders.config_ini import Config
-from email import Encoders
+from email import encoders
 import pandas as pd
 from Classes.LoggerFile.LogFile import logger
 
@@ -57,7 +57,7 @@ class SendEmail(Config):
 
             part = MIMEBase('application', 'octet-stream')
             part.set_payload(open(file_path + attachment, 'rb').read())
-            Encoders.encode_base64(part)
+            encoders.encode_base64(part)
             part.add_header('Content-Disposition', 'attachment', filename=attachment)
 
             msg.attach(part)
