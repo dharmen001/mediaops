@@ -16,7 +16,7 @@ class Config(object):
         """
 
         config_file = configparser.ConfigParser()
-        config_file.read('mediaops.ini')
+        config_file.read('/home/Dharmendra/mediaops/Classes/DataReaders/mediaops.ini')
 
         section_key = []
         section_value = []
