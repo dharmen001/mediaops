@@ -16,10 +16,7 @@ class Config(object):
         """
 
         config_file = configparser.ConfigParser()
-        config_file.read('C:/mediaops/config/mediaops.ini')
-
-        self.sqlPath = config_file['mediaops-properties']['sqlPath']
-        self.mazdaInputPath = config_file['mediaops-properties']['mazdaInputPath']
+        config_file.read('mediaops.ini')
 
         section_key = []
         section_value = []
