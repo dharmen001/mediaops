@@ -1,5 +1,5 @@
 # coding=utf-8
-#!/usr/bin/env python3
+#! /usr/bin/env python3
 import smtplib
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
