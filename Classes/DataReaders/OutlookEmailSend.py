@@ -75,5 +75,5 @@ class SendEmail(Config):
 
 if __name__ == "__main__":
     Object_Email_Send = SendEmail()
-    path = 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/Monday/Mazda_Report/'
+    path = '/home/Dharmendra/billingOutput/'
     Object_Email_Send.main(path)
