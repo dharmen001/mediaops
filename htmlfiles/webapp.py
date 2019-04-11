@@ -29,6 +29,9 @@ def submit():
     elif report == 'Billing':
         subprocess.call([r'C:\mediaops\script\Billing.Bat'])
         return render_template('Billing.html')
+    elif report == 'Adwords':
+        subprocess.call([r'C:\mediaops\script\Adwords.bat'])
+        return 'Files Downloaded'
 
 
 if __name__ == "__main__":

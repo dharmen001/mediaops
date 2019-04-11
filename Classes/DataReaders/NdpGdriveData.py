@@ -1,7 +1,7 @@
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 from Classes.DataReaders.config_ini import Config
-
+import httplib2
 
 class NdpGrdriveDate(Config):
 
@@ -63,5 +63,6 @@ class NdpGrdriveDate(Config):
 
 
 if __name__ == "__main__":
+    h = httplib2.Http(".cache", disable_ssl_certificate_validation=True)
     objectNdpGdrive = NdpGrdriveDate()
     objectNdpGdrive.main()

@@ -25,8 +25,8 @@ response = s.post(url, data=json.dumps(payload), headers=headers, verify=True)
 # with open('data.json', 'w') as outfile:
 #     json.dump(my_data, outfile,  indent=4)
 #
-# print(response.status_code)
-# # print(json.dumps(response._content.decode("utf-8"), indent=4, sort_keys=True))
-# from pprint import pprint
-# pprint(response.json(), indent=4)
+print(response.status_code)
+# print(json.dumps(response._content.decode("utf-8"), indent=4, sort_keys=True))
+from pprint import pprint
+pprint(response.json(), indent=4)
 # print(json.dumps(response.json(), indent=4), file=open('alok.json', 'w')))
