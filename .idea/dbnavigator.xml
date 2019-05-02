@@ -23,7 +23,12 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="1282e049-e317-47bc-b2af-d3e2db6f46f6">
+        <schema name="adwords" object-types="function, procedure, table, view" />
+        <schema name="information_schema" object-types="function, procedure, table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="1282e049-e317-47bc-b2af-d3e2db6f46f6">

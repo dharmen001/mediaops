@@ -108,8 +108,9 @@ class Jira(Config):
         self.description = description
 
     def de(self):
-        watch = ['anastasia.lanina', 'Ing-y.Chenn', 'jennifer.marquez', 'manon.leymat',
-                 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma',
+                 'nikita.borah', 'deepak.garg', 'mohammad.dilshad',
+                 'jennifer.marquez', 'ajaysingh.yadav', 'Ing-y.Chenn', 'anastasia.lanina', 'thilo.babel1']
         assignees = 'anastasia.lanina'
         attachment = [self.section_value[3] + 'DE.xlsx']
 
@@ -117,7 +118,7 @@ class Jira(Config):
             self.issue_de = {
                 'project': {'key': 'MOS'},
                 'issuetype': {'name': 'Reporting'},
-                'summary': 'NDP Data Audit {} DE'.format(Jira.date_create().strftime('%B')),
+                'summary': 'Test', # 'NDP Data Audit {} DE'.format(Jira.date_create().strftime('%B')),
                 'description': self.description,
                 'customfield_10038': {'value': 'DE'},
                 'customfield_10052': {'value': 'Ad hoc'},
@@ -129,19 +130,20 @@ class Jira(Config):
             create_de = self.client.create_issue(fields=self.issue_de, prefetch=True)
             self.create_de = create_de
 
-            for i in watch:
-                self.client.add_watcher(self.create_de.id, i)
-
             for j in attachment:
                 self.client.add_attachment(self.create_de.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_de.id, i)
 
         except JIRAError as e:
             logger.error(str(e))
             pass
 
     def fr(self):
-        watch = ['manon.mercier', 'maxime.sarrazin',
-                 'jennifer.marquez', 'manon.leymat', 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma', 'nikita.borah',
+                 'deepak.garg', 'mohammad.dilshad', 'jennifer.marquez',
+                 'ajaysingh.yadav', 'Maxime.Sarrazin', 'philippine.gurs', 'manon.mercier']
         assignees = 'manon.mercier'
         attachment = [self.section_value[3] + 'FR.xlsx']
 
@@ -160,20 +162,21 @@ class Jira(Config):
 
             self.create_fr = self.client.create_issue(fields=self.issue_fr, prefetch=True)
 
-            for i in watch:
-                self.client.add_watcher(self.create_fr.id, i)
-
             for j in attachment:
                 self.client.add_attachment(self.create_fr.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_fr.id, i)
 
         except JIRAError as e:
             logger.error(str(e))
             pass
 
     def es(self):
-        watch = ['carmen.candela', 'antonio.desantos', 'raquel.hernandez', 'jennifer.marquez', 'manon.leymat',
-                 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
-        assignees = 'antonio.desantos'
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma',
+                 'nikita.borah', 'deepak.garg', 'mohammad.dilshad',
+                 'jennifer.marquez', 'ajaysingh.yadav', 'silvia.orofino', 'carmen.candela', 'raquel.hernandez']
+        assignees = 'raquel.hernandez'
         attachment = [self.section_value[3] + 'ES.xlsx', self.section_value[3] + 'PT.xlsx']
 
         try:
@@ -190,19 +193,21 @@ class Jira(Config):
                 }, 'duedate': str(Jira.sixth_day())}
 
             self.create_es = self.client.create_issue(fields=self.issue_es, prefetch=True)
-            for i in watch:
-                self.client.add_watcher(self.create_es.id, i)
 
             for j in attachment:
                 self.client.add_attachment(self.create_es.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_es.id, i)
 
         except JIRAError as e:
             logger.error(str(e))
             pass
 
     def us(self):
-        watch = ['christine.ciarcia', 'vanessa.ezeta', 'jennifer.marquez', 'manon.leymat',
-                 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma', 'nikita.borah',
+                 'deepak.garg', 'mohammad.dilshad', 'jennifer.marquez', 'ajaysingh.yadav',
+                 'vanessa.ezeta']
         assignees = 'vanessa.ezeta'
         attachment = [self.section_value[3] + 'CA.xlsx', self.section_value[3] + 'US.xlsx',
                       self.section_value[3] + 'US & CA.xlsx']
@@ -221,20 +226,23 @@ class Jira(Config):
                 }, 'duedate': str(Jira.sixth_day())}
 
             self.create_us = self.client.create_issue(fields=self.issue_us, prefetch=True)
-            for i in watch:
-                self.client.add_watcher(self.create_us.id, i)
 
             for j in attachment:
                 self.client.add_attachment(self.create_us.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_us.id, i)
 
         except JIRAError as e:
             logger.error(str(e))
             pass
 
     def uk(self):
-        watch = ['mireia.nadal', 'marta.fiascaris', 'nick.gardiner', 'James Hill', 'jennifer.marquez',
-                 'manon.leymat', 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
-        assignees = 'Aman Mastana'
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma', 'nikita.borah',
+                 'deepak.garg', 'mohammad.dilshad', 'jennifer.marquez',
+                 'ajaysingh.yadav', 'aman.mastana', 'manon.leymat', 'james.hill', 'alex.ooi', 'sophie.corcinos',
+                 'mireia.nadal', 'nick.gardiner']
+        assignees = 'manon.leymat'
         attachment = [self.section_value[3] + 'UK.xlsx', self.section_value[3] + 'IE.xlsx']
 
         try:
@@ -251,19 +259,22 @@ class Jira(Config):
                 }, 'duedate': str(Jira.sixth_day())}
 
             self.create_uk = self.client.create_issue(fields=self.issue_uk, prefetch=True)
-            for i in watch:
-                self.client.add_watcher(self.create_uk.id, i)
 
             for j in attachment:
                 self.client.add_attachment(self.create_uk.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_uk.id, i)
+
         except JIRAError as e:
             logger.error(str(e))
             pass
 
+    # Done
     def mea(self):
-        watch = ['cindy.booysen', 'jennifer.marquez', 'manon.leymat',
-                 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
-        assignees = 'cindy.booysen'
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma',
+                 'nikita.borah', 'deepak.garg', 'mohammad.dilshad', 'jennifer.marquez', 'ajaysingh.yadav', 'marthinus.matthee']
+        assignees = 'gareth.macgregor'
         attachment = [self.section_value[3] + 'ZA.xlsx']
 
         try:
@@ -280,19 +291,21 @@ class Jira(Config):
                 }, 'duedate': str(Jira.sixth_day())}
 
             self.create_mea = self.client.create_issue(fields=self.issue_mea, prefetch=True)
-            for i in watch:
-                self.client.add_watcher(self.create_mea.id, i)
 
             for j in attachment:
                 self.client.add_attachment(self.create_mea.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_mea.id, i)
 
         except JIRAError as e:
             logger.error(str(e))
             pass
 
     def aus(self):
-        watch = ['corinne.hewlett', 'thuy.le', 'jon.windred', 'jennifer.marquez', 'manon.leymat',
-                 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma',
+                 'nikita.borah', 'deepak.garg', 'mohammad.dilshad',
+                 'jennifer.marquez', 'ajaysingh.yadav', 'jon.windred', 'corinne.hewlett']
         assignees = 'corinne.hewlett'
         attachment = [self.section_value[3] + 'AUS.xlsx']
 
@@ -311,19 +324,20 @@ class Jira(Config):
 
             self.create_aus = self.client.create_issue(fields=self.issue_aus, prefetch=True)
 
-            for i in watch:
-                self.client.add_watcher(self.create_aus.id, i)
-
             for j in attachment:
                 self.client.add_attachment(self.create_aus.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_aus.id, i)
 
         except JIRAError as e:
             logger.error(str(e))
             pass
 
     def apac(self):
-        watch = ['ravi.chettiar', 'jennifer.marquez', 'manon.leymat',
-                 'mohammad.dilshad', 'deepak.garg', 'matthew.perrone']
+        watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma', 'nikita.borah',
+                 'deepak.garg', 'mohammad.dilshad', 'jennifer.marquez',
+                 'ajaysingh.yadav', 'ravi.chettiar']
         assignees = 'ravi.chettiar'
         attachment = [self.section_value[3] + 'HK.xlsx', self.section_value[3] + 'ID.xlsx',
                       self.section_value[3] + 'MY.xlsx', self.section_value[3] + 'SG.xlsx',
@@ -343,11 +357,12 @@ class Jira(Config):
                 }, 'duedate': str(Jira.sixth_day())}
 
             self.create_apac = self.client.create_issue(fields=self.issue_apac, prefetch=True)
-            for i in watch:
-                self.client.add_watcher(self.create_apac.id, i)
 
             for j in attachment:
                 self.client.add_attachment(self.create_apac.id, j)
+
+            for i in watch:
+                self.client.add_watcher(self.create_apac.id, i)
 
         except JIRAError as e:
             logger.error(str(e))
@@ -393,5 +408,5 @@ class Jira(Config):
 
 
 if __name__ == "__main__":
-    MyJira = Jira(username='Dharmendra.mishra@neomediaworld.com', password='Password3')
+    MyJira = Jira(username='Dharmendra.mishra@neomediaworld.com', password='yNbGwGbfJwEhI1d56WlG21B1')
     MyJira.main()

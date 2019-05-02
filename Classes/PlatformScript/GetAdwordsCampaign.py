@@ -193,11 +193,11 @@ def main(client, report_download_directory):
     # Create report definition.
     report_definition = {
         'reportName': 'Custom ADGROUP_PERFORMANCE_REPORT',
-        'dateRangeType': 'LAST_7_DAYS',
+        'dateRangeType': 'LAST_MONTH',
         'reportType': 'ADGROUP_PERFORMANCE_REPORT',
         'downloadFormat': 'CSV',
         'selector': {
-            'fields': ['CampaignId', 'AdGroupId', 'Impressions', 'Clicks',
+            'fields': ['CampaignName', 'CampaignId', 'AdGroupId', 'Impressions', 'Clicks',
                        'Cost'],
             # Predicates are optional.
             'predicates': {

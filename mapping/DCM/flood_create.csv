@@ -1,0 +1,2 @@
+profileId,advertiserId,floodlightActivityGroupId,name,countingMethod,expectedUrl,floodlightTagType,cacheBustingType,userDefinedVariableTypes
+4846889,9325544,5404713,Test_FMG_Insights and Impact Page Yahoo,UNIQUE_COUNTING,https://www.fmglobal.com/insights-and-impacts,IFRAME,JAVASCRIPT,

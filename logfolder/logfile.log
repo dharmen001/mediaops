@@ -111,3 +111,73 @@
 2019-02-12 17:57:35,217 - App - ERROR - [Errno 13] Permission denied: 'C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/Reports/NDPdataDump/Sage Global - Publisher Data - Daily.xlsx'
 2019-04-12 14:26:32,809 - App - ERROR - adgroup_5438044680.csvis empty
 2019-04-12 14:30:09,411 - App - ERROR - adgroup_5438044680.csvis empty
+2019-04-16 13:32:56,085 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36793/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '784397c9-8aa8-4ef1-93c8-f3a5f1838760', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '6b519f38717f48bc', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:02:56 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 13:32:58,042 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36794/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '92fd663c-8545-49d4-b3ce-dfdba8d5b444', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '23918a7fff1830a1', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:02:58 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 13:32:59,709 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36795/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '7b2264fd-3801-43cf-a3f3-98a8262db8a8', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '6b9c30ec6b5fc4bd', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:02:59 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 13:33:01,367 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36796/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '20d11345-289d-42d2-ae80-fcd19a97306c', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '5a6c0e601ca5affc', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:03:01 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 13:48:34,177 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36798/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '4b2882ce-44e9-450d-aaec-49a14d21121a', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '05be9cc5d7b2e028', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:18:34 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 13:48:36,115 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36799/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '0790af21-3146-4528-b162-a3c7211496f2', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '0cfff58f41138faa', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:18:36 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 13:48:37,914 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36800/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '11c491b1-7a29-482b-8acf-73cb96251eef', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '539673f4404c2e11', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:18:37 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 14:06:17,411 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36805/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '405dd5f2-a850-4017-b710-ea97deaeb67a', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': 'ef04a76be116337a', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:36:17 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 14:11:52,461 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36806/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': 'd68d044b-78a9-4947-8508-e0c98e611df2', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '52da0633bbc1e05a', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:41:52 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 14:12:43,263 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36807/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '918e1abd-04e1-49ca-b034-1b26d751211d', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '4de896b913a3b8cb', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:42:43 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 14:17:39,888 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36808/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': 'a771507b-db5b-4d3f-9a02-f71728d5fd37', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': 'e971d35b3bbee377', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 08:47:39 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 14:54:56,049 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36814/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': 'a1cd8623-e2a0-43b7-87b7-f3cdf9b8d190', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '04f972e620f920a3', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 09:24:55 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 15:21:50,395 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36816/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': '26168f6a-9d95-4e09-afa3-e8ea2639f5ba', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '58fd056d8703a6c2', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 09:51:50 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
+2019-04-16 15:43:36,111 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/36817/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': 'f34b3970-70f0-4702-b9a3-0ce2089e7db0', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '841a1ffb55f26a54', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 10:13:35 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
+	response text = {"errorMessages":[],"errors":{}}
