@@ -7,7 +7,7 @@ class NdpGrdriveDate(Config):
 
     def __init__(self):
         super(NdpGrdriveDate, self).__init__()
-        GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = 'C:\mediaops\Classes\DataReaders\client_secrets.json'
+        GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = 'C:\mediaops\Classes\DataReaders\client_secret.json'
         mycred = 'C:\mediaops\Classes\DataReaders\mycreds.txt'
         self.gauth = GoogleAuth()
         self.gauth.LoadCredentialsFile(mycred)
@@ -55,6 +55,7 @@ class NdpGrdriveDate(Config):
             f = self.drive.CreateFile({'id': f['id']})
             f.GetContentFile(self.section_value[14] + fname  + ".xlsx",
                              mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+
 
     def main(self):
         self.file_objects()

@@ -43,48 +43,64 @@ class AdwordsFileReader(Config):
         path = self.section_value[35]
         files = os.listdir(path)
 
-        files_xlsx = [f for f in files if f[-3:] == 'csv']
+        files_csv = [f for f in files if f[-3:] == 'csv']
 
-        for f in files_xlsx:
+        for f in files_csv:
             logger.info('Start Reading filename: - ' + f)
             try:
                 data = pd.read_csv(path + f, skiprows=1, skipfooter=1, engine='python', encoding="utf-8")
+
                 data['WorkbookName'] = f
                 data_new = pd.pivot_table(data, index=['Campaign'], values=['Clicks', 'Cost'], aggfunc=pd.np.sum)
                 adwords_data = data_new.reset_index()
                 adwords_data = adwords_data[(adwords_data[['Clicks']] != 0).all(axis=1)]
+                adwords_data['Cost'] = adwords_data['Cost']/1000000
                 adwords_file_creation = pd.ExcelWriter(path + os.path.splitext(f)[0] + ".xlsx", engine="xlsxwriter",
                                                        datetime_format="YYYY-MM-DD")
-                adwords_data.to_excel(adwords_file_creation, index=False)
+                adwords_data.to_excel(adwords_file_creation, index=False, startrow=6)
+                data_info = pd.read_csv(self.section_value[34] + 'Client_id_mcc.csv', engine='python', encoding="utf-8")
+                data_info = data_info.drop('MCCID', 1)
+                # data_info_new = data_info.transpose()
+                data_info_new = data_info.set_index('Client').T
+                # data_info_new.reset_index()
+                print(data_info_new)
+                # exit()
+                # for index, row in data_info.iterrows():
+                data_info_new.to_excel(adwords_file_creation, index=True, startrow=0, startcol=0)
                 workbook = adwords_file_creation.book
                 worksheet = adwords_file_creation.sheets['Sheet1']
                 worksheet.hide_gridlines(2)
                 worksheet.set_zoom(75)
                 format_header = workbook.add_format({"bold": True, "bg_color": "#00B0F0", "border": 1})
-                worksheet.conditional_format(0, 0, 0, adwords_data.shape[1], {"type": "no_blanks",
+                worksheet.conditional_format(6, 0, 6, adwords_data.shape[1], {"type": "no_blanks",
                                                                               "format": format_header})
 
                 border_row = workbook.add_format({"border": 1})
                 bold_format = workbook.add_format({"bold": True, "bg_color": "#00B0F0", "border": 1,
                                                    "num_format": "#,##0"})
-                worksheet.conditional_format(1, 0, adwords_data.shape[0], adwords_data.shape[1],
+                worksheet.conditional_format(7, 0, adwords_data.shape[0]+7, adwords_data.shape[1],
                                              {"type": "no_blanks", "format": border_row})
 
                 number_format = workbook.add_format({"num_format": "#,##0"})
-                worksheet.conditional_format(1, 1, adwords_data.shape[0], adwords_data.shape[1]-1,
+                dollar_format = workbook.add_format({"num_format": "#,##0.00"})
+                worksheet.conditional_format(7, 1, adwords_data.shape[0]+7, 1,
                                              {"type": "no_blanks", "format": number_format})
 
-                worksheet.write_string(adwords_data.shape[0] + 1, 0, 'Total', bold_format)
-                worksheet.write_formula(adwords_data.shape[0] + 1, 1, '=SUM(B{}:B{})'.format(2,
-                                                                                             adwords_data.shape[0]+1),
+                worksheet.conditional_format(7, 2, adwords_data.shape[0] + 7, 2,
+                                             {"type": "no_blanks", "format": dollar_format})
+
+                worksheet.write_string(adwords_data.shape[0] + 7, 0, 'Total', bold_format)
+                worksheet.write_string(0, 0, 'Client')
+                worksheet.write_formula(adwords_data.shape[0] + 7, 1, '=SUM(B{}:B{})'.format(8,
+                                                                                             adwords_data.shape[0]+7),
                                         bold_format)
-                worksheet.write_formula(adwords_data.shape[0] + 1, 2, '=SUM(C{}:C{})'.format(2,
-                                                                                             adwords_data.shape[0]+1),
+                worksheet.write_formula(adwords_data.shape[0] + 7, 2, '=SUM(C{}:C{})'.format(8,
+                                                                                             adwords_data.shape[0]+7),
                                         bold_format)
 
                 adwords_file_creation.save()
                 adwords_file_creation.close()
-            except pandas.io.common.EmptyDataError:
+            except (pandas.io.common.EmptyDataError, KeyError):
                 pass
                 logger.error(f + "is empty")
 

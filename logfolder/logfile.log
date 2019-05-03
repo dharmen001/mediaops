@@ -181,3 +181,39 @@
 	
 	response headers = {'X-AUSERNAME': 'Dharmendra.mishra', 'X-AREQUESTID': 'f34b3970-70f0-4702-b9a3-0ce2089e7db0', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'Transfer-Encoding': 'chunked', 'X-AACCOUNTID': '5bb1a423eec89a2b8534a4a3', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'ATL-TraceId': '841a1ffb55f26a54', 'Server': 'Atlassian Proxy/1.13.6.2', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache, no-store, no-transform', 'Date': 'Tue, 16 Apr 2019 10:13:35 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Timing-Allow-Origin': '*'}
 	response text = {"errorMessages":[],"errors":{}}
+2019-05-02 15:30:07,621 - App - ERROR - adgroup_1691496603.csvis empty
+2019-05-02 15:30:18,137 - App - ERROR - adgroup_2851654556.csvis empty
+2019-05-02 15:30:23,144 - App - ERROR - adgroup_3482239119.csvis empty
+2019-05-02 15:31:02,516 - App - ERROR - adgroup_6081169741.csvis empty
+2019-05-02 15:31:05,559 - App - ERROR - adgroup_6425288392.csvis empty
+2019-05-02 15:31:13,112 - App - ERROR - adgroup_7085379778.csvis empty
+2019-05-02 15:31:15,986 - App - ERROR - adgroup_7387872521.csvis empty
+2019-05-02 15:31:26,602 - App - ERROR - adgroup_8150047014.csvis empty
+2019-05-02 15:31:27,967 - App - ERROR - adgroup_8239549580.csvis empty
+2019-05-02 15:36:38,165 - App - ERROR - adgroup_1691496603.csvis empty
+2019-05-02 15:36:48,168 - App - ERROR - adgroup_2851654556.csvis empty
+2019-05-02 15:36:53,631 - App - ERROR - adgroup_3482239119.csvis empty
+2019-05-02 15:37:29,571 - App - ERROR - adgroup_6081169741.csvis empty
+2019-05-02 15:37:32,117 - App - ERROR - adgroup_6425288392.csvis empty
+2019-05-02 15:37:38,309 - App - ERROR - adgroup_7085379778.csvis empty
+2019-05-02 15:37:41,375 - App - ERROR - adgroup_7387872521.csvis empty
+2019-05-02 15:37:50,013 - App - ERROR - adgroup_8150047014.csvis empty
+2019-05-02 15:37:51,542 - App - ERROR - adgroup_8239549580.csvis empty
+2019-05-02 17:14:16,292 - App - ERROR - adgroup_1691496603.csvis empty
+2019-05-02 17:14:27,003 - App - ERROR - adgroup_2851654556.csvis empty
+2019-05-02 17:14:30,309 - App - ERROR - adgroup_3482239119.csvis empty
+2019-05-02 17:15:00,678 - App - ERROR - adgroup_6081169741.csvis empty
+2019-05-02 17:15:03,263 - App - ERROR - adgroup_6425288392.csvis empty
+2019-05-02 17:15:09,532 - App - ERROR - adgroup_7085379778.csvis empty
+2019-05-02 17:15:12,098 - App - ERROR - adgroup_7387872521.csvis empty
+2019-05-02 17:15:21,934 - App - ERROR - adgroup_8150047014.csvis empty
+2019-05-02 17:15:23,210 - App - ERROR - adgroup_8239549580.csvis empty
+2019-05-02 18:37:20,326 - App - ERROR - adgroup_1691496603.csvis empty
+2019-05-02 18:37:30,138 - App - ERROR - adgroup_2851654556.csvis empty
+2019-05-02 18:37:34,720 - App - ERROR - adgroup_3482239119.csvis empty
+2019-05-02 18:38:03,927 - App - ERROR - adgroup_6081169741.csvis empty
+2019-05-02 18:38:06,398 - App - ERROR - adgroup_6425288392.csvis empty
+2019-05-02 18:38:12,532 - App - ERROR - adgroup_7085379778.csvis empty
+2019-05-02 18:38:15,216 - App - ERROR - adgroup_7387872521.csvis empty
+2019-05-02 18:38:23,766 - App - ERROR - adgroup_8150047014.csvis empty
+2019-05-02 18:38:24,849 - App - ERROR - adgroup_8239549580.csvis empty
