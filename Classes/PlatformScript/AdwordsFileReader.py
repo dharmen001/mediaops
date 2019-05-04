@@ -49,7 +49,6 @@ class AdwordsFileReader(Config):
             logger.info('Start Reading filename: - ' + f)
             try:
                 data = pd.read_csv(path + f, skiprows=1, skipfooter=1, engine='python', encoding="utf-8")
-
                 data['WorkbookName'] = f
                 data_new = pd.pivot_table(data, index=['Campaign'], values=['Clicks', 'Cost'], aggfunc=pd.np.sum)
                 adwords_data = data_new.reset_index()
@@ -58,7 +57,9 @@ class AdwordsFileReader(Config):
                 adwords_file_creation = pd.ExcelWriter(path + os.path.splitext(f)[0] + ".xlsx", engine="xlsxwriter",
                                                        datetime_format="YYYY-MM-DD")
                 adwords_data.to_excel(adwords_file_creation, index=False, startrow=6)
+
                 data_info = pd.read_csv(self.section_value[34] + 'Client_id_mcc.csv', engine='python', encoding="utf-8")
+
                 data_info = data_info.drop('MCCID', 1)
                 # data_info_new = data_info.transpose()
                 data_info_new = data_info.set_index('Client').T
