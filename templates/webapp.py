@@ -21,17 +21,17 @@ def submit():
     report = request.form['reports']
 
     if report == 'Generate Jira Tickets':
-        subprocess.call([r'C:\mediaops\script\GenerateJiraTickets.bat'])
+        subprocess.call([r'C:\mediaops\script\jira.sh'])
         return 'Generate Jira Tickets submitted'
-    elif report == 'NDP Reports':
-        subprocess.call([r'C:\mediaops\script\Ndp.bat'])
-        return 'NDP Reports Generated'
-    elif report == 'Billing':
-        subprocess.call([r'C:\mediaops\script\Billing.Bat'])
-        return render_template('Billing.html')
-    elif report == 'Adwords':
-        subprocess.call([r'C:\mediaops\script\Adwords.bat'])
-        return 'Files Downloaded'
+    # elif report == 'NDP Reports':
+    #     subprocess.call([r'C:\mediaops\script\Ndp.bat'])
+    #     return 'NDP Reports Generated'
+    # elif report == 'Billing':
+    #     subprocess.call([r'C:\mediaops\script\Billing.Bat'])
+    #     return render_template('Billing.html')
+    # elif report == 'Adwords':
+    #     subprocess.call([r'C:\mediaops\script\Adwords.bat'])
+    #     return 'Files Downloaded'
 
 
 if __name__ == "__main__":
