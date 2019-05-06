@@ -1,6 +1,0 @@
-LOAD DATA LOCAL INFILE  'C:/mediaops/mapping/ndpdata/NdpRawDataFile.csv'
-INTO TABLE 
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
