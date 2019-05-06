@@ -21,7 +21,7 @@ def submit():
     report = request.form['reports']
 
     if report == 'Generate Jira Tickets':
-        subprocess.call([r'C:\mediaops\script\jira.sh'])
+        subprocess.call([r'/home/groupm/mediaops-project/mediaops/script/jira.sh'])
         return 'Generate Jira Tickets submitted'
     # elif report == 'NDP Reports':
     #     subprocess.call([r'C:\mediaops\script\Ndp.bat'])
