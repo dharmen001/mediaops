@@ -14,7 +14,7 @@ logger.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 # create file handler which logs even debug messages
-fh = logging.FileHandler('C:/mediaops/logfolder/logfile.log')
+fh = logging.FileHandler('/home/groupm/mediaops-project/mediaops/logfolder/logfile.log')
 fh.setLevel(logging.ERROR)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
