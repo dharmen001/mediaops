@@ -13,6 +13,7 @@ class NdpData(Config):
         now = datetime.datetime.now()
         last_month = now.month-1 if now.month > 1 else 12
         last_year = now.year if now.month > 1 else now.year - 1
+
         self.path = self.section_value[10] + "Data Audit_GDS_All_Markets-{}-{:02d}.xlsx".format(last_year, last_month)
 
         logger.info("Start creating NDPFile at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))

@@ -59,11 +59,11 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.publisher_data_read()
         self.lead_content_read()
         self.uk_publisher_data()
-        self.twitter_data_reader_france()
-        self.twitter_data_reader_mea()
-        self.twitter_data_reader_za()
-        self.final_twitter_data()
-        self.facebook_data_reader()
+        # self.twitter_data_reader_france()
+        # self.twitter_data_reader_mea()
+        # self.twitter_data_reader_za()
+        # self.final_twitter_data()
+        # self.facebook_data_reader()
 
     def data_reader_ndp_raw(self):
 
@@ -291,9 +291,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         df.fillna(0, inplace=True)
         df = df[(df['Year'] == self.last_year)]
         self.publisher_data_uk = df.loc[:, ['NewWeek', 'Market', 'WorkbookName', 'Delivered Budget', 'NConversions']]
-        x = self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
-        self.save_and_close_writer()
-        exit()
+        self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
         # instruction_df = pd.DataFrame()
         #
         # for g in files_xlsx:

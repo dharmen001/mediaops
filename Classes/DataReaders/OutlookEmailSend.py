@@ -75,5 +75,5 @@ class SendEmail(Config):
 
 if __name__ == "__main__":
     Object_Email_Send = SendEmail()
-    path = '/home/Dharmendra/billingOutput/'
+    path = '/home/groupm/datadump/billingdata/'
     Object_Email_Send.main(path)

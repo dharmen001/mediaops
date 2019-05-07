@@ -54,8 +54,8 @@ class NdpDataPlayer(NdpReader):
         self.market_publisher_data_us()
         self.pub_data_uk()
         self.social_npd_data()
-        self.twitter_data_player()
-        self.facebook_data()
+        # self.twitter_data_player()
+        # self.facebook_data()
 
     def internal_data(self):
         # Removing unconditional rows from NDP Tableau Raw Data

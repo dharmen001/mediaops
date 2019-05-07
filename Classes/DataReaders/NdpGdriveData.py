@@ -7,8 +7,8 @@ class NdpGrdriveDate(Config):
 
     def __init__(self):
         super(NdpGrdriveDate, self).__init__()
-        GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = 'C:\mediaops\Classes\DataReaders\client_secret.json'
-        mycred = 'C:\mediaops\Classes\DataReaders\mycreds.txt'
+        GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = '/home/groupm/mediaops-project/mediaops/Classes/DataReaders/client_secret.json'
+        mycred = '/home/groupm/mediaops-project/mediaops/Classes/DataReaders/mycreds.txt'
         self.gauth = GoogleAuth()
         self.gauth.LoadCredentialsFile(mycred)
         if self.gauth.credentials is None:

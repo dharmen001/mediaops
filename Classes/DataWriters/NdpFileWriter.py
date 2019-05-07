@@ -322,12 +322,12 @@ class NdpFileWriter(NdpDataPlayer):
         self.writing_publisher_market_us()
         self.writing_publisher_uk()
         self.writing_social_internal()
-        self.writing_social_twitter()
-        self.writing_social_facebook()
+        # self.writing_social_twitter()
+        # self.writing_social_facebook()
         self.formatting_conversions()
         self.formatting_performance()
         self.formatting_publisher()
-        self.formatting_social()
+        # self.formatting_social()
         self.save_and_close_writer()
 
 
