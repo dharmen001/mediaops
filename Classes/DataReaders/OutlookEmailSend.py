@@ -15,7 +15,7 @@ class SendEmail(Config):
     def __init__(self):
         super(SendEmail, self).__init__()
         self.username = self.section_value[5]
-        self.password = self.section_value[6]
+        self.password = 'Password5'
         self.file_name = None
 
     def get_contacts(self, filename):
