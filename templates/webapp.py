@@ -35,7 +35,7 @@ if __name__ == "__main__":
     # Debug/Development
     # app.run(debug=True, host="0.0.0.0", port="5000")
     # Production
-    app.run(debug=True, host='0.0.0.0',  port=5000)
+    app.run(debug=False, host='0.0.0.0',  port=5000)
     # http_server = WSGIServer(('0.0.0.0', 5000), app)
     # http_server.serve_forever()
 
