@@ -378,33 +378,33 @@ class Jira(Config):
         self.de()
         logger.info('Done!creating issue for DE' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-        logger.info('Start!creating issue for FR' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        self.fr()
-        logger.info('Done!creating issue for FR' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        logger.info('Start!creating issue for ES' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        self.es()
-        logger.info('Done!creating issue for ES' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        logger.info('Start!creating issue for US' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        self.us()
-        logger.info('Done!creating issue for US' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        logger.info('Start!creating issue for UK' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        self.uk()
-        logger.info('Done!creating issue for UK' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        logger.info('Start!creating issue for MEA' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        self.mea()
-        logger.info('Done!creating issue for MEA' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        logger.info('Start!creating issue for AUS' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        self.aus()
-        logger.info('Done!creating issue for AUS' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-        logger.info('Start!creating issue for APAC' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-        self.apac()
-        logger.info('Done!creating issue for APAC' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # logger.info('Start!creating issue for FR' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # self.fr()
+        # logger.info('Done!creating issue for FR' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        #
+        # logger.info('Start!creating issue for ES' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # self.es()
+        # logger.info('Done!creating issue for ES' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        #
+        # logger.info('Start!creating issue for US' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # self.us()
+        # logger.info('Done!creating issue for US' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        #
+        # logger.info('Start!creating issue for UK' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # self.uk()
+        # logger.info('Done!creating issue for UK' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        #
+        # logger.info('Start!creating issue for MEA' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # self.mea()
+        # logger.info('Done!creating issue for MEA' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        #
+        # logger.info('Start!creating issue for AUS' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # self.aus()
+        # logger.info('Done!creating issue for AUS' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        #
+        # logger.info('Start!creating issue for APAC' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+        # self.apac()
+        # logger.info('Done!creating issue for APAC' + " at " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
 
 if __name__ == "__main__":
