@@ -20,7 +20,7 @@ except ImportError:
 # at ~/.credentials/gmail-python-quickstart.json
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly', 'https://www.googleapis.com/auth/dfareporting',
           'https://www.googleapis.com/auth/dfatrafficking']
-CLIENT_SECRET_FILE = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/client_secret.json'
+CLIENT_SECRET_FILE = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/client_secret_rajiv.json'
 APPLICATION_NAME = 'ps'
 
 
@@ -33,7 +33,7 @@ def get_credentials():
     Returns:
         Credentials, the obtained credential.
     '''
-    credential_path = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/credentials.json'
+    credential_path = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/credentials_rajiv.json'
     store = Storage(credential_path)
     credentials = store.get()
 
@@ -58,7 +58,7 @@ def main():
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('gmail', 'v1', http=http)
     service1 = discovery.build('dfareporting', 'v3.3', http=http)
-    csvfile = open("/home/groupm/mediaops-project/mediaops/mapping/DCM/eventtag.csv", "r+")
+    csvfile = open("/home/groupm/mediaops-project/mediaops/mapping/DCM/eventtag_rajiv.csv", "r+")
     reader = csv.DictReader(csvfile)
     for r in reader:
         eventtag_activity_3 = dict(r)
