@@ -29,6 +29,9 @@ def submit():
     elif report == 'Billing EMails':
         subprocess.call([r'/home/groupm/mediaops-project/mediaops/script/BillingEmails.sh'])
         return 'Billing Emails sent'
+    elif report == 'Adwords Reports':
+        subprocess.call([r'/home/groupm/mediaops-project/mediaops/script/Adwords.sh'])
+        return 'Adwords Files Generated'
 
 
 if __name__ == "__main__":
