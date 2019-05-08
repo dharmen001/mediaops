@@ -30,11 +30,12 @@ class SendEmail(Config):
         emails = file_name['Email']
         subjects = file_name['Subject']
         attachments = file_name['FileName']
+        cc = filename['Cc']
         self.file_name = filename
-        return body, names, emails, subjects, attachments
+        return body, names, emails, subjects, attachments, cc
 
     def main(self, file_path):
-        body, names, emails, subjects, attachments = self.get_contacts(self.section_value[9] +
+        body, names, emails, subjects, attachments, cc = self.get_contacts(self.section_value[9] +
                                                                        'outlookReciepientsList.csv')  # read contacts
 
         # set up the SMTP server
@@ -47,7 +48,7 @@ class SendEmail(Config):
         attachment = ''
         # For each contact, send the email:
         try:
-            for msg_body, name, email, subject, attachment in zip(body, names, emails, subjects, attachments):
+            for msg_body, name, email, subject, attachment, cc in zip(body, names, emails, subjects, attachments, cc):
                 print(file_path+attachment)
                 msg = MIMEMultipart()  # create a message
 
@@ -55,6 +56,7 @@ class SendEmail(Config):
                 msg['From'] = self.username
                 msg['To'] = email
                 msg['Subject'] = subject
+                msg['Cc'] = cc
 
                 part = MIMEBase('application', 'octet-stream')
                 part.set_payload(open(file_path + attachment, 'rb').read())
