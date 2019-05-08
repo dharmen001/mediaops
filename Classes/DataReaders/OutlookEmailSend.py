@@ -30,7 +30,7 @@ class SendEmail(Config):
         emails = file_name['Email']
         subjects = file_name['Subject']
         attachments = file_name['FileName']
-        cc = filename['Cc']
+        cc = file_name['Cc']
         self.file_name = filename
         return body, names, emails, subjects, attachments, cc
 
