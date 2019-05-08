@@ -32,6 +32,9 @@ def submit():
     elif report == 'Adwords Reports':
         subprocess.call([r'/home/groupm/mediaops-project/mediaops/script/Adwords.sh'])
         return 'Adwords Files Generated'
+    elif report == 'DCM Impressions Tag Rajiv':
+        subprocess.call([r'/home/groupm/mediaops-project/mediaops/script/RajivImpressionEventTag.sh'])
+        return 'Impressions Tag Generated'
 
 
 if __name__ == "__main__":
