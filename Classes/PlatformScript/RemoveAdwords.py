@@ -10,7 +10,7 @@ class RemoveSelectedFiles(Config):
 
     def file_manipulators(self):
 
-        path = self.section_value[35]
+        path = self.section_value[37]
         flist = pd.read_csv(self.section_value[34] + 'file_name.csv')
 
         file_name = flist['fileName'].tolist()
