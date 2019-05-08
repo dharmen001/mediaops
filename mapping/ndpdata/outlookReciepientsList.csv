@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 Name,Email,Subject,FileName,Body
 Harmeet,keshav.sachdeva@neomediaworld.com,Testing,2019_April_TDA_2019-Q3-STANDARD-SOCIAL_858_TWITTER_Delivery Report.xlsx,"Hi Team , 
+=======
+Name,Email,Subject,FileName,Body,Cc
+Dharmendra,dharmendra.mishra@neomediaworld.com,Testing,DynamicFrance.csv,"Hi Team , 
+>>>>>>> 9da7afdea2566f4a85f3a88abae611c5b2757f04
 
 Attached is the February month billing delivery report. The attached doc confirms the billable amount for the February invoice.                                                                                 
  
@@ -20,6 +25,7 @@ If we do not hear from you by 11th of March, 2019 we will assume the information
 
 Thanks!
 Team GDS
+<<<<<<< HEAD
 "
 Harmeet,shobhit.singh@neomediaworld.com,Testing,2019_April_TDA_2019-Q2-STANDARD-CORE_858_GOOGLE_Delivery Report.xlsx,"Hi Team , 
 
@@ -153,3 +159,6 @@ If we do not hear from you by 11th of March, 2019 we will assume the information
 Thanks!
 Team GDS
 "
+=======
+",
+>>>>>>> 9da7afdea2566f4a85f3a88abae611c5b2757f04

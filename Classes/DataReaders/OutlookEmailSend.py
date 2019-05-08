@@ -30,11 +30,12 @@ class SendEmail(Config):
         emails = file_name['Email']
         subjects = file_name['Subject']
         attachments = file_name['FileName']
+        cc = filename['Cc']
         self.file_name = filename
-        return body, names, emails, subjects, attachments
+        return body, names, emails, subjects, attachments, cc
 
     def main(self, file_path):
-        body, names, emails, subjects, attachments = self.get_contacts(self.section_value[9] +
+        body, names, emails, subjects, attachments, cc = self.get_contacts(self.section_value[9] +
                                                                        'outlookReciepientsList.csv')  # read contacts
 
         # set up the SMTP server
@@ -44,31 +45,36 @@ class SendEmail(Config):
         s.starttls()
         s.ehlo()
         s.login(self.username, self.password)
-
+        attachment = ''
         # For each contact, send the email:
-        for msg_body, name, email, subject, attachment in zip(body, names, emails, subjects, attachments):
-            print(file_path+attachment)
-            msg = MIMEMultipart()  # create a message
+        try:
+            for msg_body, name, email, subject, attachment, cc in zip(body, names, emails, subjects, attachments, cc):
+                print(file_path+attachment)
+                msg = MIMEMultipart()  # create a message
 
-            # setup the parameters of the message
-            msg['From'] = self.username
-            msg['To'] = email
-            msg['Subject'] = subject
+                # setup the parameters of the message
+                msg['From'] = self.username
+                msg['To'] = email
+                msg['Subject'] = subject
+                msg['Cc'] = cc
 
-            part = MIMEBase('application', 'octet-stream')
-            part.set_payload(open(file_path + attachment, 'rb').read())
-            encoders.encode_base64(part)
-            part.add_header('Content-Disposition', 'attachment', filename=attachment)
+                part = MIMEBase('application', 'octet-stream')
+                part.set_payload(open(file_path + attachment, 'rb').read())
+                encoders.encode_base64(part)
+                part.add_header('Content-Disposition', 'attachment', filename=attachment)
 
-            msg.attach(part)
+                msg.attach(part)
 
-            # add in the message body
-            msg.attach(MIMEText(msg_body, 'plain'))
+                # add in the message body
+                msg.attach(MIMEText(msg_body, 'plain'))
 
-            # send the message via the server set up earlier.
-            logger.info('Sending email with Subject: {} to {} '.format(subject, email))
-            s.sendmail(msg['From'], msg['To'], msg.as_string())
-            logger.info('Email sent to {}: '.format(name))
+                # send the message via the server set up earlier.
+                logger.info('Sending email with Subject: {} to {} '.format(subject, email))
+                s.sendmail(msg['From'], msg['To'], msg.as_string())
+                logger.info('Email sent to {}: '.format(name))
+        except OSError as e:
+            logger.error(str(e) + attachment)
+            pass
         # Terminate the SMTP session and close the connection
         s.close()
 
