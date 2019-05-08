@@ -44,31 +44,35 @@ class SendEmail(Config):
         s.starttls()
         s.ehlo()
         s.login(self.username, self.password)
-
+        attachment = ''
         # For each contact, send the email:
-        for msg_body, name, email, subject, attachment in zip(body, names, emails, subjects, attachments):
-            print(file_path+attachment)
-            msg = MIMEMultipart()  # create a message
+        try:
+            for msg_body, name, email, subject, attachment in zip(body, names, emails, subjects, attachments):
+                print(file_path+attachment)
+                msg = MIMEMultipart()  # create a message
 
-            # setup the parameters of the message
-            msg['From'] = self.username
-            msg['To'] = email
-            msg['Subject'] = subject
+                # setup the parameters of the message
+                msg['From'] = self.username
+                msg['To'] = email
+                msg['Subject'] = subject
 
-            part = MIMEBase('application', 'octet-stream')
-            part.set_payload(open(file_path + attachment, 'rb').read())
-            encoders.encode_base64(part)
-            part.add_header('Content-Disposition', 'attachment', filename=attachment)
+                part = MIMEBase('application', 'octet-stream')
+                part.set_payload(open(file_path + attachment, 'rb').read())
+                encoders.encode_base64(part)
+                part.add_header('Content-Disposition', 'attachment', filename=attachment)
 
-            msg.attach(part)
+                msg.attach(part)
 
-            # add in the message body
-            msg.attach(MIMEText(msg_body, 'plain'))
+                # add in the message body
+                msg.attach(MIMEText(msg_body, 'plain'))
 
-            # send the message via the server set up earlier.
-            logger.info('Sending email with Subject: {} to {} '.format(subject, email))
-            s.sendmail(msg['From'], msg['To'], msg.as_string())
-            logger.info('Email sent to {}: '.format(name))
+                # send the message via the server set up earlier.
+                logger.info('Sending email with Subject: {} to {} '.format(subject, email))
+                s.sendmail(msg['From'], msg['To'], msg.as_string())
+                logger.info('Email sent to {}: '.format(name))
+        except OSError as e:
+            logger.error(str(e) + attachment)
+            pass
         # Terminate the SMTP session and close the connection
         s.close()
 
