@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 profileId,id,defaultClickThroughEventTagProperties
 4742237,442959772,"{""id"": '2873202',""enabled"":'true'}"
 4742237,442959793,"{""id"": '2873202',""enabled"":'true'}"
 4742237,442959796,"{""id"": '2873202',""enabled"":'true'}"
+=======
+profileId,id,defaultClickThroughEventTagProperties
+4742237,442959772,"{""id"": '2873202',""enabled"":'true'}"
+4742237,442959793,"{""id"": '2873202',""enabled"":'true'}"
+4742237,442959796,"{""id"": '2873202',""enabled"":'true'}"
+>>>>>>> 321902747cf996c69cc00d91020b4792f23a9634
