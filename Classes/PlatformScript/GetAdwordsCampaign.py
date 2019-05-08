@@ -26,7 +26,7 @@ section of our README.
 
 import multiprocessing
 import os
-from Queue import Empty
+from queue import Empty
 import time
 import pandas as pd
 from Classes.DataReaders.config_ini import Config
