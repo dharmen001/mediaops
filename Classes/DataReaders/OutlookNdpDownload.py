@@ -94,7 +94,7 @@ class Outlook(Config):
 
     def main(self):
         self.subject_line()
-        self.login(self.section_value[5], self.section_value[6])
+        self.login(self.section_value[5], 'Password5')
         self.inbox()
         logger.info('start downloading emails at ' + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         self.email_check(self.section_value[12])

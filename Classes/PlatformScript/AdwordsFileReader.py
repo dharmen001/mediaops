@@ -41,6 +41,7 @@ class AdwordsFileReader(Config):
         logger.info("Start Reading:-  Adwords files at " +
                     str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
         path = self.section_value[35]
+        report_path = self.section_value[37]
         files = os.listdir(path)
 
         files_csv = [f for f in files if f[-3:] == 'csv']
@@ -54,7 +55,7 @@ class AdwordsFileReader(Config):
                 adwords_data = data_new.reset_index()
                 adwords_data = adwords_data[(adwords_data[['Clicks']] != 0).all(axis=1)]
                 adwords_data['Cost'] = adwords_data['Cost']/1000000
-                adwords_file_creation = pd.ExcelWriter(path + os.path.splitext(f)[0] + ".xlsx", engine="xlsxwriter",
+                adwords_file_creation = pd.ExcelWriter(report_path + os.path.splitext(f)[0] + ".xlsx", engine="xlsxwriter",
                                                        datetime_format="YYYY-MM-DD")
                 adwords_data.to_excel(adwords_file_creation, index=False, startrow=6)
 
