@@ -26,11 +26,11 @@ class SendEmail(Config):
         logger.info('Start Reading : {} '.format(filename))
         file_name = pd.read_csv(filename)
         body = file_name['Body']
-        names = file_name['Name']
+        names = file_name['Name'].tolist()
         emails = file_name['Email']
         subjects = file_name['Subject']
         attachments = file_name['FileName']
-        cc = file_name['CarbonC']
+        cc = file_name['CarbonC'].tolist()
         self.file_name = filename
         return body, names, emails, subjects, attachments, cc
 
@@ -45,7 +45,6 @@ class SendEmail(Config):
         s.starttls()
         s.ehlo()
         s.login(self.username, self.password)
-        attachment = ''
         # For each contact, send the email:
         try:
             for msg_body, name, email, subject, attachment, cc in zip(body, names, emails, subjects, attachments, cc):
@@ -73,6 +72,7 @@ class SendEmail(Config):
                 s.sendmail(msg['From'], msg['To'], msg.as_string())
                 logger.info('Email sent to {}: '.format(name))
         except OSError as e:
+            print(str(e))
             # logger.error(str(e) + attachment)
             pass
         # Terminate the SMTP session and close the connection
