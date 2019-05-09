@@ -14,8 +14,8 @@ class SendEmail(Config):
 
     def __init__(self):
         super(SendEmail, self).__init__()
-        self.username = 'harmeet.singh@neomediaworld.com'
-        self.password = '98266@raMbo'
+        self.username = 'dharmendra.mishra@neomediaworld.com'
+        self.password = 'Password5'
         self.file_name = None
 
     def get_contacts(self, filename):
@@ -35,8 +35,8 @@ class SendEmail(Config):
         return body, names, emails, subjects, attachments, cc
 
     def main(self, file_path):
-        body, names, emails, subjects, attachments, cc = self.get_contacts('/home/groupm/datadump/'
-                                                                           'billingdata/outlookReciepientsList.csv')  # read contacts
+        body, names, emails, subjects, attachments, cc = self.get_contacts('/home/groupm/datadump/billingdata/'
+                                                                           'outlookReciepientsList.csv')  # read contacts
 
         # set up the SMTP server
         logger.info('Setting up server with: {} '.format(self.username))
@@ -70,7 +70,7 @@ class SendEmail(Config):
 
                 # send the message via the server set up earlier.
                 logger.info('Sending email with Subject: {} to {} '.format(subject, email))
-                s.sendmail(msg['From'], msg['To'], msg['Cc'], msg.as_string())
+                s.sendmail(msg['From'], msg['To'], msg.as_string())
                 logger.info('Email sent to {}: '.format(name))
         except OSError as e:
             logger.error(str(e) + attachment)
