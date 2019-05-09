@@ -35,8 +35,8 @@ class SendEmail(Config):
         return body, names, emails, subjects, attachments, cc
 
     def main(self, file_path):
-        body, names, emails, subjects, attachments, cc = self.get_contacts(self.section_value[9] +
-                                                                       'outlookReciepientsList.csv')  # read contacts
+        body, names, emails, subjects, attachments, cc = self.get_contacts('/home/groupm/datadump/'
+                                                                           'billingdata/outlookReciepientsList.csv')  # read contacts
 
         # set up the SMTP server
         logger.info('Setting up server with: {} '.format(self.username))

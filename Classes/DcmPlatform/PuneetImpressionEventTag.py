@@ -58,7 +58,7 @@ def main():
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('gmail', 'v1', http=http)
     service1 = discovery.build('dfareporting', 'v3.3', http=http)
-    csvfile = open("/home/groupm/mediaops-project/mediaops/mapping/DCM/eventtag_puneet.csv", "r+")
+    csvfile = open("/home/groupm/datadump/dcm//eventtag_puneet.csv", "r+")
     reader = csv.DictReader(csvfile)
     for r in reader:
         eventtag_activity_3 = dict(r)
