@@ -70,7 +70,7 @@ class SendEmail(Config):
 
                 # send the message via the server set up earlier.
                 logger.info('Sending email with Subject: {} to {} '.format(subject, email))
-                s.sendmail(msg['From'], msg['To'], msg.as_string())
+                s.sendmail(msg['From'], msg['To'], msg['Cc'], msg.as_string())
                 logger.info('Email sent to {}: '.format(name))
         except OSError as e:
             logger.error(str(e) + attachment)
