@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #!/bin/sh
-python /home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/RajivImpressionEventTag.py
+nohup python /home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/RajivImpressionEventTag.py
