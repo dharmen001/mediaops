@@ -38,6 +38,9 @@ def submit():
     elif report == 'DCM Impressions Tag Puneet':
         subprocess.call([r'/home/groupm/mediaops-project/mediaops/script/PuneetImpressionEventTag.sh'])
         return 'Impressions Tag Generated'
+    elif report == 'DCM Impressions Tag Anchal':
+        subprocess.call([r'/home/groupm/mediaops-project/mediaops/script/AnchalImpressionEventTag.sh'])
+        return 'Impressions Tag Generated'
 
 
 if __name__ == "__main__":
