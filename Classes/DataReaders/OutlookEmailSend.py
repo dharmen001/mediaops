@@ -23,13 +23,13 @@ class SendEmail(Config):
             Return two lists names, emails containing names and email addresses
             read from a file specified by filename.
         """
-        logger.info('Start Reading : {} '.format(filename))
+        # logger.info('Start Reading : {} '.format(filename))
         file_name = pd.read_csv(filename)
-        body = file_name['Body']
+        body = file_name['Body'].tolist()
         names = file_name['Name'].tolist()
-        emails = file_name['Email']
-        subjects = file_name['Subject']
-        attachments = file_name['FileName']
+        emails = file_name['Email'].tolist()
+        subjects = file_name['Subject'].tolist()
+        attachments = file_name['FileName'].tolist()
         cc = file_name['CarbonC'].tolist()
         self.file_name = filename
         return body, names, emails, subjects, attachments, cc
@@ -46,9 +46,10 @@ class SendEmail(Config):
         s.ehlo()
         s.login(self.username, self.password)
         # For each contact, send the email:
+        attachment = ''
         try:
             for msg_body, name, email, subject, attachment, cc in zip(body, names, emails, subjects, attachments, cc):
-                print(file_path+attachment)
+                print(file_path+attachment, emails, cc)
                 msg = MIMEMultipart()  # create a message
 
                 # setup the parameters of the message
@@ -66,14 +67,13 @@ class SendEmail(Config):
 
                 # add in the message body
                 msg.attach(MIMEText(msg_body, 'plain'))
-
+                print(email, cc)
                 # send the message via the server set up earlier.
-                logger.info('Sending email with Subject: {} to {} '.format(subject, email))
-                s.sendmail(msg['From'], msg['To'], msg.as_string())
-                logger.info('Email sent to {}: '.format(name))
+                # logger.info('Sending email with Subject: {} to {} '.format(subject, email))
+                s.sendmail(msg['From'], (email, cc), msg.as_string())
+                # logger.info('Email sent to {}: '.format(name))
         except OSError as e:
-            print(str(e))
-            # logger.error(str(e) + attachment)
+            logger.error(str(e) + attachment)
             pass
         # Terminate the SMTP session and close the connection
         s.close()
