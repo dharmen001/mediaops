@@ -103,7 +103,7 @@ class Jira(Config):
                       + "\n" \
                       + "https://insidemedia.sharepoint.com/sites/neosagecentral/Shared%20Documents/" \
                         "Forms/AllItems.aspx?id=%2Fsites%2Fneosagecentral%2FShared%20Documents%2FFY18%20Media%" \
-                        "20Plans%2FQ4%20Media%20Plans" + "\n" + "Thanks," + "\n" + "Ubaid"
+                        "20Plans%2FQ4%20Media%20Plans" + "\n" + "Thanks," + "\n" + "Nikita"
 
         self.description = description
 
