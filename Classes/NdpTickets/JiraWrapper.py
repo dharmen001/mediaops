@@ -273,7 +273,8 @@ class Jira(Config):
     # Done
     def mea(self):
         watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma',
-                 'nikita.borah', 'deepak.garg', 'mohammad.dilshad', 'jennifer.marquez', 'ajaysingh.yadav', 'marthinus.matthee']
+                 'nikita.borah', 'deepak.garg', 'mohammad.dilshad', 'jennifer.marquez', 'ajaysingh.yadav',
+                 'marthinus.matthee', 'Brunette Nkuna']
         assignees = 'gareth.macgregor'
         attachment = [self.section_value[3] + 'ZA.xlsx']
 
