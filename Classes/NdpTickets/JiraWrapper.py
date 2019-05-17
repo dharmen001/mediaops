@@ -176,7 +176,7 @@ class Jira(Config):
         watch = ['Dharmendra.mishra', 'ankit.singhal', 'ubaidullah.arifshah', 'ayush.sharma',
                  'nikita.borah', 'deepak.garg', 'mohammad.dilshad',
                  'jennifer.marquez', 'ajaysingh.yadav', 'silvia.orofino', 'carmen.candela', 'raquel.hernandez']
-        assignees = 'raquel.hernandez'
+        assignees = 'silvia.orofino'
         attachment = [self.section_value[3] + 'ES.xlsx', self.section_value[3] + 'PT.xlsx']
 
         try:
