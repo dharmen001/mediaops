@@ -9,7 +9,6 @@ from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
 
-
 try:
     import argparse
 
@@ -21,8 +20,8 @@ except ImportError:
 # at ~/.credentials/gmail-python-quickstart.json
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly', 'https://www.googleapis.com/auth/dfareporting',
           'https://www.googleapis.com/auth/dfatrafficking']
-CLIENT_SECRET_FILE = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/client_secret_puneet.json'
-APPLICATION_NAME = 'pu'
+CLIENT_SECRET_FILE = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/client_secret_kritika.json'
+APPLICATION_NAME = 'ps'
 
 
 def get_credentials():
@@ -34,7 +33,7 @@ def get_credentials():
     Returns:
         Credentials, the obtained credential.
     '''
-    credential_path = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/credentials_puneet.json'
+    credential_path = '/home/groupm/mediaops-project/mediaops/Classes/DcmPlatform/credentials_kritika.json'
     store = Storage(credential_path)
     credentials = store.get()
 
@@ -59,14 +58,14 @@ def main():
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('gmail', 'v1', http=http)
     service1 = discovery.build('dfareporting', 'v3.3', http=http)
-    csvfile = open("/home/groupm/datadump/dcm//eventtag_puneet.csv", "r+")
+    csvfile = open("eventtag_kritika.csv", "r+")
     reader = csv.DictReader(csvfile)
     for r in reader:
         eventtag_activity_3 = dict(r)
         p = eventtag_activity_3["profileId"]
         s = eventtag_activity_3["id"]
-        eventtag_activity_3["eventTagOverrides"] = [eval(i) for i in eventtag_activity_3[
-            "eventTagOverrides"].split("|")]
+        eventtag_activity_3["eventTagOverrides"] = [eval(i) for i in
+                                                    eventtag_activity_3["eventTagOverrides"].split("|")]
         print("eventtag_activity_3", eventtag_activity_3)
         request3 = service1.ads().patch(profileId=p, id=s, body=eventtag_activity_3)
         response3 = request3.execute()
