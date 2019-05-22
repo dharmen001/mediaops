@@ -226,3 +226,22 @@
 2019-05-08 19:31:08,417 - App - ERROR - adgroup_3482239119.csvis empty
 2019-05-09 21:31:02,616 - App - ERROR - Server not connected2019_April_TDA_2019-Q2-STANDARD-CORE_858_GOOGLE_Delivery Report.xlsx
 2019-05-09 21:53:50,023 - App - ERROR - (501, b'5.5.4 Invalid arguments', 'dharmendra.mishra@neomediaworld.com')2019_April_TDA_2019-Q2-STANDARD-CORE_858_GOOGLE_Delivery Report.xlsx
+2019-05-13 23:38:56,553 - App - ERROR - adgroup_8239549580.csvis empty
+2019-05-13 23:38:56,634 - App - ERROR - adgroup_1691496603.csvis empty
+2019-05-13 23:38:56,998 - App - ERROR - adgroup_2851654556.csvis empty
+2019-05-13 23:38:58,897 - App - ERROR - adgroup_7085379778.csvis empty
+2019-05-13 23:38:59,766 - App - ERROR - adgroup_7387872521.csvis empty
+2019-05-13 23:39:00,961 - App - ERROR - adgroup_6081169741.csvis empty
+2019-05-13 23:39:01,955 - App - ERROR - adgroup_3482239119.csvis empty
+2019-05-14 00:00:27,452 - App - ERROR - adgroup_8239549580.csvis empty
+2019-05-14 00:00:27,536 - App - ERROR - adgroup_1691496603.csvis empty
+2019-05-14 00:00:27,909 - App - ERROR - adgroup_2851654556.csvis empty
+2019-05-14 00:00:29,875 - App - ERROR - adgroup_7085379778.csvis empty
+2019-05-14 00:00:30,789 - App - ERROR - adgroup_7387872521.csvis empty
+2019-05-14 00:00:31,980 - App - ERROR - adgroup_6081169741.csvis empty
+2019-05-14 00:00:33,005 - App - ERROR - adgroup_3482239119.csvis empty
+2019-05-18 00:37:45,853 - App - ERROR - JiraError HTTP 404 url: https://neomediaworld.atlassian.net/rest/api/2/issue/38628/watchers
+	text: {"errorMessages":[],"errors":{}}
+	
+	response headers = {'Server': 'AtlassianProxy/1.13.6.2', 'Vary': 'Accept-Encoding', 'Cache-Control': 'no-cache, no-store, no-transform', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Encoding': 'gzip', 'Strict-Transport-Security': 'max-age=315360000; includeSubDomains; preload', 'Date': 'Fri, 17 May 2019 13:37:30 GMT', 'ATL-TraceId': 'c7c9b142e8c1a8fc', 'X-AACCOUNTID': '5ba23bc229d6c22f924e8276', 'X-AREQUESTID': '9767950f-db5f-4b68-8ec3-5771944248da', 'X-XSS-Protection': '1; mode=block', 'Transfer-Encoding': 'chunked', 'Timing-Allow-Origin': '*', 'X-Content-Type-Options': 'nosniff', 'Connection': 'keep-alive'}
+	response text = {"errorMessages":[],"errors":{}}
