@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #!/bin/sh
-python /home/groupm/mediaops-project/mediaops/Classes/PlatformScript/GetAdwordsCampaign.py
-python /home/groupm/mediaops-project/mediaops/Classes/PlatformScript/AdwordsFileReader.py
-python /home/groupm/mediaops-project/mediaops/Classes/PlatformScript/RemoveAdwords.py
+python /home/groupm/mediaops-project/mediaops/Classes/Adwords/GetAdwordsCampaign.py
+python /home/groupm/mediaops-project/mediaops/Classes/Adwords/AdwordsFileReader.py
+python /home/groupm/mediaops-project/mediaops/Classes/Adwords/RemoveAdwords.py
