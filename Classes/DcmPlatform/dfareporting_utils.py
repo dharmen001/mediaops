@@ -32,7 +32,7 @@ API_SCOPES = ['https://www.googleapis.com/auth/dfareporting',
               'https://www.googleapis.com/auth/ddmconversions']
 
 # Filename used for the credential store.
-CREDENTIAL_STORE_FILE = API_NAME + '.dat'
+CREDENTIAL_STORE_FILE = API_NAME + '.json'
 
 
 def get_arguments(argv, desc, parents=None):
@@ -113,7 +113,7 @@ def setup(flags):
         # application, including client_id and client_secret, which are found
         # on the Credentials tab on the Google Developers Console.
         client_secrets = os.path.join(os.path.dirname(__file__),
-                                      'client_secret_rajiv.json')
+                                      'client_secret.json')
         storage = oauthFile.Storage(CREDENTIAL_STORE_FILE)
         credentials = load_user_credentials(client_secrets, storage, flags)
 

@@ -24,16 +24,14 @@ import dfareporting_utils
 from oauth2client import client
 
 
-
-
 # Declare command-line flags.
 argparser = argparse.ArgumentParser(add_help=False)
 argparser.add_argument(
     'profile_id', type=int,
     help='The ID of the profile to add an event tag for')
-argparser.add_argument(
-    'campaign_id', type=int,
-    help='The ID of the campaign to add an event tag for')
+# argparser.add_argument(
+#     'campaign_id', type=int,
+#     help='The ID of the campaign to add an event tag for')
 
 
 def main(argv):
@@ -44,18 +42,15 @@ def main(argv):
     service = dfareporting_utils.setup(flags)
 
     profile_id = flags.profile_id
-    campaign_id = flags.campaign_id
+    # campaign_id = flags.campaign_id
 
     try:
         # Construct and save event tag.
 
-        csv_file = pd.read_csv('C:/Users/dharmendra.mishra/OneDrive - insidemedia.net/'
-                               'ExtraData/Kritika/eventtag_kritika.csv')
-
-
         event_tag = {
-            'campaignId': campaign_id,
-            'name': 'Test Campaign Event Tag',
+            'campaignId': 21457475,
+            'enabledByDefault': True,
+            'name': 'Test Dharmendra',
             'status': 'ENABLED',
             'type': 'CLICK_THROUGH_EVENT_TAG',
             'url': 'https://www.google.com'
@@ -65,6 +60,8 @@ def main(argv):
 
         # Execute request and print response.
         response = request.execute()
+
+        event_tag1 = {'id': response['id'], 'enabled':  'true'}
 
         print ('Created campaign event tag with ID %s and name "%s".'
                % (response['id'], response['name']))
