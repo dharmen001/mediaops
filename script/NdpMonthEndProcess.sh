@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #!/bin/sh
-nohup python /home/groupm/mediaops-project/mediaops/Classes/ProcessEnd/MainNDPMonthEndProcess.py
+python /home/groupm/mediaops-project/mediaops/Classes/DataReaders/NdpGdriveData.py
+python /home/groupm/mediaops-project/mediaops/Classes/DataReaders/NdpDataReader.py
