@@ -50,14 +50,14 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         self.facebook_data_pt_final = None
         self.facebook_data_uk_final = None
         self.facebook_data_us_final = None
-        self.data_reader_ndp_raw()
-        self.ndp_static_conversion_reader()
-        self.ndp_dynamic_conversion_reader()
-        self.ndp_mapping_reader()
-        self.dcm_data_reader()
-        self.dbm_data_reader()
-        self.publisher_data_read()
-        self.lead_content_read()
+        # self.data_reader_ndp_raw()
+        # self.ndp_static_conversion_reader()
+        # self.ndp_dynamic_conversion_reader()
+        # self.ndp_mapping_reader()
+        # self.dcm_data_reader()
+        # self.dbm_data_reader()
+        # self.publisher_data_read()
+        # self.lead_content_read()
         self.uk_publisher_data()
         # self.twitter_data_reader_france()
         # self.twitter_data_reader_mea()
