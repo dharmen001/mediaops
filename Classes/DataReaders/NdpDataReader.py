@@ -292,6 +292,7 @@ class NdpReader(Classes.DataWriters.NdpDataFile.NdpData):
         df = df[(df['Year'] == self.last_year)]
         self.publisher_data_uk = df.loc[:, ['NewWeek', 'Market', 'WorkbookName', 'Delivered Budget', 'NConversions']]
         self.publisher_data_uk.to_excel(self.writer_file, sheet_name='UKPublisherData')
+        self.writer_file.save()
         exit()
         # instruction_df = pd.DataFrame()
         #
